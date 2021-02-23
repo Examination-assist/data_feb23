@@ -1,0 +1,436 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="2019-11-23T15:20:00" name="created"/>
+<meta content="2021-02-22T03:59:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 2.54cm; margin-right: 2.54cm; margin-top: 1.27cm; margin-bottom: 1.27cm }
+		p { margin-bottom: 0.25cm; direction: ltr; font-size: 11pt; line-height: 115%; text-align: justify; orphans: 2; widows: 2; background: transparent }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000">
+<div title="header"><p style="margin-bottom: 1.17cm; line-height: 50%">
+<br/>
+</p>
+</div><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>नियंत्रण
+प्रणाली</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>प्रोफेसर
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>एस</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>शंकर
+राम</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>अभियांत्रिकी
+रचना</b></span></font><span lang="mr"> विभाग</span></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>इंडियन
+इन्स्टिट्यूट ऑफ टेक्नॉलॉजी</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>मद्रास</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>वाचन
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>६१</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b>Nyquist
+Sta</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>क्षमतेचा
+निकष</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>भाग
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+1</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डब्ल्यू
+ई ने</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+न्यूक्विस्ट </span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">स्टॅबिलिटी
+सीरिट्रिया</span></font><span lang="mr">ची
+सुरुवात</span><font size="3" style="font-size: 12pt"><span lang="mr">केली</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">ओपन
+लूप प्रणालीचा फ्रिक्वेन्सी
+प्रतिसाद पाहून आम्ही बंद
+लूप प्रणालीच्या स्थैर्याची
+माहिती</span></font><span lang="mr">शोधण्याचा
+प्रयत्न करत </span><font size="3" style="font-size: 12pt"><span lang="mr">आहोत</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">००</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">३४</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_b30dc4c636795eaa" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">मी
+मानक नकारात्मक अभिप्राय
+प्रणालीचा विचारकरतो</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_6b57f6b21a1635d"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">फॉरवर्ड
+मार्ग हस्तांतरण कार्यअसणे</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_e8a8d21da9ea14c"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">अभिप्राय
+मार्ग हस्तांतरण कार्य असणे</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_a7776d51cdacb808"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">ओपन
+लूप ट्रान्सफर फंक्शन असणे</span></font></span></font><font size="3" style="font-size: 12pt">.
+ND </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">बंद
+लूप हस्तांतरण कार्य असणार
+आहे</span></font></span></font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_fe2f22881e3bb405"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">बंद
+लूप वैशिष्ट्यपूर्ण पॉलिनओमियल
+असणार</span></font><span lang="mr"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_443646b111b41dda"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">
+आहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टी</span></font></span></font><font size="3" style="font-size: 12pt">.</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">या
+बंद लूप वैशिष्ट्यपूर्ण
+बहुविधतेची मुळे बंद लूप ध्रुव
+आहेत</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आपण
+ओपन लूप ट्रान्सफर फंक्शनचे
+प्रतिनिधित्व करू या</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_35fe97c0f52e6f55"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_5534cbe9c5b7ab8f"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डब्ल्यू
+ई लासंख्यात्मक क्षेत्रात
+रस</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">आहे</span></font><span lang="mr">कारण</span><font size="3" style="font-size: 12pt"><span lang="mr">
+संख्यात्मक बहुविधतेची मुळे
+बंद लूप ध्रुव आहेत</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">उजवीकडे</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">०२</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">१०</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_1007f60faf278acf" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टी
+तो </span></font></span></font><font size="3" style="font-size: 12pt">1+</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">शून्य</span></font><span lang="mr">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_d2643afe135c1492"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">
+आहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">बंद
+लूप पोलआहेत</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">ध्रुव</span></font><span lang="mr">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_3f02b0d53707dba3"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">उघडे
+लूप खांब आहेत</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टी
+तो स्वत</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">ला
+विचारत आहे की</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">बंद</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> </span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> लूप
+खांबांच्या ठिकाणावर</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> आम्ही</span></font><span lang="mr">
+भाष्य करतो</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आणि </span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">पर्यायाने
+</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+ओपन लूप प्रणालीच्या फ्रिक्वेन्सी
+प्रतिसादाचा कट रचून बंद लूप
+प्रणालीच्या स्थैर्यावर
+भाष्यकरतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">सीएक</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> 
+नायक्विस्ट </span></font><span lang="mr"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_ecbf0e3fea82e4e4"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">प्लॉट</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> </span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> म्हणून
+आम्ही कट रचतो</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">आणि
+त्यानंतर संबंधित बंद लूप
+प्रणालीच्या स्थैर्यावर
+भाष्य करतो</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आपण</span></font><span lang="mr">पाहणार
+आहोत या</span><font size="3" style="font-size: 12pt"><span lang="mr">पहिल्या
+संकल्पनेला</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">मॅपिंग
+प्रमेय म्हणतात</span></font></span></font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">०३</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">५९</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_1700dc5210e187a1" width="384"/>
+</p>
+<p align="left" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">मी
+</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">हँडआऊटमध्ये
+जाऊन</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+मॅपिंग प्रमेयाकडे पाहतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_c64703394a762af5"/>
+<font size="3" style="font-size: 12pt">be
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">मध्ये
+दोन बहुविधतांचे गुणोत्तर
+पडू</span></font><span lang="mr"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_b880e659bf7d175e"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">
+द्या</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">एस</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">प्लेनमध्ये
+</span></font><span lang="mr">बंद सी ऑनटूरमध्ये
+ </span><font size="3" style="font-size: 12pt"><span lang="mr">झेड</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">
+शून्यआणि</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+पी </span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">ध्रुव
+कोणतेही खांब आणि शून्य न जाता</span></font><span lang="mr">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_21fc208046f194e1"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">
+पी</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">एस
+विमानातील ही बंद रचना</span></font><span lang="mr">विमानातील
+संबंधित </span><font size="3" style="font-size: 12pt"><span lang="mr">बंद
+रचनेचे मॅपिंग केले जाते</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_c64703394a762af5"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">एसविमानात
+तुमचा एक मार्ग </span></font><span lang="mr">आहे
+हे </span><font size="3" style="font-size: 12pt"><span lang="mr">उघड
+आहे</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+की</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">संरचनेतील
+ </span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">प्रत्येक</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">
+बिंदूला</span></font><span lang="mr"> एक विशिष्ट
+मूल्य असणार </span><font size="3" style="font-size: 12pt"><span lang="mr">
+</span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_b880e659bf7d175e"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">
+आहे</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="mr">की
+आपण विमानात </span><font size="3" style="font-size: 12pt"><span lang="mr">समान
+मूल्य मिळवू</span></font><span lang="mr"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_c64703394a762af5"/>
+<span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> शकतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_c64703394a762af5"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डब्ल्यूई
+विमानातील रचनेद्वारे मूळ
+ाभोवती च्या घड्याळाच्या
+काट्यानुसार वेढलेल्या ंची
+संख्या मोजते</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_c64703394a762af5"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टी</span></font></span></font><font size="3" style="font-size: 12pt">.</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">तो
+विमानाच्या रचनेमुळे उगमाच्या
+संख्येला वेढा घालून</span></font><span lang="mr">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_c64703394a762af5"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">
+</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+</span></font><span lang="mr">झेड </span><font size="3" style="font-size: 12pt"><span lang="mr">मायनस</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> पी</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">०६</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">४९</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_cdd1acb8fc7b2c2b" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">सर्वप्रथम
+आपण </span></font><span lang="mr"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_f3a74839aaaa8f2f"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">
+एस विमानातील</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+खांब आणि शून्यांची संख्या
+चिन्हांकित केली पाहिजे</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> आणि</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">
+कोणतीही रचना घेणे</span></font><span lang="mr">गरजेचे</span><font size="3" style="font-size: 12pt"><span lang="mr">आहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टी</span></font></span></font><font size="3" style="font-size: 12pt">.</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">त्याचे
+मॅपिंग विमानात एकाच रचनेत
+केले जाणार आहे</span></font></span></font><font size="3" style="font-size: 12pt">.</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_f3a74839aaaa8f2f"/>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="mr">आपण
+</span><font size="3" style="font-size: 12pt"><span lang="mr">एच</span></font><span lang="mr">दोन</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_f3a74839aaaa8f2f"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">
+ध्रुव आणि एक शून्य</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">म्हणू</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">या</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">वादविवादासाठीआम्ही
+</span></font><span lang="mr">काही मनमानी</span><font size="3" style="font-size: 12pt"><span lang="mr">
+</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">हिरवा</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">घेतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">या
+प्रकरणात झेडपीची किंमत </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">त्यामुळे
+</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">मूळ
+गोलची संख्या</span></font><span lang="mr"> ०
+असणार</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">शून्य
+आणि ध्रुव या दोन्हींना वेढा
+घालून आणखी एका संरचनेचा
+</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">काळा</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">विचार
+करू या</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">झेड</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पीचे
+मूल्य </span></font></span></font><font size="3" style="font-size: 12pt">-1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आहे</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">याचा
+अर्थ विमानात ील उगमाला
+घड्याळाच्या काट्याप्रमाणे
+वेढा</span></font><span lang="mr"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_f3a74839aaaa8f2f"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">आहे</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">१२</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">३०</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_f061ec9c65d8409a" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">१४</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">५१</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 6" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_6cafc3c1e63d61bb" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">मी
+हँडआऊटमध्ये सादर केलेल्या
+</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">काही
+उदाहरणांकडे</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">पाहतो</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डब्ल्यूई
+हे कार्य</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_f3a74839aaaa8f2f"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">आहे</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="mr">ज्यामध्ये</span><font size="3" style="font-size: 12pt"><span lang="mr">
+</span></font></span></font><font size="3" style="font-size: 12pt">-1.52.4</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_f83439ec8c23d459"/>
+<font size="3" style="font-size: 12pt">j</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="mr">आणि
+टी वो पोल</span></span></font><font size="3" style="font-size: 12pt">-1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आणि
+</span></font></span></font><font size="3" style="font-size: 12pt">-2
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">वर</span></font><span lang="mr">
+दोन शून्य</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आहेत</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">१५</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">३३</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 7" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_e13e7005f914132c" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जर
+आपण पहिल्या आकृतीकडे पाहिलेतर</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आपल्याला</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">१
+आणि </span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">२
+वर</span></font><span lang="mr"> दोन खांब</span><font size="3" style="font-size: 12pt"><span lang="mr">
+दिसतात</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">ND </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">दोन
+शून्य</span></font></span></font>-1.5<font size="3" style="font-size: 12pt">2.4</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_f83439ec8c23d459"/>
+<font size="3" style="font-size: 12pt">j</font><font face="Times New Roman"><span lang="ar-SA"><span lang="mr">वर
+सी</span><font size="3" style="font-size: 12pt"><span lang="mr">ऑम्प्लेक्स
+कंजुगेटआहेत</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जर
+आपण</span></font><span lang="mr">एस विमानात
+एबीसी</span><font size="3" style="font-size: 12pt"><span lang="mr">डी</span></font><span lang="mr">
+घेतला</span><font size="3" style="font-size: 12pt"><span lang="mr">
+तर</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जो
+बंद नाही</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font size="3" style="font-size: 12pt"> '</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">अ</span></font></span></font><font size="3" style="font-size: 12pt">''</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">सी</span></font></span></font><font size="3" style="font-size: 12pt">'</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डी</span></font></span></font><font size="3" style="font-size: 12pt">'</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">सी</span></font></span></font><font size="3" style="font-size: 12pt">'</font><font face="Times New Roman"><span lang="ar-SA"><span lang="mr">या</span><font size="3" style="font-size: 12pt"><span lang="mr">
+संरचनेसाठी त्यांचे मॅपिंग
+केले जाते</span></font><span lang="mr"> हे आपण</span><font size="3" style="font-size: 12pt"><span lang="mr">
+पाहू शकतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डब्ल्यूईला
+पूर्णपणे वेगळा आकारमिळतो</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जे
+कार्यावर अवलंबूनआहे</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">बरोबर</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जरतुमच्याकडे</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">कॉन्टूर
+डीईआर ए असेल </span></font><span lang="mr">तर</span></span></font><font size="3" style="font-size: 12pt">'</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डी</span></font></span></font><font size="3" style="font-size: 12pt">'</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">ईएफ</span></font></span></font><font size="3" style="font-size: 12pt">'</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">ए</span></font></span></font><font size="3" style="font-size: 12pt">'
+'</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">ए</span></font></span></font><font size="3" style="font-size: 12pt">'</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">१६</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">५२</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 8" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_cc240bc282f445c1" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आम्ही
+</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+बंद कॉन्टूर एबीसीडेफा</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> टी</span></font><span lang="mr">टोपी
+चे मॅपिंग ए </span><font size="3" style="font-size: 12pt"><span lang="mr">
+बी</span></font></span></font><font size="3" style="font-size: 12pt">'</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">सी
+डी</span></font></span></font><font size="3" style="font-size: 12pt">'</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">एफए</span></font></span></font><font size="3" style="font-size: 12pt">'</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">मध्ये
+केले जाते</span></font></span></font><font size="3" style="font-size: 12pt">.
+Z-P=-2 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">चे
+मूल्य</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">त्यामुळे
+आपण पाहू शकतो की विमानात
+उगमाभोवती घड्याळाच्या
+काट्यानुसार दोन वेढा आहेत</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_f3a74839aaaa8f2f"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">ए
+बी सीडी</span></font></span></font><font size="3" style="font-size: 12pt">'
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आणि
+</span></font></span></font><font size="3" style="font-size: 12pt">'</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डी
+ईएफए</span></font></span></font><font size="3" style="font-size: 12pt">'</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">२१</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">४६</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 9" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20marathi_htm_7f938e813964848a" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">या
+प्रकरणात आणखी काही उदाहरणे</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">आहेत
+</span></font><span lang="mr">जी आपण</span><font size="3" style="font-size: 12pt"><span lang="mr">
+मॅपिंग प्रमेयाकडे पाहू शकतो
+आणि त्याची पडताळणी करू शकतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">विविध
+रचनांचे मॅपिंग समजून घेण्यासाठी
+आपण मॅटलॅबचा वापर करू शकतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<div title="footer"><p style="margin-top: 1.17cm; margin-bottom: 0cm; line-height: 50%">
+<br/>
+</p>
+</div>
+</body>
+</html>

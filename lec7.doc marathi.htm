@@ -1,0 +1,556 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-72" name="author"/>
+<meta content="2018-09-23T09:16:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-22T04:04:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 3.3cm; margin-right: 2.54cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-family: "Calibri", serif; font-size: 11pt }
+		p.cjk { font-family: "Calibri"; font-size: 11pt; so-language: zh-CN }
+		p.ctl { font-family: "Calibri"; font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000"><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>नियंत्रण
+प्रणाली</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>प्रोफेसर
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>एस</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>शंकर
+राम</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>अभियांत्रिकी
+रचना विभाग</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>इंडियन
+इन्स्टिट्यूट ऑफ टेक्नॉलॉजी</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>मद्रास</b></span></font></span></font></p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>वाचन
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+</b></font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>०७</b></span></font></span></font></p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>हस्तांतरण
+कार्य </b></span></font></span></font>
+</p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><b>भाग
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+1</b></font></p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आम्ही
+सिंगल इनपुट सिंगल आउटपुट
+प्रणाली</span></font><span lang="mr"> एसआयएसओ
+म्हणून</span><font size="3" style="font-size: 12pt"><span lang="mr">
+संक्षिप्तडी</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+आणि रेखीव वेळेच्या व्हेरिएंट
+कॉसल डायनॅमिक सिस्टिम्सहाताळत
+आहोत जे सतत च्या कार्यक्षमांशी
+रेखीव सामान्य फरक समीकरणे
+आहेत</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">००</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">२८</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 8" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_13c9f9f7baed5758" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">अशी
+समीकरणे सोडवण्यासाठी लाप्लेस
+ट्रान्सफॉर्मचा उपयोग कसा
+करता येईल हे</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">डब्ल्यूईने</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> </span></font><span lang="mr">
+पाहिले</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डब्ल्यू</span></font><span lang="mr">टोपी
+आपण आतापर्यंत केली आहे ती</span><font size="3" style="font-size: 12pt"><span lang="mr">म्हणजे
+आपण या </span></font><span lang="mr">अभ्यासक्रमात
+अभ्यास करण्यासाठी काय जाणार
+आहोत </span><font size="3" style="font-size: 12pt"><span lang="mr">आणि
+आपण वापरणार असलेल्या काही
+गणिती साधनांचा</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">व्यापक
+आढावा</span></font><span lang="mr">घेणार</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आहोत</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">००</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">४९</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_88c9bece0ad795ae" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डब्ल्यू
+ई शास्त्रीय नियंत्रण पद्धतीचा
+वापर करूनविश्लेषणात जाईल</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font size="3" style="font-size: 12pt">
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">हस्तांतरणाच्या</span></font><span lang="mr">कामांपैकी
+मी हे</span><font size="3" style="font-size: 12pt"><span lang="mr">शिकणार
+आहोत हे आपण मुख्य विषयांपैकी</span></font><span lang="mr">ओ
+ने</span></span></font>.<font size="3" style="font-size: 12pt">
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">हस्तांतरण
+कार्य म्हणजे काय ते आपण पाहतो</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">मीआपण
+सामूहिक वसंत ऋतूच्या डंपर
+प्रणालीचा विचार करतो</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_7bc8e003ef6a093"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टीही
+एक रेखीव वेळेची विविध प्रणालीआहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आम्हीदोन्ही
+बाजूंनी लॅप्लेस ट्रान्सफॉर्म
+घेतो</span></font></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Calibri"><span lang="ar-SA"><span lang="mr">आम्हाला
+</span><font size="3" style="font-size: 12pt"><span lang="mr">मिळणार
+आहे</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_323d7936fc9fad7b"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जर
+आपण आपल्याला मिळणार असलेल्या
+अटींची पुनर्रचना</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> केली</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> तर</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_32744643e4506ca4"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आता
+जर आपण दोन्ही बाजूंनी फूट
+पाडली</span></font><span lang="mr"> तर आपल्याला
+खालील गोष्टी मिळणार </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_47cddef531ed4852"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">आहेत</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_4b7670c46b863a80"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पहिली
+टर्म म्हणजे उत्पादनाचा घटक</span></font><span lang="mr">
+नॉन</span></span></font>-<font face="Calibri"><span lang="ar-SA"><span lang="mr">शून्य
+प्रारंभिक</span><font size="3" style="font-size: 12pt"><span lang="mr">
+स्थितीमुळे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font size="3" style="font-size: 12pt"> </font> <font face="Calibri"><span lang="ar-SA"><span lang="mr">टी
+टोपी मध्ये समाविष्ट असलेल्या
+</span><font size="3" style="font-size: 12pt"><span lang="mr">टी
+टोपीचे लगेच निरीक्षण करता
+येईल</span></font><span lang="mr"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_7d448ed3f01d184a"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">आणि
+</span></font></span></font><font size="3" style="font-size: 12pt">.
+. .</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_c0b6baec8148294d"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टीटोपी
+हे विस्थापन आहे जे कोणत्याही
+शून्य प्रारंभिक स्थितीमुळे
+होते</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जर
+आपल्याकडे</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+सुरुवातीला वस्तुमान विश्रांती
+असेल तर </span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">आपण</span></font><span lang="mr">
+ते थोड्या फार प्रमाणात</span><font size="3" style="font-size: 12pt"><span lang="mr">
+विस्थापित</span></font><span lang="mr"> करतो</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आणि ते सोडून देतो</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr"><i>के</i></span></font><span lang="mr">
+आणि </span><font size="3" style="font-size: 12pt"><span lang="mr"><i>सी</i></span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> च्या
+मूल्यांनुसार  स्पंदन करू
+शकतो</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+आणि  शेवटी तो पुन्हा संतुलित
+अवस्थेत स्थिरावू शकतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टीतो
+पहिला भाग</span></font><span lang="mr"> शून्य
+प्रारंभिक</span><font size="3" style="font-size: 12pt"><span lang="mr">
+</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+परिस्थितीमुळे उत्पादन</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> आहे</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आपण</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> त्याला
+मोफत प्रतिसादम्हणतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">दुसऱ्या
+भागात इनपुट शब्द समाविष्ट</span></font><span lang="mr">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_f3a74839aaaa8f2f"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">
+आहे</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जो
+बल आहे</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="mr">आपण</span><font size="3" style="font-size: 12pt"><span lang="mr">
+वस्तुमानावर वेगवेगळी शक्ती
+लागू करतो</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="mr">दुसरी
+संज्ञा </span><font size="3" style="font-size: 12pt"><span lang="mr">आपल्याला
+वस्तुमानाचे विस्थापन प्रदान
+करते</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टीहॅट
+हे उत्पादनासाठी इनपुट फोर्सचे
+योगदान</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+आहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डब्ल्यू</span></font><span lang="mr">ई</span><font size="3" style="font-size: 12pt"><span lang="mr">
+त्याला</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">सक्तीचा
+प्रतिसाद</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+म्हणा</span></font></span></font><font size="3" style="font-size: 12pt">.
+ </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डब्ल्यू</span></font><span lang="mr">ई
+मध्ये हे </span><font size="3" style="font-size: 12pt"><span lang="mr">दोन
+</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">घटक
+आउटपुटमध्येअसणार आहेत</span></font></span></font><font size="3" style="font-size: 12pt">.
+ </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">प्रणालीला</span></font><span lang="mr">दिलेल्या</span><font size="3" style="font-size: 12pt"><span lang="mr">इनपुटमुळे
+शून्य प्रारंभिक अटी</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> आणि
+इतर</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+कारणांमुळे</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">०७</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">४२</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_a61b28fba57655ad" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आता
+आपण सुरुवातीच्या सर्व अटी
+० असा विचार</span></font><span lang="mr">करू</span><font size="3" style="font-size: 12pt"><span lang="mr">या</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">या
+प्रकरणात आणि </span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">मग</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_541d8b9d3e1757fb"/>
+</span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_6ac1db023df3aa17"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_305c7f2f244449f7"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">त्यामुळे</span></font></span></font><font size="3" style="font-size: 12pt">,
+0 </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">प्रारंभिक
+परिस्थितीत इनपुटच्या लॅप्लेस
+ट्रान्सफॉर्मचे गुणोत्तर
+असलेल्या या मात्रेला प्रणाली
+किंवा वनस्पतीचे हस्तांतरण
+कार्य असे म्हणतात</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_aaede8b54463e309"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आम्ही</span></font><span lang="mr">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_556e712b849fb6e"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">
+हस्तांतरण कार्य दर्शविण्यासाठी
+वापरू</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">सारांश</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आम्ही</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">
+प्रशासकीय रेखीव सामान्य फरक
+समीकरण लिहिले</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">मग
+आम्ही दोन्ही बाजूंनी लॅप्लेस
+ट्रान्सफॉर्म घेतला</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आमच्या
+लक्षात आले की आऊटपुट टर्ममध्ये
+नॉन</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">झिरो
+प्रारंभिक कॉन्डिटीऑन्स</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> मुळे
+आणि</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+इनपुटमुळे एक</span></font><span lang="mr"> असे
+दोन घटक आहेत</span></span></font>. <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आम्ही</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">
+सुरुवातीच्या सर्व अटी ०
+असाघेतल्या</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">मग</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आम्ही
+उत्पादनाच्या लाप्लेसचे
+गुणोत्तर इनपुटच्या लॅप्लेसकडे
+नेले</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">ज्याला
+</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">प्रणाली
+किंवा वनस्पतीचे हस्तांतरण
+कार्य असे म्हणतात</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> आणि</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> आम्ही
+हे सूचित करणार आहोत</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_80f07ae64983f965"/>
+<font size="3" style="font-size: 12pt">
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जेव्हा
+आपण ट्रान्सफर फंक्शन पद्धतीचा
+वापर करतो तेव्हा आम्हाला
+प्रणालीच्या सक्तीच्या
+प्रतिसादात स्वारस्य आहे
+कारण आम्ही सर्व प्रारंभिक
+अटी ० </span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आता
+प्रश्न पडतो</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+</span></font><span lang="mr"> की</span><font size="3" style="font-size: 12pt"><span lang="mr">
+सुरुवातीला कॉन्डिटीऑन्स</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">
+व्यवहारात सतत</span></font><span lang="mr">शून्य
+असतील</span><font size="3" style="font-size: 12pt"><span lang="mr">का</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जर
+आपण</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+या पद्धतीचा अवलंब केला</span></font><span lang="mr">नाही
+तर काय</span><font size="3" style="font-size: 12pt"><span lang="mr">
+होईल</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टीटोपी
+हा प्रश्न आम्ही नंतर उत्तर
+देणार आहोत</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पीलीज
+लक्षात ठेवा की</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="mr">आपल्याकडे
+एसआयएसओ प्रणाली असेल तरच</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आपण</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+उत्पादन आणि इनपुटचे गुणोत्तर
+घेऊ शकतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जर</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आपल्याकडे</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+एमआयएमओ प्रणाली</span></font><span lang="mr">असेल</span><font size="3" style="font-size: 12pt"><span lang="mr">तर
+</span></font><span lang="mr">आपल्याकडे ट्रान्सफर
+फंक्शन मॅट्रिक्स </span><font size="3" style="font-size: 12pt"><span lang="mr">असेल</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font face="Calibri"><span lang="ar-SA"><span lang="mr">आपण
+आता </span><font size="3" style="font-size: 12pt"><span lang="mr">सदिश
+इनपुटद्वारे सदिश आउटपुटचे
+विभाजन</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">करू
+शकत नाही</span></font></span></font><font size="3" style="font-size: 12pt">.
+ </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आम्ही</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> अजूनही
+ते दुस</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">या
+</span></font><span lang="mr">उत्पादन स्वरूपात
+</span><font size="3" style="font-size: 12pt"><span lang="mr">लिहितो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जिथे
+आपण म्हणू शकतो की आउटपुट
+व्हेक्टर</span></font><span lang="mr"> गुंतागुंतीच्या
+क्षेत्रात इनपुट</span><font size="3" style="font-size: 12pt"><span lang="mr">
+व्हेक्टर गुणाकार ाच्या
+हस्तांतरण फंक्शन मॅट्रिक्सशी
+बरोबरी करणार आहे</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">बी
+उट आम्ही या अभ्यासक्रमात
+सिंगल इनपुट सिंगल आउटपुट
+सिस्टिम्स</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">हाताळणार
+ आहोत</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">त्यामुळे</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">
+नोटिफिकेशनसिंगल</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">आउटपुट
+प्रणालीसाठी</span></font><span lang="mr">रोखून</span><font size="3" style="font-size: 12pt"><span lang="mr">
+धरलेजाते</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">सीऑनसेक्वेन्टली</span></font></span></font><font size="3" style="font-size: 12pt">,</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_3fbabed0d82432c8"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पाहा
+स्लाईड टाइम</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">१४</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">२६</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_e0a54b088ae0611f" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जर
+आपण उलट्या लाप्लेस चा कायापालट
+केला तर</span></font><span lang="mr"> आपल्याकडे</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आहे</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_485ca51aca09f3e7"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_69c89bc0de200b54"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जर
+आपण उलटे लॅप्लेस ट्रान्सफॉर्म
+घेतला तर टाइम डोमेनमधील
+आउटपुट आहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डब्ल्यूई
+काही मुद्द्यांची नोंद घेऊ
+शकते</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टीहा
+पहिला </span></font><span lang="mr">मुद्दा </span><font size="3" style="font-size: 12pt"><span lang="mr">आहे</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जर</span></font><span lang="mr">
+माहीत </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_556e712b849fb6e"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">असेल</span></font><span lang="mr">
+तर</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आपण कोणत्याही इनपुटसाठी
+प्रणाली आउटपुट शोधू शकतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आणखी
+एक गोष्ट आपण करू शकतो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जर
+आपल्याला काही उत्पादन हवे
+असेल तर आपण</span></font><span lang="mr"> कोणती
+माहिती</span><font size="3" style="font-size: 12pt"><span lang="mr">
+द्यावी</span></font><span lang="mr">हे </span><font size="3" style="font-size: 12pt"><span lang="mr">जाणून</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> घेऊ
+शकतो</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">डब्ल्यू</span></font><span lang="mr">ई
+नियंत्रण</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आणि विश्लेषण</span></font><span lang="mr">दोन्ही
+करू</span><font size="3" style="font-size: 12pt"><span lang="mr">शकते</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="mr">डब्ल्यू</span><font size="3" style="font-size: 12pt"><span lang="mr">टोपी
+आम्ही मॉडेल्सचाउद्देश म्हणून
+स्टड करतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पीरेडिक्शन
+किंवा विश्लेषण</span></font><span lang="mr">
+आहे</span><font size="3" style="font-size: 12pt"><span lang="mr">
+जिथे आपल्याकडे</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> इनपुट</span></font><span lang="mr">
+आहे आणि आम्ही</span><font size="3" style="font-size: 12pt"><span lang="mr">
+आउटपुटचे मूल्यमापन करतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">सीऑन्ट्रोल</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> हे
+असे आहे जिथे आपल्याकडे इच्छित
+उत्पादन आहे आणि इनपुट दिले
+जात असल्याचे आम्हाला आढळते</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">दुसरा
+मुद्दा असा आहे की</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जर</span></font><span lang="mr">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_c24c44b3ee11029e"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">युनिट
+आवेग इनपुट असेल</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> तर</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_3aa600113d007fef"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">म्हणून
+</span></font><span lang="mr"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_b4ffffda71fa77d8"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">याचा
+अर्थ असा होतो की</span></font></span></font><font size="3" style="font-size: 12pt">,</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_42e87bd77a50b16a"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">मीकोणतीही
+इनपुट देता आणि तुम्ही संबंधित
+आउटपुट मोजता</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">त्या
+उत्पादनाला प्रतिसाद म्हणून
+म्हणतात आणि टी</span></font></span></font><font size="3" style="font-size: 12pt">.</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">त्याचे
+जाहिरात</span></font><span lang="mr">जेक्टिव्ह
+जोडले जाऊ शकते जे त्या
+विशिष्ट</span><font size="3" style="font-size: 12pt"><span lang="mr">इनपुटशी
+सुसंगत </span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">आहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">या
+विशिष्ट प्रकरणात आम्ही
+प्रणालीला एक युनिट आवेग इनपुट
+देत आहोत</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">त्यामुळे
+आपल्याला मिळणारे उत्पादन
+आवेग प्रतिसाद म्हणून ओळखले
+जाते</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+आणि</span></font><span lang="mr"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_6ff12b2aabb97de3"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">ते
+आवेग प्रतिसाद कार्य आहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आणि
+आवेग प्रतिसाद कार्याचे
+लाप्लेस हे वनस्पती हस्तांतरण
+कार्य</span></font><span lang="mr"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20marathi_htm_cf15fa1c4b3d690"/>
+<font size="3" style="font-size: 12pt"><span lang="mr">
+आहे</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">यामुळे
+आपल्याला एक </span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">अतिशय
+उपयुक्त कल्पना मिळते</span></font></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Calibri"><span lang="ar-SA"><span lang="mr">जर
+आपल्याला प्रायोगिक तत्त्वावर
+वनस्पती हस्तांतरण कार्य</span><font size="3" style="font-size: 12pt"><span lang="mr">
+ठरवायचे</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+असेल</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">तर
+आपल्याला</span></font><span lang="mr"> फक्त
+एक</span><font size="3" style="font-size: 12pt"><span lang="mr">
+युनिट आवेग इनपुट द्यावे लागेल
+आणि मग उत्पादन काय आहे आणि
+ते आय</span></font><span lang="mr">पल्स रिस्पॉन्स
+फंक्शन</span><font size="3" style="font-size: 12pt"><span lang="mr">असेल</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आवेग
+प्रतिसाद कार्यातून आपण</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">वनस्पती
+हस्तांतरण कार्याला उशीर करू</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> शकतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">फायदा</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr"> म्हणजे
+आपल्याला</span></font><span lang="mr"> एकच
+प्रयोग करावा</span><font size="3" style="font-size: 12pt"><span lang="mr">
+लागेल</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font size="3" style="font-size: 12pt"> </font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">पण
+इथला झेल म्हणजे </span></font><span lang="mr">व्यवहारात
+एक आदर्श</span><font size="3" style="font-size: 12pt"><span lang="mr">आवेग
+इनपुट</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">गिव्ह
+करणं खूप कठीणअसतं</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टीकोंबडीचा
+प्रश्नपडतो</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="mr">आपल्याला
+कोणते अंदाज</span><font size="3" style="font-size: 12pt"><span lang="mr">
+मिळू शकतात</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Calibri"><span lang="ar-SA"><span lang="mr">हस्तांतरणाची
+कार्ये पुन्हा सुरू</span><font size="3" style="font-size: 12pt"><span lang="mr">करण्याची
+माझी आणखी काही पद्धतआहे का</span></font></span></font><font size="3" style="font-size: 12pt">?
+ </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आपण
+जसजशी प्रगती करू तसतसे आपण
+शिकू</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">टी</span></font><span lang="mr">ही
+आणखी एक पद्धत आहे ज्याद्वारे
+आपण फ्रिक्वेन्सी रिस्पॉन्स</span><font size="3" style="font-size: 12pt"><span lang="mr">
+वापरून</span></font><span lang="mr"> प्रायोगिकतत्त्वावर</span><font size="3" style="font-size: 12pt"><span lang="mr">इन
+ट्रान्सफर फंक्शन्स</span></font><span lang="mr">
+</span><font size="3" style="font-size: 12pt"><span lang="mr">डिडक्टर्म
+करू शकतो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">ठीक
+आहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">त्यामुळे
+आम्ही ते तंत्रही शिकू</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">दिवसाच्या
+शेवटी</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">जर
+आपल्याला</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+वनस्पती हस्तांतरण कार्य
+शोधायचे असेल तर ते दोन्ही
+पद्धतींचे मिश्रण असणार आहे</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">एफकिंवा
+एक्झामले</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="mr">हे
+</span><font size="3" style="font-size: 12pt"><span lang="mr">भौतिकशास्त्रावर
+आधारित समीकरणांचे मिश्रण
+असणार आहे आणि प्रयोग करणे
+आणि हस्तांतरण कार्याशी जुळवून
+घेण्यासाठी प्रायोगिक डेटाचा
+वापर करणे</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">आपल्याला
+दोन्ही दृष्टिकोनांची गरज
+आहे</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">हस्तांतरण
+कार्याच्या व्याख्येच्या
+संदर्भात आपण</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">
+सर्व प्रारंभिक अटी </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">असणेअत्यंत
+महत्त्वाचे</span></font><span lang="mr"> </span><font size="3" style="font-size: 12pt"><span lang="mr">आहे</span></font></span></font><font size="3" style="font-size: 12pt">-
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="mr">मग
+आपण फक्त हस्तांतरण कार्यांबद्दल
+बोलू शकतो आणि त्यांचा वापर
+करूशकतो</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+</body>
+</html>

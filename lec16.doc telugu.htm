@@ -1,0 +1,887 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-81" name="author"/>
+<meta content="2018-10-08T10:22:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-21T12:23:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; font-size: 11pt; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000"><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>నియంత్రణ
+వ్యవస్థలు</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>ప్రొఫెసర్
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>ఎస్</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>డిపార్ట్
+మెంట్ ఆఫ్ ఇంజినీరింగ్ డిజైన్</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>ఇండియన్
+ఇన్స్టిట్యూట్ ఆఫ్ టెక్నాలజీ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>మద్రాస్</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>చదవడం
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+16</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>క్లోజ్డ్
+లూప్ సిస్టమ్ </b></span></font></span></font>
+</p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>భాగం
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+2</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్లైడ్
+సమయం రిఫర్ చేయండి</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:14)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20telugu_htm_1d8632044d897bf7" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">పాజిటివ్
+ఫీడ్ బ్యాక్ సిస్టమ్ యొక్క
+క్లోజ్డ్ లూప్ బదిలీ ఫంక్షన్
+ని గమనించవచ్చు</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20telugu_htm_dea23d1b345070a6"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్లైడ్
+సమయం రిఫర్ చేయండి</span></font></span></font><font size="3" style="font-size: 12pt">:
+06:16)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="322" name="Picture 6" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20telugu_htm_372e56b4bb1234f" width="467"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కొన్ని
+పదజాలం ఒకే</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒకవేళ
+నేను ఈ బిందువు వద్ద లూప్ ని
+ఓపెన్ చేసినట్లయితే</span></font></span></font><font size="3" style="font-size: 12pt">(
+W(s </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">దగ్గర</span></font></span></font><font size="3" style="font-size: 12pt">),
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒకే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒకవేళ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+క్లోజ్డ్ లూప్ ని కలిగి
+ఉన్నదనుకోండి మరియు నేను
+లూప్ ని ఓపెన్</span></font><span lang="te">చేశాను
+మరియు ఈ పాయింట్ నేను పొందే</span><font size="3" style="font-size: 12pt"><span lang="te">ట్రాన్స్</span></font><span lang="te">
+ఫర్ ఫంక్షన్ ను బ్రేక్ చేస్తుంది</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">ఇది
+ఈ పాయింట్ వద్ద సిగ్నల్ ను</span><font size="3" style="font-size: 12pt"><span lang="te">
+తెలియజేస్తుంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇది
+</span></font><span lang="te"> </span></span></font><font size="3" style="font-size: 12pt">E(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">అని
+పిలవబడే సిస్టమ్ కు ఇన్ పుట్</span><font size="3" style="font-size: 12pt"><span lang="te">
+గా </span></font><span lang="te">  వెళుతుంది</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">ఇది</span><font size="3" style="font-size: 12pt"><span lang="te">
+ఓపెన్ లూప్ ట్రాన్స్ ఫర్
+ఫంక్షన్</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20telugu_htm_5148ec6df9344cd6"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">దీనిని
+ఓపెన్ లూప్ ట్రాన్స్ ఫర్
+ఫంక్షన్ అని అంటారు</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">దీనిని
+ఓపెన్ లూప్ ట్రాన్స్ ఫర్
+ఫంక్షన్ అని ఎందుకు అంటారు</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+కుడి</span></font></span></font><font size="3" style="font-size: 12pt">,
+W </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మరియు
+</span></font></span></font><font size="3" style="font-size: 12pt">E,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి
+తీసుకుంటున్న సిగ్నల్స్
+నిష్పత్తిని చూడండి</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సో</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+చెప్పినట్లుగా</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మీరు
+ఇక్కడ లూప్ ని కట్ చేశారు</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మీరు
+లూప్ ని ఓపెన్ చేస్తారు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఈ
+జంక్షన్ వద్ద మీరు పొందుతున్న
+సిగ్నల్ </span></font><span lang="te"> </span></span></font><font size="3" style="font-size: 12pt">W</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">అవుతుంది
+మరియు</span><font size="3" style="font-size: 12pt"><span lang="te">
+ఓపెన్ లూప్ కు ఇన్ పుట్ </span></font></span></font><font size="3" style="font-size: 12pt">E,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+తప్పనిసరిగా  </span></font></span></font><font size="3" style="font-size: 12pt">E(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ద్వారా
+విభజింపబడే</span></font><span lang="te"> </span><font size="3" style="font-size: 12pt"><span lang="te">ఓపెన్</span></font><span lang="te">
+</span><font size="3" style="font-size: 12pt"><span lang="te"> లూప్
+ట్రాన్స్ ఫర్ ఫంక్షన్ గా
+తీసుకుంటున్నాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="te">ఇది
+ఒక నిర్వచనం</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="te">మరియు
+ఇది </span></span></font><font size="3" style="font-size: 12pt">G(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సమయాలు</span></font><span lang="te">
+</span><font size="3" style="font-size: 12pt"><span lang="te"> </span></font></span></font><font size="3" style="font-size: 12pt">H(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అవుతుంది</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఓపెన్
+లూప్ ట్రాన్స్ ఫర్ ఫంక్షన్
+యొక్క పోల్స్ ని ఒపెన్ లూప్
+పోల్స్ అని అంటారు మరియు ఓపెన్
+లూప్ ట్రాన్స్ ఫర్ ఫంక్షన్
+యొక్క సున్నాలను ఓపెన్ లూప్
+జీరోలు అని అంటారు</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+గుర్తుంచుకోవాల్సిన కొన్ని
+పదజాలం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మీరు
+విశేషణం</span></font><span lang="te"> ఓపెన్
+లూప్ ని ఎదుర్కొన్నట్లయితే</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">మనం
+</span></span></font><font size="3" style="font-size: 12pt">G(s)H(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">గురించి
+మాట్లాడుతున్నాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒకే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇది
+ఓపెన్ లూప్ రైట్ ఎందుకు అనేది
+స్పష్టంగా ఉందని నేను
+ఆశిస్తున్నాను</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సో</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+లూప్ ఓపెన్ చేస్తున్నాను</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సో</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మీరు
+నన్ను ప్రశ్న అడగవచ్చు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">హే
+ఇది భౌతికంగా అర్ధవంతంగా
+ఉంటుంది</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అవసరం
+లేదు</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కానీ
+మీరు కుడి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఈ
+ఉపయోగించడానికి చూస్తారు</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఫీడ్
+బ్యాక్ లేకుండా ఏమి జరుగుతుందనే
+దానికి ఇది </span></font><span lang="te">ఒక</span><font size="3" style="font-size: 12pt"><span lang="te">సూచిక</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఈ
+అన్ని ఎలిమెంట్లను నేను లూప్
+లో ఉంచాను అనుకోండి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అయితే
+నేను లూప్ ని క్లోజ్ చేయలేను</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇది
+నేను ఎన్నడూ ఆచరణలో చేయలేను</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">రైట్</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అయితే</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అప్పుడు
+చూడండి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒక
+క్లోజ్డ్ లూప్ ఫీడ్ బ్యాక్
+సిస్టమ్ రూపకల్పన యొక్క
+పాయింట్ ఏమిటి</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒకవేళ
+నేను లూప్ ని క్లోజ్ చేయనట్లయితే</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+పొందబోయే ట్రాన్స్ ఫర్ ఫంక్షన్
+ఏమిటి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">దీనిని
+ఓపెన్ లూప్ ట్రాన్స్ ఫర్
+ఫంక్షన్ అని అంటారు</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇది
+ఎందుకు ముఖ్యమైనది</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఓపెన్
+లూప్ ట్రాన్స్ ఫర్ ఫంక్షన్
+ఏమిటి</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font size="3" style="font-size: 12pt">G(s)H(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">),
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">G(s)=C(s)P(s)H(s).</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఓపెన్
+లూప్ ట్రాన్స్ ఫర్ ఫంక్షన్
+అనేది ఏమీ కాదని మీరు చూస్తారు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అయితే</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మీకు
+ఉన్న అన్ని ట్రాన్స్ ఫర్
+ఫంక్షన్ ల యొక్క ఉత్పత్తి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">రైట్</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సో</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మీరు
+కుడి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మూడు
+బ్లాక్స్ కలిగి</span></font></span></font><font size="3" style="font-size: 12pt">.
+C(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">),</font>
+<font size="3" style="font-size: 12pt"> P(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మరియు
+</span></font><span lang="te"> </span></span></font><font size="3" style="font-size: 12pt">H(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">మీరు
+ఈ మూడు ట్రాన్స్ ఫర్ ఫంక్షన్
+ల యొక్క ఉత్పత్తి ద్వారా
+వెంటనే ఓపెన్</span><font size="3" style="font-size: 12pt"><span lang="te">
+లూప్ ట్రాన్స్ ఫర్ ఫంక్షన్
+ఏర్పడుతుంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+ముందుకు సాగేటప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒకే</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒకే</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">ఇది
+ఉపయోగకరంగా ఉంటుందని మీరు
+చూస్తారు</span></span></font>.</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">W</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">హెన్
+మనం కంట్రోల్ డిజైన్ లో
+ఉపయోగించే అధునాతన టూల్స్
+కు వెళతాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఈ
+ఓపెన్ లూప్ ట్రాన్స్ ఫర్
+ఫంక్షన్ యొక్క ప్రభావాన్ని
+మీరు చూడవచ్చు</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">క్లోజ్డ్
+లూప్ లక్షణ సమీకరణం వన్ ప్లస్
+ఓపెన్ లూప్ ట్రాన్స్ ఫర్
+ఫంక్షన్ అని మీరు వెంటనే
+గమనించారు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">వెంటనే
+కుడి</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">క్లోజ్డ్
+లూప్ లక్షణ సమీకరణం </span></font></span></font><font size="3" style="font-size: 12pt">=
+1+ OLTF</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అనేక
+రిఫరెన్స్ లు మనం ఒకే ఫీడ్
+బ్యాక్ డయాగ్రమ్ ని ఈ విధంగా
+సవరించడాన్ని మనం చూడవచ్చు</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కంట్రోలర్
+మరియు ప్లాంట్ లు కలిపి </span></font></span></font><font size="3" style="font-size: 12pt">G(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">వలే
+రాయబడతాయి</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సో</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు
+నేను మీరు చెప్పినట్లుగా</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మేము</span></font><span lang="te">
+ఇప్పటికీ </span></span></font><font size="3" style="font-size: 12pt">P(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">చూస్తున్నాము
+</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మేం
+ఇంకా ప్లాంట్ ట్రాన్స్ ఫర్
+ఫంక్షన్ లో ఉన్నాం</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+ప్లాంట్ లేదా సిస్టమ్ ని
+మరోసారి విశ్లేషిస్తాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అయితే
+మనం ముందుకు సాగేటప్పుడు
+కాన్సెప్ట్ లను మొత్తం సిస్టమ్
+కు విస్తరిస్తాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+ఒక మొక్క స్థిరంగా ఉందా లేదా</span></font><span lang="te">
+అని</span><font size="3" style="font-size: 12pt"><span lang="te">
+చూస్తున్నాం</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">క్లోజ్డ్
+లూప్ ఫీడ్ బ్యాక్ సిస్టమ్ ని
+డిజైన్ చేసేటప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">క్లోజ్డ్
+లూప్ స్థిరంగా ఉండాలని మేం
+కోరుకుంటున్నాం</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">క్లోజ్డ్
+లూప్ పోల్స్ ని మనం చూస్తాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">క్లోజ్డ్
+లూప్ ట్రాన్స్ ఫర్ ఫంక్షన్
+కు దానిని మేం విస్తరిస్తాం</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాబట్టి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మేము
+చేయబోతున్నది అదే</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్లైడ్
+సమయం రిఫర్ చేయండి</span></font></span></font><font size="3" style="font-size: 12pt">:
+10:56)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20telugu_htm_9330c27f07c2013e" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మరియు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒక
+ముఖ్యమైన </span></font><span lang="te"> విషయం</span><font size="3" style="font-size: 12pt"><span lang="te">
+ఏ నియంత్రణ రూపకల్పన లో</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మేముమరియు
+ఒక</span></font></span></font><font size="3" style="font-size: 12pt">S</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">నియంత్రణ
+రూపకర్త ఈ క్రమంలో రెండు
+ముఖ్యమైన</span><font size="3" style="font-size: 12pt"><span lang="te">
+అంశాలను చూడాలి</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మొదటిది
+స్థిరత్వం ఒకే</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">రెండో
+అంశం పనితీరు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒకే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font size="3" style="font-size: 12pt">B</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అనేది
+ముఖ్యం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అయితే</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">పనితీరు
+కంటే స్థిరత్వం అనేది చాలా
+ముఖ్యం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరైనది</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">చూడండి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+ప్రారంభించడానికి ఒక స్థిరమైన
+వ్యవస్థ లేకపోతే నేను దాని
+గురించి మాట్లాడలేను</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మొదట
+నేను డిజైన్ చేస్తున్న వ్యవస్థ
+స్థిరంగా ఉందని నేను
+నిర్ధారించుకోవాలి</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">అప్పుడు
+మేము పనితీరు</span><font size="3" style="font-size: 12pt"><span lang="te">
+గురించి మాట్లాడతాము</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+ఏమి చేయబోతున్నానో</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మీరు
+డిజైన్ చేసేటప్పుడు ఒక కంట్రోల్
+డిజైనర్ కు రెండూ ముఖ్యమైనవని
+సూచించడానికి నేను ఒక డాష్డ్
+బాణం గుర్తును గీయబోతున్నాను</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అయితే
+మీరు మొదట స్థిరత్వం ధృవీకరిస్తాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">తరువాత
+పనితీరు గురించి మేం మాట్లాడతాం</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సో</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మేము
+ఇప్పుడు చర్చ ప్రారంభించబోతున్నాము
+ఏమిటి అంటే నేను పనితీరు ఎలా
+అంచనా</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాబట్టి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+నేర్చుకోబోయే ది సరైనది</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+పనితీరు స్పెసిఫికేషన్ గురించి
+మనం నేర్చుకోబోతున్నాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరైనది</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+స్థిరత్వం గురించి గమనించినట్లుగా</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఈ
+నిర్ధిష్ట కోర్సులో మనం
+అనుసరించాల్సిన స్థిరత్వం
+యొక్క బౌండెడ్ ఇన్ పుట్ బౌండెడ్
+అవుట్ పుట్ స్టెబిలిటీ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మరియు
+మీరు బిబో స్థిరత్వాన్ని
+ధృవీకరించడానికి ప్రమాణాలు
+తెలుసు అని మేము చూశాము అన్ని
+ట్రాన్స్ ఫర్ సిస్టమ్ బదిలీ
+</span></font><span lang="te">ఫంక్షన్ పోల్స్
+సంక్లిష్ట </span><font size="3" style="font-size: 12pt"><span lang="te">మైన
+ప్లేన్ కుడి ఎడమ లో ఉండాలి</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాబట్టి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అది
+బిబో స్థిరత్వానికి సరైన
+ప్రమాణం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరైనది</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఈ
+గదిలో గాలి ఉష్ణోగ్రతను
+నియంత్రించడానికి ఒక కంట్రోలర్
+ను రూపొందించాలని మనం
+అనుకుంటున్నాం</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+మొత్తం </span></font></span></font><font size="3" style="font-size: 12pt">60
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మంది
+స్థిరమైన కంట్రోలర్లను డిజైన్
+చేద్దాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నా
+చేతిలో </span></font></span></font><font size="3" style="font-size: 12pt">60
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కంట్రోలర్లు
+ఉన్నాయి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఏది
+అత్యుత్తమైనది అని నేను ఎలా
+మదింపు చేయగలను</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఆచరణాత్మక
+కోణంలో నేను మదింపు చేయాల్సి
+ఉంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరైనది</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మదింపు
+కొరకు నేను ఉపయోగించే కొన్ని
+పరామితులు ఏమిటి</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">పనితీరు
+మదింపు కొరకు నేను దేనిని
+ప్రమాణంగా ఉపయోగించగలనని
+మీరు భావిస్తున్నారు</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">So, </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+వేసవి కాలంలో ఈ గదిలోకి వచ్చాను
+అనుకుందాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">గది
+ఉష్ణోగ్రత </span></font></span></font><font size="3" style="font-size: 12pt">38
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">డిగ్రీల
+సెల్సియస్ అనుకుందాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+కుడి</span></font></span></font><font size="3" style="font-size: 12pt">,
+25 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">వెళ్ళాలని
+కోరుకున్నారు</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+ప్రతి కంట్రోలర్ ని చూస్తాను</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి
+వైపు చూస్తాను మరియు తరువాత
+నేను సెట్ ని చూసినట్లుగా</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నా
+రిఫరెన్స్ ని </span></font></span></font><font size="3" style="font-size: 12pt">25
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">డిగ్రీల
+సెల్సియస్ గా సెట్ చేశాను</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇది
+ఎంత వేగంగా </span></font></span></font><font size="3" style="font-size: 12pt">25</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కు
+వెళతారో నేను మదింపు చేయవచ్చు</span></font></span></font><font size="3" style="font-size: 12pt">;</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అని
+ఒక</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+H ow </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+ఖచ్చితంగా అది </span></font></span></font><font size="3" style="font-size: 12pt">25
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">చుట్టూ
+ఎంత వేగంగా స్థిరపడవచ్చు
+మరియు అది </span></font></span></font><font size="3" style="font-size: 12pt">25
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">వరకు
+ఎంతదగ్గరగా ఉంటుంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఖచ్చితంగా</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">చూడండి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నా
+వద్ద ఎయిర్ కండిషనర్ ఉన్నట్లయితే</span></font></span></font><font size="3" style="font-size: 12pt">,
+10 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నిమిషాల్లో
+</span></font></span></font><font size="3" style="font-size: 12pt">38
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నుంచి
+</span></font></span></font><font size="3" style="font-size: 12pt">25
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కు
+వెళుతుంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అయితే
+</span></font></span></font><font size="3" style="font-size: 12pt">23
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మరియు
+</span></font></span></font><font size="3" style="font-size: 12pt">27
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మధ్య
+ఏమి చెప్పాలో మీకు తెలుసు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+చాలా సంతోషంగా ఉండను</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాబట్టి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అది
+</span></font></span></font><font size="3" style="font-size: 12pt">23
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">డిగ్రీల
+సెల్సియస్ వద్ద కట్ ఆఫ్ మరియు
+కుడి</span></font></span></font><font size="3" style="font-size: 12pt">,
+27 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">డిగ్రీ
+సెల్సియస్ వద్ద కోత అని
+అనుకుందాం</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+</span></font><span lang="te"> </span><font size="3" style="font-size: 12pt"><span lang="te">
+చాలా సంతోషంగా కుడి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఎందుకంటే
+నేను నాలుగు డిగ్రీల సెల్సియస్
+వేరియేషన్ సరిగ్గా కలిగి
+ఉండబోతున్నాను</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కానీ
+మరోవైపు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఎయిర్
+కండిషనర్ </span></font></span></font><font size="3" style="font-size: 12pt">24.5
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మరియు
+</span></font></span></font><font size="3" style="font-size: 12pt">25.5
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మధ్య
+ఉష్ణోగ్రతను మెయింటైన్
+చేస్తుంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+చాలా సంతోషంగా</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాబట్టి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అది
+ఒక పనితీరు స్పెసిఫికేషన్</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాబట్టి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అప్పుడు
+అది ఎంత వేగంగా</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఎంత
+వేగంగా అది విలువని ఓవర్ షూట్
+చేయవచ్చు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మేము
+కూడా చూసిన</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నాకు
+రిఫరెన్స్ వాల్యూ ఇవ్వబడింది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇది
+వాంఛిత విలువ నుంచి ఎంత దూరం
+వెళుతుంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">రైట్
+అనేది మరో పనితీరు స్పెసిఫికేషన్
+లు సరైనది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇది
+నిలకడైన స్టేట్ ఎర్రర్ లు
+ఏమిటి</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాబట్టి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అది
+తుది కావలసిన విలువకు వెళుతుంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">తుది
+విలువ చుట్టూ అది నియంత్రించే
+బ్యాండ్</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">తుది
+విలువ లేదా కావలసిన విలువ ను
+ఎంత ఓవర్ షూట్ చేస్తుంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లేదా
+మేము ఆసక్తి కలిగి ఉన్న పనితీరు
+స్పెసిఫికేషన్లు మరియు మేము
+ఏమి నేర్చుకోబోతున్నాము
+మరియు క్వాంటిఫై</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సాధారణంగా
+ముందుగా అవసరం </span></font><span lang="te"> </span><font size="3" style="font-size: 12pt"><span lang="te">
+ఏమిటంటే</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సిస్టమ్
+స్థిరంగా ఉంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందుకే
+నేను</span></font><span lang="te">మొదట</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">కుడి</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">నేను</span><font size="3" style="font-size: 12pt"><span lang="te">చర్చించాను</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాబట్టి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్థిరత్వం
+లేకుండా పనితీరు గురించి
+చర్చించడంలో ఎలాంటి పాయింట్
+లేదు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">రైట్</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+</span></font><span lang="te">నా సిస్టమ్ </span><font size="3" style="font-size: 12pt"><span lang="te">ని
+కోరుకుంటున్నట్లుగా</span></font><span lang="te">
+మీకు తెలిసిన విధంగా</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">నేను
+కేవలం</span><font size="3" style="font-size: 12pt"><span lang="te">
+ఆ సిస్టమ్ ల పనితీరు విశ్లేషణమాత్రమే
+చేయగలను</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మరియు
+పనితీరు లేదా పనితీరును
+పేర్కొనడానికి సాధారణంగా
+ఉపయోగించే పరామితులు మొదటి
+ఆర్డర్ మరియు సెకండ్ ఆర్డర్
+సిస్టమ్ ల యొక్క స్టెప్
+రెస్పాన్స్ నుంచి సంగ్రహించబడ్డాయని
+నేను చెప్పగలను</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాబట్టి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మేము
+కుడి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఎందుకు
+చూడండి</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">పనితీరు
+ఆవశ్యకతలను ఏమి చెప్పాలో
+లెక్కించే పరామితులు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్టెప్
+రెస్పాన్స్ లేదా</span></font><span lang="te">
+</span><font size="3" style="font-size: 12pt"><span lang="te"> ఫస్ట్
+ఆర్డర్ మరియు సెకండ్ ఆర్డర్
+సిస్టమ్ లు అని పిలవబడే వాటి
+యొక్క యూనిట్ స్టెప్ ప్రతిస్పందన
+నుంచి ఫార్ములాలు సంగ్రహించబడతాయి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+ఒకే వైపు గా ఎందుకు వెళతామో
+మనం చూస్తాం</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మేము
+ఆధునిక నియంత్రణ రూపకల్పనకు
+వెళ్ళినప్పుడు ప్రేరణ
+స్పష్టమవుతుంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మీరు
+నిన్న ఆధిపత్య పోల్స్ గురించి
+తెలుసుకున్నట్లు మీరు చూస్తారు</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాబట్టి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మీరు
+ఒక పదవ ఆర్డర్ సిస్టమ్</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మీరు
+ఒక ఫస్ట్ ఆర్డర్ సిస్టమ్ లేదా
+రెండో ఆర్డర్ సిస్టమ్ కు
+సంబంధించిన ఒక ఆధిపత్య డైనమిక్స్
+ని కలిగి ఉంటారు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మరియు
+పెద్ద ఒకే</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఎల్లప్పుడూ
+మినహాయింపులు ఉండవచ్చు</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సాధారణంగా
+మీరు మొదటి ఆర్డర్ లేదా సెకండ్
+ఆర్డర్ సిస్టమ్ ద్వారా క్యాప్చర్
+చేయగల డామినెంట్ డైనమిక్స్
+ని కలిగి ఉంటారు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందుకే
+పనితీరు పరామీటర్లను వెలికితీయడం
+కొరకు ఈ సిస్టమ్ లను ఉపయోగించడంలో
+మేం స్ఫూర్తిని పొందుతాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">తరువాత
+మనం ఈ పాయింట్ ని తిరిగి
+సందర్శిస్తాం</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+ఇప్పుడు ఫస్ట్ ఆర్డర్ సిస్టమ్
+లతో ప్రారంభిద్దాం</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్లైడ్
+సమయం రిఫర్ చేయండి</span></font></span></font><font size="3" style="font-size: 12pt">:
+18:07)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20telugu_htm_15dea0a58bd175a4" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>ఫస్ట్
+ఆర్డర్ సిస్టమ్స్</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>:</b></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+ఒక సాధారణ ఫస్ట్ ఆర్డర్ సిస్టమ్
+మోడల్ తో ప్రారంభించబోతున్నాను
+మరియు నేను మిమ్మల్ని ప్రశ్నల
+సెట్ తో విడిచిపెట్టబోతున్నాను</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఫస్ట్
+ఆర్డర్ సిస్టమ్ అంటే ఏమిటి</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">చూడండి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నిజానికి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇది
+నిజంగా మీరు ఎవరితో మాట్లాడుతున్నారనే
+దానిపై ఆధారపడి ఉంటుంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఉదాహరణకు
+ఒక కెమికల్ ఇంజినీర్ తో దీనిని
+ఏమి మాట్లాడాలనే విషయాన్ని
+మీరు చర్చిస్తున్నారని
+అనుకుందాం</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">వారు
+మొదటి ఆర్డర్ ప్రాసెస్ కొరకు
+ఒక మోడల్ చెబుతారు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">వారు
+ఎల్లప్పుడూ ప్రక్రియలను
+చూస్తూ ఉంటారు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కుడి</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాబట్టి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">వారికి
+మొక్క ఒక ప్రక్రియ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కెమికల్
+ఇంజినీర్ రాసిన</span></font><span lang="te">
+రిఫరెన్స్ లను మీరు చూస్తే</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">ఇది</span><font size="3" style="font-size: 12pt"><span lang="te">
+ఒక ఫస్ట్ ఆర్డర్ ప్రాసెస్
+అని వారు చెబుతారు</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">దయచేసి
+గందరగోళానికి గురికావద్దు</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అనేది
+ఒకే విషయం</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాబట్టి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మేము
+కుడి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మేము
+వ్యవస్థలు చూస్తున్న</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒక
+సాధారణ ప్రథమ క్రమవ్యవస్థ
+యొక్క పాలక సమీకరణం</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20telugu_htm_ae3cc208078f6a09"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">రెండు
+వైపులా </span></font></span></font><font size="3" style="font-size: 12pt">Laplace
+transform </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">తీసుకోండి</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20telugu_htm_c84756f8c156e615"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">శూన్య
+ప్రాథమిక పరిస్థితులు ఊహించండి</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20telugu_htm_9f7d0078a06648c1"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్లైడ్
+సమయం రిఫర్ చేయండి</span></font></span></font><font size="3" style="font-size: 12pt">:
+21:09)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20telugu_htm_1a75ccd3a60a1747" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇక్కడ
+</span></font></span></font><font size="3" style="font-size: 12pt">n=1;
+m=0.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనకు
+కుడి వైపు </span></font></span></font><font size="3" style="font-size: 12pt">-1/T</font><font face="Times New Roman"><span lang="ar-SA"><span lang="te">వద్ద
+ఒక పోల్</span><font size="3" style="font-size: 12pt"><span lang="te">ఉంది</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సున్నాలకు</span></font><span lang="te">
+సంబంధించి</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="te">మీరు
+</span></span></font>TS<font size="3" style="font-size: 12pt"> +</font>
+<font size="3" style="font-size: 12pt"> 1</font> <font size="3" style="font-size: 12pt">
+=</font> <font size="3" style="font-size: 12pt"> 0,</font> <font size="3" style="font-size: 12pt">
+A</font>solve <font face="Times New Roman"><span lang="ar-SA"><span lang="te">చేయాల్సి</span><font size="3" style="font-size: 12pt"><span lang="te">ఉంటుంది</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్థిరత్వం
+కొరకు ఏమి జరగాలనే విషయాన్ని
+ఇది తెలియజేస్తుంది</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">విద్యార్థి</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">టి
+పాజిటివ్ గా ఉండాలి</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">పాజిటివ్
+గా ఉండాలి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్థిరత్వం
+అనేది పాజిటివ్ గా ఉండాలని
+మీరు చూస్తారు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒకే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">రాజధాని
+</span></font></span></font><font size="3" style="font-size: 12pt">T
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కంటే
+మైనస్ </span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">వద్ద
+ఒక పోల్ ను కలిగి ఉంటాం</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నేను
+మిమ్మల్ని విడిచిపెట్టబోతున్నది
+ఈ ప్రశ్నలు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">యూనిట్
+స్టెప్ రెస్పాన్స్ ఒకే</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">యూనిట్
+ర్యాంప్ రెస్పాన్స్ మరియు
+సిస్టమ్ యొక్క యూనిట్ ఇంపల్స్
+ప్రతిస్పందన ను మీరు లెక్కిస్తు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇది
+నేను మీకు విడిచిపెట్టే హోమ్
+వర్క్</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మేము
+కుడి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">తరువాత
+తరగతిలో అదే పాయింట్ నుండి
+పునఃప్రారంభము చేస్తాము</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అందువల్ల</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">యూనిట్
+స్టెప్ ప్రతిస్పందనలెక్కించండి
+అంటే </span></font></span></font><font size="3" style="font-size: 12pt">s
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">యొక్క
+</span></font></span></font><font size="3" style="font-size: 12pt">U
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కొరకు
+మీరు ఏమి ఉపయోగిస్తారు</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">విద్యార్థి</span></font></span></font><font size="3" style="font-size: 12pt">:
+(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">రిఫర్
+టైమ్</span></font></span></font><font size="3" style="font-size: 12pt">:
+23:20).</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20telugu_htm_4cbfcb2c6648da75"/>
+<font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">యూనిట్
+ర్యాంప్ అంటే</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">విద్యార్థి</span></font></span></font><font size="3" style="font-size: 12pt">:
+1 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">బై
+</span></font></span></font><font size="3" style="font-size: 12pt">S
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">చతురస్రం</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20telugu_htm_7b7b0d8c1ba2d2c6"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">యూనిట్
+ఇంపల్స్ </span></font></span></font><font size="3" style="font-size: 12pt">U(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">)=1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కొరకు</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">S o, </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">దయచేసి
+ఈ </span></font></span></font><font size="3" style="font-size: 12pt">U(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లు</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">అందంగా
+సూటిగా</span><font size="3" style="font-size: 12pt"><span lang="te">ఉపయోగించండి</span></font></span></font><font size="3" style="font-size: 12pt">,
+ </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మూడు
+ప్రతిస్పందనలను లెక్కించడానికి
+మీకు </span></font></span></font><font size="3" style="font-size: 12pt">5
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నిమిషాల
+కంటే ఎక్కువ సమయం పట్టరాదు</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">దయచేసి
+సమీకరణాలను పొందండి</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">పరిశీలనలు
+చేయండి</span></font></span></font><font size="3" style="font-size: 12pt">,m</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">నుంచి
+మీరు ఏమి గమనించారు మరియు</span><font size="3" style="font-size: 12pt"><span lang="te">
+తరువాత క్లాసుకు తిరిగి
+వచ్చినవిధంగా మేం ఇక్కడ నుంచి
+మా చర్చలను తిరిగి ప్రారంభిస్తాం</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సరే</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ధన్యవాదాలు</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+</body>
+</html>

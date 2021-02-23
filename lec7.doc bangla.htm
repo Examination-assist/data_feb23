@@ -1,0 +1,541 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-72" name="author"/>
+<meta content="2018-09-23T09:16:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-22T05:55:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 3.3cm; margin-right: 2.54cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-family: "Calibri", serif; font-size: 11pt }
+		p.cjk { font-family: "Calibri"; font-size: 11pt; so-language: zh-CN }
+		p.ctl { font-family: "Calibri"; font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000"><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>নিয়ন্ত্রণ
+সিস্টেম</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>অধ্যাপক</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>এস
+শংকর রাম</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>প্রকৌশল
+বিভাগ</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>ইন্ডিয়ান
+ইনস্টিটিউট অফ টেকনোলজি</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>মাদ্রাজ</b></span></font></span></font></p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>পড়া
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+07</b></font></p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>স্থানান্তর
+ফাংশন </b></span></font></span></font>
+</p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>অংশ
+– ১</b></span></font></span></font></p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+একক ইনপুট একক আউটপুট সিস্টেম</span></font><span lang="bn">
+</span></span></font>SISO <font face="Calibri"><span lang="ar-SA"><span lang="bn">হিসাবে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+সংক্ষিপ্ত</span></font></span></font><font size="3" style="font-size: 12pt">d</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="bn">এবং
+রৈখিক</span><font size="3" style="font-size: 12pt"><span lang="bn">
+সময় ইনভ্যারিয়েন্ট কসাল
+ডাইনামিক সিস্টেম যা ধ্রুবক
+সহ</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">দক্ষতা
+সঙ্গে রৈখিক সাধারণ ডিফারেনশিয়াল
+সমীকরণ দ্বারা চিহ্নিত করা
+হয়</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">০০</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">২৮</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 8" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_13c9f9f7baed5758" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ডব্লিউই</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">
+দেখেছেন কিভাবে কেউ এই ধরনের
+সমীকরণ সমাধানের জন্য</span><font size="3" style="font-size: 12pt"><span lang="bn">
+লাপ্লেস রূপান্তর ব্যবহার
+করতে পারে।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+ডব্লিউটুপি আমরা এখন পর্যন্ত
+করেছি তা হচ্ছে এই</span></font><span lang="bn">কোর্সে
+আমরা কি</span><font size="3" style="font-size: 12pt"><span lang="bn">পড়তে
+</span></font><span lang="bn">যাচ্ছি এবং কিছু
+গাণিতিক সরঞ্জাম যা আমরা
+ব্যবহার করতে </span><font size="3" style="font-size: 12pt"><span lang="bn">যাচ্ছি।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font></span></font>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">০০</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৪৯</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_88c9bece0ad795ae" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">W e </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ধ্রুপদী
+নিয়ন্ত্রণ পদ্ধতি ব্যবহার
+করেবিশ্লেষণে যাবে। </span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">
+প্রধানবিষয় যে আমরা</span></font><span lang="bn">ট্রান্সফার
+ফাংশন শিখতে</span><font size="3" style="font-size: 12pt"><span lang="bn">যাচ্ছি</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমিদেখি
+ট্রান্সফার ফাংশন কি। আমিআমাদের
+বিবেচনা করি ভর স্প্রিং ডাম্পার
+সিস্টেম যা দ্বারা নিয়ন্ত্রিত
+হয়</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_7bc8e003ef6a093"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তার
+একটি রৈখিক সময় ের পরিবর্তন
+ব্যবস্থা। আমিউভয় দিকে
+লাপ্লেস রূপান্তর গ্রহণ</span></font><span lang="bn">করি</span></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="bn">আমরা
+</span><font size="3" style="font-size: 12pt"><span lang="bn">পেতে
+যাচ্ছি</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_323d7936fc9fad7b"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি
+আমরা শুধু শর্তাবলী পুনর্বিন্যাস
+করি</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+আমরা</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+পেতে যাচ্ছি</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_32744643e4506ca4"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি
+আমরা এখন উভয় পক্ষকে বিভক্ত
+করি</span></font><span lang="bn"> তাহলে আমরা
+নিম্নলিখিত গুলি পেতে </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_47cddef531ed4852"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">যাচ্ছি।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font></span></font>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_4b7670c46b863a80"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্রথম
+মেয়াদ </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+অ</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">শূন্য
+</span></font><span lang="bn">প্রাথমিক অবস্থার
+কারণে </span><font size="3" style="font-size: 12pt"><span lang="bn">আউটপুটের
+উপাদান।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">কেউ
+অবিলম্বে টিটুপি</span></font><span lang="bn">
+পর্যবেক্ষণ করতে পারে </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_7d448ed3f01d184a"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">এবং</span></font><span lang="bn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_c0b6baec8148294d"/>
+</span></font><font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">টুপি
+হল বাস্তুচ্যুত যা যে কোন
+শূন্য প্রাথমিক অবস্থার কারণে
+হয়।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">যদি
+আমরা</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+প্রাথমিকভাবে ভর বিশ্রাম ের
+জন্য</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা</span></font><span lang="bn">
+এটি একটি সামান্য পরিমাণ
+দ্বারা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+বাস্তুচ্যুত</span></font><span lang="bn"> এবং</span><font size="3" style="font-size: 12pt"><span lang="bn">
+এটি ছেড়ে</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="bn">এটি </span></span></font><font size="3" style="font-size: 12pt"><i>K</i></font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এবং
+</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt"><i>C</i></font>
+<font face="Calibri"><span lang="ar-SA"><span lang="bn">এর মানের
+উপর</span><font size="3" style="font-size: 12pt"><span lang="bn">
+নির্ভর করে </span></font><span lang="bn">কম্পিত
+হতে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+পারে</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+এবং পরিশেষে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এটি
+মূলত ভারসাম্য অবস্থাহতে
+পারে।</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তিনি
+প্রথম অংশ</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+অশূন্য</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+প্রাথমিক অবস্থার</span></font><span lang="bn">কারণে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আউটপুট</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">হয়।
+আমি</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+একে মুক্ত প্রতিক্রিয়া বলি।</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">দ্বিতীয়
+অংশে ইনপুট শব্দটি জড়িত</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_f3a74839aaaa8f2f"/>
+<font size="3" style="font-size: 12pt">
+</font> <font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যা
+শক্তি।</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">Suppose
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা</span></font><span lang="bn">
+ভরের উপর একটি সময় ভিন্ন
+শক্তি প্রয়োগ</span><font size="3" style="font-size: 12pt"><span lang="bn">
+করি</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">দ্বিতীয়
+শব্দটি আমাদের ভর বাস্তুচ্যুত
+প্রদান করে।</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><span lang="bn">টুপি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আউটপুট</span></font><span lang="bn">ইনপুট</span><font size="3" style="font-size: 12pt"><span lang="bn">
+শক্তির</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">অবদান।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> উ
+একে</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">জোর
+পূর্বক প্রতিক্রিয়া বলে
+অভিহিত</span></font><span lang="bn"> করুন</span><font size="3" style="font-size: 12pt"><span lang="bn">।
+</span></font></span></font><font size="3" style="font-size: 12pt">W</font>e
+<font face="Calibri"><span lang="ar-SA"><span lang="bn">আউটপুট
+এই </span><font size="3" style="font-size: 12pt"><span lang="bn">দুই
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">উপাদান
+পেতেযাচ্ছে।  </span></font></span></font><font size="3" style="font-size: 12pt">One
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">নন</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">জিরো
+প্রাথমিক অবস্থা</span></font><span lang="bn">
+এবং সিস্টেমে প্রদত্ত ইনপুটের
+কারণে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+অন্যান্য</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+কারণে।</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">০৭</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৪২</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_a61b28fba57655ad" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এখন</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আসুন
+আমরা সকল প্রাথমিক শর্ত </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">বিবেচনা
+করাযাক।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">এক্ষেত্রে
+এবং । তারপর</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_541d8b9d3e1757fb"/>
+</span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_6ac1db023df3aa17"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_305c7f2f244449f7"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এই
+পরিমাণ যা আউটপুট ের ল্যাপ্লেস
+রূপান্তরের অনুপাত </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্রাথমিক
+পরিস্থিতিতে ইনপুট রূপান্তর
+সিস্টেম বা উদ্ভিদের স্থানান্তর
+ফাংশন বলা হয়। </span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_aaede8b54463e309"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">আমরা</span></font><span lang="bn">
+ট্রান্সফার ফাংশন নির্দেশ
+করতে ব্যবহার</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_556e712b849fb6e"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+করব</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সংক্ষেপে
+বলতে গেলে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> শাসক
+রৈখিক সাধারণ পার্থক্য সমীকরণ
+লিখেছি</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তারপর
+আমরা উভয় দিকে </span></font></span></font><font size="3" style="font-size: 12pt">Laplace
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">রূপান্তর
+গ্রহণ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+দেখেছি যে আউটপুট টার্ম ের
+একটি অ</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">শূন্য
+প্রাথমিক কনডিটিঅন</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> এবং</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ইনপুটের কারণে একটি উপাদান
+আছে।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">আমরা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> সব
+প্রাথমিক শর্ত </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">হতে
+নিয়েছি</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তারপর</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+আউটপুটের ল্যাপ্লেস অনুপাত
+ইনপুট ের লাপ্লেসে নিয়ে
+গিয়েছিলাম</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যাকে
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">বলা
+হয় সিস্টেম বা উদ্ভিদের
+স্থানান্তর ফাংশন</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> এবং</span></font><span lang="bn">
+আমরা দ্বারা নির্দেশ</span><font size="3" style="font-size: 12pt"><span lang="bn">
+করতে যাচ্ছি।</span></font><span lang="bn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_80f07ae64983f965"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">আমিএকটি
+নির্দিষ্ট বোধ করি যখন আমরা
+ট্রান্সফার ফাংশন পদ্ধতি
+ব্যবহার করি আমরা সিস্টেমের
+বাধ্যতামূলক প্রতিক্রিয়া
+আগ্রহী কারণ আমরা সব প্রাথমিক
+শর্ত </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">গ্রহণকরেছি।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">এখন
+প্রশ্ন হচ্ছে</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+প্রাথমিক কন্ডিটিঅনগুলো</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> কি</span></font><span lang="bn">
+বাস্তবে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+সব সময়</span></font><span lang="bn">শূন্য হবে</span></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি
+আমরা</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+এই পন্থা অনুসরণ</span></font><span lang="bn">না
+করি তাহলে কি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+হবে</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">টিটুপি
+একটি প্রশ্ন যা আমরা পরে উত্তর
+দিতাম।</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">P</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">লিজ
+মনে রাখবেনযে</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা</span></font><span lang="bn">
+আউটপুট এবং</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ইনপুটের অনুপাত নিতে পারি</span></font><span lang="bn">
+শুধুমাত্র যদি আমাদের একটি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">SISO
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সিস্টেম
+থাকে। যদি</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+আমাদের</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+একটি </span></font></span></font><font size="3" style="font-size: 12pt">MIMO
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সিস্টেমথাকে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="bn">তাহলে
+আমাদের একটি ট্রান্সফার ফাংশন
+ম্যাট্রিক্স </span><font size="3" style="font-size: 12pt"><span lang="bn">থাকবে।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">
+আমরা আর </span><font size="3" style="font-size: 12pt"><span lang="bn">ভেক্টর
+আউটপুটকে ভেক্টর ইনপুট দ্বারা
+ভাগ</span></font><span lang="bn">করতে পারি </span><font size="3" style="font-size: 12pt"><span lang="bn">না।
+ আমরা</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn">এখনও এটি অন্য
+পণ্য</span><font size="3" style="font-size: 12pt"><span lang="bn">আকারে
+লিখি</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><span lang="bn">যেখানে
+আমরা বলতে পারি </span><font size="3" style="font-size: 12pt"><span lang="bn">আউটপুট
+ভেক্টর</span></font><span lang="bn"> জটিল ডোমেইনে
+একটি ইনপুট ভেক্টর গুণ করে
+একটি ট্রান্সফার</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ফাংশন ম্যাট্রিক্সের সমান
+হতে যাচ্ছে।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">B ut </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+এই কোর্সে একক ইনপুট একক আউটপুট
+সিস্টেম</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">মোকাবেলা
+করতে যাচ্ছি</span></font></span></font><font size="3" style="font-size: 12pt">.
+ </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">নোটেশনঅনুসরণ
+একটি একক ইনপুট একক আউটপুট
+সিস্টেম জন্য হোল্ড</span></font><span lang="bn">করা</span><font size="3" style="font-size: 12pt"><span lang="bn">হয়।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">
+সিঅনসেকুয়েন্টলি</span></font></span></font><font size="3" style="font-size: 12pt">,</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_3fbabed0d82432c8"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">১৪</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">২৬</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_e0a54b088ae0611f" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি
+আমরা বিপরীত ল্যাপ্লেস রূপান্তর
+গ্রহণ করি</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমাদের
+আছে</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_485ca51aca09f3e7"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_69c89bc0de200b54"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি
+আমরা বিপরীত ল্যাপ্লেস রূপান্তর
+গ্রহণ করি তাহলে সময় ডোমেইনের
+আউটপুট। উকিছু বিষয় উল্লেখ
+করতে পারেন। </span></font></span></font><font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তিনি
+প্রথম </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">বিন্দু</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি</span></font><span lang="bn">
+জানা </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_556e712b849fb6e"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">যায়</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="bn">আমরা
+যে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+কোন ইনপুটের জন্য সিস্টেম
+আউটপুট খুঁজে পেতেপারি।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">আরেকটি
+জিনিস আমরা করতে পারি</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি
+আমরা কিছু আউটপুট চাই তাহলে
+আমরা</span></font><span lang="bn"> জানতে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+পারি </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">কি
+ইনপুট</span></font><span lang="bn"> দিতে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+হবে।</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">W</font>e
+<font face="Calibri"><span lang="ar-SA"><span lang="bn">নিয়ন্ত্রণ
+এবং বিশ্লেষণ</span><font size="3" style="font-size: 12pt"><span lang="bn">উভয়
+করতে পারে</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> w</font>hat <font face="Calibri"><span lang="ar-SA"><span lang="bn">আমরা
+মডেল উদ্দেশ্য হিসাবে</span><font size="3" style="font-size: 12pt"><span lang="bn">স্টাড</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">P</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">রিডিকশন
+বা বিশ্লেষণ</span></font><span lang="bn"> যেখানে
+আমাদের একটি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ইনপুট</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+আছে</span></font><span lang="bn"> এবং আমরা আউটপুট</span><font size="3" style="font-size: 12pt"><span lang="bn">
+মূল্যায়ন</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+করি।</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">C</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অনট্রোল</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> যেখানে
+আমাদের একটি কাঙ্ক্ষিত আউটপুট
+আছে এবং আমরা ইনপুট দেওয়া
+খুঁজে পাই</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">দ্বিতীয়
+বিষয়টি হল</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি</span></font><span lang="bn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_c24c44b3ee11029e"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">ইউনিট
+ইমোশন ইনপুট হয়</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাহলে।
+</span></font><span lang="bn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_3aa600113d007fef"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+অতএব </span></font><span lang="bn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_b4ffffda71fa77d8"/>
+</span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এটা
+ইঙ্গিত দেয় যে </span></font></span></font><font size="3" style="font-size: 12pt">,</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_42e87bd77a50b16a"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমিআপনি
+কোন ইনপুট দেন এবং আপনি সংশ্লিষ্ট
+আউটপুট গণনা করেন</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যে
+আউটপুট কে একটি প্রতিক্রিয়া
+বলা হয় এবং </span></font></span></font><font size="3" style="font-size: 12pt">t</font><font face="Calibri"><span lang="ar-SA"><span lang="bn">তিনি</span><font size="3" style="font-size: 12pt"><span lang="bn">বিজ্ঞাপন</span></font></span></font>jective
+<font face="Calibri"><span lang="ar-SA"><span lang="bn">যোগ করা
+যেতে পারে যা ঐ </span><font size="3" style="font-size: 12pt"><span lang="bn">নির্দিষ্ট
+ইনপুটেরসাথে সামঞ্জস্যপূর্ণ।
+ এই বিশেষ ক্ষেত্রে আমরা
+সিস্টেমে একটি ইউনিট আবেগ
+ইনপুট প্রদান করছি। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ফলশ্রুতিতে
+আমরা যে আউটপুট পাই তাকে বলা
+হয় আবেগ প্রতিক্রিয়া</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> এবং</span></font><span lang="bn">
+আবেগ </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_6ff12b2aabb97de3"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">প্রতিক্রিয়া
+ফাংশন। এবং আবেগ প্রতিক্রিয়া
+ফাংশনের লাপ্লেস উদ্ভিদ
+স্থানান্তর ফাংশন</span></font><span lang="bn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20bangla_htm_cf15fa1c4b3d690"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+হয়।</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এটি
+আমাদের একটি </span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">অত্যন্ত
+দরকারী ধারণা দেয়</span></font></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Calibri"><span lang="ar-SA"><span lang="bn">যদি
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> আমরা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">
+পরীক্ষামূলকভাবে উদ্ভিদ
+স্থানান্তর ফাংশন নির্ধারণ
+করতে চাই</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমাদের</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> শুধু
+একটি ইউনিট আবেগ ইনপুট দিতে
+হবে এবং তারপর আউটপুট কি এবং
+এটা হবে </span></font></span></font><font size="3" style="font-size: 12pt">impulse
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্রতিক্রিয়া
+ফাংশন</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="bn">আবেগ
+প্রতিক্রিয়া ফাংশন </span><font size="3" style="font-size: 12pt"><span lang="bn">থেকে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা</span></font><span lang="bn">
+উদ্ভিদ স্থানান্তর ফাংশন
+দেরিতে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ক্যালকু করতেপারি</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুবিধা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> হচ্ছে
+আমাদের</span></font><span lang="bn"> শুধুমাত্র
+একটি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+পরীক্ষা</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">নিরীক্ষা
+করতে হবে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><span lang="bn">কিন্তু
+এখানে </span><font size="3" style="font-size: 12pt"><span lang="bn">ধরা
+হচ্ছে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="bn">বাস্তবে
+একটি আদর্শ আবেগ</span><font size="3" style="font-size: 12pt"><span lang="bn">ইনপুট</span></font><span lang="bn">পাওয়া
+</span><font size="3" style="font-size: 12pt"><span lang="bn">খুবই
+কঠিন। টিমুরগি প্রশ্ন হয়ে
+ওঠে</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="bn">আমরা
+কি অনুমান</span><font size="3" style="font-size: 12pt"><span lang="bn">
+পেতে পারি</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Calibri"><span lang="ar-SA"><span lang="bn">আমি
+ট্রান্সফার ফাংশন বের</span><font size="3" style="font-size: 12pt"><span lang="bn">করার
+অন্য কোন পদ্ধতি আছে</span></font></span></font><font size="3" style="font-size: 12pt">?
+ </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+অগ্রসর হওয়ার সাথে সাথে
+শিখবো।</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><span lang="bn">এখানে
+আরেকটি পদ্ধতি আছে যার মাধ্যমে
+আমরা ফ্রিকোয়েন্সি রেসপন্স</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ব্যবহার করে</span></font><span lang="bn">
+পরীক্ষামূলকভাবে</span><font size="3" style="font-size: 12pt"><span lang="bn">ইন
+ট্রান্সফার ফাংশন</span></font><span lang="bn">
+নিষ্ক্রিয় করতে</span><font size="3" style="font-size: 12pt"><span lang="bn">পারি</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Calibri"><span lang="ar-SA"><span lang="bn">ঠিক</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আছে। তো</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+ওই কৌশলটাও শিখবো। </span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">দিনের
+শেষে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি
+আমরা</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+একটি উদ্ভিদ স্থানান্তর ফাংশন
+বের করতে চাই এটি উভয় পদ্ধতির
+একটি মিশ্রণ হতেযাচ্ছে। </span></font></span></font><font size="3" style="font-size: 12pt">F</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">বা
+</span></font></span></font><font size="3" style="font-size: 12pt">Example,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="bn">এটা
+</span><font size="3" style="font-size: 12pt"><span lang="bn">পদার্থবিজ্ঞানের
+উপর ভিত্তি করে সমীকরণ অর্জন
+এবং একই সাথে পরীক্ষা এবং
+স্থানান্তর ফাংশন ফিট করতে
+পরীক্ষামূলক তথ্য ব্যবহার</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমাদের
+উভয় পদ্ধতি প্রয়োজন</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ট্রান্সফার
+ফাংশনের সংজ্ঞা সম্পর্কে এটা
+অত্যন্ত গুরুত্বপূর্ণ</span></font><span lang="bn">
+যে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আমরা</span></font><span lang="bn"> সকল প্রাথমিক
+শর্ত </span></span></font>0<font size="3" style="font-size: 12pt">
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">হতে
+হবে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="bn">তারপর
+আমরা স্থানান্তর ফাংশন নিয়ে
+কথা বলতে পারি এবং সেগুলো
+ব্যবহার </span><font size="3" style="font-size: 12pt"><span lang="bn">করতে
+পারি।</span></font></span></font></p>
+</body>
+</html>

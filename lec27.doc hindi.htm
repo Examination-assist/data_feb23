@@ -1,0 +1,534 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK" name="author"/>
+<meta content="2018-12-29T11:38:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-21T02:29:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-size: 11pt; so-language: en-US }
+		p.cjk { font-size: 11pt; so-language: en-US }
+		p.ctl { font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-IN" link="#000080" vlink="#800000"><p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#222222"><font size="3" style="font-size: 12pt"><span lang="hi"><b>कंट्रोल
+सिस्टम</b></span></font></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>प्रो</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>एस
+शंकर राम</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>इंजीनियरिंग
+डिजाइन विभाग</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>भारतीय
+प्रौद्योगिकी संस्थान</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>मद्रास</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>पढ़ना
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+27</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="hi"><b>राउथ
+के स्थिरता मापदंड </b></span></font></span></font><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>भाग
+</b></span></font></span></font><span lang="hi">के विशेष
+मामले </span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">-</span></b></font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><b><span style="background: #ffffff">
+1</span></b></font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">एलएट</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+यूराउथ के</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">मापदंड</span></font></font><span lang="hi">पर
+हमारी चर्चा के साथ जारी</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है । अंतिम कक्षा में</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमने
+इस प्रश्न के साथ शुरुआत की
+कि कोई</span></font></span></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">पॉलीनोमियल</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+की जड़ों का वितरण </span></font></font><span lang="hi">कैसे
+प्राप्त कर सकता है। </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">हमें
+पता लगा कि हम</span></font></font><span lang="hi">
+राउथ की सरणी का निर्माण कर
+सकते हैं</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+और</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+राउथ </span></font></font><span lang="hi">की</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">सरणी</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+के पहले कॉलम में हस्ताक्षर
+परिवर्तन की संख्या की</span></font></font><span lang="hi">
+जांच कर </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">सकते
+हैं। इसका </span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">उपयोग
+नियंत्रण प्रणाली डिजाइन के
+लिए किया जा सकता है</span></font></font><span lang="hi">
+ताकि यह जांचा जा सके कि बंद
+लूप सिस्टम स्थिर हो जाएगा
+नियंत्रक </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">मापदंडों
+के किन मूल्यों की जांच करने
+</span></font></font><span lang="hi">के लिए</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।
+डब्ल्यू</span></font></font><span lang="hi">ई </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">बंद
+लूप विशेषता पॉलीनोमियल के
+लिए</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+राउथ की </span></font></font><span lang="hi">सरणी</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">बनाते</span></font></font><span lang="hi">
+हैं और फिर व्यवहार्य क्षेत्रों</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+एफ</span></font></font><span lang="hi">या नियंत्रक
+लाभ का</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+पता लगाते</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं।</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+आइए देखते हैं</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+कुछ </span></font></font><span lang="hi">ऐसे खास
+मामले जो</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+राउथ </span></font></font><span lang="hi">की सरणी</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+के निर्माण के साथ</span></font></font><span lang="hi">
+सामने आ सकते</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं</span></font></font><span lang="hi"> और </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">फिर
+उन्हें कैसे संभालना</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+01:20)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_d844a60a208eaf09" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">पहला
+मामला तब होता है जब</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+राउथ </span></font></font><span lang="hi">की व्यूह
+रचना की किसी भी पंक्ति में
+पहला तत्व</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+शून्य</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">होता
+है</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+जिसमें अन्य शेष तत्व या</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+प्रविष्टियां</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+शून्य होती हैं। एलएट</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+यूपॉलीनोमियल पर विचार करें</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_c47ad07ba7f6777d"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">डब्ल्यूई
+देख सकते हैं कि सभी गुणांक
+गैरशून्य</span></font></font><span lang="hi"> और
+एक ही</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+संकेत केहैं। इसलिए</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+आवश्यक शर्त</span></font></font><span lang="hi">
+इस विशेष</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+पॉलीनोमियल में संतुष्ट होती
+है। एलएट</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+यूराउथ की</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">सरणी
+का </span></font></font><span lang="hi">निर्माण</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">मैंच
+हम</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+केवल</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+जड़ों के वितरण का पता लगाना</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+चाहते</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जब
+वह</span></font></span></font><span lang="hi"> आवश्यक स्थिति
+संतुष्ट नहीं</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+होती है। टीटोपी स्थिरता के
+लिए आवश्यक शर्तहै।</span></font></font></font></p>
+<table cellpadding="7" cellspacing="0" width="189">
+<col width="33"/>
+<col width="33"/>
+<col width="33"/>
+<col width="33"/>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_f85a1a0505af81d7"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">1</font></font></p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">3</font></font></p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">2</font></font></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_af25e9a40e8aa246"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">3</font></font></p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">3</font></font></p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_64597e3e78bf3321"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">2</font></font></p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">2</font></font></p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_f822616fdd62e9c6"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">0 (</font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_fffb51ef33fac550"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_56550b92a27f16d7"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">2</font></font></p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+</table>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+देख सकते हैं कि पंक्ति में
+पहली प्रविष्टि </span></font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_f822616fdd62e9c6"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">शून्य
+है। अब हम नीचे की प्रक्रिया
+का पालन करें । आर</span></font></font><span lang="hi">एक
+छोटे</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">से</span></font></font><span lang="hi">
+</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">"</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">सकारात्मक
+वास्तविक संख्या</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+के साथ  शून्य</span></font></font><span lang="hi">
+प्रविष्टि</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">को
+ईप्ले</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+करें और प्रक्रिया जारी रखें</span></font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_b2afff49a2c32122"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">यहां
+से</span></font></font><span lang="hi">एक</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">एनडी</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक
+बार जब हम</span></font></span></font><span lang="hi"> इस
+प्रक्रिया को जारी</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+रखतेहैं</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+एप्सिलॉन</span></font></span></font><span lang="hi"> के
+ऊपर प्रवेश से कोई संकेत
+परिवर्तन</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+होता</span></font></font><span lang="hi">है</span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">तो</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+राउथ </span></font></font><span lang="hi">की सरणी
+के </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">1</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सेंट
+कॉलम</span></font></span></font><span lang="hi"> को एप्सिलॉन
+के नीचे प्रवेश के लिए फिर
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">आरएचपी</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">में
+जड़ें हैं।  उदाहरण के लिए</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font></font> <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+एप्सिलॉन के ऊपर प्रवेश
+सकारात्मक है और एप्सिलॉन के
+नीचे प्रवेश </span></font></font><span lang="hi">नकारात्मक
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">तो
+जड़ें मैं</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">सही
+आधा</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+विमान</span></font></font><span lang="hi">एन</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं। मैंच वहां</span></font></font><span lang="hi">
+</span></span></font>epsilon <font face="Times New Roman"><span lang="ar-SA"><span lang="hi">ऊपर
+प्रवेश से कोई</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+संकेत </span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">परिवर्तन
+</span></font></font><span lang="hi"> </span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">epsilon
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">नीचे
+प्रवेश करने के लिए तो वहां</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_e089035645511fb8"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">धुरी
+या काल्पनिक धुरी</span></font></font><span lang="hi">
+पर जड़ों की एक जोड़ी है</span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">एलएट</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+यूएस</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+देखते हैं कि वर्तमान उदाहरण
+में क्या होता है।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">डब्ल्यू</span></font></font><span lang="hi">ई</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">0
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">को
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">एक
+छोटी सकारात्मक संख्या सकारात्मक
+वास्तविक संख्या के साथ</span></font></font><span lang="hi">बदलने
+जा रहे हैं</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">और
+</span></font></font><span lang="hi">गणना जारी </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">रखने</span></font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_b2afff49a2c32122"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+जा</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">रहे
+हैं</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।
+हम </span></font></font><span lang="hi">पंक्ति में
+</span></span></font>2 <font face="Times New Roman"><span lang="ar-SA"><span lang="hi">मिलता
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_56550b92a27f16d7"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">है
+। यदि हम</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+एप्सिलॉन के ऊपर प्रवेश और
+एप्सिलॉन</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> के</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+नीचे प्रवेश</span></font></font><span lang="hi">को</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">देखें</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">तो
+हम देख सकते हैं कि राउथ </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">की
+सरणी </span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+के पहले कॉलम में एप्सिलॉन
+के</span></font></font><span lang="hi"> ऊपर प्रवेश
+से कोई संकेत परिवर्तन </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">नहीं</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है। </span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">टीउसका
+तात्पर्य है कि काल्पनिक धुरी
+पर जड़ों की एक जोड़ी है। यदि
+हम</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+पॉलीनोमियल की जड़ों की</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+गणना</span></font></font><span lang="hi"> करते हैं
+</span></span></font>,<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+हमें मिलता </span></font></font><span lang="hi">है
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_fc835eb5808baefc"/>
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+देख सकते </span></font></font><span lang="hi">हैं
+कि </span></font><font color="#000000"><font size="3" style="font-size: 12pt">4</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जड़ों</span></font></span></font><span lang="hi">
+में से धुरी पर</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">2
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">जड़ें
+हैं </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">शेष</span></font></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_e089035645511fb8"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">2
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">जड़ें
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">बाएं
+आधे विमान में हैं। </span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">जड़ों
+को हल किए </span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi">बिना हम </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">जड़ों
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">का
+वितरण प्राप्त कर सकतेहैं </span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">एलएट</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+यू एस एक</span></font></font><span lang="hi"> और</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+उदाहरणहै</span></font></font><span lang="hi"> </span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_b44981a47ab6c4ea"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+देखते हैं कि सभी गुणांक</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">0
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">और
+एक ही संकेत </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">नहीं</span></font></font><span lang="hi">हैं
+</span></span></font>,<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">बल्कि</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+जड़ों के वितरण का पता लगाएं।
+एलएट</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+यू</span></font></font><span lang="hi">राउथ की </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">सरणीके
+निर्माण को अंजाम</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+देते हैं ।</span></font></font></span></font></p>
+<table cellpadding="7" cellspacing="0" width="212">
+<col width="33"/>
+<col width="57"/>
+<col width="33"/>
+<col width="33"/>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_af25e9a40e8aa246"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="57"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">1</font></font></p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">-3</font></font></p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_64597e3e78bf3321"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="57"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">0 (</font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_fffb51ef33fac550"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">2</font></font></p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_f822616fdd62e9c6"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="57"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_13e7337887896980"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_56550b92a27f16d7"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="57"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">2</font></font></p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="33"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+</table>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><font size="3" style="font-size: 12pt">Now,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> if </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+नीचे और ऊपर के तत्वों को देखते
+हैं </span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एप्सिलॉन</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi">के </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">ऊपर
+के तत्व</span></font></font><span lang="hi"> का
+सकारात्मक</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+संकेत होता है</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+और</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+एप्सिलॉन के नीचे के तत्व का
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">नकारात्मक</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+संकेत</span></font></font><span lang="hi">होता है</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।
+टीयहां एप्सिलॉन के नीचे और
+ऊपर एक संकेत परिवर्तन</span></font></font><span lang="hi">है</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।
+हमें इसे एक</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हस्ताक्षर परिवर्तन</span></font></font><span lang="hi">के
+रूप में गिनने की आवश्यकता
+है</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">टीमुर्गी
+पहले कॉलम में पंक्ति से पंक्ति
+तक</span></font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_da95f2420144cca4"/>
+</font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">एक
+और हस्ताक्षर</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+परिवर्तन है</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">2
+</font></font> <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">साइन
+परिवर्तन हैं</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">टीउसका
+तात्पर्य है कि</span></font></font><span lang="hi">
+दाएं आधे विमान में</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">2
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">जड़ें
+हैं </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">जो
+बाएं आधे विमान में शेष जड़
+हैं। टी</span></font></font><span lang="hi">टोपी
+निष्कर्ष हम</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">यहां
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">आकर्षित
+कर सकते</span></font></font><span lang="hi">है</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">पॉलीनोमियल
+की जड़ें हैं</span></font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_ac112a6f4ab2e7ef"/>
+</span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+14:13)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="264" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec27.doc%20hindi_htm_db4c80f77913cee6" width="407"/>
+</p>
+</body>
+</html>

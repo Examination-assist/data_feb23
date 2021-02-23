@@ -1,0 +1,1451 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-72" name="author"/>
+<meta content="2018-09-26T07:58:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-21T02:14:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-size: 11pt; so-language: en-US }
+		p.cjk { font-size: 11pt; so-language: en-US }
+		p.ctl { font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-IN" link="#000080" vlink="#800000"><p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>कंट्रोल
+सिस्टम</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>प्रो</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>एस
+शंकर राम</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>इंजीनियरिंग
+डिजाइन विभाग</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>भारतीय
+प्रौद्योगिकी संस्थान</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>मद्रास</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>पढ़ना
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+12</b></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>बिबो
+स्थिरता</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>भाग
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+2</b></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:15)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_d8ceaceae9c0d314" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आइए
+कुछ विस्तार से बीआईबीओ स्थिरता
+को देखें।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">उदाहरण
+और सामान्य निष्कर्ष है जो
+मैं उन से आकर्षित पर कोई सवाल</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+उनमें से एक को ठीक साबित करने
+जा रहा हूं । इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अब</span></font><span lang="hi">मेरा
+यही इरादा है</span></span></font><font size="3" style="font-size: 12pt">;</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हां
+कोई सवाल</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">किसी
+को</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ठीक
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+ठीक है। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आइए
+हम बीबो स्थिरता को सही तरह
+से देखते हैं । इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+यह अधिकार जानते हैं । तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तुम
+मुझे किसी भी संयंत्र हस्तांतरण
+समारोह</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_b5cba78d8a53e3c2"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">दे</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">एक
+इनपुट यू के लिए उत्पादन</span><font size="3" style="font-size: 12pt"><span lang="hi">
+पी</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एस</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बार
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">यू</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एस</span></font></span></font><font size="3" style="font-size: 12pt">)</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">होने
+जा रहा</span><font size="3" style="font-size: 12pt"><span lang="hi">
+है</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसका
+तात्पर्य यह है । इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+कन्वोल्यूशन इंटीग्रल ओके
+का उपयोग कर रहा हूं। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+क्या</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_9bf5b0a6d3389a5f"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">होगा</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_e85f027ad70eba58"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मुझे
+यह कैसेमिला</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यहइंटीग्रल
+राइट का सहारा है। इसलिए </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+आपके पास है तो एक सादृश्य
+देने के लिए</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">आइए
+हम कहें कि</span><font size="3" style="font-size: 12pt"><span lang="hi">
+दो स्केलर </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">ए</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> और
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">बी</span></font><span lang="hi">
+और आप </span><font size="3" style="font-size: 12pt"><span lang="hi">ए</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> </span></font></span></font><font size="3" style="font-size: 12pt">+</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बी</span></font><span lang="hi">
+को</span><font size="3" style="font-size: 12pt"><span lang="hi">
+सही जोड़ते </span></font><span lang="hi">हैं</span><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+कहते हैं कि ए</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+और </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">बी</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> असली
+नंबर सही हैं । तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्या
+हम त्रिकोण असमानता सही के
+रूप में कहते हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+एक ऐसी ही बात सही है । इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+आपके पास एक अभिन्न है और आपके
+पास एकीकृत</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_a37932c28c17d0f3"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पहले
+बाएं हाथ</span></font><span lang="hi"> की ओर
+मैं पूरे अभिन्न अधिकार का
+पूर्ण मूल्य ले रहा हूं और यह
+पूर्ण पूर्ण मूल्य के अभिन्न
+अंग से कम या बराबर होने जा
+रहा</span><font size="3" style="font-size: 12pt"><span lang="hi">
+है।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+ठीक ही कर रहे हैं ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अब</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+होने जा रहा है </span></font></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_c96950884040ded1"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">समय
+का उल्लेख</span></font></span></font><font size="3" style="font-size: 12pt">:
+03:07) </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हाँ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एम
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">से
+अधिक है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हां
+एम </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">से
+अधिक सही है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">समय
+का उल्लेख</span></font></span></font><font size="3" style="font-size: 12pt">:
+03:13) </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्षमा
+करें।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एम
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">से
+अधिक है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">नहीं
+है </span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">समय
+देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+03:17) </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हां
+यह एक परिमाण सही है</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यहां
+एम एक परिमित सकारात्मक वास्तविक
+संख्या है । वैसे भी मैं पूर्ण
+मूल्य सही ले जा रहा हूं</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यू
+</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">का
+पूर्ण मूल्य</span><font size="3" style="font-size: 12pt"><span lang="hi">
+सही है । इसलिए यह एक सकारात्मक
+संख्या सही होने जा रही है ।
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">एसओ
+मुझे आशा है कि यह स्पष्ट है
+।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अब</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कृपया
+याद रखें कि पी </span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">क्या</span><font size="3" style="font-size: 12pt"><span lang="hi">था</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+वही था जिसे आवेग प्रतिक्रिया
+समारोह के रूप में सही कहा
+जाता है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+आप </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">पी
+</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">के
+भौतिक अर्थ को याद करते</span><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">प्रश्न
+यह हो जाता</span></font><span lang="hi"> है कि
+हम स्वयं से यह प्रश्न</span><font size="3" style="font-size: 12pt"><span lang="hi">पूछेंगे</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> कि</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> इस
+अभिव्यक्ति को देखते हुए</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">वाई
+</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">की
+भयावहता </span></font><span lang="hi">कब</span><font size="3" style="font-size: 12pt"><span lang="hi">
+बंधीहोगी</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इस
+अभिव्यक्ति को देखते हुए जब
+आपको लगता है कि </span></font></span></font><font size="3" style="font-size: 12pt">y
+(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">की
+भयावहता</span><font size="3" style="font-size: 12pt"><span lang="hi">
+बाध्य किया जाएगा</span></font></span></font><font size="3" style="font-size: 12pt">?
+y </font> <font size="3" style="font-size: 12pt">(t)</font> <font face="Times New Roman"><span lang="ar-SA"><span lang="hi">की
+भयावहता देखें</span><font size="3" style="font-size: 12pt"><span lang="hi">
+इस अभिन्न से घिरा हुआ है अब
+मान लीजिए कि हम कहते हैं कि
+यह अभिन्न सही है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">निश्चित
+रूप से </span></font><span lang="hi">वाई </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_fffb86f83cfee801"/>
+</span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">की
+भयावहता</span><font size="3" style="font-size: 12pt"><span lang="hi">
+से घिरा हुआ है ।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">क्या</span></font><span lang="hi">
+आप सहमत नहीं</span><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">देखिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अनुवर्ती
+प्रश्न जो हम पूछेंगे वह यह
+है कि जब बाध्य</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_9f061b3a40867604"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">किया
+जाता है</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सही
+है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जब
+आपको लगता है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक
+गैर नकारात्मक अखंड का अभिन्न
+घिरा होगा</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+गैर</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">नाजीव
+इंटीग्रेंड क्यों कह रहा हूं</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+मैं सही का पूर्ण मूल्य ले जा
+रहा हूं</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">वैसे
+भी एक वास्तविक मूल्यवान कार्य
+सही हो सकता है। यह सकारात्मक
+या नकारात्मक मूल्यों ले जा
+सकते हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+फिर एक बार मैं पूर्ण मूल्य
+लेने के लिए यह </span></font></span></font><font size="3" style="font-size: 12pt">nonnegative
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">होने
+जा रहा है ।</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_71a64ccbd59ddc11"/>
+</span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+गैर नकारात्मक क्यों कह रहा
+हूं</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">से
+अधिक या </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">के
+बराबर भी सही हो सकता है। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसका
+पूर्ण मूल्य एक गैर</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">नितांत
+कार्य होने जा रहा है। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+एक गैर</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">नाती
+पूर्णाहुति का अभिन्न अंग ले
+रहा हूं। आपको कब लगता है कि
+यह अभिन्न बंधी होगी</span></font></span></font><font size="3" style="font-size: 12pt">?</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_72d44cbc44d76c0e"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">समय
+का उल्लेख</span></font></span></font><font size="3" style="font-size: 12pt">:
+06:12) </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">केवल
+जब । अन्यथा देखें यदि यह सीमा
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तक
+नहीं जाती है</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_2feb61a66ba0884b"/>
+</span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">देखें
+एकीकरण  राशि की तरह</span></font><span lang="hi">
+सही </span><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font><span lang="hi">
+अगर पी</span></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt">  0 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सही
+करने के लिए नहीं जाना है कि
+तुम क्या है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+आप संख्या को एकीकृत करते रहते
+हैं तो क्या होता है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">केवल
+सही वृद्धि करने जा रहा है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">उदाहरण
+के लिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+आपको एक सरल चित्रण सही देता
+हूं। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमें
+कहना है कि </span></font><span lang="hi">  पी</span></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">की
+भयावहता </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">कुछ
+इस तरह से चला जाता है और फिर
+जैसे यह एक </span></font></span></font><font size="3" style="font-size: 12pt">nonnegative
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मूल्य
+के लिए नीचे सुलझेगी क्या होने
+जा रहा है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इंटीग्रल
+सिर्फ क्षेत्र है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> ना।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्याहोगा</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक</span></font></span></font><font size="3" style="font-size: 12pt">lthough
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पी
+</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">की
+भयावहता घिरा हुआ</span><font size="3" style="font-size: 12pt"><span lang="hi">
+है</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">अभिन्न
+के रूप में टी अनंत करने के</span><font size="3" style="font-size: 12pt"><span lang="hi">
+लिए जाता है असीम हो जा रहा
+है</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">केवल
+परिदृश्य</span><font size="3" style="font-size: 12pt"><span lang="hi">
+क्या है </span></font><span lang="hi">जब अभिन्न
+</span><font size="3" style="font-size: 12pt"><span lang="hi">घिरा
+होगा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जब
+क्षेत्र घिरा होगा</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ओ</span></font></span></font><font size="3" style="font-size: 12pt">nly
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जब
+समारोह ही </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">के
+लिए चला जाता है के रूप में टी
+के लिए जाता है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अनंत।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अनंत
+सही है। इसलिए यह स्थिति है।
+इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+तुरंत देख सकते हैं कि इसका
+तात्पर्य है कि यदि ठीक है तो
+वाई </span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">का
+परिमाण</span><font size="3" style="font-size: 12pt"><span lang="hi">
+सभी समय के लिए घिरा हुआ है।
+इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बीबीओ
+स्थिरता अधिकार के लिए यह
+पर्याप्त शर्त है। यह कहता
+है कि</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">देखो
+तुम मुझे आवेग प्रतिक्रिया
+दे और अगर आवेग प्रतिक्रिया
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">के
+लिए क्षय के रूप में समय टी
+अनंत की आदत है तो मेरी प्रणाली
+</span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिर
+ठीक है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+फिर यह एक अच्छी अवधारणा है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+फिर भी हम वहां सही नहीं हैं
+।</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_1d09aa13fd91e5d7"/>
+</span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+यदि मैं आवेग प्रतिक्रिया का
+उपयोग करके एक प्रणाली का
+परीक्षण करना चाहता हूं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+हम उस कठिनाई को जानते हैं
+जिसका हम सही सामना करेंगे</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+एक आदर्श आवेग अधिकार उत्पन्न
+करना बहुत मुश्किल है। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+मैं आवेग प्रतिक्रिया कैसे
+मिलता है और मैं अपनी स्थिरता
+के लिए प्रणाली का परीक्षण
+कैसे ठीक है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+एक प्रश्न सही होगा। तो क्या
+इसके</span></font><span lang="hi"> लिए</span><font size="3" style="font-size: 12pt"><span lang="hi">
+समतुल्य मापदंड हो सकते हैं</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हां</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">वहां
+है और यह डंडे पर आधारित है
+ठीक है । इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+इसी पर ध्यान देने जा रहे हैं।
+तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आइए
+देखें कि हमें एक समकक्ष मानदंड
+कैसे मिलता है। हम केवल आधे
+व्युत्पन्न अधिकार के साथ
+किया जाता है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मुझे
+आशा है कि यह इस बिंदु तक स्पष्ट
+है सही है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+यह पता लगाना चाहते हैं कि
+सिस्टम एक बाध्य इनपुट अधिकार
+के लिए कब स्थिर होगा।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">किसी
+भी बाध्य इनपुट के लिए जब
+उत्पादन घिरा होगा</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+यह पता लगाते हैं कि आउटपुट
+घिरा हुआ है यदि</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्या
+कहना है</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">आवेग
+प्रतिक्रिया के परिमाण की</span><font size="3" style="font-size: 12pt"><span lang="hi">
+सीमा </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तक
+जाती है क्योंकि टी अनंत को
+ठीक करता है। अब</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमें
+आगे ठीक ठीक जाना है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+09:09)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_6c3675ae050d9f55" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+पहले से ही जानते हैं कि सही
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+संयंत्र हस्तांतरण कार्य ठीक
+है और </span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_795a85f9e6241d2b"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">पी
+</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">का
+लैप्लेस पी</span></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एस</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">के
+बराबर होने जा रहा है</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">यह
+भी कुछ ऐसा है जिसे हम सही</span><font size="3" style="font-size: 12pt"><span lang="hi">जानते
+हैं । तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पी
+</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एस</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">के
+अलग डंडे होने दें </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पोल
+की बहुलता को ठीक होने दें।
+इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सिस्टम
+ऑर्डर एन ओके है। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">प्रणाली
+का आदेश वैसे भी एन सही है</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+एक सामान्य नोटेशन है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">वैसे
+भी हम सही सिस्टम के आदेश का
+पालन कर रहे हैं एन है। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसका
+मतलब यह है कि स्थानांतरण
+कार्य के एन डंडे सही होने जा
+रहे हैं</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+कुछ ऐसा है जिसे हम पहले से ही
+सही जानते</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_5c32c1665619266a"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+एक सामान्य</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+मामले</span></font><span lang="hi">से निपट
+रहे</span><font size="3" style="font-size: 12pt"><span lang="hi">हैं</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> nth </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आदेश
+प्रणाली ठीक है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+इन </span></font></span></font><font size="3" style="font-size: 12pt">n
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डंडे
+से बाहर कहना है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कश्मीर
+अलग ठीक हो । मैं एक सामान्य
+मामला कर रहा हूं। बेशक</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सभी
+एन अलग हो सकता है कि यह भी सही
+है । इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कुछ
+उदाहरणों में हमने देखा होगा
+कि डंडे अलग थे</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कोई
+दोहराने वाले डंडे नहीं हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+वहां सीएएन दोहराने वाले डंडे
+भी सही हैं</span></font></span></font><font size="3" style="font-size: 12pt">;</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+सिर्फ जेनेरिक केस कर रहे हैं
+।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+कह रहा हूं जैसे कि कश्मीर अलग
+डंडे कश्मीर </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">≤
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">एन</span></font><span lang="hi">
+सही</span><font size="3" style="font-size: 12pt"><span lang="hi">
+ठीक है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">और
+ध्रुव की बहुलता</span></font><span lang="hi">
+ठीक</span><font size="3" style="font-size: 12pt"><span lang="hi">
+हो</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_49946311b621329e"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+। बहुलता का क्या मतलब है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+कितनी बार दोहराता है</span></font></span></font><font size="3" style="font-size: 12pt">;</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+यह गैर दोहरा बहुलता है </span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">है
+। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसका
+अर्थ</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_7714e810da0c0585"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ठीक
+है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमें
+कहना है कि अगर मैं एक </span></font></span></font><font size="3" style="font-size: 12pt">10
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">वीं
+आदेश प्रणाली है और हम कहते
+है कि मैं नौवें ध्रुव के साथ
+</span></font></span></font><font size="3" style="font-size: 12pt">9
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">गैर
+दोहराने डंडे दो बार ठीक दोहरा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बहुलता
+का योग </span></font></span></font><font size="3" style="font-size: 12pt">10
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सही
+होना चाहिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ताकि
+मैं सही उल्लंघन नहीं कर सकते
+। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अनिवार्य
+रूप से बहुलता का योग प्रणाली
+के क्रम के बराबर होना चाहिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जो
+ध्रुवों की कुल संख्या सही
+है। अब तुरंत हम देखते हैं कि
+पी </span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ओं</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">इस
+विशेष रूप में ठीक</span><font size="3" style="font-size: 12pt"><span lang="hi">
+लिखा</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+जा सकता</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_4665b25a30eab689"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इस
+तरह मैं भाजक पॉलीनोमियल
+अधिकार को विभाजित कर सकता
+हूं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+भाजक</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+पॉलीनोमियल</span></font><span lang="hi">को
+फैक्टरी कर सकता</span><font size="3" style="font-size: 12pt"><span lang="hi">हूं।
+अब मुझे आंशिक अंश विस्तार
+सही लेने की जरूरत है। सामान्य
+रूप से आंशिक अंश विस्तार कैसे
+दिखेगा</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+कुछ उदाहरण पिछली बार सही किया
+था</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+अगर तुम एक दोहरा ध्रुव हम
+क्या किया था</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमें
+कहना है कि अगर हम </span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">की
+तरह एक कारक था </span></font><span lang="hi">कि
+हम क्या </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_8b7298c557b4e98"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">किया</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमने
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">एलआईके
+सही किया। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आपके
+पास दो शब्द होंगे</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_d007403f171d7d46"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">है
+ना</span></font></span></font><font size="3" style="font-size: 12pt">?</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">।
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्या
+होने जा रहा है कि</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+हम आंशिक अंश विस्तार करते
+हैं तो हमें ऐसा कुछ प्राप्त
+होगा । </span></font></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_3cd6d0cc039d1b05"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">उदाहरण
+के लिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मुझे
+आशा है कि मैं इसे सही ढंग से
+किया था</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमें
+डबल ठीक जांच करते हैं । उदाहरण
+के लिए देखें</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+कहते हैं कि मेरे पास एक प्रणाली
+है जिसका स्थानांतरण कार्य
+यह है। व्यवस्था का क्रम क्या
+है</span></font></span></font><font size="3" style="font-size: 12pt">?</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_ae96e009eda7cf77"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">समय
+का उल्लेख</span></font></span></font><font size="3" style="font-size: 12pt">:
+14:47) </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आप
+क्या नहींएचंक प्रणाली का
+क्रम है</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">समय
+का उल्लेख</span></font></span></font><font size="3" style="font-size: 12pt">:
+14:53)</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सिस्टम
+का क्रम देखें</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थानांतरण
+समारोह के भाजक पॉलीनोमियल
+का आदेश सही है। भाजक पॉलीनोमियल
+का क्रम क्या है</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+4.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+n 4 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सही
+के बराबर होने जा रहा है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">और
+डंडे क्या हैं</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसके</span></font><span lang="hi">
+बी</span><font size="3" style="font-size: 12pt"><span lang="hi">ई
+</span></font></span></font><font size="3" style="font-size: 12pt">-1,
+-</font> <font size="3" style="font-size: 12pt"> 2,</font> - 3 <font face="Times New Roman"><span lang="ar-SA"><span lang="hi">और
+</span></span></font>-<font size="3" style="font-size: 12pt">3</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">सही
+करने</span><font size="3" style="font-size: 12pt"><span lang="hi">
+के लिए जा रहा</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">वहाँ
+चार डंडे हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+शून्य से </span></font></span></font><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">दो
+बार दोहराता है। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अद्वितीय
+गैर दोहराने डंडे की संख्या
+क्या है</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कश्मीर
+</span></font></span></font><font size="3" style="font-size: 12pt">=</font>
+<font size="3" style="font-size: 12pt"> 3. </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+फिर क्या</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font size="3" style="font-size: 12pt">1 μ</font><sub><font size="3" style="font-size: 12pt">2</font></sub>
+μ<sub><font size="3" style="font-size: 12pt">3</font></sub> <font size="3" style="font-size: 12pt">
+μ</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">के
+मूल्य क्या हैं जो</span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></span></font><sub><font size="3" style="font-size: 12pt">3</font></sub>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">गैर
+दोहराने वाले ध्रुवों की
+गुणा</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">भाग
+हैं</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">μ 1 =</font><sub><font size="3" style="font-size: 12pt">1,</font></sub><font size="3" style="font-size: 12pt">μ</font><sub><font size="3" style="font-size: 12pt">2</font></sub><font size="3" style="font-size: 12pt">=1,
+μ</font><sub><font size="3" style="font-size: 12pt">3</font></sub>=<font size="3" style="font-size: 12pt">2</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+आप </span></font></span></font><font size="3" style="font-size: 12pt">1,
+μ</font><sub><font size="3" style="font-size: 12pt">2 </font></sub>
+<font size="3" style="font-size: 12pt">μ</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">जोड़ते</span><sub><font size="3" style="font-size: 12pt"><span lang="hi">हैं</span></font></sub></span></font><sub><font size="3" style="font-size: 12pt">,
+</font></sub> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+</span></font></span></font><font size="3" style="font-size: 12pt">μ</font><sub><font size="3" style="font-size: 12pt">3</font></sub>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आपको
+क्या मिलता है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आपको
+</span></font></span></font><font size="3" style="font-size: 12pt">4
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मिलता
+है जो एन सही है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+15:57)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_b480ef6dbc81e8c3" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अब</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+आप आंशिक अंश विस्तार करना
+चाहते हैं तो हम क्या करेंगे</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_7ee9ddaf4124db74"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यही
+हम सही करेंगे</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यही
+बात मैंने कॉम्पैक्ट रूप में
+किया है सही योग का उपयोग कर
+।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_b1370845d358e086"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सी</span></font><sub><font size="3" style="font-size: 12pt"><span lang="hi">एलएम</span></font></sub><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> अवशेष
+ठीक हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+सिर्फ दो सूचकांक डाल रहा हूं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+मैं दो योगों सही है कि यह है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्या
+आप एक बी सी डी के रूप में कहा
+जाता है मैं सिर्फ </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">यह</span></font><span lang="hi">
+सी सबस्क्रिप्ट एल एम ठीक कह
+रहा</span><font size="3" style="font-size: 12pt"><span lang="hi">
+हूं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कि
+सिर्फ नोटेशन में परिवर्तन
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+मैं दो सूचकांक एल और एम है ।
+मुझे आशा है कि यह स्पष्ट है
+कि हम यह कैसे सही है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हां
+।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अब
+हम लाप्लेस विलोम लेते हैं ।
+तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अब</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इस
+विशेष समस्या में</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अगर
+मैं लाप्लेस विलोम लेता हूं
+तो मुझे क्या मिलेगा</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमें
+इस समस्या को सही रखना चाहिए
+। अगर मैं पी </span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ले
+मैं पाने के लिए जा रहा हूं </span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_129ff7fa40d7dd"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अब
+मैं यहां से सामान्यीकरण करने
+जा रहा हूं। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसका
+मतलब है कि</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_6fa768e7603cb93d"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+अभी वहां से सामान्यीकृत ठीक
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+आप देखते है कि जब वहां कोई
+बहुलता </span></font><span lang="hi">है वहां
+कोई </span><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font><span lang="hi">
+शब्द</span><font size="3" style="font-size: 12pt"><span lang="hi">
+ठीक है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+वैसे भी आप एम के संबंध में
+योग नहीं होगा । आप एम के संबंध
+में एक योग होगा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">केवल
+अगर आप </span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">से
+अधिक बहुलता है । तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> आप
+टी</span></font><sup><font size="3" style="font-size: 12pt"><span lang="hi">एम</span></font></sup><span lang="hi">होगा</span><font size="3" style="font-size: 12pt"><span lang="hi">।
+तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एम
+</span></font><span lang="hi"> </span></span></font><font size="3" style="font-size: 12pt">=</font>
+0 <font face="Times New Roman"><span lang="ar-SA"><span lang="hi">के
+लिए जो मामला है जब आप किसी</span><font size="3" style="font-size: 12pt"><span lang="hi">
+भी बहुलता नहीं है। उदाहरण
+के लिए देखें</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">शून्य
+से </span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पर
+ध्रुव के लिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><sub><font size="3" style="font-size: 12pt">1</font></sub>
+<font size="3" style="font-size: 12pt">μ</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">क्या</span><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+</span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आप
+सिर्फ एम </span></font></span></font><font size="3" style="font-size: 12pt">=</font>
+0 <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">का
+उपयोग करें </span></font><span lang="hi">जो कि
+यह सही</span><font size="3" style="font-size: 12pt"><span lang="hi">
+है। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आप
+</span></font><span lang="hi">पर एक टी शक्ति
+शब्द </span><font size="3" style="font-size: 12pt"><span lang="hi">नहीं</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">
+मिलेगा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सब</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आप
+सहमत हैं</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हां।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+फिर किसी भी मामले के लिए की
+तरह जहां बहुलता </span></font></span></font><font size="3" style="font-size: 12pt">2
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">है
+और ऊपर आप एक इसी टी शब्द सही
+मिल जाएगा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+यह है कि तुम क्या है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+जा रहे हैं । क्या आप सहमत हैं</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्या
+मैंने जो लिखा है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">उसके
+साथ हर कोई सहमत है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+सिर्फ उदाहरण के रूप में
+समानांतर कर रहा हूं और फिर
+सामान्य मामला कर रहा हूं ताकि
+हम उन्हें हां नक्शा कर सकें
+।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अब
+एक बार जब मुझे यह मिलता है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+इसका मतलब है कि</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_ad24ec95fb31206c"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्या
+आप सहमतहैं</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीटोपी
+है कि हम क्या सही ठीक होगा ।
+अब आइए</span></font><span lang="hi"> इस पर आगे
+नजर डालते हैं</span></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_fc6a688c08697dd1"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_8afb55ff82ec361e"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_7688e9be14cde77d"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+लगभग वहां ठीक हैं</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बेशक</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+एक लंबे व्युत्पन्न अधिकार
+था।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कुल
+मिलाकर देखें</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मुझे
+लगता है कि यह एकमात्र सबूत
+है जो मैं ठीक करने जा रहा हूं।
+तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">भविष्य
+में हम परिणामों का उपयोग सही
+कर देगा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कि
+इस विशेष पाठ्यक्रम के लिए
+ध्यान केंद्रित होने जा रहा
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+कम से कम मैं तुंहें ठीक दिखाना
+चाहता था</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ताकि
+आप समझ कैसे जो कुछ भी आप सीख
+रहे है के भीतर के विवरण सही
+काम करता है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अनिवार्य
+रूप से यह पता चलता है कि</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_8841bc5c174a919c"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अब</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आप</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_9bd7c9f212645cea"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+पी </span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">की
+भयावहता के बारे में क्या कह
+सकते</span><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं क्योंकि टी अनंत हो जाता
+है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+0.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सही
+करने के लिए जाना जाएगा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+कृपया देखते हैं कि</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कृपया
+ध्यान दें कि बाएं हाथ की ओर
+से कम या दाहिने हाथ की ओर के
+बराबर है । सीमा टी में अनंत
+के लिए प्रवृत्त अगर दाहिने
+हाथ की ओर </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">को
+चला जाता है</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जाहिर
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बाएं
+हाथ की ओर </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">करने
+के लिए जाना है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+बाएं हाथ की ओर नकारात्मक
+मूल्यों टी के पी के सही परिमाण
+नहीं ले जा सकते है </span></font></span></font><font size="3" style="font-size: 12pt">nonnegative
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ठीक
+है । इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसके
+लिए एकमात्र विकल्प यह है कि
+टी के पी की भयावहता की तरह </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तक
+जाना चाहिए ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+0.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+इसका मतलब यह है कि । अब तुरंत
+कोई प्रश्न पूछ सकता</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_2feb61a66ba0884b"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+है</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हे
+टी</span></font><sup><font size="3" style="font-size: 12pt"><span lang="hi">एम</span></font></sup><span lang="hi">
+शब्द के बारे में</span><font size="3" style="font-size: 12pt"><span lang="hi">
+क्या</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ठीक।
+ऐसा होता है कि नेपी के साथ
+घातीय शब्द</span></font><span lang="hi">घातीय
+शब्द टी</span><sup><font size="3" style="font-size: 12pt"><span lang="hi">एम</span></font></sup><span lang="hi">
+शब्द ठीक</span><font size="3" style="font-size: 12pt"><span lang="hi">हावी
+होगा। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">उत्पाद
+वैसे भी शून्य हो जाएगा। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+इतना पता चला है कि आवेग
+प्रतिक्रिया के लिए पर्याप्त
+शर्त पर शून्य पर जाना है कि
+मैं सभी डंडे के लिए नकारात्मक
+असली </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">भागों</span></font><span lang="hi">
+ठीक है की जरूरत है</span><font size="3" style="font-size: 12pt"><span lang="hi">
+।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+कहते हैं कि कश्मीर वहां कश्मीर
+अलग डंडे हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कश्मीर
+से कम या एन सही के बराबर हो
+सकता है । इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जो
+भी डंडे हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सभी
+ध्रुवों में नकारात्मक वास्तविक
+भाग होने चाहिए या दूसरे शब्दों
+में हमारे पास जटिल विमान के
+बाईं ओर पड़े सभी ध्रुव होने
+चाहिए हां</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हां
+कृपया ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+कैसे ले जा सकते है कि </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">ई</span></font><sup><font size="3" style="font-size: 12pt"><span lang="hi">एसएलपी</span></font></sup><span lang="hi">
+की भयावहता कुछ भी नहीं</span><font size="3" style="font-size: 12pt"><span lang="hi">
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन</span></font></span></font><font size="3" style="font-size: 12pt">..
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ओह
+ठीक है। तो मैं सिर्फ एक कदम
+वहां</span></font></span></font><font size="3" style="font-size: 12pt">ped</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">छोड़</span><font size="3" style="font-size: 12pt"><span lang="hi">
+दें । इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अगर
+मैं लेता हूं</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_5e3f444f6b19670b"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec12.doc%20hindi_htm_14652254276628a8"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">संक्षेप
+में प्रस्तुत करने के लिए हम
+देखते हैं कि इसका मतलब यह है
+कि यदि संयंत्र हस्तांतरण
+समारोह के सभी ध्रुव एलएचपी
+में हैं</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कि
+नकारात्मक असली भागों है तो
+प्रणाली </span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिर
+ठीक है । कुछ लोगों का कहना है
+कि यह चिंताजनक रूप से स्थिर
+ठीक है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+शीघ्र ही देखने के लिए कि क्या
+है जा रहे हैं ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यहीहै।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">एसओ
+यहां महत्वपूर्ण शर्त यह है
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">कि
+</span></font><span lang="hi">मैं प्रणाली
+हस्तांतरण समारोह मिल </span><font size="3" style="font-size: 12pt"><span lang="hi">अगर
+सभी डंडे जटिल विमान के बाईं
+ओर में हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">काल्पनिक
+धुरी के छोड़ दिया सही काल्पनिक
+धुरी के बाईं ओर विमान में
+काल्पनिक धुरी के छोड़ दिया
+तो हम </span></font></span></font><font size="3" style="font-size: 12pt">asymptotic
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिरता
+है या क्या हम </span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिरता
+के रूप में कहते हैं । तो क्या</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> यह
+भी आवश्यक है</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+आवश्यक से क्या मतलबहै</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमने
+केवल वही दिखाया है जिसे
+पर्याप्तता की स्थिति कहा
+जाता है । तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+क्या ठीक दिखाया है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अगर
+सभी डंडे विमान के बाईं ओर झूठ
+हमने दिखाया है कि प्रणाली
+</span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिर
+है । अब विपरीत सवाल उठता है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अगर
+एक प्रणाली </span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिर
+होना है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्या
+सभी डंडे जटिल विमान के बाईं
+ओर झूठ की जरूरत है</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">देखो
+मुझे आशा है कि हम सभी आवश्यक
+शर्तों पर्याप्त शर्तों और
+आवश्यक और पर्याप्त शर्त को
+समझते हैं । देखें कि क्या बी
+के लिए सही होना आवश्यक है</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसका
+मतलब है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कि
+एक बी के लिए सच होने की जरूरत
+है कि मतलब नहीं है कि केवल एक
+बी के लिए आवश्यक है सही होने
+की जरूरत है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+हम कहते हैं कि बी के लिए पर्याप्त
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+कोई होता है</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसका
+मतलब है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कि
+बी</span></font><span lang="hi"> भी</span><font size="3" style="font-size: 12pt"><span lang="hi">
+सही होगा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+फिर बी अंय कारणों से भी सही
+हो सकता है । इसलिए हमें सही
+पता नहीं है। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अनिवार्य
+रूप से हमने जो दिखाया है वह
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमने
+केवल यह दर्शाया है कि बीबो
+स्थिरता के लिए पर्याप्त शर्त
+यह है कि सभी ध्रुव</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> जटिल
+विमान के बाईं ओर झूठ बोलना
+चाहिए । अब दूसरी तरह से क्या
+ठीक है</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यही
+है कि अगर एक प्रणाली</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्या</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> कहना
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+BIBO </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिर
+है तो सभी डंडे जटिल विमान के
+बाईं ओर झूठ सही है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कि
+सच है</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्या
+कहना है सभी ध्रुवों की स्थिति
+जटिल विमान के बाईं ओर झूठ बोल
+</span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिरता
+के लिए एक आवश्यक शर्त है ।
+क्यों आवश्यक शर्त महत्वपूर्ण
+है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तभी
+हम एक परिणामी अधिकार</span></font><span lang="hi">के
+बारे में बात कर सकते</span><font size="3" style="font-size: 12pt"><span lang="hi">हैं</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+</span></font><span lang="hi">मैं एफ </span><font size="3" style="font-size: 12pt"><span lang="hi">मैं</span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिरता
+के लिए कहते है सभी डंडे जटिल
+विमान के बाईं ओर जा रहा है
+आवश्यक है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+मैं कह सकता हूं कि यहां तक कि
+एक ध्रुव विमान के अधिकार में
+निहित है यह अस्थिर है । इस
+वक्तव्य के साथ मैं सही नहीं
+दिखा सकता</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+हमें इस व्युत्पन्न अधिकार
+को देखना चाहिए ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अब</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+आप मुझे बताएं कि मेरे पास एक
+ऐसी प्रणाली है जहां एक ध्रुव
+जटिल विमान के अधिकार में है
+कि इसका क्या होगा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+व्युत्पन्न क्या कहना है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+इस व्युत्पन्न से क्या निष्कर्ष
+निकाल सकता हूं</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कुछ
+नहीं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्यों</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बता
+दें कि एक पोल कॉम्प्लेक्स
+प्लेन राइट के दाईं ओर है</span></font></span></font><font size="3" style="font-size: 12pt">,
+1 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सिग्मा
+एल </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">से
+ज्यादा है। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसका
+क्या मतलब होगा</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></span></font><font size="3" style="font-size: 12pt">:
+(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">देखें
+समय</span></font></span></font><font size="3" style="font-size: 12pt">:
+31:15) </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अनंत</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आह
+मैं करूंगा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+केवल टी के पी के परिमाण में
+समाप्त करने में सक्षम हो
+जाएगा से कम है या अनंत है कि
+मेरी मदद नहीं करता है के बराबर
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कि
+मुझे नहीं बताता है यह अस्थिर
+सही है । देखें </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अनंत
+से भी कम है आप जानते हैं जैसे
+कोई अन्य सकारात्मक नंबर भी
+अनंत अधिकार से कम या बराबर
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अनंत
+से कम आप जानते हैं। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+वास्तव में मुझे ठीक करने में
+मदद नहीं करता है। तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमने
+जो दिखाया है वह केवल पर्याप्तता
+ठीक है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आवश्यक
+स्थिति के बारे में क्या ठीक
+है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+इसे होमवर्क के रूप में आप के
+लिए छोड़</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+नहीं है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">और
+एक बार फिर यह आवश्यक नहीं है
+जहां तक इस पाठ्यक्रम का संबंध
+है ठीक है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+जो गणितीय इच्छुक है के लिए
+कृपया सबूत ठीक पर देखो पर
+चलते हैं । इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+नियंत्रण पर कई मानक पाठ्यपुस्तकों
+में उपलब्ध है। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+आशा करता हूं कि मेरा मुद्दा
+स्पष्ट है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमने
+जो दिखाया है वह केवल पर्याप्तता
+है । इसलिए पता चला है कि यह
+भी एक जरूरी शर्त है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मुझे
+क्या कहना है कि सवाल मुद्रा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+शर्त आवश्यक है । मैं इस हालत
+से क्या मतलब है</span></font></span></font><font size="3" style="font-size: 12pt">?
+BIBO </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिरता
+के लिए आवश्यक </span></font></span></font><font size="3" style="font-size: 12pt">LHP
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">में
+सभी डंडे</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जवाब
+हां है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">और
+यही वजह है कि अगर हम नहीं है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अगर
+हम भी एक </span></font></span></font><font size="3" style="font-size: 12pt">RHP
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">झूठ
+बोल ध्रुव या काल्पनिक धुरी
+पर प्रणाली </span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिर
+नहीं है कि हम उदाहरण के माध्यम
+से सही दिखाया गया है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">BIBO </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिरता
+को गलत साबित करने के लिए देखें
+मुझे केवल एक बाध्य इनपुट का
+पता लगाने की आवश्यकता है
+जिसके लिए आउटपुट असीम है हमने
+पहले ही इसे ठीक दिखाया है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चाहे
+हम इसे गंभीर रूप से स्थिर
+मामूली रूप से स्थिर कहें या
+जो कुछ भी हो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+फिर हमने पाया कि यह </span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्थिरता
+परिभाषा का उल्लंघन करता है।
+और अगर तुम सही आधा विमान में
+ध्रुव पर एक ध्रुव है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तुम
+मुझे किसी भी बाध्य इनपुट
+उत्पादन असीम हो जाएगा कि यकीन
+है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+आप काल्पनिक धुरी पर दोहराने
+वाले डंडे देते हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+कोई भी घिरा हुआ इनपुट अनबाउंड
+ओ</span></font><span lang="hi">उत्पुट का कारण</span><font size="3" style="font-size: 12pt"><span lang="hi">बनेगा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+आपके पास काल्पनिक धुरी पर
+गैर दोहराने वाले ध्रुवों की
+तरह कहा जाता है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+आप हमेशा एक घिरा इनपुट पा
+सकते हैं जिसके लिए आउटपुट
+असीमित होगा। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यही
+कारण है कि हम यह भी निष्कर्ष
+निकालते हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+यह भी आवश्यक है। देखो मैं
+उदाहरण से एक जीनआर</span></font><span lang="hi">आईसी
+निष्कर्ष के लिए चला</span><font size="3" style="font-size: 12pt"><span lang="hi">गया</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सबसे
+अच्छा तरीका है यह भी हमेशा
+के लिए सामांय एक साबित करने
+के लिए और फिर उदाहरण की तरह
+ठीक है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+जब से यह नियंत्रण पर पहला
+पाठ्यक्रम है तुंहें पता है
+जैसे मैं उदाहरण करना चाहता
+था हमारी समझ को प्रेरित और
+फिर जैसे हम सामांय </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">व्युत्पन्न</span></font><span lang="hi">
+सही किया</span><font size="3" style="font-size: 12pt"><span lang="hi">
+।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+इसे होमवर्क के रूप में</span></font><span lang="hi">
+आप पर छोड़ता</span><font size="3" style="font-size: 12pt"><span lang="hi">
+हूं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">उत्तर
+हां है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आपको
+आवश्यकताहै</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+भी आवश्यक है</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसीलिए
+हम यह निष्कर्ष निकालने में
+सक्षम हैं कि</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">भले
+ही एक ध्रुव विमान के अधिकार
+में निहितहो</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">प्रणाली</span><font size="3" style="font-size: 12pt"><span lang="hi">
+बीबो स्थिर ठीक नहीं है । और
+अगर तुम काल्पनिक धुरी पर गैर
+दोहरा डंडे एक बार फिर से है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तुम
+मुझे पता है कि यह </span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अस्थिर
+सही है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+जैसे मैं हमेशा एक बोयू</span></font></span></font><font size="3" style="font-size: 12pt">nded
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इनपुट
+जिसके लिए प्रणाली या यह करने
+के लिए सही है</span></font><span lang="hi"> पा
+सकते हैं ।</span></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हालांकि
+कई पाठ्यपुस्तकें इसे गंभीर
+रूप से स्थिर या मामूली रूप
+से स्थिर कहेंगी</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+स्थिरता की एक और धारणा ठीक
+है की वजह से है । तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+क्या करूंगा कि शायद यह ठीक
+रोकने के लिए एक अच्छी जगह है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ताकि
+आप यह सब जानकारी सही पचा सकें
+</span></font></span></font>
+</p>
+</body>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-78" name="author"/>
+<meta content="2019-05-06T16:07:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-21T02:34:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; font-size: 11pt; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000"><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>कंट्रोल
+सिस्टम</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>प्रो</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>एस
+शंकर राम</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>इंजीनियरिंग
+डिजाइन विभाग</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>भारतीय
+प्रौद्योगिकी संस्थान</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>मद्रास</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>पढ़ना
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+35</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>रूट
+लोकस </b></span></font></span></font><font size="3" style="font-size: 12pt"><b>2</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>भाग</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+1</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमरूट
+लोकस को देख रहे हैं</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> और
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">हमने</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> दो</span></font><span lang="hi">
+कदम</span><font size="3" style="font-size: 12pt"><span lang="hi">
+पूरे कर</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+लिए</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">एफ</span></font><span lang="hi">आईआरएसटी
+कदम जटिल विमान में</span><font size="3" style="font-size: 12pt"><span lang="hi">खुले
+लूप डंडे और खुले लूप</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">
+शून्य</span></font><span lang="hi">एस</span><font size="3" style="font-size: 12pt"><span lang="hi">का</span></font><span lang="hi">
+पता लगाना है और</span><font size="3" style="font-size: 12pt"><span lang="hi">
+दूसरा कदम मैं</span></font><span lang="hi">रूट</span><font size="3" style="font-size: 12pt"><span lang="hi">लोकस
+पर स्थित असली धुरी के हिस्सों
+का पता लगाने के लिएहै।</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:40)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_3befee50cf88db17" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एलएट
+हमें</span></font><span lang="hi"> चरण संख्या
+</span></span></font><font size="3" style="font-size: 12pt">3 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">से
+शुरू</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">रूट
+लोकस के</span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></span></font><font size="3" style="font-size: 12pt">asymptotes</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">का
+निर्धारण करने</span></font><span lang="hi">
+के साथ यह</span><font size="3" style="font-size: 12pt"><span lang="hi">सौदों।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> टीअपने
+कदम एपी</span></font><span lang="hi">केवल जब</span></span></font><font size="3" style="font-size: 12pt">plies
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_9b28195e4477992c"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:55)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_c8abac7ec6b8a228" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एकएस
+हमने चर्चा की कि </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">आरऊट
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">एलओकस
+</span></font><span lang="hi">में </span><font size="3" style="font-size: 12pt"><span lang="hi">शाखाएं
+होंगी</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_caf0ed0351febb0e"/>
+<span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">। ईआच
+शाखा एक खुले</span></font><span lang="hi"> लूप
+पोल से शुरू होगी और </span><font size="3" style="font-size: 12pt"><span lang="hi">शाखाएं
+खुले लूप शून्य पर समाप्त हो
+जाएंगी और शेष शाखाएं सिम्पोटट्स
+के साथ अनंत</span></font><span lang="hi">में
+जाएंगी</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_dacbc5c1cbb7e783"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">।</span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_fc53677f96a53864"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">
+अलिमोटेट्स तभी अस्तित्व में
+आने वाले हैं जब</span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_974ca81af998d6a2"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आइए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पहले
+की तरह ही उदाहरण लें</span></font><span lang="hi">
+कि</span><font size="3" style="font-size: 12pt"><span lang="hi">
+कहां</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_716bb8dd0df16e37"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">और
+</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_7678cf5b8f71db64"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">।
+डब्ल्यूई में एस्पिंटोट्स
+होने वाले हैं</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_22852ecf378b3813"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बीवाई
+परिभाषा </span></font></span></font><font size="3" style="font-size: 12pt">asymptotes
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">रूट
+लोकस या बंद लूप डंडे का निशान
+है।</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_e42c101fb81d83d0"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+ यदि हम परीक्षण बिंदु को</span></font><span lang="hi">
+अनंत की ओर </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_7d25abe43a234056"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">धकेलतेहैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+मूल से दूर और आगे</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_9f6590c1b0511f1d"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">और</span></font><span lang="hi">
+बराबर </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_80c18b3e84a2f1d9"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">हो
+जाएंगे।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">इससे
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">कोई
+फर्क नहीं</span></font><span lang="hi"> पड़ता
+कि हम किस दिशा में</span><font size="3" style="font-size: 12pt"><span lang="hi">
+जाते हैं।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">एसओ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आप
+देखते हैं कि प्रत्येक खुले
+लूप पोल और प्रत्येक खुले लूप</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> शून्य
+</span></font><span lang="hi">से कोण योगदान
+बराबर </span><font size="3" style="font-size: 12pt"><span lang="hi">हो
+जाएगा। इस तरह हमें</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">
+असिंटोट्स के कोण के लिए समीकरण
+मिलता है । यदि परीक्षण बिंदु
+को</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+मूल से बहुत दूर चुना</span></font><span lang="hi">जाता
+है</span></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+प्रत्येक खुले लूप पोल का कोण
+योगदान खुले लूप</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">
+शून्य</span></font><span lang="hi">के साथ रद्द
+हो जाता</span><font size="3" style="font-size: 12pt"><span lang="hi">है
+।</span></font><span lang="hi"> </span></span></font><font size="3" style="font-size: 12pt">B</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">इसलिए
+कि </span><font size="3" style="font-size: 12pt"><span lang="hi">
+खुले लूप पोल और खुले लूप</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> शून्य
+</span></font><span lang="hi">के बीच चरण का
+योगदान रद्द</span><font size="3" style="font-size: 12pt"><span lang="hi">हो
+जाता</span></font><span lang="hi">है </span><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+वे परिमाण में बराबर होते हैं।</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एचएंसेस
+एंस सीधी रेखाएं होंगी जो
+सकारात्मक वास्तविक धुरी के
+साथ एक कोण बनाती हैं </span></font></span></font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_4c34f2c7cae410f3"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+04:41)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_8f70ec6e0e9397e2" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीवह
+</span></font></span></font><font size="3" style="font-size: 12pt">asymptotes
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जो
+केवल</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+जब</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_9b28195e4477992c"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">सीधे
+लाइनों जो सकारात्मक असली
+धुरी के साथ एक कोण कर देगा
+होगा</span></font><span lang="hi"> मौजूद</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_be9adc5e2313dc4a"/>
+</span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी
+वह असली धुरी पर </span></font></span></font><font size="3" style="font-size: 12pt">asymptotes
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">के
+चौराहे के बिंदु द्वारा दिया
+जाता है</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_94a79395eba3e22e"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+खुले लूप ध्रुवों की</span></font><span lang="hi">
+गणना के रूप में ही है शून्य
+के खुले लूप के योग को शून्य</span><font size="3" style="font-size: 12pt"><span lang="hi">
+से विभाजित किया जाता है। </span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_ca208b85b7a26857"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></span></font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+06:47)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_2f21cab8c70eb55d" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आइए
+उदाहरण पर नजर डालतेहैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इस
+समस्या में</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_f24c1658f96f60d2"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">टीका
+तात्पर्य यह है कि </span></font><span lang="hi">दो
+असिंटोट्स द्वारा बनाए गए </span><font size="3" style="font-size: 12pt"><span lang="hi">दो</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">
+अयॉम्पोटेट्स </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">और </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">कोण
+</span></font><span lang="hi">हैं जो बराबर होने
+जा रहे</span><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_a1c313022264c55f"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+।</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">Now,</font> <font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">असली
+</span></font><span lang="hi">धुरी पर </span><font size="3" style="font-size: 12pt"><span lang="hi">दो</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></span></font><font size="3" style="font-size: 12pt">asymptotes
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">के</span></font><span lang="hi">
+चौराहे की बात होने जा रहा है</span></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_81eef84a1cf6bcb7"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पर</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_7cfcbafd779d7fe3"/>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">दोनों</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></span></font><font size="3" style="font-size: 12pt">asymptotes
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक
+दूसरे से मिलने ।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">एक</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">
+सिम्पेटो जाने वाला है</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> या
+</span></font><span lang="hi">दूसरे की </span><font size="3" style="font-size: 12pt"><span lang="hi">तरह</span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_a3fb1bf8efd8c751"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">दूसरे
+एमिंटोटोट की तरह जाने वाला
+है</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_6037e59b132c4035"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+1 1:54)</font></p>
+<p align="center" style="margin-bottom: 0.42cm; line-height: 150%"><img align="bottom" border="0" height="291" name="Picture 6" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_1043b2d68fec723d" width="376"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+12:37)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 7" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_7be51f10f7bf7b23" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमें
+</span></font></span></font><font size="3" style="font-size: 12pt">4
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कदम
+पर जाना </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैंटी
+कहते हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तोड़नेका</span></font><span lang="hi">
+निर्धारण दूर अंक</span><font size="3" style="font-size: 12pt"><span lang="hi">
+और </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">तोड़ने</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> में</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> अंक</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">
+तोड़दूर</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+बिंदु </span></font><span lang="hi">उदाहरण </span><font size="3" style="font-size: 12pt"><span lang="hi">के
+लिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">उन
+दोनों के बीच में कोई</span><font size="3" style="font-size: 12pt"><span lang="hi">
+असली खुले छोर शूंय के साथ
+असली धुरी पर लगातार</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">दो</span></font><span lang="hi">
+खुले पाश डंडे के बीच </span><font size="3" style="font-size: 12pt"><span lang="hi">जड़
+लोकस पर मौजूद होगा ।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">इसी
+प्रकार </span></font><span lang="hi">वास्तविक
+धुरी पर लगातार </span><font size="3" style="font-size: 12pt"><span lang="hi">दो</span></font><span lang="hi">
+खुले लूप शून्य के बीच</span><font size="3" style="font-size: 12pt"><span lang="hi">
+रूट लोकस </span></font><span lang="hi">पर
+एक</span><font size="3" style="font-size: 12pt"><span lang="hi">ब्रेक</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इन</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> पॉइंट
+</span></font><span lang="hi">मौजूद </span><font size="3" style="font-size: 12pt"><span lang="hi">होगा</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> जिसमें
+उनके बीच कोई वास्तविक खुला
+लूप डंडे नहींहोगा ।</span></font><span lang="hi">
+</span></span></font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+13:32)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 8" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_5cee8c1f1d00a627" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डब्ल्यू
+मुर्गी हम</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+एक </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">तोड़दूर</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">
+बिंदुहोगा</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">उदाहरण</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> में</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> </span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">असली
+धुरी पर</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+हमारे </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">पास
+है और</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_31deff7e8161143d"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font><span lang="hi">हेस
+असली धुरी पर </span><font size="3" style="font-size: 12pt"><span lang="hi">दो</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> खुले
+लूप डंडे हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बिना
+किसी खुले लूप</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+शून्य</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+के बीच में।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">इस</span></font><span lang="hi">
+उदाहरण</span><font size="3" style="font-size: 12pt"><span lang="hi">
+में</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमारे
+पास</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+एक</span></font><span lang="hi"> शाखा है जो</span><font size="3" style="font-size: 12pt"><span lang="hi">
+दाईं</span></font><span lang="hi"> ओर से शुरू
+होती है और</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_cc3eb01607db0507"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+आती है</span></font></span></font><font size="3" style="font-size: 12pt">;</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> ब्रांच
+से शुरू</span></font><span lang="hi"> और</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_a8099f2efcc221cf"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+बाईं ओर आ रहा</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जड़
+लोकन्स खुले</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+लूप ध्रुवों</span></font><span lang="hi"> पर
+शुरू होगा </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_3292622f5d9d9d50"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">और
+एकएस बढ़ता रहता</span></font><span lang="hi">है</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_23087554af7d75b2"/>
+</span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> शाखा
+की ओर आने वाली है</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">दूसरी</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> शाखा
+बाईं ओर आने वाली है और किसी
+समय</span></font><span lang="hi"> वे</span><font size="3" style="font-size: 12pt"><span lang="hi">
+एक दूसरे से मिलने जा रहे हैं।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">इस
+बिंदु पर वेअसली धुरी से दूर</span></font><span lang="hi">
+होने जा रहे हैं क्योंकि</span><font size="3" style="font-size: 12pt"><span lang="hi">
+वे </span></font><span lang="hi">एक</span><font size="3" style="font-size: 12pt"><span lang="hi">दूसरे</span></font><span lang="hi">को
+</span><font size="3" style="font-size: 12pt"><span lang="hi">पीछे
+नहीं मुड़ सकते और न ही एक दूसरे
+को पार कर सकतेहैं ।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> दोनों</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> शाखाएं
+एक दूसरे से टकराती </span></font><span lang="hi">हैं
+और</span><font size="3" style="font-size: 12pt"><span lang="hi">
+असली धुरी सेबस</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">टूट</span></font><span lang="hi">जाती</span><font size="3" style="font-size: 12pt"><span lang="hi">हैं
+।</span></font><span lang="hi"> इसे</span><font size="3" style="font-size: 12pt"><span lang="hi">ब्रेक</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अवे</span></font><span lang="hi">
+बिंदु </span><font size="3" style="font-size: 12pt"><span lang="hi">कहा
+जाता </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+है।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">कृपया
+ध्यान दें कि ब्रेक</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अवे
+बिंदु</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+हमेशा नहीं होता है</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+</span></font><span lang="hi">इस उदाहरण में ऐसा
+</span><font size="3" style="font-size: 12pt"><span lang="hi">होता
+है।</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसी
+तरह यदि असली धुरी पर दो खुले
+लूप शून्य हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जिनमें
+उनके बीच कोई खुला लूप डंडे
+नहींहैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+रूट लोकी एक दूसरे की यात्रा
+कर सकता है और कुछ बिंदु एक
+दूसरे को मार सकते हैं और असली
+धुरी में टूट सकते हैं।</span></font><span lang="hi">
+इसे</span><font size="3" style="font-size: 12pt"><span lang="hi">
+ब्रेक</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इनपॉइंट</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">कहा
+जाता</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">है।</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक
+ब्रेक</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अवे
+या ब्रेक</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इन</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> पॉइंट</span></font><span lang="hi">
+के बारे में एक </span><font size="3" style="font-size: 12pt"><span lang="hi">अनूठी
+विशेषता </span></font><span lang="hi">यह है कि
+दो</span><font size="3" style="font-size: 12pt"><span lang="hi">
+शाखाएं एक ही मूल्य के लिए एक
+दूसरे को काटती</span></font><span lang="hi">हैं</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_23087554af7d75b2"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">जिसका
+अर्थ है कि हम </span></font><span lang="hi">एक
+</span><font size="3" style="font-size: 12pt"><span lang="hi">दोहराने
+वाले ध्रुव के पास जा रहे हैं।</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+इस तथ्य को जानते हैं कि</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैंच
+आपके पास</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">व्युत्पन्न</span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_f2121cf30245e232"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">तक</span></font><span lang="hi">
+की बहुलता के लिए एक आर</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_38b4a30d4c2eb664"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">ऊट
+है</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">जब
+आप उस दोहराने वाली जड़ को सु
+करने वाले </span><font size="3" style="font-size: 12pt"><span lang="hi">
+व्युत्पन्न</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></span></font><font size="3" style="font-size: 12pt">0 </font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">बनाए</span><font size="3" style="font-size: 12pt"><span lang="hi">जाएंगे।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">अब
+के बाद से तोड़ने दूर या एक
+तोड़ बिंदु पर</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+एक दोहरा ध्रुव है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+कह सकते है कि पहले व्युत्पन्न
+शूंय है ।</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चलो
+रिट</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_c0a81cc5a840e0ee"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">दस</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> के
+रूप में</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_107b627d8ae4a547"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_6a54f4cb9f7f03fc"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_2436f9511158f178"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीवह
+बंद पाश विशेषता समीकरण होने
+जा रहा है</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_b065545389e5965f"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीवह
+लूप विशेषता पॉलीनोमियल बंद
+</span></font><span lang="hi">एक दोहरा जड़ </span><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">
+व्युत्पन्न</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></span></font><font size="3" style="font-size: 12pt">0</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">होने
+जा रहा है</span><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+22:57)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 9" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_445f9fc1c0db40b1" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_68d2c6c01e858983"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_5195de4f6f7820c5"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसे
+हल करते हुए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमें
+मिलता है</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_b3ca18bd90f71de2"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीवह
+इस समीकरण की जड़ें</span></font><span lang="hi">
+संभावित</span><font size="3" style="font-size: 12pt"><span lang="hi">
+बी</span></font></span></font><font size="3" style="font-size: 12pt">Reak-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">दूर</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बी</span></font></span></font><font size="3" style="font-size: 12pt">Reak-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अंक
+में</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font><span lang="hi">हैं</span><font size="3" style="font-size: 12pt"><span lang="hi">।
+हम</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">क्षमता
+को रखना</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+इसलिए कह</span></font><span lang="hi">रहे हैं</span><font size="3" style="font-size: 12pt"><span lang="hi">
+क्योंकि </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">हमें
+अभी भी</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+एक</span></font><span lang="hi"> और</span><font size="3" style="font-size: 12pt"><span lang="hi">
+जांच</span></font><span lang="hi">करने की जरूरत</span><font size="3" style="font-size: 12pt"><span lang="hi">है
+।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">डब्ल्यूई
+को इन बिंदुओं के अनुरूप मूल्य
+का पता लगाने और यह जांचने की
+आवश्यकता</span></font><span lang="hi">है कि
+वे सकारात्मक हैं या नहीं</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_e256ef11c89faf84"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">।
+हेनाली</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+तो</span></font><span lang="hi"> अंक रूट</span><font size="3" style="font-size: 12pt"><span lang="hi">
+लोकस पर झूठ बोलेंगे।</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी
+यहां दो</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+कदमहैं</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font>
+</p>
+<ol>
+<li><p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सबसे
+	पहले हम इस समीकरण को हल करते</span></font><span lang="hi">हैं</span><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<li><p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">फिर
+	हम बंद लूप</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20hindi_htm_e256ef11c89faf84"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+	विशेषता समीकरण</span></font><span lang="hi">से
+	संबंधित</span><font size="3" style="font-size: 12pt"><span lang="hi">
+	मूल्यों </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">को</span></font><span lang="hi">
+	पाते</span><font size="3" style="font-size: 12pt"><span lang="hi">हैं।</span></font></span></font></p>
+</li></li></ol>
+</body>
+</html>

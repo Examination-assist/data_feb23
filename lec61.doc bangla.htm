@@ -1,0 +1,426 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="2019-11-23T15:20:00" name="created"/>
+<meta content="2021-02-22T05:50:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 2.54cm; margin-right: 2.54cm; margin-top: 1.27cm; margin-bottom: 1.27cm }
+		p { margin-bottom: 0.25cm; direction: ltr; font-size: 11pt; line-height: 115%; text-align: justify; orphans: 2; widows: 2; background: transparent }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000">
+<div title="header"><p style="margin-bottom: 1.17cm; line-height: 50%">
+<br/>
+</p>
+</div><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>নিয়ন্ত্রণ
+সিস্টেম</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>অধ্যাপক</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>এস
+শংকর রাম</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>প্রকৌশল
+বিভাগ</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>ইন্ডিয়ান
+ইনস্টিটিউট অফ টেকনোলজি</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>মাদ্রাজ</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>পড়া
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+61</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b>Nyquist
+Sta</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>যোগ্যতা
+মানদণ্ড</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>অংশ
+– ১</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">We </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">শুরু
+হয়</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+নিকুইস্ট </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">স্টেবিলিটি
+সিরিতেরিয়া।</span></font><span lang="bn">
+আমরা </span><font size="3" style="font-size: 12pt"><span lang="bn">ওপেন
+লুপ সিস্টেমের ফ্রিকোয়েন্সি
+প্রতিক্রিয়া দেখে বন্ধ লুপ
+সিস্টেমের স্থায়িত্ব সম্পর্কে
+তথ্য</span></font><span lang="bn">বের করার
+চেষ্টা </span><font size="3" style="font-size: 12pt"><span lang="bn">করছি।
+</span></font></span></font>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">০০</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৩৪</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_b30dc4c636795eaa" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমিআদর্শ
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">নেতিবাচক
+ফিডব্যাক সিস্টেম বিবেচনা
+করি।</span></font><span lang="bn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_6b57f6b21a1635d"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">ফরওয়ার্ড
+পাথ ট্রান্সফার ফাংশনহওয়া</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_e8a8d21da9ea14c"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ফিডব্যাক
+পাথ ট্রান্সফার ফাংশন।</span></font><span lang="bn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_a7776d51cdacb808"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">ওপেন
+লুপ ট্রান্সফার ফাংশনহওয়া
+। একটিবন্ধ লুপ স্থানান্তর
+ফাংশন হতে যাচ্ছে</span></font></span></font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_fe2f22881e3bb405"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">বন্ধলুপ
+বৈশিষ্ট্য পলিন</span></font></span></font><font size="3" style="font-size: 12pt">omial
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">হতে</span></font><span lang="bn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_443646b111b41dda"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+যাচ্ছে। টিতিনি এই বন্ধ লুপ
+বৈশিষ্ট্য বহুনমিয়াল শিকড়
+বন্ধ লুপ খুঁটি হয়। আসুন আমরা
+ওপেন লুপ ট্রান্সফার ফাংশনকে
+প্রতিনিধিত্ব করার জন্য
+বিবেচনা করি</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_35fe97c0f52e6f55"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_5534cbe9c5b7ab8f"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">We </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সংখ্যাতত্ত্বে</span></font><span lang="bn">আংশিক</span><font size="3" style="font-size: 12pt"><span lang="bn">আগ্রহী</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> কারণ
+সংখ্যাতত্ত্বের শিকড় বন্ধ
+লুপ খুঁটি</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ডান।</span></font></span></font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">০২</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">১০</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_1007f60faf278acf" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সে
+শূন্য</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">1+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_d2643afe135c1492"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">বন্ধ
+লুপ খুঁটি হয়।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">খুঁটি</span></font><span lang="bn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_3f02b0d53707dba3"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">গুলো
+খোলা লুপ ের খুঁটি।</span></font></span></font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">টি
+তিনি প্রশ্ন করেন যে আমরা
+নিজেদের</span><font size="3" style="font-size: 12pt"><span lang="bn">জিজ্ঞেস
+করছি</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">C</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা</span></font><span lang="bn">
+বন্ধ লুপ খুঁটির অবস্থান
+সম্পর্কে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+মন্তব্য</span></font><span lang="bn"> করি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+এবং </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">এর
+ফলে  আমরা</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+ওপেন লুপ সিস্টেমের ফ্রিকোয়েন্সি
+প্রতিক্রিয়া ষড়যন্ত্র করে
+বন্ধ লুপ সিস্টেমের স্থায়িত্ব
+সম্পর্কে মন্তব্যকরি।</span></font></span></font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+C<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_ecbf0e3fea82e4e4"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+একটি </span></font></span></font><font size="3" style="font-size: 12pt">Nyquist
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">প্লট</span><font size="3" style="font-size: 12pt"><span lang="bn">
+হিসাবে ষড়যন্ত্র</span></font><span lang="bn">
+তারপর সংশ্লিষ্ট বন্ধ লুপ
+সিস্টেমের স্থায়িত্ব উপর
+মন্তব্য  </span><font size="3" style="font-size: 12pt"><span lang="bn">থেকে।
+</span></font></span></font><font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তিনি
+প্রথম ধারণা আমরা দেখতে যাচ্ছি</span></font><span lang="bn">
+একটি ম্যাপিং উপপাদ্য বলা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+হয় </span></font><span lang="bn"> </span></span></font>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">০৩</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৫৯</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_1700dc5210e187a1" width="384"/>
+</p>
+<p align="left" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমি
+হ্যান্ডআউটে যাই</span></font><span lang="bn">
+এবং</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ম্যাপিং উপপাদ্য</span></font><span lang="bn">ের
+দিকে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ তাকাই।</span></font><span lang="bn"> </span></span></font>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">দুই</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_c64703394a762af5"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">বহুপদী</span></font><span lang="bn">
+অনুপাত </span><font size="3" style="font-size: 12pt"><span lang="bn">বি</span></font><span lang="bn">একটি
+অনুপাত হতে</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_b880e659bf7d175e"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+দিন।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">আমিএস</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্লেনে
+</span></font><span lang="bn">একটি বন্ধ</span><font size="3" style="font-size: 12pt"><span lang="bn">সি</span></font><span lang="bn">অনট্যুর
+</span></span></font><font size="3" style="font-size: 12pt">Z</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">শূন্য</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> এবং</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font></span></font><font size="3" style="font-size: 12pt">P
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">খুঁটি
+কোন খুঁটি এবং শূন্য অতিক্রম
+</span><font size="3" style="font-size: 12pt"><span lang="bn">না
+করে।</span></font><span lang="bn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_21fc208046f194e1"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">Th</font>en
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এই</span><font size="3" style="font-size: 12pt"><span lang="bn">বন্ধ
+কনট্যুর ইন </span></font></span></font><font size="3" style="font-size: 12pt">s-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্লেন</span></font><span lang="bn">
+একটি অনুরূপ বন্ধ কনট্যুর</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ম্যাপ করা </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">হয়।</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_c64703394a762af5"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+আমিআপনার প্লেনে একটি পথ আছে
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">অবশ্যই</span></font><span lang="bn">
+আমরা প্রতিটি  </span><font size="3" style="font-size: 12pt"><span lang="bn">
+বিন্দুতে</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+একটি নির্দিষ্ট মূল্য </span></font><span lang="bn">পেতে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_b880e659bf7d175e"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">যাচ্ছি</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">যাতে
+আমরা প্রতিস্থাপন করতে পারি
+এবং </span><font size="3" style="font-size: 12pt"><span lang="bn">প্লেনে
+একটি অনুরূপ মূল্য পেতে</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_c64703394a762af5"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_c64703394a762af5"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">পারি।</span></font><span lang="bn">
+</span></span></font><font size="3" style="font-size: 12pt">W</font>e
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">বিমানের</span><font size="3" style="font-size: 12pt"><span lang="bn">কনট্যুর
+দ্বারা উৎপত্তির ঘড়িভিত্তিক
+ঘেরাসংখ্যার সংখ্যা গণনা</span></font><span lang="bn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_c64703394a762af5"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+করুন। </span></font></span></font><font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তিনি
+উৎসের ঘড়িঅনুযায়ী ঘেরাও</span></font><span lang="bn">
+সংখ্যা যে সমতল মধ্যে</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_c64703394a762af5"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">z </font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font></span></font><font size="3" style="font-size: 12pt">P</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">সমান
+হতে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">যাচ্ছে।</span></font></span></font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">০৬</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৪৯</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_cdd1acb8fc7b2c2b" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্রথমে
+</span></font><span lang="bn"> আমাদের</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_f3a74839aaaa8f2f"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">এস</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্লেনে</span></font><span lang="bn">
+খুঁটি এবং</span><font size="3" style="font-size: 12pt"><span lang="bn">
+শূন্যের সংখ্যা চিহ্নিত করতে
+হবে</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+এবং</span></font><span lang="bn"> যে কোন রূপ
+নিতে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ হবে। টিতাকে সমতলে একটি অনুরূপ
+আকৃতিতে ম্যাপ করা হবে</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_f3a74839aaaa8f2f"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">ধরা
+যাক</span></font><span lang="bn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_f3a74839aaaa8f2f"/>
+</span></font><font size="3" style="font-size: 12pt">h</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">হিসাবে</span></font><span lang="bn">
+দুই খুঁটি এবং একটি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+শূন্য।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">তর্কের
+খাতিরেআমরা </span></font><span lang="bn">কিছু
+অনিচ্ছাকৃত</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সবুজ</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">গ্রহণ</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">করি।
+এক্ষেত্রে </span></font></span></font><font size="3" style="font-size: 12pt">Z-P
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এর
+মান </span></font></span></font><font size="3" style="font-size: 12pt">0</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">।
+সুতরাং </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">উৎপত্তির</span></font><span lang="bn">
+সংখ্যা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">হতে
+যাচ্ছে। আসুন আমরা আরেকটি
+ধারা </span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">কালো</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">বিবেচনা
+করি যা শূন্য এবং খুঁটি উভয়কেই
+ঘিরে থাকে। </span></font></span></font><font size="3" style="font-size: 12pt">Z-P
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এর
+মান </span></font></span></font><font size="3" style="font-size: 12pt">-1,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যার
+মানে প্লেনে উৎপত্তির একটি
+ঘড়িঅনুযায়ী ঘেরাও</span></font><span lang="bn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_f3a74839aaaa8f2f"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">আছে।</span></font></span></font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">১২</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৩০</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_f061ec9c65d8409a" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">১৪</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৫১</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 6" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_6cafc3c1e63d61bb" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমি
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+হ্যান্ডআউটে উপস্থাপিত </span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">কিছু
+উদাহরণ দেখি</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">।
+</span></font></span></font><font size="3" style="font-size: 12pt">We
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এই
+ফাংশন গ্রহণ</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_f3a74839aaaa8f2f"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">করুন</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">যা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">-1.5
+2.4</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_f83439ec8c23d459"/>
+<font size="3" style="font-size: 12pt">j</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এ
+দুটি শূন্য এবং</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">Two
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">খুঁটি
+</span></font></span></font><font size="3" style="font-size: 12pt">-1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এবং
+</span></font></span></font><font size="3" style="font-size: 12pt">-2</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আছে।</span></font></span></font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">১৫</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৩৩</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 7" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_e13e7005f914132c" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি
+আমরা প্রথম ফিগারের দিকে
+তাকাই</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">আমরা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">-1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এবং
+</span></font></span></font><font size="3" style="font-size: 12pt">-2
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এ</span></font><span lang="bn">
+দুটি খুঁটি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+দেখতে</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+পাব।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">একটি</span></font></span></font><font size="3" style="font-size: 12pt">nd
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">দুই
+শূন্য </span></font></span></font><font size="3" style="font-size: 12pt">complex
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">কনজুগেট
+</span></font></span></font><font size="3" style="font-size: 12pt">-1.5
+2.4</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_f83439ec8c23d459"/>
+<font size="3" style="font-size: 12pt">j</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">হয়।
+যদি আমরা এস</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্লেনে</span></font><span lang="bn">এবিসি</span><font size="3" style="font-size: 12pt"><span lang="bn">ডি</span></font><span lang="bn">
+গ্রহণ</span><font size="3" style="font-size: 12pt"><span lang="bn">করি</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যা
+কোন বন্ধ কনট্যুর নয়। আমরা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> দেখতে
+পাচ্ছি যে</span></font><span lang="bn"> তারা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">A'C'D'-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এর
+সাথে ম্যাপ</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+করা হয়েছে।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">We
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">একটি
+ভিন্ন আকৃতি পেতে</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">যা
+ফাংশনের উপর</span><font size="3" style="font-size: 12pt"><span lang="bn">
+নির্ভর করে</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ডান
+দিকে। </span></font></span></font><font size="3" style="font-size: 12pt">Similarly
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি
+আপনার</span></font><span lang="bn"> কাছে </span><font size="3" style="font-size: 12pt"><span lang="bn">ডিইএফ</span></font></span></font>A<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">থাকে
+</span></font><span lang="bn">যা একটি কনট্যুর
+</span></span></font>D<font size="3" style="font-size: 12pt">'F'A'</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এ
+ম্যাপ</span><font size="3" style="font-size: 12pt"><span lang="bn">করা
+হয়।</span></font></span></font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">১৬</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৫২</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 8" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_cc240bc282f445c1" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">একটি</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> বন্ধ
+কনট্যুর </span></font></span></font><font size="3" style="font-size: 12pt">ABCDEFA</font>
+<font size="3" style="font-size: 12pt"> t</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">টুপি
+ম্যাপ</span><font size="3" style="font-size: 12pt"><span lang="bn">করা
+হয়</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">A'B'C'D'E'E'F'A'-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এ।
+</span></font></span></font><font size="3" style="font-size: 12pt">Z-P=-2
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এর
+মান। তাই আমরা দেখতে পাচ্ছি
+যে বিমানের উৎপত্তিকে ঘিরে
+দুটি ঘড়ির কাঁটা আছে</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_f3a74839aaaa8f2f"/>
+<font size="3" style="font-size: 12pt">A'B'C'D'
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এবং
+</span></font></span></font><font size="3" style="font-size: 12pt">D'E'F'A'</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">২১</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৪৬</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 9" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec61.doc%20bangla_htm_7f938e813964848a" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এখানে
+এই ক্ষেত্রে আরো কিছু উদাহরণ</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">আছে
+</span></font><span lang="bn">যা আমরা ম্যাপিং
+উপপাদ্য দেখতে এবং যাচাই</span><font size="3" style="font-size: 12pt"><span lang="bn">
+করতে পারি।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">বিভিন্ন
+রূপরেখার ম্যাপিং সম্পর্কে
+উপলব্ধি পেতে আমরা </span></font></span></font><font size="3" style="font-size: 12pt">MATLAB
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ব্যবহার
+করতে পারি।</span></font></span></font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<div title="footer"><p style="margin-top: 1.17cm; margin-bottom: 0cm; line-height: 50%">
+<br/>
+</p>
+</div>
+</body>
+</html>

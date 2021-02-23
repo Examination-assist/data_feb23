@@ -1,0 +1,507 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="admin" name="author"/>
+<meta content="2018-10-17T11:49:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-21T02:27:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-size: 11pt; so-language: en-US }
+		p.cjk { font-size: 11pt; so-language: en-US }
+		p.ctl { font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-IN" link="#000080" vlink="#800000"><p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>कंट्रोल
+सिस्टम</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>प्रो</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>एस
+शंकर राम</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>इंजीनियरिंग
+डिजाइन विभाग</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>भारतीय
+प्रौद्योगिकी संस्थान</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>मद्रास</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>पढ़ना
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+23</b></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>बंद
+लूप कंट्रोल </b></span></font></span></font>
+</p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>भाग
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+1</b></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पिछले
+व्याख्यानों में</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमने
+नियंत्रक ब्लॉक और तीन प्रकार
+के मौलिक नियंत्रकों के</span></font><span lang="hi">
+बारे में चर्चा की जो</span><font size="3" style="font-size: 12pt"><span lang="hi">
+आनुपातिक नियंत्रण</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">अभिन्न
+नियंत्रण </span><font size="3" style="font-size: 12pt"><span lang="hi">और
+व्युत्पन्न नियंत्रण हैं।</span></font><span lang="hi">
+</span></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:45)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_650d8ff1d99dbb6e" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:59)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_b72684c0ca35fe24" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">यदि
+हम</span><font size="3" style="font-size: 12pt"><span lang="hi">
+व्युत्पन्न नियंत्रण के
+व्यावहारिक कार्यान्वयन को
+देखेंतो</span></font><span lang="hi"> कई</span><font size="3" style="font-size: 12pt"><span lang="hi">
+मामलों में लोग</span></font><span lang="hi">
+उपयोग</span><font size="3" style="font-size: 12pt"><span lang="hi">
+करेंगे</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_e53acf6b687721b3"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यहां</span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_5ba141bf02833218"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">शोर
+संकेतों को फ़िल्टर करने के
+लिए कम पास फिल्टर की तरह कार्य
+करेगा क्योंकि व्युत्पन्न
+नियंत्रण की एक सीमा यह है कि
+यह गलती से व्यावहारिक कार्यान्वयन
+के दौरान आने वाले उच्च आवृत्ति
+शोर को बढ़ा सकता है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आनुपातिक
+अभिन्न </span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पी
+आई</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">नियंत्रक</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ओ</span></font></span></font><font size="3" style="font-size: 12pt">ne
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आनुपातिक
+नियंत्रण के साथ शुरू होता</span></font><span lang="hi">
+है</span><font size="3" style="font-size: 12pt"><span lang="hi">
+और</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+यदि चीजें काम नहीं करती हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">तो
+हम आनुपातिक और एक अभिन्न
+नियंत्रण</span><font size="3" style="font-size: 12pt"><span lang="hi">
+या</span></font><span lang="hi"> पी आई नियंत्रक
+का </span><font size="3" style="font-size: 12pt"><span lang="hi">प्रयास
+करते</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं। डब्ल्यूई अकेले इंटीग्रल
+ब्लॉक की कोशिश कर सकते</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+</span></font><span lang="hi">यह मूल </span><font size="3" style="font-size: 12pt"><span lang="hi">में
+एक </span></font><span lang="hi">खुला </span><font size="3" style="font-size: 12pt"><span lang="hi">पाश
+ध्रुव </span></font><span lang="hi">पेश </span><font size="3" style="font-size: 12pt"><span lang="hi">करता</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">है।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">बंद
+लूप सिस्टम को डिजाइन करने
+और इसे स्थिर बनाने में कुछ
+कठिनाइयां होने वाली हैं। </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">नतीजतन
+एक विकल्प पी आई नियंत्रक का
+उपयोग करनाहै।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+इसके दो घटक हैं।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">नियंत्रण
+इनपुट अनिवार्य रूप से आनुपातिक
+भाग और</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+आईएनटीग्रल भाग</span></font><span lang="hi">का
+योग</span><font size="3" style="font-size: 12pt"><span lang="hi">है।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">स्थानांतरण
+कार्य होने जा रहा है</span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_1e4c04120c30a1ea"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+।  डब्ल्यू</span></font><span lang="hi">ई देखते
+हैं कि हम</span><font size="3" style="font-size: 12pt"><span lang="hi">
+शून्य पर</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">एक
+खुला लूप पोल पेश करते</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">हैं</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+साथ ही हम एक खुले लूप शून्य
+को पेश करते</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_d36f7594ba224232"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+हैं।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+04:50)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_d3d4780a64b21ae6" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कंट्रोलर
+पैरामीटर स्पेस या </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">कंट्रोल
+गेन क्षेत्र</span></font><span lang="hi">के
+रूप में कुछ कहा जाता</span><font size="3" style="font-size: 12pt"><span lang="hi">है।
+मैंडी का उपयोग</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+बंद लूप स्थिरता और प्रदर्शन
+प्राप्त करने के लिए नियंत्रक
+लाभ के व्यवहार्य क्षेत्र को
+इंगित करने के लिए</span></font><span lang="hi">करता</span><font size="3" style="font-size: 12pt"><span lang="hi">हूं।
+मैंटी सिर्फ एक चित्रमय
+प्रतिनिधित्व है।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">मैं</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> पी</span></font><span lang="hi">
+या </span><font size="3" style="font-size: 12pt"><span lang="hi">आई
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+या  डी</span></font><span lang="hi">के</span><font size="3" style="font-size: 12pt"><span lang="hi">
+मामले में</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">केवल</span></font><span lang="hi">
+एक नियंत्रक</span><font size="3" style="font-size: 12pt"><span lang="hi">
+पैरामीटर है</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+जो</span></font><span lang="hi"> वास्तविक</span><font size="3" style="font-size: 12pt"><span lang="hi">
+संख्या है। टीउसका नियंत्रक
+पैरामीटर स्पेस</span></font><span lang="hi">
+एक</span><font size="3" style="font-size: 12pt"><span lang="hi">
+आयामी </span></font></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">लाइनहोगी।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+06:08)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_6d46b00c7d6d806a" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बी
+यूटी तो हम पी आई के लिए </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">आते
+हैं</span></font><span lang="hi"> नियंत्रक
+पैरामीटर</span><font size="3" style="font-size: 12pt"><span lang="hi">
+अंतरिक्ष </span></font></span></font><font size="3" style="font-size: 12pt">2
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आयामी
+हो जाताहै ।</span></font><span lang="hi"> हमें</span><font size="3" style="font-size: 12pt"><span lang="hi">
+दो </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">आयामी</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">कथानक</span></font><span lang="hi">
+की साजिश करने</span><font size="3" style="font-size: 12pt"><span lang="hi">
+की</span></font><span lang="hi"> आवश्यकता है</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_8dcf98d76ba9a4c5"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+और</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_83c54b9cd114d5de"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+जहां </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">हम</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> सभी
+व्यवहार्य मूल्यों</span></font><span lang="hi">का</span><font size="3" style="font-size: 12pt"><span lang="hi">
+प्रतिनिधित्व</span></font><span lang="hi">
+करते हैं</span><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आनुपातिक
+व्युत्पन्न </span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पी
+डी</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">नियंत्रक</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पी
+डीनियंत्रक</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जैसा
+कि नाम का सुझाव</span></font><span lang="hi">है
+कि एस आनुपातिक प्लस </span><font size="3" style="font-size: 12pt"><span lang="hi">डेरिवेटिवहै
+।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">सीऑनसेकैंटली
+कंट्रोलर ट्रांसफर फ़ंक्शन
+प्रोपर कॉन्शनल और डेरिवेटिव
+कंट्रोल</span></font><span lang="hi"> के दो
+व्यक्तिगत स्थानांतरण </span><font size="3" style="font-size: 12pt"><span lang="hi">कार्यों
+का</span></font><span lang="hi">योग</span><font size="3" style="font-size: 12pt"><span lang="hi">
+है।</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_4e595ebc2aa4c1a4"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+ हम </span></font><span lang="hi">देख सकते </span><font size="3" style="font-size: 12pt"><span lang="hi">हैं
+कि यह परिचय और लूप शून्य पर
+खुला</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_567e3ed898e391d4"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+है। हम इसे ओपन लूप जीरो कहते
+हैं क्योंकि ओपन लूप ट्रांसफर
+फ़ंक्शन होता है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_3e23aca7eba4dfc1"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए
+जब हम बदलते हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">तो
+ओपन </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_e9ebb4e807803aea"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">लूप
+ट्रांसफर फ़ंक्शन प्रभावित
+होता है। इस मामले में </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">नियंत्रक
+पैरामीटर अंतरिक्ष के एक </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">दो </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">आयामी
+साजिश</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font><span lang="hi"> होगी </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_8dcf98d76ba9a4c5"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">और</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_6d375df00bb86b4b"/>
+</span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+11:14)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_5ef638957e0d28a2" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आनुपातिक
+इंटीग्रल डेरिवेटिव </span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पी
+आई डी</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">नियंत्रक</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">फिर
+सामान्य तौर पर हम तीनों ब्लॉकों
+को जोड़ सकतेहैं </span></font></span></font><font size="3" style="font-size: 12pt">;</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आनुपातिक</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अभिन्न
+और व्युत्पन्न</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">जिसे
+पीआईडी</span><font size="3" style="font-size: 12pt"><span lang="hi">
+कहा जाता है।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">एकएस</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> नाम
+इंगित करता है</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_cf4cf47da7bec1d6"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+12:48)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 6" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_f8b47b3a95ac6d4d" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीवह
+नियंत्रक स्थानांतरण समारोह
+होगा</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_bcd1336dd482c2fd"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">डब्ल्यूई
+देख सकते हैं कि यह दो खुले
+लूप शून्य का परिचय देता है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जो
+मूल्यों पर निर्भर करता</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> </span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_8dcf98d76ba9a4c5"/>
+<span lang="hi">
+है </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_83c54b9cd114d5de"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">और
+</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_9760be22be12caf2"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">Now </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डिजाइन
+करने के लिए तीन पैरामीटरहैं</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_8dcf98d76ba9a4c5"/>
+<font size="3" style="font-size: 12pt">
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_83c54b9cd114d5de"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">और।
+</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_9760be22be12caf2"/>
+<span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">टीवह
+जटिलता बढ़ती रहती है ।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">ध्यान
+दें कि </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">इनमें
+से प्रत्येक पैरामीटर एक
+वास्तविक संख्या है जो बीच
+में भिन्न हो सकती</span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_99dd49fefe26415f"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">है।
+डब्ल्यू</span></font><span lang="hi">ई </span><font size="3" style="font-size: 12pt"><span lang="hi">हमारी</span></font><span lang="hi">
+अधिकांश चर्चाओं</span><font size="3" style="font-size: 12pt"><span lang="hi">
+के लिए  इस नियंत्रक</span></font><span lang="hi">
+पर ध्यान केंद्रित</span><font size="3" style="font-size: 12pt"><span lang="hi">करेगा</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सरल
+कारण है </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">कि
+</span></font><span lang="hi">व्यावहारिक
+अनुप्रयोगों में उपयोग किए
+जाने वाले नियंत्रकों का </span><font size="3" style="font-size: 12pt"><span lang="hi">एक</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> भारी</span></font><span lang="hi">
+बहुमत</span></span></font>,<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पीआईडी
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">नियंत्रकों
+के इस वर्ग से संबंधित</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एलएट
+हमें</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+कुछ उदाहरण देखते</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">हैं</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">हम</span><font size="3" style="font-size: 12pt"><span lang="hi">
+एक संयंत्र हस्तांतरण समारोह</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> है</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_f113fdc204cba1a4"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">प्रणाली
+का क्रम </span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">है
+और यह अस्थिर है क्योंकि इसमें
+</span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पर
+एक ध्रुव है जो </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+जटिल विमान के अधिकार</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">में
+</span></font><span lang="hi">है</span><font size="3" style="font-size: 12pt"><span lang="hi">।
+ओनेक प्रतिक्रिया का उद्देश्य
+यह भी सुनिश्चित करना है कि
+हम एक अस्थिर प्रणाली को स्थिर
+करें। एलएट हमें एक बंद पाश
+एकता नकारात्मक प्रतिक्रिया
+प्रणाली डिजाइन करने की कोशिश।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">इन
+सभी उदाहरणों के लिए एक सामान्य
+स्थिति है</span></font></span></font><font size="3" style="font-size: 12pt">;</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> एकता
+निगेटिव फीडबैक बंद लूप कंट्रोल
+सिस्टम हमेशा</span></font><span lang="hi">
+आवश्यक</span><font size="3" style="font-size: 12pt"><span lang="hi">
+नहीं सोचा</span></font><span lang="hi"> पर विचार</span></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसका
+मतलब है </span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_f5deac7861239757"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एलएट
+हमें एक आनुपातिक नियंत्रक
+की कोशिश करो।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> हमारे
+पास है </span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_f6841f4964e8f16d"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_8a0cf84eaf8e73a7"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+19:49)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 7" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_1a677a3e04236d05" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीवह
+बंद लूप हस्तांतरण समारोह</span></font><span lang="hi">
+होने जा रहा</span><font size="3" style="font-size: 12pt"><span lang="hi">
+है</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_e8468cede90074b"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बंद
+लूप विशेषता पॉलीनोमियल</span></font><span lang="hi">
+को हल करना जो </span><font size="3" style="font-size: 12pt"><span lang="hi">बंद
+लूप ट्रांसफर फ़ंक्शन का भाजक
+पॉलीनोमियल है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमें
+बंद लूप डंडे मिलते हैं।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_858906959b9fbbe5"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">बंद
+लूप पोल टी होने जा रहाहै</span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_db0daaf789e695fb"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एफया
+बंद लूप स्थिरता</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> हम</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> चाहते
+हैं कि सभी </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">बंद
+लूप डंडे जटिल विमान के बाईं
+ओर सख्ती से हों।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">इसका
+मतलब है कि हम</span></font><span lang="hi">
+नकारात्मक होना </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_db0daaf789e695fb"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">चाहते
+हैं । यह तब संभव है जब </span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_d3d25ebe472a4851"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">।
+के लिए व्यवहार्य क्षेत्र के</span></font><span lang="hi">
+रूप में </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_8dcf98d76ba9a4c5"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">आंकड़ा
+में दिखाया गया है तैयार किया
+जा सकता है ।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बीवाई
+इस विश्लेषणने</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font><span lang="hi">एक पैरामीटर</span><font size="3" style="font-size: 12pt"><span lang="hi">को
+परिवर्तितकर दिया</span></font><span lang="hi">
+है</span><font size="3" style="font-size: 12pt"><span lang="hi">
+जो </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">किसी
+भी</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+मूल्य</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+को</span></font><span lang="hi"> एक पैरामीटर</span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font><span lang="hi"> में</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_a23455afd3a556cf"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+ले </span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_79cbf0ba3f092c54"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">सकता</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> है
+जिसकी सीमा </span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">के
+बीच है</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec23.doc%20hindi_htm_79cbf0ba3f092c54"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+और</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">हमने</span></font><span lang="hi">सीमा
+को कम</span><font size="3" style="font-size: 12pt"><span lang="hi">
+करदिया</span></font><span lang="hi"> है</span><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">डब्ल्यूई
+बाद में देखेंगे कि यदि</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> हम</span></font><span lang="hi">
+बंद लूप प्रदर्शन</span><font size="3" style="font-size: 12pt"><span lang="hi">
+को शामिल करना चाहते</span></font><span lang="hi">
+हैं तो यह सीमा और कम </span><font size="3" style="font-size: 12pt"><span lang="hi">हो
+जाएगी ।</span></font></span></font></p>
+</body>
+</html>

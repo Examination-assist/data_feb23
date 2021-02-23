@@ -1,0 +1,647 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-72" name="author"/>
+<meta content="2018-09-24T08:25:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-21T12:20:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; font-size: 11pt; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000"><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>నియంత్రణ
+వ్యవస్థలు</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>ప్రొఫెసర్
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>ఎస్</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>డిపార్ట్
+మెంట్ ఆఫ్ ఇంజినీరింగ్ డిజైన్</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>ఇండియన్
+ఇన్స్టిట్యూట్ ఆఫ్ టెక్నాలజీ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>మద్రాస్</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>చదవడం
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+11</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b>BIBO
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>స్థిరత్వం</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te"><b>పార్ట్
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+1</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">కొన్ని</span></font></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">problems
+ </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">పరిష్కరించడానికి</span></font></span></font><span lang="te">
+మరియు </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">కొన్ని
+పరిశీలనలు మరియు</span></font></font><span lang="te">
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్థిరత్వం
+గురించి</span></font></span></font><span lang="te">సాధారణ
+డి</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">రివేషన్
+</span></font></font><span lang="te">చేయండి</span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">సమస్య
+ాసంఖ్య </span></font></font></span></font><font size="3" style="font-size: 12pt">5</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">తో</span></font></span></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ప్రారంభిద్దాం</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"> <font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్లైడ్
+సమయం రిఫర్ చేయండి</span></font></span></font><font size="3" style="font-size: 12pt">:
+01:27)</font></font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"> </font>
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_1ee6609d8a208fc5" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">గత
+చర్చ నుంచి</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మొక్క
+బదిలీ ఫంక్షన్</span></font></span></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_ce5769e5ceef8dc2"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">వద్ద
+సిస్టమ్ </span></font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_122583c615086db9"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">పోల్స్</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అవి
+</span></font></span></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+పూర్తిగా ఊహాజనిత ధృవాలు</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">మరియు
+యూనిట్ స్టెప్ ఇన్ పుట్ కు
+లోబడి ఉన్నప్పుడు</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అవుట్
+పుట్ పరిమాణం తో బౌండ్ చేయబడిందని
+మనం చూశాం</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+దీనిని</span></font></span></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+ఒక నిర్ధిష్ట కోణీయ పౌన</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">పున్యం
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> rad/s</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">యొక్క</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+కోసిన్ ఇన్ పుట్ కు</span></font></font><span lang="te">
+లోబడి ఉంచుదాం</span></span></font>.</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><font size="3" style="font-size: 12pt">In
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సాధారణ</span></font></span></font><span lang="te">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_940e687517422751"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">అర్థం</span></font></font><span lang="te">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_5e359603aa982f40"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ప్రతి
+సెకనుకు రేడియన్స్ లో కోణీయ
+పౌనఃపున్యంఉంటుంది</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_9693eb965568a636"/>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">అంటే</span></font></font><span lang="te">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_724f90b8bc272009"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">రాడ్</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">/</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఎస్</span></font></span></font><font size="3" style="font-size: 12pt">.
+If </font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_9042b5e28a4e5337"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అప్పుడు
+</span></font></span></font><span lang="te"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_54d573a24a4cf489"/>
+</font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_3b33e5dd09e12da0"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+W</font><font face="Times New Roman"><span lang="ar-SA"><span lang="te">అనేది</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">లాప్లేస్
+ట్రాన్స్ ఫర్ యొక్క ఒక ప్రాపర్టీని
+ఉపయోగిస్తుంది</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">ఇది
+సంక్లిష్ట</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+తేడా సిద్ధాంతం</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_9459081b3ff48f34"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">తీసుకుందాం
+</span></font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_9ec60e3be7cbe149"/>
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_27e84901efbb031f"/>
+</p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_349bd658df0156cc"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_d4a1abd41013d326"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఈవిధంగా</span></font></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_8fc9870177691025"/>
+</span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్లైడ్
+సమయం రిఫర్ చేయండి</span></font></span></font><font size="3" style="font-size: 12pt">:
+05:22)</font></font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_61c803da1fdaa417" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+సమస్య నెంబరు </span></font></span></font><font size="3" style="font-size: 12pt">6</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ని</span></font></span></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">పరిష్కరిద్దాం</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">మొక్క
+బదిలీ విధి ని ఇప్పటికే తెలుసు</span></font></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_89b3ff7b05bf9"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_9042b5e28a4e5337"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అప్పుడు
+</span></font></span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_54d573a24a4cf489"/>
+</font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_90bab8928117dd94"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఇక్కడ
+న్యూమరేటర్ మరియు హారం లో </span></font></font><span lang="te">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_b880e659bf7d175e"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">రద్దు</span></font></font><span lang="te">
+ఒక గణిత ఆపరేషన్</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="te">ఇది
+మనకు కలిగి ఉన్న </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఇన్పుట్
+యొక్క నిర్దిష్ట స్వభావం
+కారణంగా వచ్చింది</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కానీ
+సాధారణంగా మేము పోల్  జీరో
+క్యాన్సిలేషన్</span></font></span></font><span lang="te">అని
+పిలిచే మరింత </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">సూక్ష్మమైన</span></font></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+ఆలోచన కలిగి ఉన్నాము</span></font></font><span lang="te">
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+చర్చించుకుంటాం</span></font></span></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">w</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">హెన్
+మేము</span></font></span></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+కంట్రోల్ సిస్టమ్ రూపకల్పన
+లోకి లోతుగా వెళ్ళి</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">పాక్షిక
+భిన్నాలను పరిష్కరించడం</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+</span></font></span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_8ac35deb0c098979"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+ మరియు</span></font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_a7ed50118b3e26dc"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_ab3944b29dc20e5a"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">విలోమ
+లాప్లేస్ ను తీసుకుంటే</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మేము</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_7540d4d3fb96365e"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఆ
+విధంగా బౌండ్ డ్ గా ఉండటాన్ని
+</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+గమనిచవచ్చు</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_b33a10b31d6cfb6e"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font></font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఇంతకు
+ముందు మనం చూసిన ట్లుగా</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అదే
+సిస్టమ్ కొరకు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">యూనిట్
+స్టెప్ రెస్పాన్స్ ఇచ్చినప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_150ccf7c60455030"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు
+మనం మరో</span></font></span></font><span lang="te">బౌండెడ్
+ఇన్ పుట్ ని </span></font>GA <font face="Times New Roman"><span lang="ar-SA"><span lang="te">వే
+గా</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">చూశాం</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+బౌండెడ్ అవుట్ పుట్ ని
+పొందుతున్నాం</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_9693eb965568a636"/>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఒకసరళ
+పట్టికను తయారుచేయండి</span></font></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<table cellpadding="7" cellspacing="0" width="491">
+<col width="128"/>
+<col width="62"/>
+<col width="96"/>
+<col width="147"/>
+<tr valign="top">
+<td height="29" style="border: 1px solid #000000; padding: 0cm 0.19cm" width="128"><p align="justify" style="margin-top: 0.42cm">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">వ్యవస్థ</span></font></font></span></font></p>
+</td>
+<td style="border: 1px solid #000000; padding: 0cm 0.19cm" width="62"><p align="center" style="margin-top: 0.42cm">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ధృవాలు</span></font></font></span></font></p>
+</td>
+<td style="border: 1px solid #000000; padding: 0cm 0.19cm" width="96"><p align="center" style="margin-top: 0.42cm">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">మూలాంశము</span></font></font></span></font></p>
+</td>
+<td style="border: 1px solid #000000; padding: 0cm 0.19cm" width="147"><p align="center" style="margin-top: 0.42cm">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">అవుట్
+			పుట్</span></font></font></span></font></p>
+</td>
+</tr>
+<tr valign="top">
+<td height="30" rowspan="2" style="border: 1px solid #000000; padding: 0cm 0.19cm" width="128"><p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">11</font></font></p>
+<p align="justify" style="margin-top: 0.42cm"><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_d65956b68c2aa795"/>
+</p>
+</td>
+<td rowspan="2" style="border: 1px solid #000000; padding: 0cm 0.19cm" width="62"><p align="justify" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_122583c615086db9"/>
+</p>
+</td>
+<td style="border: 1px solid #000000; padding: 0cm 0.19cm" width="96"><p align="center" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">1</font></font></p>
+</td>
+<td style="border: 1px solid #000000; padding: 0cm 0.19cm" width="147"><p align="center" style="margin-top: 0.42cm">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">బౌండెడ్
+			గా</span></font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_a34bd7802b322192"/>
+</span></font></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: 1px solid #000000; padding: 0cm 0.19cm" width="96"><p align="justify" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_9693eb965568a636"/>
+</p>
+</td>
+<td style="border: 1px solid #000000; padding: 0cm 0.19cm" width="147"><p align="center" style="margin-top: 0.42cm">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">హద్దులేని
+			</span></font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_a34bd7802b322192"/>
+</span></font></p>
+</td>
+</tr>
+<tr valign="top">
+<td height="3" rowspan="2" style="border: 1px solid #000000; padding: 0cm 0.19cm" width="128"><p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">S2</font></font></p>
+<p align="justify" style="margin-top: 0.42cm"><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_5e92da68c898544a"/>
+</p>
+</td>
+<td rowspan="2" style="border: 1px solid #000000; padding: 0cm 0.19cm" width="62"><p align="center" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">0,-1</font></font></p>
+</td>
+<td style="border: 1px solid #000000; padding: 0cm 0.19cm" width="96"><p align="center" style="margin-top: 0.42cm">
+<font color="#000000"><font size="3" style="font-size: 12pt">1</font></font></p>
+</td>
+<td style="border: 1px solid #000000; padding: 0cm 0.19cm" width="147"><p align="center" style="margin-top: 0.42cm">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">హద్దులేని
+			</span></font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_a34bd7802b322192"/>
+</span></font></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: 1px solid #000000; padding: 0cm 0.19cm" width="96"><p align="justify" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_9693eb965568a636"/>
+</p>
+</td>
+<td style="border: 1px solid #000000; padding: 0cm 0.19cm" width="147"><p align="center" style="margin-top: 0.42cm">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">బౌండెడ్
+			గా</span></font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_a34bd7802b322192"/>
+</span></font></p>
+</td>
+</tr>
+</table>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఇది
+ఒక వ్యవస్థ </span></font></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్థిరంగా
+ఉందని</span></font></span></font><span lang="te"> పేర్కొన్న
+</span><font color="#000000"><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్థిరత్వం
+యొక్క నిర్వచనాన్ని
+ఉపయోగించినట్లయితే</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">దాని</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+యొక్క అవుట్ పుట్ అన్ని సంభావ్య
+బౌండెడ్ ఇన్ పుట్ లకు కట్టుబడి
+ఉన్నట్లయితే</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="te">మనం</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">రెండు
+సిస్టమ్ లను</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+అస్థిరం అని</span></font></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">బ్రాండ్చేయాలి</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font></font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్లైడ్
+సమయం రిఫర్ చేయండి</span></font></span></font><font size="3" style="font-size: 12pt">:
+14:14)</font></font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_ce8aba6ceda451" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><font size="3" style="font-size: 12pt">But</font></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">మొదటి</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+సిస్టమ్</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">(S1)</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">కొరకు</span></font></font><span lang="te">
+అవుట్ పుట్</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+అన్ బౌండ్ అవుతుంది</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒకవేళ
+మనం </span></font></span></font><font size="3" style="font-size: 12pt">a</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_716aa34d20318f7c"/>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">లేదా</span></font></font><span lang="te">
+ఇన్ పుట్ వలే ఇచ్చినప్పుడు
+మాత్రమే అవుట్ పుట్ అన్ బౌండ్
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_9693eb965568a636"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">అవుతుంది</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">యూనిట్
+స్టెప్ ఇన్ పుట్ లేదా </span></span></font>1<font color="#000000"><font size="3" style="font-size: 12pt">
+rad/s </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కాకుండా
+ఏదైనా కోణీయ పౌన</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">పున్యం</span></font></span></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">యొక్క
+ఒక కోసైన్ వంటి ఏదైనా ఇతర
+బౌండెడ్ ఇన్ పుట్</span></font></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">కొరకు</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అవుట్
+పుట్ బౌండింగ్ చేయబడుతుందని
+మనం</span></font></span></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">చూపించవచ్చు</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">ఇన్
+పుట్ ఒక </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">సైనస్
+గా మారినప్పుడు మాత్రమే</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">దాని
+కోణీయ పౌనఃపున్యం ఊహాజనిత
+అక్షంపై ధృవాల పరిమాణానికి
+సమానంగా ఉన్నప్పుడు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అవుట్
+పుట్ హద్దులు లేకుండా అవుతుంది</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt">S1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కొరకు</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఊహాత్మక
+అక్షంపై ధృవాల పరిమాణం </span></font></span></font><font size="3" style="font-size: 12pt">1.
+S</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఈ
+తరగతి వ్యవస్థలను స్వల్పంగా
+స్థిరంగా లేదా విమర్శనాత్మకంగా</span></font></span></font><span lang="te">స్థిరంగా
+అని</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">పిలుస్తారు</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">;</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">అనేది
+ఒక</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+సెట్</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">మినహా
+అన్ని సంభావ్య బౌండెడ్ ఇన్
+పుట్ లకు అవుట్ పుట్ బౌండ్
+చేయబడుతుంది</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="te">ఈ
+నిర్వచనం ఎలా ఉన్నదనో మనం
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">అర్థం
+చేసుకుంటే వ్యవస్థ అస్థిరంగా
+ఉంటుంది</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+We </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఆచరణలో
+ఇటువంటి వ్యవస్థలను రూపకల్పన
+చేయాలని కోరుకోదు</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఇలాంటి
+వ్యవస్థలను</span></font></font><span lang="te">
+మనం </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఎదుర్కుంటే
+వాటిని స్థిరపరచాలి</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+ఒక మాస్ స్ప్రింగ్ డ్యాంపర్
+సిస్టమ్</span></font></font><span lang="te"> ని
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">కలిగి</span></font></font><span lang="te">
+ఉన్నట్లయితే</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="te">మనం
+కేవలం ద్రవ్యరాశి </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">మరియు
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">t</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">వసంతాలు</span></font></span></font><span lang="te">మాత్రమే</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+ఉంటాయి</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="te">చలన
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+సమీకరణం అవుతుంది</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_aeb416933ac72dc0"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మనం
+ఒక స్టెప్</span></font></span></font><span lang="te"> ఇన్
+పుట్ ఇచ్చిన </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">వెంటనే</span></font></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+అవుట్</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+పుట్ అబౌండ్ అవుతుంది</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఇప్పుడు</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మీరు
+సిస్టమ్ </span></font></span></font><font size="3" style="font-size: 12pt">S</font>2
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">ను</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">చూస్తే</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">దానికి
+మూలం </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">వద్ద
+ఒక ధ్రువం</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+ ఉంటుంది</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒకవేళ
+మూలం</span></font></span></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">వద్ద</span></font></font><span lang="te">
+పునరావృతం</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+కానిపోల్  ఉన్నట్లయితే</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">మీరు
+స్టెప్ ఇన్ పుట్ ని ఇస్తారు</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">అవుట్
+పుట్</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+అన్ బౌండ్ అవుతుంది</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అన్ని
+ఇతర సైనసోయిడల్ ఇన్ పుట్ ల
+కొరకు</span></font></span></font><span lang="te"> </span></font>B
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">అవుట్</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+పుట్ బౌండ్ చేయబడుతుంది</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+That </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అనేది</span></font></span></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">S2</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="te">యొక్క</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఆస్తి</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అవుట్
+పుట్ ఒక సెట్ ఇన్ పుట్ ల కొరకు
+మాత్రమే అన్ బౌండ్ చేయబడడాన్ని
+మనం చూడవచ్చు</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="te">ఊహాత్మక</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+అక్షంపై పునరావృతం కాని ధృవాల
+కొరకు మనం ఉన్నట్లయితేనే</span></font></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">అతడి
+ఫలితం సత్యం</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఊహాత్మకఅక్షంపై
+పునరావృత ధృవంఉంటుంది</span></font></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font color="#000000"><font size="3" style="font-size: 12pt">F</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లేదా
+ఉదాహరణ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_8922d08f923ca5e8"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్లైడ్
+సమయం రిఫర్ చేయండి</span></font></span></font><font size="3" style="font-size: 12pt">:
+21:53)</font></font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_a29fa9041a46b50" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><font size="3" style="font-size: 12pt">0,0,-</font></font>1
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">వద్ద
+ధ్రువాలు</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఉంటాయి</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font></font> <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ఈ
+వ్యవస్థ అస్థిరంగా ఉంటుంది</span></font></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">అదే
+విధంగా</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">బదిలీ
+విధి ఉన్న మరో సిస్టమ్ ఉన్నట్లయితే</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_96cd94778b84fff3"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">తఅత
+క ప</span></font></font><span lang="te"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec11.doc%20telugu_htm_da5fc9eeaf6d180a"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font><span lang="te"> ఉపాంత</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">స్థిరత్వం
+లేదా క్రిటికల్ స్టెబిలిటీ
+అనే భావనకు పైన </span></font></font><span lang="te">ఉండే
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">భావన</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఊహాత్మక
+అక్షంపై పునరావృతం కాని ధృవాలు
+ఉన్నట్లయితేమాత్రమేఇది
+వర్తిస్తుంది</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font>
+</p>
+<ol>
+<li><p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><font size="3" style="font-size: 12pt">BIBO
+	</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్థిరత్వం
+	కొరకు</span></font></span></font><font size="3" style="font-size: 12pt">,
+	</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ప్లాంట్
+	ట్రాన్స్ ఫర్ ఫంక్షన్ యొక్క
+	అన్ని ధృవాలు విధిగా </span></font></span></font><font size="3" style="font-size: 12pt">LHP</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లో
+	ఉండాలి లేదా మరోవిధంగా
+	చెప్పాలంటే</span></font></span></font><font size="3" style="font-size: 12pt">,
+	</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">నెగిటివ్
+	రియల్ పార్టులు ంటాయి</span></font></span></font><font size="3" style="font-size: 12pt">.
+	</font></font>
+</p>
+<li><p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">కుడి
+	సగం తలంలో మొక్క బదిలీ విధి
+	యొక్క ఒక ధృవం కూడా ఉన్నట్లయితే</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+	</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అది
+	ఒక సానుకూల మైన నిజ భాగాన్ని
+	కలిగి ఉంటుంది</span></font></span></font><font size="3" style="font-size: 12pt">,
+	</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అప్పుడు
+	మొక్క లేదా వ్యవస్థ </span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+	</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్థిరంగా
+	ఉండదు</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<li><p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><font size="3" style="font-size: 12pt">LHP</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లో
+	మిగిలిన</span></font></span></font><span lang="te">అన్ని
+	ధృవాలతో</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">(j
+	</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒమేగాఅక్షం</span></font></span></font><font size="3" style="font-size: 12pt">)</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="te">యొక్క
+	మొక్క బదిలీ ఫంక్షన్ యొక్క
+	పునరావృత ధృవాలు ఉన్నట్లయితే</span></span></font>,<font color="#000000"><font size="3" style="font-size: 12pt">n</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">వ్యవస్థ</span></font></span></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">BIBO
+	</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్థిరంగా
+	ఉండదు</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font></p>
+<li><p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><font size="3" style="font-size: 12pt">LHP</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లో
+	మిగిలిన అన్ని ధృవాలతో ఊహాజనిత
+	అక్షంపై మొక్క బదిలీ విధి
+	యొక్క పునరావృతకాని ధృవాలు
+	ఉంటాయి</span></font></span></font><font size="3" style="font-size: 12pt">,
+	</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అప్పుడు
+	వ్యవస్థ అస్థిరంగా</span></font></span></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+	లేదా</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+	స్థిరంగాఉంటుంది</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+</li></li></li></li></ol>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><font size="3" style="font-size: 12pt">Mo</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్ట్
+టెక్ట్స్ బుక్ క్రిటికల్ </span></font></span></font><span lang="te">గా
+లేదా స్వల్పంగా</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+స్థిరంగా</span></font></font><span lang="te">ఉంటుందని
+మనం</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+చెబుతాం</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">అయితే
+</span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్థిరత్వం
+యొక్క నిర్వచనాన్ని కచ్చితంగా
+అనువర్తించినట్లయితే</span></font></span></font><span lang="te">
+అది</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+అస్థిరంగా</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+ఉంటుంది</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="te">నేను
+ఖచ్చితంగా</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">దీనిని
+అస్థిరంగా పిలవాలి</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">కానీ
+</span></font></span></font><span lang="te">అవుట్</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+పుట్ ఒక చిన్న సమూహానికి
+మాత్రమే బౌండెడ్ ఇన్ పుట్ ల
+కొరకు మాత్రమే బౌండెడ్ అని
+మనం</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">చెప్పగలిగితే</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">దానిని
+క్రిటికల్ గా స్థిరంగా లేదా
+స్వల్పంగా స్థిరంగా</span></font></span></font><span lang="te">అని</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+పిలుస్తాం</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">టోపీ
+అనేది ప్రాథమికంగా</span></font></span></font><span lang="te">
+మీరు</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+పుట్టుకతో సహా ఊహాఅక్షంపై</span></font></font><span lang="te">పునరావృత
+ధ్రువాలు</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">కలిగి</span></font></font><span lang="te">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+ఉన్నప్పుడు సిస్టమ్ స్థిరత్వాన్ని
+ఎలా వివరించాలనే</span></font></font><span lang="te">దానిపై</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+కొన్ని</span></font></font><span lang="te"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">దృక్కోణాలు</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">కండిషన్
+నెంబరు </span></font></font></span></font><font size="3" style="font-size: 12pt">1</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">లో</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">ఒకవేళ
+మనకు</span></font></span></font><span lang="te"> సిస్టమ్</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+ ఉన్నట్లయితే</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">బదిలీ</span></font></span></font><span lang="te">
+ఫంక్షన్ మరియు సిస్టమ్</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">ట్రాన్స్</span></font></font><span lang="te">
+ఫర్</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+ఫంక్షన్ యొక్క అన్ని ధృవాలు
+ఎడమ సగం సంక్లిష్ట తలంలో
+ఉన్నాయని మనం తెలుసుకున్నాం</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">సిస్టమ్
+</span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="te">స్థిరంగా
+ఉన్నదా</span></font></span></font><font size="3" style="font-size: 12pt">?</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">మరియు
+సమాధానం అవును</span></font></font><span lang="te">
+మరియు తరువాత మేం దానిని
+రుజువు</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="te">
+చేస్తాం</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+</p>
+</body>
+</html>

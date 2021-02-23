@@ -1,0 +1,922 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="2019-12-29T10:13:00" name="created"/>
+<meta content="2021-02-22T05:52:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 2.54cm; margin-right: 2.54cm; margin-top: 1.27cm; margin-bottom: 1.27cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: justify; orphans: 2; widows: 2; background: transparent }
+		p.western { font-size: 11pt; so-language: en-US }
+		p.cjk { font-size: 11pt; so-language: en-US }
+		p.ctl { font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-IN" link="#000080" vlink="#800000">
+<div title="header"><p lang="en-US" style="margin-bottom: 1.17cm; line-height: 50%">
+<br/>
+</p>
+</div><p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>নিয়ন্ত্রণ
+সিস্টেম</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>অধ্যাপক</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>এস
+শংকর রাম</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>প্রকৌশল
+বিভাগ</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>ইন্ডিয়ান
+ইনস্টিটিউট অফ টেকনোলজি</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>মাদ্রাজ</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>পড়া
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+64</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>আপেক্ষিক
+স্থিতিশীলতা </b></span></font></span></font><font size="3" style="font-size: 12pt"><b>1
+</b></font>
+</p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn"><b>অংশ
+– ২</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">০০</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">১৪</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_65c4ef482202e530" width="384"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এখন
+যখন আমরা বুঝতে পারছি </span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">আপেক্ষিক</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">
+স্থিতিশীলতা কি সঠিক</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">আমরা
+সেই অধিকার দ্বারা কি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+বোঝাতে চাচ্ছি। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যে
+প্রশ্নটি আমাদের নিজেদেরকে
+জিজ্ঞেস করতে হবে</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">দেখুন
+এটি একটি অত্যন্ত</span><font size="3" style="font-size: 12pt"><span lang="bn">
+গুণগত আলোচনা</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাইনা</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">See,</font> <font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আপনি
+ওপেন লুপ পোল প্লট করেন যা
+সিস্টেম ট্রান্সফার ফাংশনের
+ট্রান্সফার ফাংশনের একটি
+খুঁটি</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এবং
+হেই দেখুন আপনি জানেন যে এই
+সিস্টেম টি অন্য</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ডান ের তুলনায় তুলনামূলকভাবে
+কম স্থিতিশীল</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">কিন্তু
+</span></font><span lang="bn">তারপর আমাদের
+</span><font size="3" style="font-size: 12pt"><span lang="bn">পরিমাণগত
+ব্যবস্থা থাকা প্রয়োজন যা
+আমাদের</span></font><span lang="bn">কে সঠিক
+ভাবে সিদ্ধান্ত নিতে সাহায্য</span><font size="3" style="font-size: 12pt"><span lang="bn">করে</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ঠিক
+যখন আমরা নকশা নিয়ন্ত্রণ
+করি। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাহলে
+আমাদের নিজেদেরকে যে সব প্রশ্ন
+করতে হবে তা হল নিম্নলিখিতগুলি।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+একটি প্রশ্ন করতে পারি যে আপনি
+জানেন একটি বন্ধ লুপ সিস্টেমের
+স্থায়িত্বের পরিমাপকি</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">টিটুপি
+একটি</span></font><span lang="bn"> প্রশ্ন যা
+আমাদের নিজেদেরকে সঠিকভাবে
+জিজ্ঞেস করতে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+হবে। </span></font></span></font><font size="3" style="font-size: 12pt">To
+answer we have</font> <font size="3" style="font-size: 12pt">
+considering the</font> <font size="3" style="font-size: 12pt">
+</font>forward path transfer<font size="3" style="font-size: 12pt">function
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">কোথায়</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font></span></font><font size="3" style="font-size: 12pt">G(s)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">ঠিক</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আছে</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">০১</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৩৬</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_c0a1d43e9242e803" width="384"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ফিডব্যাক
+পাথ ট্রান্সফার ফাংশন </span></font></span></font><font size="3" style="font-size: 12pt">H(s)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ঠিক
+আছে। একটি</span></font><span lang="bn">ডান
+আছে</span><font size="3" style="font-size: 12pt"><span lang="bn">একটি
+ত্রুটি</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">E(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">গুলি</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ডান
+দিকেআছে। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাহলে
+দয়া করে লক্ষ্য করুন যে </span></font><span lang="bn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_8d8c10ddab81296d"/>
+<span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">
+এটাই</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আমাদের ঠিক আছে।</span></font><span lang="bn">
+</span></span></font><font size="3" style="font-size: 12pt">We </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">বন্ধ
+লুপ বৈশিষ্ট্য সমীকরণ ঠিক
+দেখতে যাচ্ছে</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">কারণ</span><font size="3" style="font-size: 12pt"><span lang="bn">
+এই সমীকরণের শিকড় </span></font><span lang="bn">
+ বন্ধ</span><font size="3" style="font-size: 12pt"><span lang="bn">
+লুপ খুঁটি।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এস
+আপপোজ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আসুন
+আমরা</span></font><span lang="bn"> বলি যে বন্ধ
+লুপ সিস্টেম ডান দিক দিয়ে
+শুরু করার জন্য স্থিতিশীল
+তারপর আমরা জানি যে সব বন্ধ
+লুপ খুঁটি জটিল</span><font size="3" style="font-size: 12pt"><span lang="bn">প্লেনের
+বাম দিকে আছে। </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+কিছু প্যারামেট্রিক অনিশ্চয়তার
+কারণে </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">বন্ধ
+লুপ সিস্টেম</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+অস্থিরতারমুখে পড়েছে</span></font></span></font>,<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">কিন্তু
+</span></font><span lang="bn">তারপর আপনি দেখতে
+পাবেন যে যদি আমার </span><font size="3" style="font-size: 12pt"><span lang="bn">বন্ধ
+লুপের খুঁটি বাম অর্ধেক প্লেনে
+থাকে</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">তাহলে
+তারা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+মূলত প্লেনের ডান দিকে চলে
+যেতে পারে। ডব্লিউহ্যাট কি
+প্লেনের ডান দিকের বাম অর্ধেক
+প্লেনের মধ্যবর্তী সীমানা</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ছাত্র</span></font></span></font><font size="3" style="font-size: 12pt">:
+jè</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">jè </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অক্ষ
+ডান</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাই</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> মূলত
+</span></font><span lang="bn">এই </span><font size="3" style="font-size: 12pt"><span lang="bn">জন্যই</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> আমি</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">একটি
+স্থিতিশীলতা সীমানা ডান</span><font size="3" style="font-size: 12pt"><span lang="bn">বলা
+হয়। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">মূলত
+</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">jè</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অক্ষ
+বা কাল্পনিক অক্ষ বাম অর্ধেক
+সমতল এবং ডান অর্ধেক সমতল
+মধ্যে সীমানাহয়। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি
+আমার বন্ধ লুপ সিস্টেম শুরু
+করার জন্য স্থিতিশীল হয় তাহলে
+আপনি জানেন বন্ধ লুপ সিস্টেম
+খুঁটি যদি তারা প্লেনের কাছাকাছি
+এবং প্লেনের ডান দিকে চলেযায়</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">তাহলে
+তাদের অবশ্যই </span><font size="3" style="font-size: 12pt"><span lang="bn">জে
+অক্ষের</span></font><span lang="bn"> ডান</span><font size="3" style="font-size: 12pt"><span lang="bn">
+দিকে দিয়ে যেতে হবে </span></font><span lang="bn">যা
+ডান অর্ধেক প্লেনে যাওয়ার
+আগে একটি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+স্থিতিশীলতা সীমানা। আপনিকি
+একমত</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">So, </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+এটা আমাদের সুবিধার জন্য
+ব্যবহার করতে পারি ঠিক আছে</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">বিন্দু
+হচ্ছে সিস্টেম বা বন্ধ লুপ
+সিস্টেম অস্থিতিশীল হয়ে
+উঠবে যখন এর খুঁটি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+জ অক্ষ</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+ডান দিকে</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">অতিক্রম
+করবে।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অবশ্যই</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ধারণা
+করা হয় যে বন্ধ লুপ সিস্টেম
+দিয়ে শুরু করা ঠিক </span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">যে</span></font><span lang="bn">
+যখন এই সমস্ত</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আলোচনা সঠিকহয়</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাই</span></font><span lang="bn">
+জে ওমেগা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+অক্ষে কি ঘটবে তা এই ডান দিকে
+পরিণত হবে</span></font></span></font><font size="3" style="font-size: 12pt">,Because</font>
+<font size="3" style="font-size: 12pt"> s</font> <font face="Times New Roman"><span lang="ar-SA"><span lang="bn">ফর্ম
+</span></span></font><font size="3" style="font-size: 12pt">j². 
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আপনিকি
+একমত</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তো</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">বন্ধ
+লুপ বৈশিষ্ট্য সমীকরণে এটাই
+ঘটবে।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এই
+পরিস্থিতিতে তখন</span></font><span lang="bn">
+</span></span></font>G<font size="3" style="font-size: 12pt">
+(j)H(j²)= -1.</font> <font size="3" style="font-size: 12pt">So</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যে
+যখন বন্ধ লুপ খুঁটি বাম অর্ধেক
+প্লেনে থাকে এবং তারা ডান
+অর্ধেক প্লেনে স্থানান্তরিত
+হয় কারণ কোন কারণে কিছু
+প্যারামেট্রিক উদ্বেগ</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ইত্যাদি। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তারপর
+তারা </span></font></span></font><font size="3" style="font-size: 12pt">jè</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অক্ষ</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">অতিক্রম
+করতে </span></font><span lang="bn">যখন তারা জে
+ওমেগা অক্ষ অতিক্রম করার সময়
+আপনি থামতে হবে যখন তারা কিছু
+বন্ধ লুপ খুঁটি ডান দিকে কিছু
+বন্ধ লুপ</span><font size="3" style="font-size: 12pt"><span lang="bn">
+খুঁটিঅতিক্রম করে। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">বন্ধ
+লুপ বৈশিষ্ট্য সমীকরণ </span></span></font><font size="3" style="font-size: 12pt">1+</font>
+G<font size="3" style="font-size: 12pt"> (j)H(jè)= 0</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">সন্তুষ্ট
+</span><font size="3" style="font-size: 12pt"><span lang="bn">করতে
+যাচ্ছে। </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">আমি
+</span></font><span lang="bn">এটাকে </span></span></font><font size="3" style="font-size: 12pt">G
+(jè)H(jè)= -1</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">হিসাবে
+পুনরায় লিখতে </span><font size="3" style="font-size: 12pt"><span lang="bn">পারি।
+ তাহলে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><span lang="bn">জি</span></span></font><font size="3" style="font-size: 12pt">(j)
+H</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">কি</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ছাত্র</span></font></span></font><font size="3" style="font-size: 12pt">:
+[</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অশ্রবণযোগ্য</span></font></span></font><font size="3" style="font-size: 12pt">]</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+ফ্রিকোয়েন্সি রেসপন্স রাইট</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এর
+অধীনে এটাই পড়ছি</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এটা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> হচ্ছে
+ওপেন লুপ সাইনুসয়েডাল
+ট্রান্সফার ফাংশন। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+G<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+(j)H(j²) </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">হচ্ছে
+ওপেন লুপ সাইনুসয়েডাল
+ট্রান্সফার ফাংশন</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> যাতে</span></font><span lang="bn">
+এটা ঠিক</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আছে। </span></font></span></font><font size="3" style="font-size: 12pt">''</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাহলে</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> আমরা
+কিসের প্রতি আগ্রহী</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্রশ্ন
+হচ্ছে যখন  </span></font></span></font><font size="3" style="font-size: 12pt">G(s)H(s)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এর
+</span></span></font><font size="3" style="font-size: 12pt">Nyquist</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্লট</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">পয়েন্ট</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">bec</font>ause
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এর</span><font size="3" style="font-size: 12pt"><span lang="bn">
+মধ্য দিয়ে যায়</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">যা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">G(s)H(s)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এর
+মান</span></font><span lang="bn"> কে </span><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ডানহয়</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাহলে
+সিস্টেম অস্থিতিশীল হয়ে
+যাবে।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">০৬</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৫০</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_c905c4789c442695" width="384"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অথবা
+অন্য কথায়</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমি
+</span></font><span lang="bn">এটাকে নিম্নলিখিত
+হিসাবে পুনরায় ব্যাখ্যা
+করতে </span><font size="3" style="font-size: 12pt"><span lang="bn">পারি।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">তিনি</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস
+১</span></font><span lang="bn"> পয়েন্টের</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">সাথে
+ </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+জি</span></font></span></font><font size="3" style="font-size: 12pt">(j)H</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এরঘনিষ্ঠতা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আপেক্ষিক স্থিতিশীলতার</span></font><span lang="bn">ইঙ্গিত</span><font size="3" style="font-size: 12pt"><span lang="bn">
+দেয়</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যাতে</span></font><span lang="bn">
+কেউ এই</span><font size="3" style="font-size: 12pt"><span lang="bn">
+সিদ্ধান্তে উপনীত হতে পারে।
+তো</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">দেখো
+এর মানে কি</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমি</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> বলছি
+যে</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+আমার </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">কাছে</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">
+জি</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এস</span></font></span></font><font size="3" style="font-size: 12pt">)</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এইচ</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">প্লেন
+আছে।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">তো</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এটা
+আমার মাইনাস </span><font size="3" style="font-size: 12pt"><span lang="bn">১</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">
+পয়েন্ট ঠিক</span></font><span lang="bn">বলে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ধরা </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">যাক।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> তো</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ঠিক
+আছে।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তো</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+বলি আপনি জানেন যেমন</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> আমি
+ আপনাকেকিছু বলতে</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">দিয়েছি</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> আমি
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">একটি
+</span></font></span></font><font size="3" style="font-size: 12pt">Nyquist</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">প্লট</span><font size="3" style="font-size: 12pt"><span lang="bn">
+সঠিক</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">বলতে
+চাই।  তো</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">চলুন</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">বলি
+যে</span><font size="3" style="font-size: 12pt"><span lang="bn">কিছু
+সিস্টেম </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">নিকুইস্ট</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> প্লট
+যা মূলত</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn">উৎপত্তি থেকে শুরু
+হয় এবং তারপর</span><font size="3" style="font-size: 12pt"><span lang="bn">এভাবে
+চলে। আপনি</span></font><span lang="bn">এটা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+সঠিকভাবে করতে দিন</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">।
+তো</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">বলি
+এভাবে আসে এবং</span><font size="3" style="font-size: 12pt"><span lang="bn">ঠিক
+আছে। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আরেকটি
+ব্যবস্থা যা মূলত আসে এবং
+এভাবে চলে যায়। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">আপনি
+দেখছেন যে দ্বিতীয় সিস্টেম
+</span><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">পয়েন্টের</span></font><span lang="bn">কাছাকাছি
+</span><font size="3" style="font-size: 12pt"><span lang="bn">হতে
+যাচ্ছে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">আপনি
+এটি </span><font size="3" style="font-size: 12pt"><span lang="bn">
+বিচলিত</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">আপনি
+</span></span></font><font size="3" style="font-size: 12pt">Nyquist</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">প্লট
+একটু</span><font size="3" style="font-size: 12pt"><span lang="bn">
+প্রসারিত </span></font><span lang="bn">এটা
+</span><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">পয়েন্ট
+সম্ভবত</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ডান</span></font><span lang="bn">দিকে অতিক্রম</span><font size="3" style="font-size: 12pt"><span lang="bn">
+করতে পারে। </span></font></span></font>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">১</span></font><span lang="bn">
+পয়েন্টের</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+কাছাকাছি </span></font><span lang="bn">যে সিস্টেম</span><font size="3" style="font-size: 12pt"><span lang="bn">
+সঠিক</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাই</span></font><span lang="bn">
+আপেক্ষিক স্থিতিশীলতা নিয়ে
+এই বিশেষ আলোচনা থেকে উপসংহার
+টানতে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ পারি। </span></font></span></font><font size="3" style="font-size: 12pt">Now,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">লক্ষ্য</span><font size="3" style="font-size: 12pt"><span lang="bn">
+করুন যে  </span></font></span></font><font size="3" style="font-size: 12pt">G(s)H(s)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্লেনের</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">বিন্দু</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> মানে
+মাত্রা</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">1,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">পর্যায়
+মাইনাস </span></span></font><font size="3" style="font-size: 12pt">180</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">হয়।
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">আমি
+</span></font><span lang="bn">মাইনাস </span><font size="3" style="font-size: 12pt"><span lang="bn">১৮০</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">লিখছি</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">বিইকারণ
+ঠিক আপনি দেখছেন যে সাধারণত
+আমরা সঠিক ট্রান্সফার ফাংশন
+নিয়ে কাজ করি</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আপনি
+শীঘ্রই বুঝতে পারবেন। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অবশ্যই</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font size="3" style="font-size: 12pt"> G(s)H(s)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">প্লেনের</span><font size="3" style="font-size: 12pt"><span lang="bn">
+মাইনাস </span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">পয়েন্ট</span></font><span lang="bn">
+নির্দেশ করে যে ওপেন লুপ
+ট্রান্সফার ফাংশনের মাত্রা
+সেই বিন্দুতে একটি এবং ওপেন
+লুপ ট্রান্সফার ফাংশনের
+পর্যায় মাইনাস </span></span></font><font size="3" style="font-size: 12pt">180</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ডিগ্রী।
+  আপনিকি একমত</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তো</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমি
+</span></font><span lang="bn">শুধু মাত্রা এবং
+</span><font size="3" style="font-size: 12pt"><span lang="bn">পর্যায়
+ের দিক থেকেলিখছি। </span></font></span></font><font size="3" style="font-size: 12pt">We
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এই
+ধারণা ব্যবহার করতে যাচ্ছে
+কিছু প্যারামিটার নির্ধারণ
+করতে যা আপেক্ষিক স্থিতিশীলতা
+ঠিক আছে পরিমাপ করতে পারে</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাই</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">
+আমরা এখন</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ঠিক আছে। তাহলে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এখন
+কি কোন প্রশ্ন আছে</span></font></span></font><font size="3" style="font-size: 12pt">?
+Yes.</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ছাত্র</span></font></span></font><font size="3" style="font-size: 12pt">:
+[</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অশ্রবণযোগ্য</span></font></span></font><font size="3" style="font-size: 12pt">]</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">দুঃখিত
+কোনটা।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ছাত্র</span></font></span></font><font size="3" style="font-size: 12pt">:
+[</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অশ্রবণযোগ্য</span></font></span></font><font size="3" style="font-size: 12pt">]</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এটা
+এর পরে আসে কারণ আপনি দেখতে
+পাচ্ছেন যে আমরা কি পরিস্থিতি
+বিবেচনাকরছি</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আসুন
+আমরা</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn">বলি যে আমরা এই
+অধিকারে</span><font size="3" style="font-size: 12pt"><span lang="bn">ফিরে
+যাই। </span></font></span></font><font size="3" style="font-size: 12pt">You
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সিস্টেম
+</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এবং
+সিস্টেম </span></font></span></font>2 <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এর
+</span></font></span></font><font size="3" style="font-size: 12pt">Nyquist</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্লট
+প্লট</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এটা
+মনে হতে পারে আমি ঠিক কি</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">ষড়যন্ত্র
+করেছি। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">যেহেতু
+এটা </span><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">পয়েন্টের
+</span><font size="3" style="font-size: 12pt"><span lang="bn">কাছাকাছি
+হবে </span></font><span lang="bn">আপনি জানেন
+যদি আপনি এটি বিরক্ত</span><font size="3" style="font-size: 12pt"><span lang="bn">
+করেন</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এটি
+</span><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এর
+মধ্য দিয়ে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+যেতে পারে।  ডব্লিউ</span></font><span lang="bn">হ্যাট
+</span><font size="3" style="font-size: 12pt"><span lang="bn">কি
+মাইনাস ১</span></font><span lang="bn"> এর মধ্য
+দিয়ে</span><font size="3" style="font-size: 12pt"><span lang="bn">যাচ্ছে
+ মানে </span></font><span lang="bn">ওপেন লুপ
+ট্রান্সফার ফাংশনের </span><font size="3" style="font-size: 12pt"><span lang="bn">নাইকুইস্ট</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> প্লট</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অর্থাৎ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">s=
+</font> <font size="3" style="font-size: 12pt">jè</font> <font face="Times New Roman"><span lang="ar-SA"><span lang="bn">বন্ধ
+লুপ বৈশিষ্ট্য সমীকরণ</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">t</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">হ্যাট</span><font size="3" style="font-size: 12pt"><span lang="bn">
+সন্তুষ্ট</span></font><span lang="bn"> মানে
+একটি বন্ধ লুপ খুঁটি </span></span></font>j
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">ওমেগা
+ফর্ম হতে</span><font size="3" style="font-size: 12pt"><span lang="bn">যাচ্ছে।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমিঅন্য
+কথা আপনি কাল্পনিক অক্ষউপর
+লুপ খুঁটি বন্ধ করতে যাচ্ছেন
+এবং </span></font><span lang="bn">  আমরা ঠিক যে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আলোচনা করছি</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাই</span></font><span lang="bn">
+আমরা সমস্যা ভেঙ্গে ফেলছি বা
+বন্ধ লুপ স্থিতিশীলতা বিশ্লেষণ
+করার সমস্যা আবার ওপেন লুপ
+স্থানান্তর ফাংশন বিশ্লেষণ
+একটি সমস্যা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+মধ্যে রূপান্তরকরছি</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">দেখুন
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">যে</span></font><span lang="bn">
+এটি একটি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+বড় সুবিধা</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ফ্রিকোয়েন্সি
+রেসপন্স পদ্ধতির একটি সুবিধা
+যদি আপনি ফিরে যান এবং চিন্তা
+করেন যে এমনকি </span></font></span></font><font size="3" style="font-size: 12pt">Nyquist</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">স্থিতিশীলতা
+</span><font size="3" style="font-size: 12pt"><span lang="bn">মানদণ্ডেও
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+আপনি জানেন যে আমরা শুধুমাত্র
+ওপেন লুপ ট্রান্সফার ফাংশনের
+দিকে তাকিয়েআছি। </span></font></span></font><font size="3" style="font-size: 12pt">Even
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এখানে</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> আমি
+</span></font><span lang="bn">শুধুমাত্র খোলা
+লুপ ট্রান্সফার ফাংশন দেখছি
+বন্ধ লুপ ট্রান্সফার ফাংশন
+ডান </span><font size="3" style="font-size: 12pt"><span lang="bn">দিকে
+নয়। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমাদের
+</span></font><span lang="bn">বন্ধ লুপ স্থানান্তর
+ফাংশন গণনা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+করার প্রয়োজন</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">নেই।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font></span></font><font size="3" style="font-size: 12pt">You
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমাকে
+ওপেন লুপ ট্রান্সফার ফাংশন
+দিন</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+আমি </span></font><span lang="bn">এর </span></span></font><font size="3" style="font-size: 12pt">Nyquist</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্লট</span></font><span lang="bn">বিশ্লেষণ
+করতে </span><font size="3" style="font-size: 12pt"><span lang="bn">পারি</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এবং
+তারপর আপনাকে বন্ধ লুপ সিস্টেম
+সম্পর্কে কিছু তথ্য </span><font size="3" style="font-size: 12pt"><span lang="bn">
+বলুন</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাই</span></font><span lang="bn">
+এখানে এর প্রভাব</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ঠিক আছে।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আপনি
+দেখতে পাচ্ছেন যে</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> আমি
+</span></font><span lang="bn">এই বন্ধ লুপ বৈশিষ্ট্য
+সমীকরণ এই আকারে পুনর্লিখন
+করতে পারি </span><font size="3" style="font-size: 12pt"><span lang="bn">ঠিক
+আছে। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যেমন</span></font><span lang="bn">
+</span></span></font>G<font size="3" style="font-size: 12pt">
+(jè)H(j²)= -1</font> <font size="3" style="font-size: 12pt"> i</font>f
+<font size="3" style="font-size: 12pt">jè</font> <font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অক্ষে
+</span></font><span lang="bn">একটি</span><font size="3" style="font-size: 12pt"><span lang="bn">বন্ধ
+লুপ খুঁটি ছিল </span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">যা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> আমরা
+ঠিক বিবেচনা করছি</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">হ্যাঁ
+ঠিক</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আছে। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+ G(s)H(s)</font> <font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্লেনের</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">একটি
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">পয়েন্ট</span></font><span lang="bn">
+মানে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">G(s)H(s)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">মাত্রার
+</span></span></font><font size="3" style="font-size: 12pt">1</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এবং</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">G(s)H(s)
+ </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">পর্যায়</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস
+</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">180</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">ডিগ্রী
+ঠিক</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আছে</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এটা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+কি পরিষ্কার</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এই
+দুটি গুরুত্বপূর্ণ আইডিয়া</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ঠিক আছে। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এর
+উপর ভিত্তি করে আমরা মূলত কিছু
+সংজ্ঞা ঠিক রাখতে যাচ্ছি।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">১২</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">১৫</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_22e0f05838e7d634" width="384"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তো</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমাকে
+ঐ সংজ্ঞাগুলো ঠিক আছে লিখতেদাও।</span></font><span lang="bn">
+</span></span></font><font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তিনি
+প্রথম সংজ্ঞা নিম্নলিখিত ঠিক
+আছে।</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+সংজ্ঞায়িত করতে যাচ্ছি যাকে
+বলা হয় একটি গেইন ক্রস ওভার
+ফ্রিকোয়েন্সি ঠিক আছে।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">আমি
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">এই
+দুটি ফ্রিকোয়েন্সি সংজ্ঞায়িত
+করব তারপর আমরা পরবর্তী শ্রেণীতে
+ফিরে আসবো এবং তারপর দুটি
+গুরুত্বপূর্ণ প্যারামিটার
+ঠিক আছে নির্ধারণকরব।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এই
+লাভ ক্রসওভার ফ্রিকোয়েন্সি
+কি</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">লাভ
+ক্রসওভার ফ্রিকোয়েন্সি এটি
+যে ফ্রিকোয়েন্সিতে ওপেন লুপ
+সাইনুসয়েডাল ট্রান্সফার
+ফাংশন মাত্রা</span></font><span lang="bn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_d65e29ac881cd80c"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">সমান
+হয়ে</span><font size="3" style="font-size: 12pt"><span lang="bn">যায়।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">ওপেন
+লুপ ট্রান্সফার ফাংশনের মাত্রা
+ঐক্য বা </span></span></font><font size="3" style="font-size: 12pt">0</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ডেসিবেল
+ঠিক হওয়া</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">উচিত।
+ আমি</span></font><span lang="bn">আপনাকে </span></span></font><font size="3" style="font-size: 12pt">0</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ডেসিবেল
+পরিমাপে</span></font><span lang="bn"> রূপান্তর</span><font size="3" style="font-size: 12pt"><span lang="bn">িত
+ করি</span></font><span lang="bn"> যদি আপনি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+একটি লগারিদম গ্রহণ করেন আপনি
+</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">0</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সঠিকপাবেন</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাই</span></font><span lang="bn">
+এটা লাভ ক্রসওভার</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ফ্রিকোয়েন্সির সংজ্ঞা।
+আমি</span></font><span lang="bn">সেই ফ্রিকোয়েন্সি
+যেখানে ওপেন লুপ ট্রান্সফার
+ফাংশনের মাত্রা </span><font size="3" style="font-size: 12pt"><span lang="bn">১</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> ডান
+দিকে</span></font><span lang="bn">পরিণত</span><font size="3" style="font-size: 12pt"><span lang="bn">হয়।
+</span></font></span></font>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">টিমুরগি
+আমাদের আরেকটি সংজ্ঞা আছে </span></font></span></font><font size="3" style="font-size: 12pt">l</font>l
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">এই
+সংজ্ঞা গুলি দয়া করে মনে</span><font size="3" style="font-size: 12pt"><span lang="bn">রাখবেন</span></font><span lang="bn">
+যে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ঠিক আছে। </span></font></span></font><font size="3" style="font-size: 12pt">We
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আরেকটি
+সংজ্ঞা আছে যাকে ফেজ ক্রসওভার
+ফ্রিকোয়েন্সি বলা হয়। </span></font><span lang="bn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_62ef77932559393d"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">W</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">টুপি
+ফেজ ক্রসওভার ফ্রিকোয়েন্সির
+সংজ্ঞা</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমি</span></font><span lang="bn">টি
+হচ্ছে সেই ফ্রিকোয়েন্সি
+যেখানে ওপেন লুপ ট্রান্সফার
+ফাংশনের পর্যায় মাইনাস </span><font size="3" style="font-size: 12pt"><span lang="bn">১৮০</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> ডিগ্রী
+ঠিক হয়েযায়</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাই</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> এটাই
+সংজ্ঞা।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অবশ্যই</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আপনি
+অবিলম্বে দেখতে পারেন কিভাবে
+এই সংজ্ঞাগুলি সঠিক ভাবে
+উদ্দেশ্যপ্রণোদিত</span></font></span></font><font size="3" style="font-size: 12pt">,B</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">কারণ
+কেন এক বিন্দুর এক মাত্রা এবং
+মাইনাস </span></span></font><font size="3" style="font-size: 12pt">180</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ডিগ্রী
+সঠিক </span></font><span lang="bn">একটি</span><font size="3" style="font-size: 12pt"><span lang="bn">পর্যায়
+</span></font><span lang="bn">আছে </span><font size="3" style="font-size: 12pt"><span lang="bn">যা</span></font><span lang="bn">
+এই দুই সংজ্ঞা কে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+অনুপ্রাণিত করছে। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">অবশ্যই</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যদি
+কোন ওপেন লুপ ট্রান্সফার
+ফাংশনের জন্য</span></font></span></font><font size="3" style="font-size: 12pt">,</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_5f49362bac86bdc7"/>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">তাহলে
+এটা তাৎক্ষণিকভাবে কি বোঝায়
+যে ওপেন লুপ ট্রান্সফার ফাংশন</span><font size="3" style="font-size: 12pt"><span lang="bn">
+সেই ফ্রিকোয়েন্সিতে</span></font><span lang="bn">মাইনাস
+</span><font size="3" style="font-size: 12pt"><span lang="bn">১</span></font><span lang="bn">
+পয়েন্টের মধ্য</span><font size="3" style="font-size: 12pt"><span lang="bn">
+দিয়ে যাচ্ছে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">তাই
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> না</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এটা
+ভেবে দেখো। আমিকিছু ওপেন লুপ
+ট্রান্সফার ফাংশনের জন্য </span></font></span></font><font size="3" style="font-size: 12pt">f</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_5f49362bac86bdc7"/>
+<font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">তারপর</span><font size="3" style="font-size: 12pt"><span lang="bn">
+সেই ফ্রিকোয়েন্সিতে ওপেন
+বা ট্রান্সফার ফাংশনের মাত্রা
+</span></font><span lang="bn"> </span></span></font><font size="3" style="font-size: 12pt">1,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">পর্যায়
+মাইনাস </span></span></font><font size="3" style="font-size: 12pt">180
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">হয়।
+ </span></font></span></font><font size="3" style="font-size: 12pt">W</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">হ্যাট
+পয়েন্ট কি এর সাথে সামঞ্জস্যপূর্ণ</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তিনি
+ </span></font></span></font><font size="3" style="font-size: 12pt">G(s)H(s)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">প্লেনে
+</span><font size="3" style="font-size: 12pt"><span lang="bn">মাইনাস
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">পয়েন্ট</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> ডান
+দিকে।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আপনি</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> দ্রুত
+এই উদাহরণ টি উদাহরণ যা আমরা
+আজ বিবেচনা করেছি। তো</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">বলি
+যে আমরা</span><font size="3" style="font-size: 12pt"><span lang="bn">বিবেচনা
+করি।</span></font><span lang="bn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_549660d0e8c97774"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_65a8673e8433ae3e"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তো</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ক্রসওভার
+ফ্রিকোয়েন্সি কি লাভ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">আপনি
+কি দয়া করে গণনা</span><font size="3" style="font-size: 12pt"><span lang="bn">
+করতে পারেন</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তো</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আপনি
+কিভাবে লাভ ক্রসওভার ফ্রিকোয়েন্সি
+পাবেন</span></font></span></font><font size="3" style="font-size: 12pt">?
+Gain </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ক্রসওভার
+ফ্রিকোয়েন্সি</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="bn">আপনি
+মাত্রা </span></span></font><font size="3" style="font-size: 12pt">1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ডান</span></font><span lang="bn">সঙ্গে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+তুলনা করুন।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_8a82ce827c61254e"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_840144e01fa7e9dc"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">স্লাইড
+টাইম</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">১৬</span></font></span></font><font size="3" style="font-size: 12pt">:</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">৫২</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_ea521044503b84e4" width="384"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এই</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">
+যে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+আপনার কাছে থাকবে</span></font></span></font>,<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তাই</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> এই
+বিশেষ ওপেন লুপ ট্রান্সফার
+ফাংশনের জন্য লাভ ক্রসওভার
+ফ্রিকোয়েন্সি। সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এটাই
+একমাত্র ফ্রিকোয়েন্সি যেখানে
+এই বিশেষ ওপেন লুপ ট্রান্সফার
+ফাংশনের জন্য মাত্রা এক
+হয়েযায়। আমি</span></font><span lang="bn">কিভাবে</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">ফেজ
+ক্রসওভার ফ্রিকোয়েন্সি গণনা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> করব</span></font><span lang="bn">
+</span></span></font><font size="3" style="font-size: 12pt">? W</font><font face="Times New Roman"><span lang="ar-SA"><span lang="bn">টুপি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font></span></font><font size="3" style="font-size: 12pt">G
+(jè)H</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">এর</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">পর্যায়</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমিহতে
+যাচ্ছি</span></font><span lang="bn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_c739a53fc0cf40a"/>
+<font size="3" style="font-size: 12pt"><span lang="bn">
+। আপনিকি একমত</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমি
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">মনে
+করি এতক্ষণে</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+আমি </span></font><span lang="bn">মনে করি আমাদের
+সবার ই এই </span><font size="3" style="font-size: 12pt"><span lang="bn">ধারণাগুলোর
+সাথে সঠিকভাবে পরিচিত হওয়াউচিত।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">প্রশ্ন
+ওঠে কখন এই পর্যায় মাইনাস </span></font><span lang="bn">
+</span></span></font><font size="3" style="font-size: 12pt">180</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ডিগ্রী</span></font><span lang="bn">
+হবে যার</span><font size="3" style="font-size: 12pt"><span lang="bn">
+মানে</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec64.doc%20bangla_htm_964c9c02f4e3d1e8"/>
+<font size="3" style="font-size: 12pt">90</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ডিগ্রী
+সঠিক</span></font><span lang="bn">হতে </span><font size="3" style="font-size: 12pt"><span lang="bn">হবে।
+</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">উমুরগি
+কি হবে</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যখন
+ওমেগা অসীম প্রবণতা দেখা দেয়।
+সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমার
+ফেজ ক্রসওভার ফ্রিকোয়েন্সি
+অসীম বা অন্য কথায় এর মানে
+</span></font><span lang="bn">হচ্ছে যে নির্দিষ্ট
+ওপেন লুপ ট্রান্সফার ফাংশন
+ফেজ মাইনাস </span><font size="3" style="font-size: 12pt"><span lang="bn">১৮০</span></font><span lang="bn">
+ডিগ্রী হয়ে যায়</span><font size="3" style="font-size: 12pt"><span lang="bn">
+যখন ওমেগা অসীমের দিকে ঝুঁকে
+পড়ে যা আপনি সহজেই বোড প্লট
+থেকেও কল্পনা করতে পারেন।
+এস</span></font><span lang="bn">চিন্তা করুন</span><font size="3" style="font-size: 12pt"><span lang="bn">এই
+বিশেষ ফ্যাক্টরের পর্যায়
+প্লট কেমন হবে।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">পর্যায়
+শুধুমাত্র মাইনাস </span></font><span lang="bn">
+</span></span></font><font size="3" style="font-size: 12pt">180</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">যাবে
+যখন ওমেগা অসীম ডান দিকে প্রবণতা</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> তাই</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn"> </span></font><span lang="bn">
+ফেজ ক্রসওভার ফ্রিকোয়েন্সি</span><font size="3" style="font-size: 12pt"><span lang="bn">
+ইনফিনিটি ঠিক আছে।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">তো</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+এখানেই থামবো।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">সুতরাং</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">আমরা
+পরবর্তী শ্রেণীতে এই দুটি
+ফ্রিকোয়েন্সি নির্মাণ করব।</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">এবং
+তারপর আমি এমন</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">
+</span></font><span lang="bn">কিছু মাপকাঠি
+নির্ধারণ করব যা আপেক্ষিক
+স্থিতিশীলতা পরিমাপ করতে
+ব্যবহার করা যেতে পারে এবং
+আমরা তা ঠিক </span><font size="3" style="font-size: 12pt"><span lang="bn">ব্যবহার
+করব। উপরের  শ্রেণীতে জরিমানা
+নিয়ে আলোচনা</span></font><span lang="bn"> </span><font size="3" style="font-size: 12pt"><span lang="bn">করবে</span></font><span lang="bn">
+</span><font size="3" style="font-size: 12pt"><span lang="bn">।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="bn">ধন্যবাদ।</span></font></span></font></p>
+<div title="footer"><p lang="en-US" style="margin-top: 1.17cm; margin-bottom: 0cm; line-height: 50%">
+<br/>
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,836 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="user" name="author"/>
+<meta content="2019-12-29T13:28:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-21T06:38:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="Grizli777" name="Company"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="1033-10.2.0.7439" name="KSOProductBuildVer"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: justify; orphans: 2; widows: 2; background: transparent }
+		p.western { font-size: 11pt; so-language: en-US }
+		p.cjk { font-size: 11pt; so-language: en-US }
+		p.ctl { font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-IN" link="#000080" vlink="#800000"><p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi"><b>कंट्रोल
+सिस्टम</b></span></font></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi"><b>प्रो</b></span></font></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>एस
+शंकर राम</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi"><b>इंजीनियरिंग
+डिजाइन विभाग</b></span></font></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi"><b>भारतीय
+प्रौद्योगिकी संस्थान</b></span></font></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>मद्रास</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font color="#000000"><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>पठन
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-</b></font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><b>66</b></font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi"><b>रीलस्थिरता
+</b></span></font></font></span></font><font size="3" style="font-size: 12pt"><b>2</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi"><b>भाग
+</b></span></font></font></span></font><font size="3" style="font-size: 12pt"><b>-</b></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><b> 2</b></font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अब
+हम कुछ और शर्तों को परिभाषित
+करने जा रहे हैं और इन सभी
+शर्तों को एक साथ रखा गया है
+जो आवृत्ति डोमेन में प्रदर्शन
+विनिर्देशों को परिभाषित
+करते हैं।</span></font></span></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+इसलिए</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आइए
+एक बार फिर बंद लूप</span></font></span></font><span lang="hi">
+ट्रांसफर फ़ंक्शन को सही मानते</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं। विचार करें</span></font></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20hindi_htm_8d8c10ddab81296d"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+। बेशक</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+मानते हैं कि बंद लूप सिस्टम</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+स्थिर है।</span></font></font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:34)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20hindi_htm_61a22d27fa82d672" width="384"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+कहते हैं </span></font></span></font><span lang="hi">कि
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">मैं</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+बंद लूप</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+साइनसॉयडल</span></font></font><span lang="hi">
+स्थानांतरण समारोह ठीक की</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+परिमाण साजिश साजिश।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">एसईई
+एक महत्वपूर्ण बिंदु जिसे
+मैं यहां उजागर करना चाहता
+हूं </span></font></font><span lang="hi">वह यह है
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">कि</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+ओपन लूप सिस्टम फ्रीक्वेंसी
+रिस्पांस का उपयोग करके बंद
+लूप सिस्टम के लिए लाभ मार्जिन
+और चरण मार्जिन को परिभाषित
+किया गया</span></font></font><span lang="hi"> था जो
+बहुत महत्वपूर्ण है</span><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सही
+है।</span></font></span></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">कश्मीरको
+याद है कि हमने केवल</span></font></font><span lang="hi">
+स्थानांतरण</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+समारोह </span></font></font><span lang="hi">जी को
+देखा</span></font><font color="#000000"><font size="3" style="font-size: 12pt">(jω)h(jω)</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जो
+खुले लूप</span></font></span></font><span lang="hi"> सिस्टम
+साइनसॉयडल ट्रांसफर फंक्शन</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+था</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जो</span></font></span></font><span lang="hi">
+बंद</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+लूप सिस्टम से संबंधित कुछ
+मापदंडों पर टिप्पणी करने का
+अधिकार</span></font></font><span lang="hi"> था जो
+हमारे लिए ठीक याद रखने के लिए
+महत्वपूर्ण है</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+।</span></font></font><span lang="hi"> </span></font>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+लाभ मार्जिन और चरण मार्जिन
+के साथ कियाजाता है।</span></font></span></font><span lang="hi">
+मैं सिर्फ मापदंडों की</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+दो और परिभाषाओं पर</span></font></font><span lang="hi">
+जा रहा </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">हूं</span></font></font><span lang="hi">
+जो महत्वपूर्ण</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं । तो</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+कहते हैं कि मैं डेसीबल</span></font></span></font><span lang="hi">
+में बंद लूप</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+फ्रीक्वेंसी रिस्पांस ट्रांसफर
+फ़ंक्शन</span></font></font><span lang="hi"> के
+परिमाण भूखंड की साजिश</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+करता हूं। तो</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+कहते हैं कि कम आवृत्ति </span></font></span></font><font size="3" style="font-size: 12pt">asymptote
+ </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कुछ</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+निरंतर मूल्य</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></font><span lang="hi">
+और फिर यह इस</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+तरह कुछ मनमाने ढंग से वक्र
+सही</span></font></font><span lang="hi"> हो</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+जाता</span></font></font><span lang="hi"> है।</span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">अब</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+मूल्य क्या है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+कम आवृत्ति पर यह मूल्य है।</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+मूल्य मैं इसे परिमाण के रूप
+में कह सकता हूं </span></font></span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20hindi_htm_c5664d751a47d701"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।
+मूलतः मैं कह रहा हूं कि</span></font></font><span lang="hi">
+यह</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+एमेगा के रूप में </span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">asymptotic
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मूल्य
+है </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आदत
+है । अब हम क्या करते है कि हम
+एक नंबर है जो इस संख्या से </span></font></span></font><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+कम है</span></font></span></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> जो कुछ भी है</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+कि संख्या</span></font></font><span lang="hi"> कम</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+आवृत्ति लाभ</span></font></font><span lang="hi">
+कुछ लोगों को यह टी वह</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">डीसी</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+लाभ ओ</span></font></font><span lang="hi">के रूप
+में फोन</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+करेंगेकम आवृत्ति लाभ और इतने</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+पर सही है ले ।</span></font></font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अनिवार्य
+रूप से आप</span></font></span></font><span lang="hi"> परिमाण
+का एक नंबर मूल्य</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+लेते हैं जो इस संख्या से </span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+से कम है और पता लगाता है कि</span></font></span></font><span lang="hi">
+किस आवृत्ति</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+पर</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+ठीक है</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font></span></font><span lang="hi">वह
+परिमाण इस बंद लूप साइनसोइडल
+ट्रांसफर फ़ंक्शन की</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">भयावहता</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+को </span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+से कम हो जाता है। इस आवृत्ति
+है जो एक कटऑफ आवृत्ति</span></font></span></font><span lang="hi">
+ठीक के रूप में कहा जाता</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है । इसलिए कटऑफ फ्रीक्वेंसी
+यह फ्रीक्वेंसी है। इसलिए</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+कटऑफ फ्रीक्वेंसी</span></font></font><span lang="hi">
+की परिभाषा लिखता हूं ।</span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कटऑफ
+फ्रीक्वेंसी</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">ω</font></font><font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><sub><font size="3" style="font-size: 12pt"><span lang="hi">सी</span></font></sub></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+वह फ्रीक्वेंसी है</span></font></font><span lang="hi">
+जिस</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+पर</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> बंद</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+लूप</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+फ्रीक्वेंसी रिस्पांस ट्रांसफर
+फंक्शन</span></font></font><span lang="hi"> की </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+भयावहता</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+ठीकहै</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीवह
+</span></font></span></font><span lang="hi">अपने</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+जीरो</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+फ्रीक्वेंसी वैल्यू से</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+नीचे</span></font></font><span lang="hi"> है ठीक
+है</span></font>,<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जीरो</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+फ्रीक्वेंसी वैल्यू कम
+फ्रीक्वेंसी</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है।</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">कृपया
+ध्यान दें कि कम आवृत्ति
+</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">asymptotic
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मूल्य
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+हर समय यह है कि इमारत ब्लॉकों
+के लिए हम यह </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ठीक
+था माना जाता है की जरूरत नहीं
+है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+यह शूंय की जरूरत नहीं है।</span></font></span></font><span lang="hi">
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt">You
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+एहसास होता है जब हम</span></font></span></font><span lang="hi">
+शुभ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+आरेख सही के लिए में एक उदाहरण
+किया था । कम आवृत्ति अप्रतिम
+डेसीबल </span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+था</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">;</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+कुछ </span></font></font></span></font><font size="3" style="font-size: 12pt">nonzero
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">संख्या
+यह सब ठीक है पर कोई मुद्दा
+नहीं हो सकता था ।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+केवल यह देख रहे हैं कि क्या
+कहना है कि आवृत्ति जो कि परिमाण
+कम आवृत्ति के मूल्य से </span></font></span></font><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+कम है । तो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इस
+परिभाषा के साथ आवृत्ति रेंज
+</span></font></span></font><font size="3" style="font-size: 12pt">0</font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तक</span></font></span></font><font size="3" style="font-size: 12pt">ω
+</font></font><font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><sub><font size="3" style="font-size: 12pt"><span lang="hi">सी</span></font></sub></font><span lang="hi">
+प्रणाली</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+की बैंडविड्थ कहा जाता है।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">टीउसकी
+एक महत्वपूर्ण परिभाषा है ।</span></font></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+आप परिमाण वक्र से सही नोटिस
+कर सकते हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सिस्टम
+आवृत्ति घटकों </span></font></span></font><span lang="hi">को
+तब तक अनुमति देता है जब तक </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">कि
+</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">ω</font></font><font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><sub><font size="3" style="font-size: 12pt"><span lang="hi">सी</span></font></sub></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+इसके माध्यम से सही हो जाए।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">एकफीटर</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">ω
+</font></font><font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><sub><font size="3" style="font-size: 12pt"><span lang="hi">सी</span></font></sub></font><span lang="hi">
+यह </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">तरह</span></font></font><span lang="hi">की</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+तरह</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+अन्य सभी आवृत्तियों को सही
+रूप से क्षीण कर देता है ।
+इसलिए</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यही
+सही होता है । इसलिए फ्रीक्वेंसी
+रेंज </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">से
+</span></font></span></font><span lang="hi"> </span></font><font color="#000000"><font size="3" style="font-size: 12pt">ω</font></font><font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><sub><font size="3" style="font-size: 12pt"><span lang="hi">सी</span></font></sub></font><span lang="hi">
+को सिस्टम</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+की बैंडविड्थ कहा जाता है।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">अब
+कोई सवाल पूछ सकता है कि शून्य
+</span></font></font><span lang="hi">से </span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+की इस संख्या के</span></font></span></font><span lang="hi">बारे
+में क्या अनूठा है</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">क्या
+आपको लगता है कि </span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+के बारे में अद्वितीय है</span></font></span></font><font size="3" style="font-size: 12pt">?</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt">You
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कृपया
+पता लगाएं और मुझे ठीक बताओ
+।</span></font></span></font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मुझे
+</span></font></span></font><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+को अपनी दहलीज के रूप में क्यों
+लेना चाहिए</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कहते
+हैं कि मुझे </span></font></span></font><font size="3" style="font-size: 12pt">5
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+पसंद है कि मैं एक संख्या के
+रूप में </span></font></span></font><font size="3" style="font-size: 12pt">ω</font><font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><sub><font size="3" style="font-size: 12pt"><span lang="hi">सी</span></font></sub></font><span lang="hi">
+को परिभाषित क्यों नहीं कर </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+सकता</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आवृत्ति
+जिस पर परिमाण कम आवृत्ति
+मूल्य से </span></font></span></font><font size="3" style="font-size: 12pt">5
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+कम है मैं इसे सही नहीं कर रहा
+हूं। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+</span></font></span></font><span lang="hi">इसे कम आवृत्ति
+मूल्य से </span></font>3 <font face="Times New Roman"><span lang="ar-SA"><span lang="hi">डेसीबल
+कम के रूप में परिभाषित </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">कर</span></font></font><span lang="hi">
+रहा</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हूं। </span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+क्यों</span></font></span></font><font size="3" style="font-size: 12pt">?</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></font></span></font><font size="3" style="font-size: 12pt">:
+[</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अश्राव्य</span></font></span></font><font size="3" style="font-size: 12pt">]</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">हांकहो</span></font></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">परिभाषा
+मैं मानता हूं</span></font></span></font><span lang="hi">
+मैं सिर्फ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+तुमसे पूछ रहा हूं कि इसके
+पीछे भौतिकी क्या है</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">?</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></font></span></font><font size="3" style="font-size: 12pt">:
+[</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अश्राव्य</span></font></span></font><font size="3" style="font-size: 12pt">]</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">कॉर्नर
+फ्रीक्वेंसी</span></font></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">पीपट्टा
+पता लगाएं</span></font></font><span lang="hi"> कि
+दिन के लिए</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+दूसरा सवाल है तो</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कृपया
+पता लगाएं और मुझे सही बताओ
+कि क्यों तीन </span></font></span></font><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+सही या </span></font></span></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">शूंय
+से </span></font></font><span lang="hi"> </span></font><font color="#000000"><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">डेसीबल
+इस मामले में सहीहै</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+कृपया ठीक है । तो</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक
+और</span></font></span></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+पैरामीटर</span></font></font><span lang="hi"> जो
+हम अनिवार्य रूप से परिभाषित</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+करना चाहते है जो एक कटऑफ चूहा</span></font></font><span lang="hi">ई
+के रूप में कहा</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">जाता</span></font></font><span lang="hi">
+है ।</span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+08:23)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20hindi_htm_d0c94862d74c9380" width="384"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+कटऑफ रेट यह</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> कटऑफ फ्रीक्वेंसी</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+ओके</span></font></font><span lang="hi"> पर लॉग
+परिमाण वक्र की ढलान</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है। यह अनिवार्य रूप से मुझे
+बताता है कि कितनी तेजी से
+परिमाण</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+सही कम हो रहा</span></font></font><span lang="hi">
+है । </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कि
+कटऑफ दर है</span></font></span></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+और डब्ल्यू</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">ay</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आदर्श
+रूप में हम के रूप में उच्च
+संभव ठीक के रूप में एक बैंडविड्थ
+चाहते हैं । इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इससे
+कोई फर्क नहीं पड़ता</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+कि</span></font></font><span lang="hi"> मैं एक
+व्यावहारिक प्रणाली डिजाइन
+कर रहा हूं या मैं कुछ गतिशील</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+विशेषताओं या एक एक्ट्यूएटर
+बुद्धि</span></font></font><span lang="hi">एच कुछ
+गतिशील विशेषताओं के साथ एक
+सेंसर बना रहा</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">हूं</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">उच्च
+बैंडविड्थ </span></font></span></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">का
+मतलब है कि आपके</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+पास तेजी से क्षणिक प्रतिक्रिया
+सही होगी।</span></font></font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+अनिवार्य रूप से कुछ है जो
+वांछनीय सही कहने के लिए</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए
+देखें क्योंकि लगता है कि अगर
+मेरे पास उच्च बैंडविड्थ
+एक्ट्यूएटर सही है। तो इसका
+मतलब है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कि
+मैं आपसे पूछता हूं कि हमें
+एक वस्तु को स्थानांतरित करने
+के लिए कहते हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+यह उस कार्रवाई को बहुत तेजी
+से सही कर सकता है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कम
+बैंडविड्थ एक्ट्यूएटर की
+तुलना में</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+एक ही समय में</span></font></span></font><span lang="hi">
+लागत में वृद्धि</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हो</span></font></font><span lang="hi">जाती</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">है।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लागत
+और प्रदर्शन के बीच हमेशा एक
+ट्रेडऑफ होता है</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+उच्च बैंडविड्थ का आम तौर पर
+मतलब है कि बेहतर तेजी से</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+क्षणिक प्रतिक्रिया बेहतर
+प्रतिक्रिया विशेषताएं हैं</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+फिर लागत अधिक ठीक है।</span></font></span></font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">उदाहरण
+के लिए हम जो कीमत देते हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+आप एक्ट्यूएशन सिस्टम के लिए
+जाते हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+आप एक इलेक्ट्रोमैकेनिकल
+एक्ट्यूएटर का उपयोग करते
+हैं तो आपको बहुत तेजी से
+प्रतिक्रिया मिलने वाली है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+फिर इलेक्ट्रोमैकेनिकल
+एक्ट्यूएटर की लागत अधिक होने
+जा रहीहै</span></font></span></font><font size="3" style="font-size: 12pt">;</font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">जटिलता
+उच्च अधिकार होने जा रहा है
+। दूसरी ओर यदि आप वायवीय
+एक्ट्यूएटर का उपयोग करते
+हैं तो वायवीय एक्ट्यूएटर की
+बैंडविड्थ अपेक्षाकृत कम
+होने वाली है</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+लागत भी कम है। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="hi">लागत
+और प्रदर्शन के बीच एक </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">ट्रेडऑफ</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है।</span></font></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></font></span></font><font size="3" style="font-size: 12pt">:
+[</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अश्राव्य</span></font></span></font><font size="3" style="font-size: 12pt">]</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">डब्ल्यूई
+अनिवार्य रूप से इसे सही दिखेगा
+। तो</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कैसे
+बैंडविड्थ प्रतिक्रिया से
+संबंधित है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+ठीक हो जाएंगे। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+अनिवार्य रूप से है कि</span></font></span></font><span lang="hi">
+एक बात क्या</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+कहना</span></font></font><span lang="hi"> है और</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+इसलिए</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक
+बार फिर</span></font></span></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+यदि आप आवृत्ति प्रतिक्रिया
+विधियों का उपयोग करते हैं।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">प्रदर्शन
+विनिर्देश आम तौर पर</span></font></span></font><span lang="hi">
+इन मापदंडों के संदर्भ में
+दिए जाने वाले</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जो
+लाभ मार्जिन चरण मार्जिन</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">चरण</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+मार्जिन</span></font></font><span lang="hi"> और फिर</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+बैंडविड्थ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">कटऑफ
+दर और फिर निश्चित</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+रूप से</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कटऑफ
+फ्रीक्वेंसी</span></font></span></font><span lang="hi">
+ओके की</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+तरह</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है।</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">ये
+सभी पैरामीटर हैं और फिर फिर
+फिरसोनंट पीक आपको याद </span></font></font><span lang="hi">है
+कि </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">एम</span></font></font><font color="#000000"><sub><font size="3" style="font-size: 12pt"><span lang="hi">आर</span></font></sub></font><span lang="hi">
+सही है कि</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+दूसरे आदेश कारकों के लिए है
+कि हम सही सुनाई देती आवृत्ति
+उन सभी चीजों</span></font></font><span lang="hi">
+को देखा इन</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+पैरामीटर</span></font></font><span lang="hi"> इन</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+मापदंडों</span></font></font><span lang="hi"> जो</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+इस्तेमाल किया जा सकता</span></font></font><span lang="hi">है</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">उपयोग
+में देखें जब आप क्या कहना है
+कि क्षणस प्रतिक्रिया</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+का उपयोग करके डिजाइन सही
+तरीके से</span></font></font><span lang="hi"> किया</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+था</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">फ्रीक्वेंसी
+रिस्पांस का उपयोग करके डिजाइन
+का उपयोग करके ठीक है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+कल से नियंत्रकों को जानने
+जा रहे हैं। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जब
+हमने क्षणिक प्रतिक्रिया का
+उपयोग करके डिजाइन किया था
+कि</span></font></span></font><span lang="hi"> प्रदर्शन
+की मात्रा निर्धारित करने के
+लिए उपयोग किए गए पैरामीटर
+क्या</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">?</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">उठो
+समय</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">समय
+बसने</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पीक
+ओवरशूट</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">पीक
+समय और इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सही
+पर ।</span></font></span></font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">वे
+सभी पैरामीटर हैं जिनका हम
+सही उपयोग करते हैं। इसलिए</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जब
+हम आवृत्ति प्रतिक्रिया का
+उपयोग करेंगे तो हम यह देखने
+जा रहे हैं कि इन मापदंडों को
+क्या कहना</span></font></span></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">है
+। टीवह सवाल उठता है कि क्या
+</span></font></font><span lang="hi">कैसे दो संबंधित
+सही कर रहे </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">हैं।
+तो</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">देखें
+कि अन्य मापदंडों से संबंधित
+बैंडविड्थ कैसे सही है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+कैसे कह सकता हूं बैंडविड्थ
+का मतलब है तेज</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+प्रतिक्रिया</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">उदाहरण
+के लिए देखें</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अगर
+मुझे पता चलता</span></font></span></font><span lang="hi">
+है कि</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+उच्च बैंडविड्थ का मतलब है
+कि कम वृद्धि का समय यो</span></font></font><span lang="hi">यू
+सहमत होगा कि सिस्टम तेजी से
+ठीक जवाब</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">देता</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है।</span></font></font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी
+वह वहां कुछ रिश्ते</span></font></span></font><span lang="hi">
+हम उंहें सही पता होगा रहे हैं</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+। इसलिए</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ये</span></font></span></font><span lang="hi">
+फ्रीक्वेंसी डोमेन ओके में
+परफॉर्मेंस स्पेसिफिकेशन</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं। तो</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">मैं
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">यहां</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+बंद हो जाएगा </span></font></font><span lang="hi">और
+हम एक नियंत्रक डिजाइन के साथ
+कल</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+आवृत्ति प्रतिक्रिया का उपयोग
+कर जारी रहेगा</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+मैं तुंहें एक सवाल सही के साथ
+छोड़ने जा रहा हूं । इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+आशा करता हूं कि मैंने अब तक
+इस प्रश्न पर चर्चा नहीं की
+है। हमें सही कहना</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है कि मैं अपने सिस्टम</span></font></font><span lang="hi">
+के रूप में यह ठीक</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमें
+कहना है कि यह मेरी प्रणाली
+है</span></font></span></font><font size="3" style="font-size: 12pt">;</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">प्लांट
+ट्रांसफर फंक्शन है</span></font></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20hindi_htm_5a7825d19e6ad26f"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्या
+यह स्थिर है या अस्थिर</span></font></span></font><font size="3" style="font-size: 12pt">?</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अस्थिर।</span></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">अस्थिर
+सही</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ध्रुव
+</span></font></span></font><font size="3" style="font-size: 12pt">+</font>1
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">सही
+पर</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">है।
+तो</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इस
+पाठ्यक्रम का एक पहलू अनिवार्य
+रूप से</span></font></span></font><span lang="hi"> प्रतिक्रिया
+सही कर रही द्वारा अस्थिर
+प्रणालियों को स्थिर करने के
+लिए</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+बजाय यह सब प्रभाव प्रयास सही
+लेने से मैं यह नहीं कर सकता</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कि
+यह कहना है कि मैं पूर्व एक
+ब्लॉक है जो अनिवार्य रूप से
+यह करता है</span></font></span></font><span lang="hi"> तो
+यह क्या होगा द्वारा</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+गुणा</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">?</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20hindi_htm_cdb2d8a3223cdac6"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20hindi_htm_b9abd010218fafb3"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्या
+आपने किसी अस्थिर प्रणाली को
+स्थिर नहीं किया है</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैंने
+जो किया है उसे पोल जीरो कैंसिलेशन
+राइट कहा जाता है । हम संक्षेप
+में इस से पहले चर्चा की हो
+सकतीहै</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+अधिक महत्वपूर्ण बात</span></font></span></font><span lang="hi">
+मैं सही आधा विमान</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+में</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+ध्रुव शूंय रद्द किया है</span></font></font><span lang="hi">
+सही है क्योंकि मैं सही आधा
+विमान में एक</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+शूंय के साथ सही आधा विमान में
+एक ध्रुव रद्द कर रहा हूं सही
+विमान सही ।</span></font></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+हमारी सभी समस्याओं को सही
+हल करता है तो मुझे महंगे बंद
+लूप फीडबैक सिस्टम की आवश्यकता
+नहीं है और इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">दाईं
+ओर।</span></font></span></font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">छात्र</span></font></font></span></font><font size="3" style="font-size: 12pt">:
+[</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">अश्राव्य</span></font></span></font><font size="3" style="font-size: 12pt">]</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मुझे
+आशा है कि सभी को वह मिल गया
+जो वह सही कहने की कोशिश कर
+रहा था । वास्तविक प्रणालियों
+में जो हमेशा कुछ पैरामेट्रिक
+अनिश्चितताएं होने वाली थीं
+</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">वे
+आदर्शीकृत दृष्टिकोणों की
+तरह हैं।</span></font></span></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">एसओ</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आप
+कभी नहीं जानते</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">उदाहरण
+के</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+लिए देखें</span></font></font><span lang="hi"> कि
+इसका मूल रूप से क्या मतलब है</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+कि</span></font></font><span lang="hi"> यह</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+एक निम्नलिखित अधिकार है।</span></font></font></span></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+16:31)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20hindi_htm_29f55bb90a745386" width="384"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+शब्द वाई </span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ओं</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">सही</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+हो सकता </span></font></font><span lang="hi">है </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20hindi_htm_c46af1fb2e608e66"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">और
+फिर हां</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">भले
+ही आप एक आदर्श</span></font></span></font><span lang="hi">
+क्षतिपूर्ति ब्लॉक का निर्माण
+ठीक</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+है</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+मेरा क्षतिपूर्ति ब्लॉक है
+यह मेरा संयंत्र है</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="hi">मेरे
+संयंत्र में</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+कुछ अनिश्चितताएं हो सकती
+हैं।</span></font></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मेरा
+ध्रुव लगभग </span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">प्लस
+या माइनस एप्सिलॉन हो सकता
+</span></font></span></font><span lang="hi">है तो</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+आपके पास एक आदर्श ध्रुव शून्य
+रद्द</span></font></font><span lang="hi"> नहीं </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">होगा</span></font></font><span lang="hi">
+जिसे प्राप्त करना बहुत</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+मुश्किल है</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">सही।</span></font></span></font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">एक</span></font></font></span></font><font size="3" style="font-size: 12pt">nd
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">भी
+अगर आपके पासहै</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यदि
+आप कहते हैं कि एप्सिलॉन बहुत
+छोटा है यदि आप विलोम लाप्लेस
+ट्रांसफॉर्म लेते हैं</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">तो
+आप देखेंगे कि आपके पास एक
+शब्द होगा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20hindi_htm_f1c92a161cb772b"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एप्सिलॉन
+बहुत छोटा हो सकता है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+जैसे ही टी आगे बढ़ता है यह
+अनंत को उड़ा देगा।</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">शुरू
+में प्रणाली स्थिर प्रतीत हो
+सकती है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लेकिन
+फिर जैसे</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जैसे
+समय आगे बढ़ता है यह</span></font></span></font><span lang="hi">
+अस्थिर हो</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+जाएगा</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><span lang="hi">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+एक महान विचार ठीक नहीं है ।
+तो</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक
+ध्रुव शून्य रद्द करने कभी
+नहीं करना चाहिए इस कारण ठीक
+के लिए सही आधा विमान में है
+। इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मैं
+एक</span></font></span></font><span lang="hi"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">अलग</span></font></font><span lang="hi">
+अधिकार के</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+रूप में </span></font></font><span lang="hi">यह बताना
+चाहता था</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+।</span></font></font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">तो</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">वैसे
+भी हम आवृत्ति प्रतिक्रियाओं
+के आधार पर कल नियंत्रकों के
+डिजाइन</span></font></span></font><span lang="hi"> क्या</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+कहना है</span></font></font><span lang="hi"> के साथ
+जारी</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="hi">
+रहेगा ।</span></font></font></p>
+</body>
+</html>

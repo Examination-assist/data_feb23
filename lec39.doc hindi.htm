@@ -1,0 +1,581 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-10" name="author"/>
+<meta content="2019-06-09T06:45:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-21T02:36:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="true" name="MTWinEqns"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 3.3cm; margin-right: 2.54cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-family: "Calibri", serif; font-size: 11pt; so-language: en-US }
+		p.cjk { font-family: "Calibri"; font-size: 11pt; so-language: zh-CN }
+		p.ctl { font-family: "Calibri"; font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-IN" link="#000080" vlink="#800000"><p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>कंट्रोल
+सिस्टम</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>प्रो</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>शंकर
+राम</b></span></font></span></font><font size="3" style="font-size: 12pt"><b> </b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>इंजीनियरिंग
+डिजाइन विभाग</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>भारतीय
+प्रौद्योगिकी संस्थान</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>मद्रास</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>लेकचर</b></span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"><b> </b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+39</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>रूट
+लोकस </b></span></font></span></font><font size="3" style="font-size: 12pt"><b>4
+</b></font>
+</p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi"><b>भाग</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-1</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम
+आरऊट </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">एल</span></font></span></font><font size="3" style="font-size: 12pt">ocus</font><font face="Calibri"><span lang="ar-SA"><span lang="hi">पर
+देख रहे</span><font size="3" style="font-size: 12pt"><span lang="hi">
+हैं ।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">याद
+करने के लिए</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बुनियादी
+ब्लॉक आरेख पर विचार करें</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जो
+हमारा ध्यान केंद्रित किया
+गया है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:38)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_85c659256567301" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_6b57f6b21a1635d"/>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_d7d26042fed45e60"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">आगे
+पथ हस्तांतरण समारोहहै</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="hi">प्रतिक्रिया
+पथ हस्तांतरण समारोह</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_e8a8d21da9ea14c"/>
+</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_d7d26042fed45e60"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="hi">और हम</span><font size="3" style="font-size: 12pt"><span lang="hi">
+एक </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">नकारात्मक
+</span></font><span lang="hi">प्रतिक्रिया</span><font size="3" style="font-size: 12pt"><span lang="hi">
+है।</span></font><span lang="hi"> </span></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बंद
+लूप ट्रांसफर फ़ंक्शनथा</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_49fe036788f4f7ee"/>
+<font size="3" style="font-size: 12pt">,
+</font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">और
+बंद पाश विशेषता समीकरण था</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_94224ed07b00fff1"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हमने
+इस समीकरण की जड़ों को देखा</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">मानलीजिए</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हम</span></font><span lang="hi">हा
+सब कुछ एक ही शेष के साथ सकारात्मक</span><font size="3" style="font-size: 12pt"><span lang="hi">
+प्रतिक्रियाहै</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीटोपी
+है</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_c589a239b1c592a7"/>
+.</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ब्लॉक
+आरेखमें</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बाकी
+सब कुछ इस</span></font><span lang="hi">तथ्य
+के</span><font size="3" style="font-size: 12pt"><span lang="hi">अलावा</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="hi">कि
+संक्षेप</span><font size="3" style="font-size: 12pt"><span lang="hi">
+जंक्शनपर</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="hi">दो
+संकेतों को </span><font size="3" style="font-size: 12pt"><span lang="hi">घटाने
+के बजाय</span></font><span lang="hi">जोड़ा</span><font size="3" style="font-size: 12pt"><span lang="hi">
+जाता है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">रूट
+लोकस के निर्माण में शामिल
+कदमों की जांच</span></font><span lang="hi">करने
+के लिए</span><font size="3" style="font-size: 12pt"><span lang="hi">
+निम्नलिखित एक उदाहरण</span></font><span lang="hi">
+है</span><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> इस
+मामले</span></font><span lang="hi">में</span></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बंद
+लूप स्थानांतरण कार्य </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_130bf6c4c5c360a"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">बंद
+पाश विशेषता समीकरण </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_5dd0e0266bad4c9e"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसका
+कोई भी मूल्य </span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_b880e659bf7d175e"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">उपरोक्त
+समीकरण को </span></font><span lang="hi">संतुष्ट
+</span><font size="3" style="font-size: 12pt"><span lang="hi">करता
+</span></font><span lang="hi">है एक</span><font size="3" style="font-size: 12pt"><span lang="hi">
+बंद पाश </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">ध्रुव</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+04:35)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_1566258a67db5560" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसका
+तात्पर्य यह है कि</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> एस
+का कोई भी मूल्य जो खुले लूप
+ट्रांसफर फ़ंक्शन को </span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">के
+बराबर बनाता है</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक
+बंद लूप पोल होगा।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीउसकी
+हमें </span></font></span></font><font size="3" style="font-size: 12pt">2
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">शर्तें
+दे देंगे।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">टीवह
+परिमाण हालत जा रहा है</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_438859796ce71b81"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">और</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चरण
+की स्थिति</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_e4afee89ea9d59a5"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीवह
+एक ही</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+उदाहरण  जड़ लोकस को समझने के
+लिए दोहराया जाता है।</span></font><span lang="hi">
+</span></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+07:06)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_9639482ec940f853" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्टेप</span></font></span></font><font size="3" style="font-size: 12pt">1:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जटिल
+विमान में खुले लूप </span></font><span lang="hi">शून्य
+और खुले लूप </span><font size="3" style="font-size: 12pt"><span lang="hi">ध्रुवों</span></font><span lang="hi">
+का पता लगाने के लिए पहला कदम</span><font size="3" style="font-size: 12pt"><span lang="hi">
+एक ही रहता है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक
+एस रूट लोकस </span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_60890ec722bfc998"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">एक
+खुले लूप पोल</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+से </span></font><span lang="hi">शुरू </span><font size="3" style="font-size: 12pt"><span lang="hi">होता</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="hi">और</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_dacbc5c1cbb7e783"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+यदि असिम्पटोट्स</span></font><span lang="hi">के</span><font size="3" style="font-size: 12pt"><span lang="hi">
+साथ</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_8987ce451d140e88"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+खुले लूप </span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">शून्य
+पर</span></font><span lang="hi"> जाते</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_974ca81af998d6a2"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">हैं।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चरण
+</span></font></span></font><font size="3" style="font-size: 12pt">2:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">असली
+धुरी परिवर्तन पर झूठ</span></font><span lang="hi">बोलने
+वाली रूट</span><font size="3" style="font-size: 12pt"><span lang="hi">
+लोकी के रूट</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+लोकस</span></font><span lang="hi"> हिस्से का
+पता लगाने</span><font size="3" style="font-size: 12pt"><span lang="hi">काकदम</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्योंकि
+यह</span></font><span lang="hi">कोण</span><font size="3" style="font-size: 12pt"><span lang="hi">की</span></font><span lang="hi">
+स्थिति पर निर्भर करता</span><font size="3" style="font-size: 12pt"><span lang="hi">
+है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+09:25)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_95dd033453326ec3" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">वास्तविक
+धुरी पर एक परीक्षण बिंदु
+को</span></font><span lang="hi">ध्यान में</span><font size="3" style="font-size: 12pt"><span lang="hi">रखते
+हुए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी</span></font><span lang="hi">वह</span><font size="3" style="font-size: 12pt"><span lang="hi">असली
+खुले लूप डंडे और उसके  दाईं
+ओर</span></font><span lang="hi"> असली खुले लूप
+</span><font size="3" style="font-size: 12pt"><span lang="hi">शून्य</span></font><span lang="hi">
+की संख्या </span><font size="3" style="font-size: 12pt"><span lang="hi">परीक्षण
+बिंदु </span></font><span lang="hi">के लिए भी
+रूट </span><font size="3" style="font-size: 12pt"><span lang="hi">लोकस
+पर झूठ</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">बोलने
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">के
+लिए </span></font><span lang="hi">होना</span><font size="3" style="font-size: 12pt"><span lang="hi">
+चाहिए। </span></font></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चरण
+</span></font></span></font><font size="3" style="font-size: 12pt">3:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीवह
+</span></font></span></font><font size="3" style="font-size: 12pt">asymptotes
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कोण
+कोण की स्थिति पर निर्भर करता
+है।</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इस
+मामले में </span></font><span lang="hi">कोण
+द्वारा दिए गए </span><font size="3" style="font-size: 12pt"><span lang="hi">हैं</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_8c660be1f8a4dc0b"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_857147a692f58cae"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">वहां
+</span></font></span></font><font size="3" style="font-size: 12pt">asymptotes</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">हैं</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जहां
+</span></font><span lang="hi">  असली धुरी पर</span><font size="3" style="font-size: 12pt"><span lang="hi">
+</span></font></span></font><font size="3" style="font-size: 12pt">asymptotes
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">के
+चौराहे</span></font><span lang="hi"> के बिंदु
+द्वारा दिए गए एक ही सूत्र
+द्वारा गणना की</span><font size="3" style="font-size: 12pt"><span lang="hi">
+जाती है</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_724f1da6a10c2ea8"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चरण
+</span></font></span></font><font size="3" style="font-size: 12pt">4:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एसटीईपी
+</span></font></span></font><font size="3" style="font-size: 12pt">4
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एक
+ही रहता है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+10:55)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 6" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_9b9fd2d41727fe83" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">ध्यान
+दें कि विशेषता समीकरण </span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">है</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_a64a795e04c4aee4"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+12:03)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 7" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_b36c8a25fdcbf2c8" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टी
+वह संभावित </span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_e256ef11c89faf84"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+टूटे तोड़ने</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+में</span></font><span lang="hi"> अंक में</span><font size="3" style="font-size: 12pt"><span lang="hi">मूल्यों</span></font><span lang="hi">
+अब द्वारा निर्धारित</span><font size="3" style="font-size: 12pt"><span lang="hi">
+किया जाएगा</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_8d1a8207bfe00ca7"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चरण
+</span></font></span></font><font size="3" style="font-size: 12pt">5:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">प्रस्थान
+के कोण और आगमन के कोण कोण
+स्थिति का उपयोग करता है
+के</span></font><span lang="hi">रूप</span><font size="3" style="font-size: 12pt"><span lang="hi">में</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इस
+मामले के सूत्र बन जाता है</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_483ac853be9f1229"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_49f4a593d71a5c50"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चरण
+</span></font></span></font><font size="3" style="font-size: 12pt">6:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एसटीईपी
+</span></font></span></font><font size="3" style="font-size: 12pt">6
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">वही
+रहताहै</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यानी</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="hi">बंद
+</span><font size="3" style="font-size: 12pt"><span lang="hi">लूप
+विशेषता</span></font><span lang="hi"> समीकरण
+को </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_479a60edeca5ecf8"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">प्रतिस्थापित
+करें।  </span></font></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">यह
+सकारात्मक</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">
+प्रतिक्रिया</span></font><span lang="hi">के
+मामले में</span><font size="3" style="font-size: 12pt"><span lang="hi">
+रूट लोकस के निर्माण के लिए
+चरणों में  परिवर्तन</span></font><span lang="hi">
+को</span><font size="3" style="font-size: 12pt"><span lang="hi">
+समाप्त करता</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">उदाहरण</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_def1aaadca3bf463"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चरण
+</span></font></span></font><font size="3" style="font-size: 12pt">1:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_f706d2f8dcce4652"/>
+,</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><span lang="hi">सी</span><font size="3" style="font-size: 12pt"><span lang="hi">ऑनसिंकेट
+</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> 2 </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">शाखाएं
+</span></font><span lang="hi"> </span></span></font><font size="3" style="font-size: 12pt">-4</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">और
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">से
+</span></font><span lang="hi"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_3292622f5d9d9d50"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">शुरू
+होंगी</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">और
+</span></font></span></font><font size="3" style="font-size: 12pt">2
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">शाखाएं
+अनंत के साथ</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">साथ
+अष्टम तक जाएंगी </span></font><span lang="hi">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_e42c101fb81d83d0"/>
+</span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चरण
+</span></font></span></font><font size="3" style="font-size: 12pt">2:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">टीवह
+असली धुरी </span></font></span></font><font size="3" style="font-size: 12pt">3
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">क्षेत्रों
+में विभाजितहै</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_e962682d76cee152"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इन
+तीन क्षेत्रों में परीक्षण
+अंक लेते हुए हम निम्नलिखित
+को समाप्त कर सकते हैं </span></font></span></font><font size="3" style="font-size: 12pt">-</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_9c9368e00d02a514"/>
+<font size="3" style="font-size: 12pt">: </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">रूट
+लोकस पर झूठ बोलते हैं।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_2b9017d144941a9a"/>
+<font size="3" style="font-size: 12pt">: </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">रूट
+लोकस पर झूठ नहीं बोलता है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_47be85d4e7caaadb"/>
+<font size="3" style="font-size: 12pt">: </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">रूट
+लोकस पर झूठ बोलते हैं।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+18:52)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 8" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_647f366b9426709e" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चरण
+</span></font></span></font><font size="3" style="font-size: 12pt">3:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">asymptotes </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">की
+संख्या</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_22852ecf378b3813"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एस्पोटोटेट्स
+द्वारा बनाया गया कोण</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_64b2c2673277b633"/>
+<font size="3" style="font-size: 12pt">,
+= </font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_8e04bff0f9f24c03"/>
+<font size="3" style="font-size: 12pt">,
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_5464e3b905149d7"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">असली
+धुरी पर चौराहे का बिंदु</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_7cfcbafd779d7fe3"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+2 </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एमिंटोट्स
+ पर एक दूसरे को काटना</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi">होगा</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="hi">और
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_7cfcbafd779d7fe3"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">सकारात्मक
+असली धुरी</span></font><span lang="hi"> के साथ
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_8e04bff0f9f24c03"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">और</span></font><span lang="hi">
+के साथ एक कोण बनाते</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_5464e3b905149d7"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">हैं।
+</span></font></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चरण
+</span></font></span></font><font size="3" style="font-size: 12pt">4:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_2c9b736cc702a78e"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_3bd41baec5455e"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_46609e45f94239ee"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">स्लाइड
+समय देखें</span></font></span></font><font size="3" style="font-size: 12pt">:
+23:09)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 9" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_643dacc6ae263ba" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">जैसा
+</span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_80d4450c0231dcb3"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">कि
+माना जाता है</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कोई
+ब्रेक</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">एकरास्ता
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">या
+</span></font><span lang="hi"> </span><font size="3" style="font-size: 12pt"><span lang="hi">ब्रेक</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इन</span></font><span lang="hi">पॉइंट
+नहीं</span><font size="3" style="font-size: 12pt"><span lang="hi">है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चरण</span></font></span></font><font size="3" style="font-size: 12pt">5:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चूंकि
+इस उदाहरण में हमारे पास केवल
+वास्तविक खुले लूप डंडे</span></font><span lang="hi">हैं</span></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए
+चरण </span></font></span></font><font size="3" style="font-size: 12pt">5
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">लागू
+नहीं है।</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">चरण
+</span></font></span></font><font size="3" style="font-size: 12pt">6:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_37c0ab618584b133"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">प्रतिस्थापन
+</span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_bce5b10c3fa65130"/>
+<font size="3" style="font-size: 12pt"><span lang="hi">
+हमें मिलता है</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20hindi_htm_b86101d50bb5eaeb"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+ </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="hi">कोई
+अंतरराष्ट्रीय</span></font><span lang="hi">
+बिंदु नहीं </span><font size="3" style="font-size: 12pt"><span lang="hi">हैं।</span></font><span lang="hi">
+</span><font size="3" style="font-size: 12pt"><span lang="hi"> </span></font></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+</body>
+</html>
