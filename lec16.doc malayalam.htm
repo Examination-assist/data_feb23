@@ -1,0 +1,878 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-81" name="author"/>
+<meta content="2018-10-08T10:22:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-23T09:12:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; font-size: 11pt; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000"><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നിയന്ത്രണ
+സംവിധാനങ്ങൾ</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പ്രൊഫ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>എഞ്ചിനീയറിംഗ്
+ഡിസൈൻ വകുപ്പ്</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഇന്ത്യൻ
+ഇൻസ്റ്റിറ്റ്യൂട്ട് ഓഫ്
+ടെക്നോളജി</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>മദ്രാസ്</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>വായന
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+16</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ക്ലോസ്ഡ്
+ലൂപ്പ് സിസ്റ്റം </b></span></font></span></font>
+</p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഭാഗം
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+2</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:14)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20malayalam_htm_1d8632044d897bf7.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+പോസിറ്റീവ് ഫീഡ്ബാക്ക്
+സിസ്റ്റത്തിന്റെ ക്ലോസ്ഡ്
+ലൂപ്പ് ട്രാൻസ്ഫർ ഫങ്ഷൻ
+പ്രവർത്തനം നിരീക്ഷിക്കാൻ
+കഴിയും</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20malayalam_htm_dea23d1b345070a6.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+06:16)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="322" name="Picture 6" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20malayalam_htm_372e56b4bb1234f.png" width="467"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ചില
+പദപ്രയോഗങ്ങൾ ശരി</span></font></span></font><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ഈ ഘട്ടത്തിൽ </span></font></span></font><font size="3" style="font-size: 12pt">(W(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ന്
+സമീപം</span></font></span></font><font size="3" style="font-size: 12pt">)</font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ലൂപ്പ്</span><font size="3" style="font-size: 12pt"><span lang="ml">പൊട്ടിക്കുകയാണെങ്കിൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+ക്ലോസ്ഡ് ലൂപ്പ് ഉണ്ടെന്ന്
+കരുതുക</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ലൂപ്പ് പൊട്ടിക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഈ
+പോയിന്റ്</span></font><span lang="ml"> ട്രാൻസ്ഫർ
+ഫങ്ഷൻ എനിക്ക് ലഭിക്കുന്ന
+ഏത് ട്രാൻസ്ഫർ ഫങ്ഷനും</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഈ
+പോയിന്റിൽ </span></span></font><font size="3" style="font-size: 12pt">W(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">എന്ന
+സിഗ്നലിനെ യാണ് ഈ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പോയിന്റിൽ സൂചിപ്പിക്കുന്നത്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇത്
+</span></font></span></font><font size="3" style="font-size: 12pt">E(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">എന്ന</span><font size="3" style="font-size: 12pt"><span lang="ml">
+സിസ്റ്റത്തിലേക്ക് ഇൻപുട്ട്
+</span></font><span lang="ml">ആയി</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പോകുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓപ്പൺ
+ലൂപ്പ് ട്രാൻസ്ഫർ ഫങ്ഷൻ എന്ന്
+പറയുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20malayalam_htm_5148ec6df9344cd6.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓപ്പൺ
+ലൂപ്പ് ട്രാൻസ്ഫർ ഫങ്ഷൻ എന്ന്
+വിളിക്കപ്പെടുന്നത്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്തുകൊണ്ടാണ്
+ഓപ്പൺ ലൂപ്പ് ട്രാൻസ്ഫർ ഫങ്ഷൻ
+എന്ന് വിളിക്കുന്നത്</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+പറഞ്ഞത് പോലെ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ശരിയായ</span></font></span></font><font size="3" style="font-size: 12pt">,
+W, E, </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">വലത്
+എടുക്കുന്ന സിഗ്നലുകളുടെ
+അനുപാതം നോക്കുക</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+പറഞ്ഞത് പോലെ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നിങ്ങൾ
+ഇവിടെ ലൂപ്പ് മുറിക്കുന്നകാര്യം
+നിങ്ങൾ തുറന്നു</span></font><span lang="ml">പറയുന്നു</span></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">നിങ്ങൾ
+ഈ ജംഗ്ഷനിൽ ലഭിക്കുന്ന സിഗ്നൽ
+</span></span></font><font size="3" style="font-size: 12pt">W</font> <font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ആയിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">,
+ </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓപ്പൺ
+ലൂപ്പിലേക്കുള്ള ഇൻപുട്ട്
+</span></font></span></font><font size="3" style="font-size: 12pt">E
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ആയിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഞങ്ങൾ
+അടിസ്ഥാനപരമായി </span></span></font><font size="3" style="font-size: 12pt">W(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">യെ
+ഒരു</span><font size="3" style="font-size: 12pt"><span lang="ml">
+നിർവചനമാണ് ഓപ്പൺ ലൂപ്പ്
+ട്രാൻസ്ഫർ ഫങ്ഷൻ ആയി  </span></font></span></font><font size="3" style="font-size: 12pt">W(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എടുക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">അത്
+</span></span></font><font size="3" style="font-size: 12pt">G(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> times</font> <font size="3" style="font-size: 12pt">
+H(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ആയിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓപ്പൺ
+ലൂപ്പ് ട്രാൻസ്ഫർ ഫങ്ഷന്റെ
+ധ്രുവങ്ങളെ ഓപ്പൺ ലൂപ്പ്
+പോളുകൾ എന്നും ഓപ്പൺ ലൂപ്പ്
+ട്രാൻസ്ഫർ ഫങ്ഷനിലെ പൂജ്യങ്ങളെ
+ഓപ്പൺ ലൂപ്പ് സീറോകൾ എന്നും
+വിളിക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+വീണ്ടും ചില പദപ്രയോഗങ്ങൾ
+ഓർക്കണം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓക്കേ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓപ്പൺ
+ലൂപ്പ് എന്ന വിശേഷണം</span></font><span lang="ml">
+നിങ്ങൾ അഭിമുഖീകരിക്കുകയാണെങ്കിൽ</span></span></font>,
+<font size="3" style="font-size: 12pt">G(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)H(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കുറിച്ച്
+ഞങ്ങൾ സംസാരിക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+ഓപ്പൺ ലൂപ്പ് ശരിയായകാരണം
+വ്യക്തമാണെന്ന് ഞാൻ
+പ്രതീക്ഷിക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ലൂപ്പ് തുറക്കുകയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നിങ്ങൾ
+എന്നോട് ചോദിച്ചേക്കാം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഹേയ്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇത്
+ശാരീരികമായി അർത്ഥമുള്ള
+എന്തെങ്കിലും ആയിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+വേണ്ട</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">പക്ഷെ
+ഇത് ഉപയോഗിക്കാൻ പോകുന്നു
+എന്ന് നിങ്ങൾ കാണും</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അഭിപ്രായനിർദ്ദേശങ്ങൾ
+ഇല്ലാതെ എന്ത് സംഭവിക്കും
+എന്നതിന്റെ സൂചകമാണ് ഇത്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഈ
+ഘടകങ്ങളെല്ലാം ഞാൻ ലൂപ്പിൽ
+ഇടുന്നു എന്ന് കരുതുക</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്നാൽ
+ഞാൻ ലൂപ്പ് അടയ്ക്കുന്നില്ല</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+ഞാൻ ഒരിക്കലും പ്രായോഗികമായി
+ഒരിക്കലും ചെയ്യില്ല</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+ക്ലോസ്ഡ് ലൂപ്പ് ഫീഡ്ബാക്ക്
+സിസ്റ്റം രൂപകൽപ്പന ചെയ്യുന്നകാര്യം
+എന്താണെന്ന് നോക്കൂ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയല്ലേ</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ലൂപ്പ് അടച്ചില്ലെങ്കിൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+എന്താണ് ട്രാൻസ്ഫർ ഫങ്ഷൻ
+ലഭിക്കാൻ പോകുന്നത്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓപ്പൺ
+ലൂപ്പ് ട്രാൻസ്ഫർ ഫങ്ഷൻ എന്ന്
+പറയുന്നത് അതാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്തുകൊണ്ട്
+അത് പ്രധാനമാണ്</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓപ്പൺ
+ലൂപ്പ് ട്രാൻസ്ഫർ ഫങ്ഷൻ
+എന്താണ്</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font size="3" style="font-size: 12pt">G(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)H(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">),
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">വലത്</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">G(s)=C(s)P(s)H(s).</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓപ്പൺ
+ലൂപ്പ് ട്രാൻസ്ഫർ ഫങ്ഷൻ
+ഒന്നുമല്ല</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്നാൽ
+നിങ്ങളുടെ പക്കൽ ഉള്ള എല്ലാ
+ട്രാൻസ്ഫർ ഫംഗ്ഷനുകളുടെയും
+ഉൽപ്പന്നം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അപ്പൊ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നിനക്ക്
+മൂന്ന് ബ്ലോക്കുകളുണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.
+C(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)
+, P(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> ,</font> <font size="3" style="font-size: 12pt">H(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">എന്നിവ
+ഈ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+മൂന്ന് ട്രാൻസ്ഫർ ഫംഗ്ഷനുകളുടെ
+ഉൽപ്പന്നമാണ് ഓപ്പൺ ലൂപ്പ്
+ട്രാൻസ്ഫർ ഫംഗ്ഷൻ രൂപപ്പെടുന്നത്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">വലത്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font><span lang="ml">
+തന്നെ</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഞങ്ങൾ
+പോകുന്നവഴി</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">അത്
+ഉപകാരപ്രദമാണെന്ന് നിങ്ങൾ
+കാണും</span></span></font>.</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">When </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+കൺട്രോൾ ഡിസൈനിൽ ഉപയോഗിക്കുന്ന
+നൂതന ഉപകരണങ്ങളിലേക്ക്
+പോകുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഈ
+ഓപ്പൺ ലൂപ്പ് ട്രാൻസ്ഫർ
+ഫങ്ഷന്റെ സ്വാധീനം നിങ്ങൾക്ക്
+കാണാനാകും</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ക്ലോസ്ഡ്
+ലൂപ്പ് സ്വഭാവസമവാക്യം വൺ
+പ്ലസ് ഓപ്പൺ ലൂപ്പ് ട്രാൻസ്ഫർ
+ഫങ്ഷനാണ്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+ഉടനടി നിരീക്ഷിക്കാൻ കഴിയും</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ക്ലോസ്ഡ്
+ലൂപ്പ് സ്വഭാവ സമവാക്യം </span></font></span></font><font size="3" style="font-size: 12pt">=
+1+ OLTF</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">In </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">പല
+റഫറൻസുകളും ഇതേ ഫീഡ്ബാക്ക്
+ഡയഗ്രം ഈ രീതിയിൽ
+പരിഷ്കരിക്കപ്പെട്ടിരിക്കുന്നു</span></font><span lang="ml">എന്ന്
+കാണാം</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൺട്രോളറും
+പ്ലാന്റും സംയോജിപ്പിച്ച്
+</span></font></span></font><font size="3" style="font-size: 12pt">G(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ആയി
+എഴുതപ്പെടുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+പറഞ്ഞപോലെ </span></font><span lang="ml"> ഞങ്ങൾ
+ഇപ്പോഴും </span></span></font><font size="3" style="font-size: 12pt">P(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നോക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+ഇപ്പോഴും പ്ലാന്റ് ട്രാൻസ്ഫർ
+ഫങ്ക്ഷൻ ആണ്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+വീണ്ടും സസ്യം അല്ലെങ്കിൽ
+സിസ്റ്റം വിശകലനം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്നാൽ
+ഞങ്ങൾ മുന്നോട്ട് നീങ്ങുമ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+ആശയങ്ങൾ മുഴുവൻ സിസ്റ്റത്തിലേക്ക്
+വ്യാപിപ്പിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+ഒരു ചെടി സ്ഥിരതയുള്ളതാണോ
+അല്ലയോ എന്ന് നോക്കുകയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+ഒരു ക്ലോസ്ഡ് ലൂപ്പ് ഫീഡ്ബാക്ക്
+സിസ്റ്റം രൂപകൽപ്പന ചെയ്യുമ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ക്ലോസ്ഡ്
+ലൂപ്പ് സ്ഥിരതയുള്ളതായിരിക്കണം
+എന്ന് ഞങ്ങൾ ആഗ്രഹിക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ക്ലോസ്ഡ്
+ലൂപ്പ് ധ്രുവങ്ങൾ ഞങ്ങൾ നോക്കി
+ക്ലോസ്ഡ് ലൂപ്പ് ട്രാൻസ്ഫർ
+ഫങ്ഷനിലേക്ക് അത് വ്യാപിപ്പിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+ചെയ്യാൻ പോകുന്ന ഒരു കാര്യം</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+10:56)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20malayalam_htm_9330c27f07c2013e.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">പിന്നെ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+പ്രധാന </span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+കാര്യം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഏത്
+കൺട്രോൾ ഡിസൈനിലും ശരി</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ</span></font></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരുഎസ്</span></font><span lang="ml">
+കൺട്രോൾ ഡിസൈനർ ഈ ക്രമത്തിൽ
+രണ്ട് പ്രധാന</span><font size="3" style="font-size: 12pt"><span lang="ml">
+വശങ്ങൾ നോക്കണം</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ആദ്യത്തേത്
+സ്ഥിരതയുടെ കാര്യം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">രണ്ടാമത്തെ
+വശം പ്രകടനം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ബിഓത്ത്
+പ്രധാനമാണ്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്നാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ഥിരത
+യാണ് പ്രകടനത്തേക്കാൾ പ്രധാനം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നോക്കൂ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ഒരു സ്ഥിരതയുള്ള സിസ്റ്റം</span></font><span lang="ml">ആരംഭിക്കാൻ
+കഴിയില്ല എങ്കിൽ ഞാൻ അത്
+സംസാരിക്കാൻ പോലും കഴിയില്ല
+പ്രകടനം ആണ് ആദ്യം ഞാൻ രൂപകൽപ്പന
+ചെയ്യുന്ന സിസ്റ്റം
+സ്ഥിരതയുള്ളതാണെന്ന്
+ഉറപ്പാക്കണം</span></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">തുടർന്ന്</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ഞങ്ങൾ പ്രകടനത്തെ കുറിച്ച്
+സംസാരിക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ചെയ്യാൻ പോകുന്നതു പോലെ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നിങ്ങൾ
+രണ്ടും ഡിസൈൻ ചെയ്യുമ്പോൾ
+ഒരു കൺട്രോൾ ഡിസൈനർ ക്ക്
+പ്രധാനപ്പെട്ടതാണെന്ന്
+സൂചിപ്പിക്കാൻ ഒരു ഡാഷ് ഡ്
+അമ്പ് വരയ്ക്കാൻ പോകുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്നാൽ
+നിങ്ങൾ ആദ്യം നിങ്ങൾ സ്ഥിരത
+ഉറപ്പ് തുടർന്ന് ഞങ്ങൾ പ്രകടനം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓകെ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇപ്പോൾ
+ഞങ്ങൾ ചർച്ച ചെയ്യാൻ പോകുന്നത്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+പ്രകടനം എങ്ങനെ അളക്കാൻ
+കഴിയും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+നമ്മൾ പഠിക്കാൻ പോകുന്ന ഒരു
+കാര്യമാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+പെർഫോർമൻസ് സ്പെസിഫിക്കേഷൻ
+അറിയാൻ പോകുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+ചെയ്തകാര്യങ്ങൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+സ്ഥിരത നോക്കി പോലെ ഈ പ്രത്യേക
+കോഴ്സ് പിന്തുടരാൻ പോകുന്ന
+സ്ഥിരത എന്ന ആശയം ബൌണ്ടഡ്
+ഇൻപുട്ട് ബൗണ്ടഡ് ഔട്ട്പുട്ട്
+സ്ഥിരത ആണ്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എല്ലാ
+ട്രാൻസ്ഫർ സിസ്റ്റം ട്രാൻസ്ഫർ
+</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">ഫങ്ഷൻ
+പോളുകളും കോംപ്ലക്സ് പ്ലെയിനിന്റെ
+ഇടതുവശത്തായിരിക്കണം എന്ന്
+ബിബോ സ്ഥിരത ഉറപ്പാക്കുന്നതിനുള്ള
+മാനദണ്ഡം നിങ്ങൾക്ക് അറിയാമെന്ന്
+ഞങ്ങൾ കണ്ടിട്ടുണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതാണ്
+ബിബോ സ്ഥിരതയുടെ മാനദണ്ഡം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഈ
+മുറിയിലെ വായുവിന്റെ താപനില
+നിയന്ത്രിക്കുന്നതിനുള്ള
+ഒരു കൺട്രോളർ വികസിപ്പിച്ചെടുക്കാൻ
+ഞങ്ങൾ ആഗ്രഹിക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നമുക്ക്
+</span></font></span></font><font size="3" style="font-size: 12pt">60
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">പേരും
+ഡിസൈൻ സ്ഥിരതയുള്ള കൺട്രോളറുകൾ
+എന്ന് പറയാം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓക്കേ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്റെ
+കയ്യിൽ </span></font></span></font><font size="3" style="font-size: 12pt">60
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കണ്ട്രോളറുകൾ
+ഉണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഏതാണ്
+ഏറ്റവും മികച്ചതെന്ന് ഞാൻ
+എങ്ങനെവിലയിരുത്തും</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">പ്രായോഗിക
+വീക്ഷണത്തിൽ ഞാൻ വിലയിരുത്തേണ്ടതുണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">മൂല്യനിർണയത്തിനായി
+എനിക്ക് ഉപയോഗിക്കാവുന്ന
+ചില പാരാമീറ്ററുകൾ
+എന്തൊക്കെയായിരിക്കണം</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">പെർഫോർമൻസ്
+വിലയിരുത്തലിന് മാനദണ്ഡമായി
+എനിക്ക് ഉപയോഗിക്കാൻ കഴിയുമെന്ന്
+നിങ്ങൾ കരുതുന്നുണ്ടോ</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">So, </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+വേനൽക്കാലത്ത് ഈ മുറിയിൽ
+വന്നു എന്നു പറയാം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">മുറിയിലെ
+താപനില </span></font></span></font><font size="3" style="font-size: 12pt">38
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഡിഗ്രി
+സെൽഷ്യസ് എന്ന് പറയാം</span></font></span></font><font size="3" style="font-size: 12pt">.
+25-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ലേക്ക്
+പോകണമായിരുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ഓരോ കണ്ട്രോളറും നോക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+സെറ്റ് ചെയ്യുന്നതുപോലെ</span></font></span></font><font size="3" style="font-size: 12pt">,
+ </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+എന്റെ റഫറൻസ് </span></font></span></font><font size="3" style="font-size: 12pt">25
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഡിഗ്രി
+സെൽഷ്യസ് ആയി ക്രമീകരിച്ചു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+</span></font></span></font><font size="3" style="font-size: 12pt">25-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ലേക്ക്
+എത്ര വേഗത്തിൽ പോകുമെന്ന്
+ഞാൻ വിലയിരുത്താം</span></font></span></font><font size="3" style="font-size: 12pt">;</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+ഒരു</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+H ow </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+കൃത്യമായി പറയും അത്</span></font></span></font><font size="3" style="font-size: 12pt">25-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ൽ
+എത്ര വേഗത്തിൽ അത് </span></font></span></font><font size="3" style="font-size: 12pt">25-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ൽ
+എത്ര വേഗത്തിൽ കഴിയും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+</span></font></span></font><font size="3" style="font-size: 12pt">25-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ലേക്ക്
+എത്ര അടുത്ത് തുടരും</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നോക്കൂ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ഒരു എയർ കണ്ടീഷണർ </span></font></span></font><font size="3" style="font-size: 12pt">10
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">മിനിറ്റിൽ
+</span></font></span></font><font size="3" style="font-size: 12pt">38
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">മുതൽ
+</span></font></span></font><font size="3" style="font-size: 12pt">25
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">വരെ
+പോകുന്നു എന്ന് പറയാം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്നാൽ
+</span></font></span></font><font size="3" style="font-size: 12pt">23-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നും
+</span></font></span></font><font size="3" style="font-size: 12pt">27-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നും
+ഇടയിൽ നിങ്ങൾ ക്കറിയാവുന്ന
+</span></font></span></font><font size="3" style="font-size: 12pt">23-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നും
+</span></font></span></font><font size="3" style="font-size: 12pt">27-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നും
+ഇടയിൽ എന്തു പറയണമെന്ന്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+വളരെ സന്തോഷവാനല്ല</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+23 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഡിഗ്രി
+സെൽഷ്യസിൽ അത് വെട്ടിക്കളഞ്ഞ്
+</span></font></span></font><font size="3" style="font-size: 12pt">27
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഡിഗ്രി
+സെൽഷ്യസിൽ കുറവ് എന്ന് പറയാം</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എനിക്ക്
+</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+വളരെ സന്തോഷം തോന്നുന്നില്ല</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കാരണം
+ഞാൻ നാലു ഡിഗ്രി സെൽഷ്യസ്
+വ്യതിയാനം വലത്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്നാൽ
+മറുവശത്ത് ഒരു എയർ കണ്ടീഷണർ
+</span></font></span></font><font size="3" style="font-size: 12pt">24.5
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നും
+</span></font></span></font><font size="3" style="font-size: 12pt">25.5
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നും
+ഇടയിൽ താപനില നിലനിർത്തുന്നു
+എന്ന് പറയാം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+വളരെ സന്തോഷവതിയായേക്കാം</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+ഒരു പെർഫോർമൻസ് സ്പെസിഫിക്കേഷൻ
+ആണ്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+എത്ര വേഗത്തിൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയായ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എത്ര
+വേഗത്തിൽ അത് മൂല്യം മറികടക്കാം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+നമ്മൾ നോക്കി</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ഒരു റെഫറൻസ് മൂല്യം എത്ര
+വേഗത്തിൽ അല്ലെങ്കിൽ എത്ര
+ദൂരം അത് ആഗ്രഹിക്കുന്ന
+മൂല്യത്തിൽ നിന്ന് എത്ര ദൂരം
+പോകും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയായ
+മറ്റൊരു പെർഫോർമൻസ്
+സ്പെസിഫിക്കേഷനുകൾ ശരിയായ
+ആണ്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയായ
+സ്റ്റേറ്റ് പിശകുകൾ ശരിയായ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അന്തിമ
+മൂല്യത്തിലേക്ക് പോകുന്ന
+വേഗത</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അന്തിമ
+മൂല്യത്തെ ചുറ്റിപ്പറ്റി
+അത് നിയന്ത്രിക്കുന്ന ബാൻഡ്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അന്തിമ
+മൂല്യം അല്ലെങ്കിൽ ആഗ്രഹിക്കുന്ന
+മൂല്യം എത്രത്തോളമാണ്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+ആഗ്രഹിക്കുന്ന പ്രകടന
+സ്പെസിഫിക്കേഷനുകൾ എല്ലാം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">വലത്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+പഠിക്കാൻ പോകുന്ന</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയായ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സിസ്റ്റം
+സ്ഥിരതയുള്ളതാണ്</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">അതുകൊണ്ടാണ്
+ഞാൻ ആദ്യം</span><font size="3" style="font-size: 12pt"><span lang="ml">
+സുസ്ഥിരതയെ കുറിച്ച്
+ചർച്ചചെയ്യുന്നത്</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ഥിരത
+ഇല്ലാതെ പ്രകടനം ചർച്ച യാതൊരു
+അർഥമില്ല</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+</span></font><span lang="ml">എന്റെ സിസ്റ്റം
+</span><font size="3" style="font-size: 12pt"><span lang="ml">ആഗ്രഹിക്കുന്നപോലെ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഞാൻ
+എന്റെ സിസ്റ്റം ആഗ്രഹിക്കുന്ന
+പോലെ</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഞാൻ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ആദ്യം സ്ഥിരതയുള്ള ആ സിസ്റ്റങ്ങളുടെ
+പെർഫോർമൻസ് വിശകലനം മാത്രമേ
+ചെയ്യാൻ കഴിയും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">പ്രകടനം
+വ്യക്തമാക്കാൻ അല്ലെങ്കിൽ
+പ്രകടനം അളക്കാൻ ഉപയോഗിക്കുന്ന
+പരാമീറ്ററുകൾ ആദ്യ ഓർഡറും
+രണ്ടാം ഓർഡർ സിസ്റ്റങ്ങളുടെ
+സ്റ്റെപ്പ് റെസ്പോൺസ് നിന്ന്
+വേർതിരിച്ചെടുക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നമുക്ക്
+കാണാം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">പ്രകടന
+ആവശ്യകതകൾ എന്താണ് എന്ന്
+അളക്കാൻ കഴിയുന്ന പരാമീറ്ററുകൾ
+</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്റ്റെപ്പ്
+റെസ്പോൺസ് അല്ലെങ്കിൽ ഫസ്റ്റ്
+ഓർഡർ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">രണ്ടാം
+ഓർഡർ സിസ്റ്റങ്ങളുടെ യൂണിറ്റ്
+സ്റ്റെപ്പ് പ്രതികരണം എന്നിവയിൽ
+നിന്ന് ഫോർമുലകൾ വേർതിരിച്ചെടുക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നമ്മൾ
+ശരിയിലേക്ക് പോകുന്നതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നമുക്ക്
+കാണാം</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നൂതന
+നിയന്ത്രണ രൂപകൽപ്പനയിലേക്ക്
+പോകുമ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇന്നലെ
+തന്നെ നാം പ്രബലധ്രുവങ്ങളെക്കുറിച്ച്
+പഠിച്ചതായി കാണാം</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നിങ്ങൾക്ക്
+പത്താം ഓർഡർ സിസ്റ്റം ഉണ്ടെങ്കിലും
+ശരി</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+ഒന്നാം ഓർഡർ സിസ്റ്റത്തിനോ
+രണ്ടാം ഓർഡർ സിസ്റ്റത്തിനോ
+അനുയോജ്യമായ ഒരു ഡോമിനന്റ്
+ഡൈനാമിക്സ് നിങ്ങൾക്ക്
+ഉണ്ടായിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എല്ലായ്പ്പോഴും
+അപവാദങ്ങൾ ഉണ്ടാകാം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സാധാരണഗതിയിൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+ഫസ്റ്റ് ഓർഡർ അല്ലെങ്കിൽ
+രണ്ടാം ഓർഡർ സിസ്റ്റം ഉപയോഗിച്ച്
+പിടിച്ചെടുക്കാൻ കഴിയുന്ന
+ഡോമിനന്റ് ഡൈനാമിക്സ് നിങ്ങൾക്ക്
+ലഭിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ടാണ്
+പെർഫോർമൻസ് പരാമീറ്ററുകൾ
+വേർതിരിച്ചെടുക്കാൻ ഈ
+സംവിധാനങ്ങൾ ഉപയോഗിക്കാൻ
+ഞങ്ങൾ പ്രചോദനം ആയിരിക്കുന്നത്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഈ
+പോയിന്റ് പിന്നീട് വീണ്ടും
+സന്ദർശിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഫസ്റ്റ്
+ഓർഡർ സിസ്റ്റങ്ങളിൽ ഇന്ന്
+തുടങ്ങാം</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+18:07)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20malayalam_htm_15dea0a58bd175a4.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഫസ്റ്റ്
+ഓർഡർ സിസ്റ്റങ്ങൾ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>:</b></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ഒരു സാധാരണ ഫസ്റ്റ് ഓർഡർ
+സിസ്റ്റം മോഡൽ ആരംഭിക്കാൻ
+പോകുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ഒരു സെറ്റ് ചോദ്യങ്ങൾ നിങ്ങളെ
+വിട്ടു പോകുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+സാധാരണ ഫസ്റ്റ് ഓർഡർ സിസ്റ്റത്തിന്റെ
+ഭരണസമവാക്യം എന്താണ്</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നോക്കൂ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">വാസ്തവത്തിൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നിങ്ങൾ
+സംസാരിക്കുന്നത് ആരെ
+ആശ്രയിച്ചിരിക്കുന്നു
+എന്നപോലെ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഉദാഹരണത്തിന്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+കെമിക്കൽ എഞ്ചിനീയറുമായി
+ഇത് ചർച്ച ചെയ്യുന്നു എന്ന്
+പറയാം</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അവർ
+ഒരു ആദ്യ ഓർഡർ പ്രക്രിയ ഒരു
+മോഡൽ പറയും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അവർ
+എപ്പോഴും പ്രക്രിയകൾ നോക്കി
+ആയിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരിയായ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അവർക്കുള്ള
+പ്ലാന്റ് ഒരു പ്രക്രിയയാണ്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നിങ്ങൾ
+കെമിക്കൽ എഞ്ചിനീയർ എഴുതിയ</span></font><span lang="ml">
+പരാമർശങ്ങൾ നോക്കിയാൽ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+അത് ഒരു ഒന്നാം ഓർഡർ പ്രക്രിയയാണെന്ന്
+അവർ പറയും</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ദയവായി
+ആശയക്കുഴപ്പത്തിൽ ആക്കാതിരിക്കുക</span></font></span></font><font size="3" style="font-size: 12pt">;</font>
+<font size="3" style="font-size: 12pt">k</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ിൽ
+</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+സിസ്റ്റം നോക്കി</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+സാധാരണ ഫസ്റ്റ് ഓർഡർ സിസ്റ്റത്തിന്റെ
+ഭരണസമവാക്യം</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20malayalam_htm_ae3cc208078f6a09.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ലാപ്ലേസ്
+ട്രാൻസ്ഫോമിനെ ഇരുവശത്തും
+എടുക്കുക</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20malayalam_htm_c84756f8c156e615.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">പൂജ്യം
+പ്രാരംഭ നിബന്ധനകൾ അനുമാനിക്കുക</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20malayalam_htm_9f7d0078a06648c1.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+21:09)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20malayalam_htm_1a75ccd3a60a1747.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇവിടെ
+</span></font></span></font><font size="3" style="font-size: 12pt">n=1;
+m=0.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+-1/T-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ൽ</span></font><span lang="ml">ഒരു
+ധ്രുവം</span><font size="3" style="font-size: 12pt"><span lang="ml">ഉണ്ട്
+</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">വലത്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നിങ്ങൾ
+</span></font></span></font><font size="3" style="font-size: 12pt">TS</font>
+<font size="3" style="font-size: 12pt"> +</font> <font size="3" style="font-size: 12pt">
+1</font> <font size="3" style="font-size: 12pt"> =</font> 0,<font size="3" style="font-size: 12pt">
+A</font>s <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">പരിഹരിക്കേണ്ടതുണ്ട്</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പൂജ്യങ്ങൾ</span></font><span lang="ml"> ഒന്നും</span><font size="3" style="font-size: 12pt"><span lang="ml">ഇല്ല</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇത്
+സൂചിപ്പിക്കുന്നത് സുസ്ഥിരതയ്ക്ക്
+വേണ്ടി എന്താണ് സംഭവിക്കേണ്ടത്</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">വിദ്യാർത്ഥി</span></font></span></font><font size="3" style="font-size: 12pt">:
+T </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">പോസിറ്റീവ്
+ആയിരിക്കണം</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">പോസിറ്റീവ്
+ആയിരിക്കണം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓക്കേ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ഥിരത
+യ്ക്ക് അത് പോസിറ്റീവ്
+ആയിരിക്കണം എന്ന് നിങ്ങൾക്ക്
+കാണാം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുകൊണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ
+മൈനസ് </span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ന്
+മുകളിൽ ഒരു ധ്രുവം തലസ്ഥാന
+</span></font></span></font><font size="3" style="font-size: 12pt">T.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇപ്പോൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+നിങ്ങളെ വിടാൻ പോകുന്ന ത് ഈ
+ചോദ്യങ്ങൾ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓകെ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">യൂണിറ്റ്
+സ്റ്റെപ്പ് പ്രതികരണം ശരി</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">യൂണിറ്റ്
+റാംപ് റെസ്പോൺസ്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സിസ്റ്റത്തിന്റെ
+യൂണിറ്റ് ഇംപൾസ് പ്രതികരണം
+എന്നിവ നിങ്ങൾ കണക്കുകൂട്ടുക</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതാണ്
+ഞാൻ നിങ്ങളെ വിടാൻ പോകുന്ന
+ഒരു ഗൃഹപാഠം</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അടുത്ത
+ക്ലാസിൽ അതേ പോയിന്റിൽ നിന്ന്
+വീണ്ടും തുടങ്ങാം</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">യൂണിറ്റ്
+സ്റ്റെപ്പ് പ്രതികരണം
+കണക്കാക്കുക എന്നാൽ </span></font></span></font><font size="3" style="font-size: 12pt">S-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ന്റെ
+</span></font></span></font><font size="3" style="font-size: 12pt">U-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നായി
+നിങ്ങൾ എന്താണ് ഉപയോഗിക്കുന്നത്</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">വിദ്യാർത്ഥി</span></font></span></font><font size="3" style="font-size: 12pt">:
+(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+23:20).</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20malayalam_htm_4cbfcb2c6648da75.gif"/>
+<font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">യൂണിറ്റ്
+റാമ്പ് എന്നാൽ</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">വിദ്യാർത്ഥി</span></font></span></font><font size="3" style="font-size: 12pt">:
+1 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ബൈ
+എസ്</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec16.doc%20malayalam_htm_7b7b0d8c1ba2d2c6.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">യൂണിറ്റ്
+ഇംപൾസ് </span></font></span></font><font size="3" style="font-size: 12pt">U(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)=1.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">So, </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ദയവായി
+ഈ </span></font><span lang="ml"> </span></span></font><font size="3" style="font-size: 12pt">U(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കൾ</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">വളരെ
+നേർധാരാ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">മൂന്ന്
+പ്രതികരണങ്ങളും കണക്കാക്കാൻ
+</span></font></span></font><font size="3" style="font-size: 12pt">5
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">മിനിറ്റിൽ
+കൂടുതൽ സമയം എടുക്കരുത്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ദയവായി
+അഭിപ്രായങ്ങൾ നേടുക</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നിരീക്ഷണങ്ങൾ
+നടത്തുക</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നിങ്ങൾ
+</span></font></span></font><font size="3" style="font-size: 12pt">m</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ൽ
+നിന്ന് എന്താണ് നിരീക്ഷിക്കുന്നത്
+തുടർന്ന് അടുത്ത</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ക്ലാസിലേക്ക് തിരികെ വരുന്ന
+പോലെ ഞങ്ങൾ ഇവിടെ നിന്ന്
+ഞങ്ങളുടെ ചർച്ചകൾ വീണ്ടും
+പുനരാരംഭിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശരി</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നന്ദി</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+</body>
+</html>

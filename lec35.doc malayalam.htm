@@ -1,0 +1,591 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-78" name="author"/>
+<meta content="2019-05-06T16:07:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-23T09:23:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; font-size: 11pt; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000"><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നിയന്ത്രണ
+സംവിധാനങ്ങൾ</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പ്രൊഫ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>എഞ്ചിനീയറിംഗ്
+ഡിസൈൻ വകുപ്പ്</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഇന്ത്യൻ
+ഇൻസ്റ്റിറ്റ്യൂട്ട് ഓഫ്
+ടെക്നോളജി</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>മദ്രാസ്</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>വായന
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+35</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>റൂട്ട്
+ലോക്കസ് </b></span></font></span></font><font size="3" style="font-size: 12pt"><b>2</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഭാഗം</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+1</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾറൂട്ട്
+ലോക്കസ് നോക്കുന്നു</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> ഞങ്ങൾ
+</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+രണ്ട്</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+ഘട്ടങ്ങൾ പൂർത്തിയാക്കി</span></font><span lang="ml">
+</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എഫ്</span></font></span></font>irst
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഘട്ടം
+ഓപ്പൺ</span><font size="3" style="font-size: 12pt"><span lang="ml">ലൂപ്പ്
+ധ്രുവങ്ങൾ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഓപ്പൺ
+ലൂപ്പ്</span><font size="3" style="font-size: 12pt"><span lang="ml">
+സീറോകൾ</span></font><span lang="ml"> എന്നിവ
+സങ്കീർണ്ണമായ തലത്തിൽ കണ്ടെത്തുക</span><font size="3" style="font-size: 12pt"><span lang="ml">
+എന്നതാണ്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">റൂട്ട്ലോക്കസിൽ
+കിടക്കുന്ന യഥാർത്ഥ അച്ചുതണ്ടിന്റെ
+ഭാഗങ്ങൾ കണ്ടെത്താൻ</span></font><span lang="ml">രണ്ടാമത്തെ
+ഘട്ടം </span></span></font>I s<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ആണ്
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:40)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_3befee50cf88db17.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഘട്ടം</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> നമ്പർ
+</span></font></span></font><font size="3" style="font-size: 12pt">3-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ൽ
+നിന്ന് ആരംഭിക്കുന്നു </span></font><span lang="ml">
+</span></span></font>- <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഇത്
+റൂട്ട് ലോക്കസിന്റെ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+അസിംപ്റ്റോട്ടുകൾ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+നിർണ്ണയിക്കുന്ന</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">തുണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ടിഅവന്റെ
+സ്റ്റെപ്പ് </span></font></span></font><font size="3" style="font-size: 12pt">applies
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">മാത്രം
+</span></font><span lang="ml"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_9b28195e4477992c.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:55)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_c8abac7ec6b8a228.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">R oot </font> <font size="3" style="font-size: 12pt">locus
+</font>s will <font size="3" style="font-size: 12pt">will </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശാഖകള്</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">ഉണ്ടാകും</span></font><span lang="ml">
+എന്ന് ചര് ച്ച ചെയ്ത</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_caf0ed0351febb0e.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">എ
+എസ് </span></font></span></font><font size="3" style="font-size: 12pt">.
+E</font>ach <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ശാഖ
+ഒരു ഓപ്പൺ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ലൂപ്പ് ധ്രുവത്തിൽ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">നിന്ന്
+ആരംഭിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_dacbc5c1cbb7e783.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ശാഖകൾ
+ഓപ്പൺ ലൂപ്പ് പൂജ്യങ്ങളിൽ
+അവസാനിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ബാക്കി
+ശാഖകൾ അസിന്പ്റ്റോട്ടസ്
+സഹിതം അനന്തതയിലേക്ക് പോകും</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_fc53677f96a53864.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font><span lang="ml">
+തന്നെ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+അസിന്പ്റ്റോട്ടുകൾ മാത്രമേ
+നിലനിൽക്കുകയുള്ളൂ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_974ca81af998d6a2.gif"/>
+<font size="3" style="font-size: 12pt">
+</font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">മുമ്പ്
+എവിടെ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">എന്നിങ്ങനെ
+യുള്ള അതേ ഉദാഹരണം നമുക്ക്</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_716bb8dd0df16e37.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">
+എടുക്കാം</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_7678cf5b8f71db64.gif"/>
+<font size="3" style="font-size: 12pt">
+We asymptotes ( Asymptotes)</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_22852ecf378b3813.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">By </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നിർവചനം
+അസിംപ്റ്റോടെസ് റൂട്ട്
+ലോക്കസിന്റെ യോ ക്ലോസ്ഡ്
+ലൂപ്പ് ധ്രുവങ്ങളുടെയോ ട്രേസ്
+ആണ്</span></font><span lang="ml"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_e42c101fb81d83d0.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">
+</span></font></span></font><font size="3" style="font-size: 12pt">. 
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നാം
+ടെസ്റ്റ് പോയിന്റ് അനന്തതയിലേക്ക്
+തള്ളിവിട്ടാൽ</span></font><span lang="ml"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_7d25abe43a234056.gif"/>
+</span></font><font size="3" style="font-size: 12pt">-
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഉത്ഭവത്തിൽ
+നിന്ന് കൂടുതൽ അകലെ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_9f6590c1b0511f1d.gif"/>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_80c18b3e84a2f1d9.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+തുല്യമാകും</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നാം
+</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+ഏതു ദിശയിലേക്കാണ് പോകുന്നത്
+എന്നത് ഒരു വിഷയമല്ല</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">So, </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓരോ
+ഓപ്പൺ ലൂപ്പ് പോളും ഓരോ ഓപ്പൺ
+ലൂപ്പ് പൂജ്യവും</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> </span></font><span lang="ml">കോൺ
+കോൺ സംഭാവന </span><font size="3" style="font-size: 12pt"><span lang="ml">തുല്യമായിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അങ്ങനെയാണ്</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> </span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ആസിംപ്റ്റോടെസിന്റെ കോണിന്റെ
+സമവാക്യം നമുക്ക് ലഭിക്കുന്നത്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ടെസ്റ്റ്
+പോയിന്റ്</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+ഉത്ഭവത്തിൽ നിന്ന് വളരെ
+അകലെ</span></font><span lang="ml">യാണ്
+തിരഞ്ഞെടുക്കുന്നതെങ്കിൽ</span></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഓപ്പൺ
+ലൂപ്പ് പോളുകളുടെ കോൺ കോൺ
+ഒരു ഓപ്പൺ ലൂപ്പ്</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പൂജ്യം</span></font><span lang="ml">ഉപയോഗിച്ച്</span><font size="3" style="font-size: 12pt"><span lang="ml">
+റദ്ദാക്കുന്നു</span></font><span lang="ml">
+</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">Because </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഘട്ടം
+കോൺട്രിബ്യൂഷൻ റദ്ദാക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഓപ്പൺ
+ലൂപ്പ്</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പോളിനും ഓപ്പൺ ലൂപ്പ് പൂജ്യത്തിനും
+ഇടയിൽ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">കാരണം
+</span><font size="3" style="font-size: 12pt"><span lang="ml">അവ
+കാന്തിമാനത്തിൽ തുല്യമായിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">Hence asymptotes
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നേർരേഖയായിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇത്
+ഒരു കോണിനെ പോസിറ്റീവ് യഥാർത്ഥ
+അക്ഷത്തിൽ ആക്കുന്നതായിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_4c34f2c7cae410f3.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+04:41)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_8f70ec6e0e9397e2.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്ന
+ത്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നേർരേഖയായി
+മാത്രമേ </span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">നിലനിൽക്കുകയുള്ളൂ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_9b28195e4477992c.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അത്
+പോസിറ്റീവ് യഥാർത്ഥ അക്ഷം
+കൊണ്ട് ഒരു കോണുണ്ടാക്കും</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_be9adc5e2313dc4a.gif"/>
+</span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">യഥാർത്ഥ
+അച്ചുതണ്ടിൽ അസൈംപ്റ്റോട്ടുകൾ
+ഇന്റർസെക്ഷൻ</span></font><span lang="ml">
+ചെയ്യുന്ന ടി</span></span></font>.</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_94a79395eba3e22e.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓപ്പൺ
+ലൂപ്പ് ധ്രുവങ്ങളുടെ സംഖ്യ
+യുടെ കണക്ക് കൂട്ടൽ പോലെയാണിത്</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">പൂജ്യം</span></font><span lang="ml">
+ഓപ്പൺ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ലൂപ്പിന്റെ ആകെ</span></font><span lang="ml">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_ca208b85b7a26857.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">
+ത്തുക</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+06:47)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_2f21cab8c70eb55d.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഈ
+പ്രശ്നത്തിൽ നമുക്ക് ഉദാഹരണം
+നോക്കാം</span></font></span></font><font size="3" style="font-size: 12pt">-
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_f24c1658f96f60d2.gif"/>
+<font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">തന്റെ
+അഭിപ്രായത്തിൽ </span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">രണ്ട്</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+അസിംപ്റ്റോട്ടുകൾ </span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> </span></font><span lang="ml">ഉണ്ട്
+</span><font size="3" style="font-size: 12pt"><span lang="ml">രണ്ട്</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+അസിംപ്റ്റോട്ടുകൾ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> </span></font><span lang="ml">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_a1c313022264c55f.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">ഉണ്ടാക്കും</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">Now-</font> <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">യഥാർത്ഥ
+അച്ചുതണ്ടിൽ </span><font size="3" style="font-size: 12pt"><span lang="ml">രണ്ട്</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+അസൈംപ്റ്റോട്ടുകൾ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ഇന്റർസെക്ഷൻ </span></font><span lang="ml">പോയിന്റ്
+പോകുന്നു</span></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_81eef84a1cf6bcb7.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_7cfcbafd779d7fe3.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">എ</span></span></font>.<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ടി</span></span></font>.<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">എം</span></span></font>.<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">എസ്</span></span></font>.
+ <font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+സിമ്പറ്റോട്ട്</span></font><span lang="ml">
+പോകാൻ പോകുന്നു</span><font size="3" style="font-size: 12pt"><span lang="ml">
+അല്ലെങ്കിൽ </span></font><span lang="ml">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_a3fb1bf8efd8c751.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">മറ്റൊരു
+അസിംപ്റ്റോട്ട് പോലെ</span></font><span lang="ml">പോകുന്നു</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_6037e59b132c4035.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+1 1:54)</font></p>
+<p align="center" style="margin-bottom: 0.42cm; line-height: 150%"><img align="bottom" border="0" height="291" name="Picture 6" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_1043b2d68fec723d.png" width="376"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+12:37)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 7" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_7be51f10f7bf7b23.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഘട്ടം</span><font size="3" style="font-size: 12pt"><span lang="ml">
+</span></font></span></font><font size="3" style="font-size: 12pt">4-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ലേക്ക്
+</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">പോകാം</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ</span></font><span lang="ml">പറയുന്നു
+</span><font size="3" style="font-size: 12pt"><span lang="ml">ബ്രേക്ക്</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എവേ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പോയിന്റുകൾ നിർണ്ണയിക്കുകയും
+</span></font><span lang="ml"> പോയിന്റുകൾ </span></span></font>-<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ൽ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ ഒരു</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+ബ്രേക്ക്</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എവേ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പോയിന്റ് </span></font><span lang="ml"> </span></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഉദാഹരണത്തിന്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">യഥാർത്ഥ
+അച്ചുതണ്ടിൽ തുടർച്ചയായ
+</span><font size="3" style="font-size: 12pt"><span lang="ml">രണ്ട്</span></font><span lang="ml">
+ഓപ്പൺ ലൂപ്പ് പോളുകൾ ക്കിടയിൽ
+</span><font size="3" style="font-size: 12pt"><span lang="ml">റൂട്ട്
+ലോക്കസിൽ  ഉണ്ടായിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുപോലെ
+തന്നെ </span></font><span lang="ml">യഥാർത്ഥ
+അച്ചുതണ്ടിൽ തുടർച്ചയായ
+</span><font size="3" style="font-size: 12pt"><span lang="ml">രണ്ട്</span></font><span lang="ml">
+ഓപ്പൺ ലൂപ്പ് പൂജ്യങ്ങൾക്കിടയിൽ
+റൂട്ട് ലോക്കസിൽ ഒരു </span><font size="3" style="font-size: 12pt"><span lang="ml">ബ്രേക്ക്</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇൻ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പോയിന്റ്  </span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">നിലനിൽക്കും</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അവയ്ക്കിടയിൽ
+യഥാർത്ഥ ഓപ്പൺ ലൂപ്പ് പോളുകൾ
+ഇല്ല</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+13:32)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 8" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_5cee8c1f1d00a627.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">W hen </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നമുക്ക്</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+ബ്രേക്ക്</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എവേ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പോയിന്റ്</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഉണ്ടോ</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഉദാഹരണത്തിൽ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> </span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> </span></font></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">യഥാർത്ഥ
+അച്ചുതണ്ടിൽ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾക്കും
+</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">ഉണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">.</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_31deff7e8161143d.gif"/>
+<font size="3" style="font-size: 12pt">T</font>hese <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">യഥാർത്ഥ
+അച്ചുതണ്ടിൽ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">രണ്ട്</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> ഓപ്പൺ
+ലൂപ്പ് പോളുകളാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഈ
+ഉദാഹരണത്തിൽ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> </span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> ശാഖയിൽ
+നിന്ന് തുടങ്ങി</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+വലതുവശത്ത്</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_cc3eb01607db0507.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">
+നിന്ന് വരുന്നു</span></font><span lang="ml">
+</span></span></font><font size="3" style="font-size: 12pt">;</font> <font size="3" style="font-size: 12pt">
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> ശാഖ
+തുടങ്ങുന്നതും</span></font><span lang="ml">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_a8099f2efcc221cf.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">
+ഇടത്തോട്ട് വരുന്നതും</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">റൂട്ട്
+ലോക്കസ് ഓപ്പൺ</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+ലൂപ്പ് ധ്രുവങ്ങളിൽ</span></font><span lang="ml">
+ആരംഭിക്കും</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഒരു
+ശാഖ യും</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_3292622f5d9d9d50.gif"/>
+<span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> </span></font><span lang="ml">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_23087554af7d75b2.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">കൂടിക്കൊണ്ടേയിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> ശാഖ
+ഇടത്തോട്ട്</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+വരും</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ചിലപ്പോൾ
+അവർ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പരസ്പരം കണ്ടുമുട്ടാൻ പോകുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഈ
+ഘട്ടത്തിൽ അവർ പിരിയാൻ
+പോകുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">യഥാർത്ഥ
+അച്ചുതണ്ടിൽ നിന്ന് അകന്നുപോയി</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">കാരണം</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> അവർ
+</span></font><span lang="ml">പരസ്പരം തിരിഞ്ഞ്
+കടക്കാൻ </span><font size="3" style="font-size: 12pt"><span lang="ml">കഴിയില്ല</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">രണ്ടു</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ശാഖകളും പരസ്പരം അടിക്കുകയും
+യഥാർത്ഥ </span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+അച്ചുതണ്ടിൽ നിന്ന്അകന്ന്</span></font><span lang="ml">
+</span></span></font>(<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">അകലെ</span></span></font>)
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഇതിനെ
+</span><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+ബ്രേക്ക്</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എവേ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പോയിന്റ്</span></font><span lang="ml">എന്ന്
+</span><font size="3" style="font-size: 12pt"><span lang="ml">വിളിക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ബ്രേക്ക്</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എവേ
+പോയിന്റ്</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+എല്ലായ്പ്പോഴും സംഭവിക്കണമെന്നില്ല</span></font></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്നാൽ
+</span></font><span lang="ml">ഈ ഉദാഹരണത്തിൽ
+അത് </span><font size="3" style="font-size: 12pt"><span lang="ml">സംഭവിക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതുപോലെ
+തന്നെ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">യഥാർത്ഥ
+അച്ചുതണ്ടിൽ രണ്ട് ഓപ്പൺ
+ലൂപ്പ് പൂജ്യങ്ങൾ ഉണ്ടെങ്കിൽ
+</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അവയ്ക്കിടയിൽ
+ഓപ്പൺ ലൂപ്പ് പോളുകൾ ഇല്ലാത്ത</span></font><span lang="ml">തിനാൽ</span></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">റൂട്ട്
+ലോചി പരസ്പരം സഞ്ചരിച്ച് ചില
+പോയിന്റ് പരസ്പരം ഹിറ്റ്
+ചെയ്യുകയും യഥാർത്ഥ അച്ചുതണ്ടിൽ
+വിള്ളൽ വീഴുകയും ചെയ്യാം</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഇതിനെ
+ഒരു</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ഇടവേള </span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ബിന്ദു</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എന്നു
+വിളിക്കുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+ബ്രേക്ക്</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">എവേ
+അല്ലെങ്കിൽ ഒരു ബ്രേക്ക്</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇൻ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പോയിന്റ്</span></font><span lang="ml"> ഒരു
+സവിശേഷ </span><font size="3" style="font-size: 12pt"><span lang="ml">സവിശേഷത
+ രണ്ട് ശാഖകൾ ഒരേ മൂല്യത്തിനായി
+പരസ്പരം ഇടുന്നു</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_23087554af7d75b2.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">എന്നതാണ്</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതായത്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നമ്മൾ
+</span></font><span lang="ml">ഒരു ആവർത്തന </span><font size="3" style="font-size: 12pt"><span lang="ml">ധ്രുവം
+</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ആവർത്തനധ്രുവം</span></font></span></font><font size="3" style="font-size: 12pt">)
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ആണ്</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നമുക്ക്
+അറിയാം</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞാൻ
+ഒരു </span></font></span></font><font size="3" style="font-size: 12pt">r
+oot-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ൽ
+ഡെറിവേറ്റീവ്</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">വരെ</span></font><span lang="ml">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_f2121cf30245e232.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">ഗുണിക്കേണ്ട</span></font><span lang="ml">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_38b4a30d4c2eb664.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+</span></font></span></font><font size="3" style="font-size: 12pt">r</font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഉണ്ട്</span></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ആ
+ആവർത്തന റൂട്ട് നിങ്ങൾ
+</span><font size="3" style="font-size: 12pt"><span lang="ml">സുബിസ്റ്റിറ്റ്യൂട്ട്</span></font><span lang="ml">ചെയ്യുമ്പോൾ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+</span></font></span></font><font size="3" style="font-size: 12pt">0 
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ആ
+ഡെറിവേറ്റീവ് ഉണ്ടാക്കും</span></font><span lang="ml">
+</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇപ്പോൾ
+ബ്രേക്ക്</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അവേഅല്ലെങ്കിൽ
+ബ്രേക്ക്</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇൻ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പോയിന്റ്</span></font></span></font>- <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">നമുക്ക്
+ഒരു</span><font size="3" style="font-size: 12pt"><span lang="ml">ആവർത്തന
+ധ്രുവം ഉണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ആദ്യ
+ത്തെ ഡെറിവേറ്റീവ് പൂജ്യം
+എന്ന് പറയാം</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_c0a81cc5a840e0ee.gif"/>
+<font size="3" style="font-size: 12pt">10</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">എന്ന</span><font size="3" style="font-size: 12pt"><span lang="ml">
+നിലയിൽ എഴുതട്ടെ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_107b627d8ae4a547.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_6a54f4cb9f7f03fc.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_2436f9511158f178.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ടിക്ലോസ്ഡ്
+ലൂപ്പ് സ്വഭാവസമവാക്യം</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_b065545389e5965f.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ക്ലോസ്ഡ്
+ലൂപ്പ് സ്വഭാവബഹുപദമായ
+ബഹുപദത്തിന് </span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">ഒരു
+ആവർത്തന റൂട്ട് ഉണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അതിനാൽ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ഡെറിവേറ്റീവ്</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+</span></font></span></font><font size="3" style="font-size: 12pt">0</font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ആണ്</span><font size="3" style="font-size: 12pt"><span lang="ml">പോകുന്നത്
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">സ്ലൈഡ്
+സമയം</span></font></span></font><font size="3" style="font-size: 12pt">:
+22:57)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 9" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_445f9fc1c0db40b1.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_68d2c6c01e858983.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_5195de4f6f7820c5.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇത്
+പരിഹരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">നമുക്ക്
+ലഭിക്കും</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_b3ca18bd90f71de2.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഈ
+സമവാക്യത്തിന്റെ വേരുകൾ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+</span></font></span></font><font size="3" style="font-size: 12pt">b</font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">റീക്ക്</span></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അകലെ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> b</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">റീക്ക്</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇൻ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+പോയിന്റുകൾ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഞങ്ങൾ</span></font><span lang="ml">
+ഇപ്പോഴും</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ഒരു</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+പരിശോധന</span></font><span lang="ml">കൂടി
+</span><font size="3" style="font-size: 12pt"><span lang="ml">ചെയ്യേണ്ടതുണ്ട്</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml"> കാരണം
+സാധ്യത</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">
+പറയുന്നു</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">We </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഈ
+ബിന്ദുക്കളുമായി ബന്ധപ്പെട്ട
+മൂല്യം കണ്ടുപിടിക്കേണ്ടതുണ്ട്</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അവ
+പോസിറ്റീവ് ആണോ എന്ന്
+പരിശോധിക്കുക</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_e256ef11c89faf84.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഓ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">അപ്പോൾ</span></font><span lang="ml">
+പോയിന്റുകൾ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+റൂട്ട് ലോക്കസ് ആയിരിക്കും</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ഇവിടെ
+</span></font><span lang="ml"> </span><font size="3" style="font-size: 12pt"><span lang="ml">രണ്ട്</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">
+ഘട്ടങ്ങൾ</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<ol>
+<li><p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ആദ്യം
+	ഈ സമവാക്യം പരിഹരിക്കാം</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<li><p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml">ക്ലോസ്ഡ്
+	ലൂപ്പ്</span></font><span lang="ml"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20malayalam_htm_e256ef11c89faf84.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="ml">
+	സ്വഭാവസമവാക്യത്തിൽ</span></font><span lang="ml">
+</span><font size="3" style="font-size: 12pt"><span lang="ml">നിന്ന്</span></font><span lang="ml">
+	ബന്ധപ്പെട്ട മൂല്യങ്ങൾ</span><font size="3" style="font-size: 12pt"><span lang="ml">
+	നമുക്ക് കാണാം </span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+</li></li></ol>
+</body>
+</html>

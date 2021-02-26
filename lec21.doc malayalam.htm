@@ -1,0 +1,505 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="admin" name="author"/>
+<meta content="2018-10-16T11:21:00" name="created"/>
+<meta content="AARYAN KAPUR" name="changedby"/>
+<meta content="2021-02-23T09:15:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-size: 11pt; so-language: en-US }
+		p.cjk { font-size: 11pt; so-language: en-US }
+		p.ctl { font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-IN" link="#000080" vlink="#800000"><p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നിയന്ത്രണ
+സംവിധാനങ്ങൾ</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b>.C </b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പ്രൊഫ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.</b></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>എഞ്ചിനീയറിംഗ്
+ഡിസൈൻ വകുപ്പ്</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഇന്ത്യൻ
+ഇൻസ്റ്റിറ്റ്യൂട്ട് ഓഫ്
+ടെക്നോളജി</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>മദ്രാസ്</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>വായന
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+21</b></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കോൺട്രോളർ
+</b></span></font></span></font>
+</p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഭാഗം
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+1</b></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നാം
+എന്താണ് നോക്കുന്നത്</b></span></font></span></font><span lang="ml">എന്ന്
+നമുക്ക്</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഓർക്കാം</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നെഗറ്റീവ്
+ഫീഡ്ബാക്ക്</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+ക്ലോസ്ഡ് ലൂപ്പ് കൺട്രോൾ
+സിസ്റ്റത്തിന്റെ ബ്ലോക്ക്
+ഡയഗ്രം</b></span></font></span></font><span lang="ml">ഉപയോഗിച്ചാണ്
+ഞങ്ങൾ ആരംഭിച്ചത്</span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">(</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>സ്ലൈഡ്
+സമയം</b></span></font></span></font><font size="3" style="font-size: 12pt">:
+00:34)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_10147f57621312b3.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഞങ്ങൾ
+ആദ്യം നോക്കിയ ബ്ലോക്ക്
+സിസ്റ്റം</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+അല്ലെങ്കിൽ പ്ലാന്റ്</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+ബ്ലോക്ക്</b></span></font></span></font><span lang="ml">ആയിരുന്നു</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+ </span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഈ
+പ്രത്യേക കോഴ്സ് സംബന്ധിച്ചിടത്തോളം
+നാം ചർച്ച ചെയ്യാൻ പോകുന്ന
+സിസ്റ്റങ്ങളുടെ</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+ക്ലാസ്</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,</span></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഞങ്ങൾ
+ഈ പ്രത്യേക കോഴ്സ് സംബന്ധിച്ചിടത്തോളം</span></span></font>,<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ലീനിയർ
+</b></span></font></span></font><font size="3" style="font-size: 12pt">ODE-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കൾ</b></span></font></span></font><span lang="ml">
+സ്ഥിരമായ</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+കോഎഫനീഫുകൾ ഉപയോഗിച്ച്</b></span></font></span></font><span lang="ml">നടന്ന
+സിസ്റ്റങ്ങൾ </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>മാതൃകയാക്കാൻ</b></span></font></span></font><span lang="ml">
+ഉപയോഗിക്കുന്ന</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+ഗണിതസമവാക്യങ്ങളും </b></span></font></span></font><span lang="ml">തിരിച്ചറിഞ്ഞു</span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+ </span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ട്രാൻസ്ഫർ
+ഫങ്ഷൻ പ്രാതിനിധ്യം
+ലഭിക്കുന്നതിന്</b></span></font></span></font><span lang="ml">ഞങ്ങൾ
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Laplace</span></font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+transform</span></font></font> <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഉപയോഗിച്ചു</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഞങ്ങൾ
+</b></span></font></span></font><span lang="ml"> </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>സിസ്റ്റം
+പ്രതികരണം</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+വിലയിരുത്തി</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>അതിൽ
+സ്വതന്ത്ര പ്രതികരണവും
+നിർബന്ധിത പ്രതികരണവും
+ഉൾപ്പെട്ടിരിക്കുന്നു എന്ന്
+നിരീക്ഷിച്ചു</b></span></font></span></font><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഞങ്ങൾ
+നിർബന്ധിത പ്രതികരണത്തിൽ
+ശ്രദ്ധ കേന്ദ്രീകരിക്കുന്നു</b></span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കാരണം
+ഔട്ട്പുട്ടിൽ ഇൻപുട്ടിന്റെ
+പ്രഭാവത്തിൽ കൂടുതൽ താത്
+പര്യം ഉണ്ട്</b></span></font></span></font><font size="3" style="font-size: 12pt">.</font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><span style="background: #ffffff"> <font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>സ്ലൈഡ്
+സമയം</b></span></font></span></font><font size="3" style="font-size: 12pt">:
+03:53)</font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_ac1e75c46f3fb81.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കൂടാതെ</b></span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>മുമ്പത്തെ
+പ്രസംഗങ്ങളിൽ നിന്നുള്ള
+മുകളിൽ പറഞ്ഞ ഉദാഹരണത്തിൽ</b></span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ആദ്യത്തെ
+അവസ്ഥ </b></span></font></span></font><span lang="ml">കാരണം
+പ്രതികരണം</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+നോക്കുകയാണെങ്കിൽ</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,</span></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ആദ്യഭാഗം</b></span></font></span></font><font size="3" style="font-size: 12pt">-</font></span></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഭാഗിക
+ഫ്രാക്ഷൻ എക്സ് പാൻഷൻ ആൻഡ്
+ഇൻവേഴ്സ് ലാപ്ലേസ്</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+എടുക്കുക</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഞങ്ങൾ
+</b></span></font></span></font><span lang="ml"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_19632af02ce91f78.gif"/>
+<font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+</b></span></font></span></font><span lang="ml">നിബന്ധനകൾ
+ലഭിക്കാൻ </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_5622a56cd397103d.gif"/>
+<font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പോകുന്നു</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>അതായത്</b></span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഫ്രീ
+പ്രതികരണം സമയം </b></span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ആയി
+ക്ഷയിക്കുന്നു</b></span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>അതുകൊണ്ട്</b></span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നിർബന്ധിത
+പ്രതികരണത്തിന് നാം കൂടുതൽ
+പ്രാധാന്യം നൽകുന്നു</b></span></font></span></font><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കൂടാതെഞങ്ങൾ
+നോക്കിയ സ്ഥിരതയുടെ</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">notio</span></font></font>n<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ബൌണ്ടഡ്
+ഇൻപുട്ട് ബൗണ്ടഡ് ഔട്ട്പുട്ട്
+സ്ഥിരത</b></span></font></span></font><span lang="ml">ആയിരുന്നു</span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+W</span></font></font>e <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">എല്ലാ
+സിസ്റ്റം പോളും </span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">BIBO</span></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>സ്ഥിരതയ്ക്കായി
+സങ്കീർണ്ണമായ പ്ലെയിനിന്റെ
+ഇടതുവശത്ത്  ആയിരിക്കണം</b></span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>സിസ്റ്റത്തിന്റെ
+പ്രതികരണത്തിലും സ്ഥിരതയിലും
+ധ്രുവങ്ങളുടെ സ്ഥാനത്തിന്റെ
+പ്രഭാവം ഞങ്ങൾ ചർച്ച</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+</b></span></font></span></font><span lang="ml"> </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+ചെയ്തു</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><span style="background: #ffffff"> <font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>സ്ലൈഡ്
+സമയം</b></span></font></span></font><font size="3" style="font-size: 12pt">:
+07:14)</font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_6e03a079d9a88833.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>രണ്ടാമത്തെ
+ഓർഡർ സിസ്റ്റങ്ങളിൽ</b></span></font></span></font><font size="3" style="font-size: 12pt">-</font></span></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">യൂണിറ്റ്</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+സ്റ്റെപ്പ് പ്രതികരണവും
+യൂണിറ്റ് ഇംപൾസ് പ്രതികരണവും
+നോക്കുമ്പോൾ</b></span></font></span></font><span lang="ml">
+</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">-
+</span></font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഒരു
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>അഴുകിത്
+സിസ്റ്റത്തിനു വേണ്ടി നമുക്ക്
+ഒരു ഓസിലേറ്ററി പ്രതികരണം
+ഉണ്ടാകും</b></span></font></span></font><span lang="ml">
+കാരണം സങ്കീർണ്ണമായ</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+കോൺജുഗേറ്റ് </b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പോളുകൾ
+ഉള്ളതിനാൽ</b></span></font></span></font><span lang="ml">
+</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">-
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>എന്നാൽ</b></span></font></span></font><font size="3" style="font-size: 12pt">,
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഈർപ്പമുള്ളതും</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഗുരുതരവുമായ
+സംവിധാനങ്ങൾക്ക് നെഗറ്റീവ്</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+യഥാർത്ഥ അച്ചുതണ്ടിൽ യഥാർത്ഥ
+ധ്രുവങ്ങൾ ഉണ്ടായിരുന്നതിനാൽ</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഓസിലേഷനുകളില്ല</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>അതുകൊണ്ട്</b></span></font></span></font><font size="3" style="font-size: 12pt">,
+</font></span></font> <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഒരു</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+പ്രത്യേക അർത്ഥത്തിൽ</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പ്രതികരണത്തിന്റെ</b></span></font></span></font><span lang="ml">
+സ്വഭാവത്തെ ധ്രുവങ്ങൾ</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+സ്വാധീനിക്കുന്നു</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font></font> <font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>എക്സ്പോണെൻഷ്യൽ</b></span></font></span></font></font>(exponential)
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">എന്ന</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+</b></span></font></span></font><span lang="ml"> </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+ഗുണനത്തെ</b></span></font></span></font><span lang="ml">
+സ്വാധീനിക്കുക വഴി ഒരു</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പൂജ്യം
+</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">(</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പൂജ്യം</b></span></font></span></font><font size="3" style="font-size: 12pt">)
+</font></font> <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഡൈനാമിക്</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+പ്രതികരണത്തെ</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+ബാധിക്കുന്നു</b></span></font></span></font><span lang="ml">
+</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പ്രതികരണത്തിന്റെ
+സ്വഭാവത്തെ ധ്രുവങ്ങൾ
+സ്വാധീനിക്കുന്നുവെന്നും
+പൂജ്യങ്ങൾ പ്രതികരണത്തിന്റെ
+രൂപത്തെ ബാധിക്കുമെന്നും
+പറയാം</b></span></font></span></font><font size="3" style="font-size: 12pt">.
+</font></span></font> <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>അച്ചുതണ്ടിനോട്
+അടുത്തുനിൽക്കുന്ന ധ്രുവങ്ങൾ
+സിസ്റ്റം പ്രതികരണത്തെ
+ആധിപത്യം പുലർത്തുന്നു</b></span></font></span></font><span lang="ml">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_e089035645511fb8.gif"/>
+<font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+</b></span></font></span></font><span lang="ml"> </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+</b></span></font></span></font><span lang="ml">വെന്നും</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഈ
+പ്രബലധ്രുവങ്ങളുടെ അടുത്ത്</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പൂജ്യം</b></span></font></span></font><span lang="ml">ഉണ്ടെങ്കിൽ</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">IR</span></font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ആധിപത്യം
+കുറയുമെന്നും</b></span></font></span></font><span lang="ml">ഞങ്ങൾ</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>മനസ്സിലാക്കി</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><span style="background: #ffffff"> <font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>സ്ലൈഡ്
+സമയം</b></span></font></span></font><font size="3" style="font-size: 12pt">:
+08:59)</font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_7b5fc7298f1f1277.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഇപ്പോൾ</b></span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നമ്മുടെ
+ഡയഗ്രത്തിലെ</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+</b></span></font></span></font><span lang="ml"> </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കൺട്രോളർ</b></span></font></span></font><span lang="ml">
+ബ്ലോക്ക് </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നോക്കുന്നു</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഒരു</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കണ്ട്രോളറുടെ</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>സാധാരണ
+ചോയ്സുകളുടെ ചർച്ചയുമായി </b></span></font></span></font></span></font>W
+e <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">സെന്റ്
+ആർട്ട്</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ചെയ്യും</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><span style="background: #ffffff"> <font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>സ്ലൈഡ്
+സമയം</b></span></font></span></font><font size="3" style="font-size: 12pt">:
+12:00)</font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><span style="background: #ffffff"> </span></font>
+<img align="bottom" border="0" height="288" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_bd5fcf240447ff5a.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">If</span></font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഞങ്ങൾ</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+സിസ്റ്റത്തിനായി ചെയ്തതുപോലെ</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കൺട്രോളറിന്</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+സമാനമായ ഒരു ഡയഗ്രം വരയ്ക്കുന്നു</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,</span></font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+The </span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഇൻപുട്ട്
+ആണ്</b></span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_f81b807861b3482c.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കൺട്രോളറിൽ
+നിന്നുള്ള ഔട്ട്പുട്ട് ഒരു
+കൺട്രോൾ ഇൻപുട്ടാണ്</b></span></font></span></font><span lang="ml">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_c24c44b3ee11029e.gif"/>
+<font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഞാൻ</b></span></font></span></font><font size="3" style="font-size: 12pt">f
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഞങ്ങൾ</b></span></font></span></font><span lang="ml">
+സങ്കീർണ്ണമായ </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഡൊമെയ്നിലേക്ക്
+പോകുന്നു </b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">-</span></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">കൺട്രോളർ
+ട്രാൻസ്ഫർ </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഫങ്ഷൻ
+എന്ന്</b></span></font></span></font><span lang="ml"> ഞങ്ങൾ</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+വിളിക്കുന്നു</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+</span></font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_aea393feef9fc99f.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പിശകിന്റെ</b></span></font></span></font><font size="3" style="font-size: 12pt">Laplace</font></font>
+of<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+error</span></font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_f81b807861b3482c.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">and
+the</span></font></font> <font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+control input</span></font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_bf113727f32d94fc.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+-</span></font></font> <font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഞങ്ങൾ</b></span></font></span></font><span lang="ml">
+അവരെ</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+യഥാക്രമം വിളിക്കുന്നു</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_4ff8d488cd1ed60d.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നമുക്ക്
+അത് കാണാം</b></span></font></span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_c33b2a7b2b015946.gif"/>
+</span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പ്ലാന്റ്
+</b></span></font></span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_fb2133a60d855393.gif"/>
+<font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ട്രാൻസ്ഫർ
+ഫങ്ഷനും</b></span></font></span></font><span lang="ml">
+കൺട്രോളർ ട്രാൻസ്ഫർ ഫങ്ഷനും
+ഞങ്ങൾ </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_aea393feef9fc99f.gif"/>
+<font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഉപയോഗിക്കുന്നു</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ചില
+സാഹചര്യങ്ങളിൽ ആളുകൾ</b></span></font></span></font><span lang="ml">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_6b932037e1b72cf1.gif"/>
+<span lang="ml">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_73a0255a279dc5d.gif"/>
+<font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>യഥാക്രമം
+ഉപയോഗിക്കുന്നു</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>എന്നാല്
+</b></span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നമ്മുടെ
+അഭിപ്രായമനുസരിച്ച്</b></span></font></span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_39d990e5002160a4.gif"/>
+</span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കൺട്രോളറുടെ
+വ്യത്യസ്ത തിരഞ്ഞെടുപ്പുകൾ</b></span></font></span></font><span lang="ml">നമുക്ക്
+കാണാം</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">;</span></font></font></p>
+<ol>
+<li><p align="justify" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഓൺ</b></span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഓഫ്
+	കൺട്രോളർ </b></span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ബാംഗ്</b></span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ബാംഗ്
+	കൺട്രോളർ</b></span></font></span></font><font size="3" style="font-size: 12pt">):</font></span></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+	F</span></font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">അല്ലെങ്കിൽ</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഉദാഹരണം</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,
+	</span></font></font> <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>എയർ</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+	കണ്ടീഷനിംഗ് സിസ്റ്റം</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പരിഗണിക്കുക
+	</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+	</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>താപനില</b></span></font></span></font></font>25<font color="#000000"><sup><font size="3" style="font-size: 12pt"><span style="background: #ffffff">o</span></font></sup></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font></font> <font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+	C-</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ൽ
+	സൂക്ഷിക്കും</b></span></font></span></font><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font></font> <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>താപനില
+	</b></span></font></span></font><font size="3" style="font-size: 12pt">26</font></span></font><font color="#000000"><sup><font size="3" style="font-size: 12pt"><span style="background: #ffffff">o</span></font></sup></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+	C</span></font></font> <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ആയി
+	</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>വർദ്ധിക്കുമ്പോൾ
+	 കോംപ്രെ</b></span></font></span></font><span lang="ml">സോർ
+	കട്ട് ചെയ്ത് തണുത്ത വായു</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഊതുന്നു</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+	</span></font></font> <font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>താപനില</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+</b></span></font></span></font><span lang="ml"> </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">24</span></font></font><font color="#000000"><sup><font size="3" style="font-size: 12pt"><span style="background: #ffffff">o</span></font></sup></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+	C </span></font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ആയി
+	പോകുമ്പോൾ അത് </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>വിച്ഛേദിക്കുന്നു</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">T</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>തൊപ്പി
+	ഓൺ ആണ്</b></span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഓഫ്
+	കൺട്രോൾ</b></span></font></span></font><font size="3" style="font-size: 12pt">.
+	 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഓ
+	</b></span></font></span></font><span lang="ml">അല്ലെങ്കിൽ
+	</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഓഫ്</b></span></font></span></font><span lang="ml">രണ്ട്
+	പ്രവൃത്തികൾ മാത്രമേ ഉള്ളൂ</span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+	</span></font></font> <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കൺട്രോൾ
+	ഇൻപുട്ട് ഘടന പോലെ തോന്നുന്നു</b></span></font></span></font><font size="3" style="font-size: 12pt">,</font></span></font></p>
+</li></ol>
+<p align="justify" lang="en-US" style="margin-left: 1.27cm; margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_8901c4445959c522.gif"/>
+</p>
+<p align="justify" lang="en-US" style="margin-left: 1.27cm; margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നമുക്ക്
+ഒന്നിലധികം വകഭേദങ്ങളും
+കൂടുതൽ മികച്ച</b></span></font></span></font><span lang="ml">
+പ്രദേശങ്ങളും ഇതിൽ </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഉണ്ടായിരിക്കാം</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഇത്</b></span></font></span></font><span lang="ml">
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+വളരെ ഫലപ്രദമല്ല</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">-</span></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഞാൻ</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+വളരെ അന്തർജ്ഞാനമുള്ളവആണെങ്കിലും</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">,</span></font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഇത്
+സിസ്റ്റത്തിന് ഏറ്റവും
+മികച്ചതാവാം</b></span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കാരണം
+ഇത്തുടർച്ചയായി നിയന്ത്രിക്കപ്പെടുന്നില്ല</b></span></font></span></font><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font></font> <font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഈ
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കോഴ്സിൽഞങ്ങൾ
+അത്തരം കൺട്രോളർമാരെ കോ</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">-</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>എൻസിഡിആർ
+</b></span></font></span></font><span lang="ml"> </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പോകുന്നില്ല</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font></p>
+<ol start="2">
+<li><p align="justify" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Proportional
+	controller</span></font></font> <font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+	(P</span></font></font> <font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കണ്ട്രോളർ</b></span></font></span></font><font size="3" style="font-size: 12pt">):A</font></font>s
+	<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">എന്നത്
+	കൺട്രോൾ ഇൻപുട്ട് നേരിട്ട്</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പിശകിന്
+	ആനുപാതികമാണെന്ന് സൂചിപ്പിക്കുന്നു</b></span></font></span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_c24c44b3ee11029e.gif"/>
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>കൺട്രോളറുടെ
+	ടി</b></span></font></span></font><font size="3" style="font-size: 12pt">.</font></span></font></p>
+</li></ol>
+<p align="justify" lang="en-US" style="margin-left: 1.27cm; margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_68ae09c6b73e03f1.gif"/>
+</p>
+<p align="justify" lang="en-US" style="margin-left: 1.27cm; margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_8dcf98d76ba9a4c5.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ആനുപാതിക
+മായ നിയന്ത്രണ പരാമീറ്റർ ആണ്
+ആനുപാതിക  നേട്ടം</b></span></font></span></font><span lang="ml">എന്ന്
+പൊതുവെ </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>വിളിക്കപ്പെടുന്നത്</b></span></font></span></font><span lang="ml">
+</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ഒരു</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+ഗണിതവീക്ഷണത്തിൽ നിന്ന്
+കുറഞ്ഞത്</b></span></font></span></font><span lang="ml">ഒരു</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>മൂല്യമെങ്കിലും
+എടുക്കാൻ</b></span></font></span></font><span lang="ml">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_5f9bf2e262faae33.gif"/>
+<font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>എനിക്ക്</b></span></font></span></font><span lang="ml">കഴിയും</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നമ്മൾ
+ലാപ്ലേസ് ട്രാൻസ്ഫോം എടുത്താൽ</b></span></font></span></font><font size="3" style="font-size: 12pt">,</font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_7409bea0bcb55260.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec21.doc%20malayalam_htm_8dcf98d76ba9a4c5.gif"/>
+<font color="#000000"><span style="background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>എന്ന
+കണ്ട്രോളറുടെ കൈമാറ്റം ആണ്</b></span></font></span></font><font size="3" style="font-size: 12pt">.</font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ആനുപാതിക
+കൺട്രോളറിന്റെ</b></span></font></span></font><span lang="ml">
+</span></span></font>T<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">he
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഗുണങ്ങൾ
+ ഘടനവളരെ ലളിതമാണ്</b></span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font></font> <font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font></font> <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>നടപ്പിലാക്കൽ
+വളരെ നേരായ താണ്</b></span></font></span></font><font size="3" style="font-size: 12pt">.
+T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഒരു
+</b></span></font></span></font><span lang="ml"> </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>സ്ഥിരാങ്കം
+</b></span></font></span></font><span lang="ml">കൊണ്ട്
+ഗുണിച്ചാൽ മാത്രം </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഗുണിച്ചിരിക്കുന്നു</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">By
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഉം
+വലിയതും ഇതാണ്</b></span></font></span></font><span lang="ml">
+ഞങ്ങൾ സിസ്റ്റം രൂപകൽപ്പന
+ചെയ്യാൻ </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ആഗ്രഹിക്കുന്ന
+സമയത്ത് </b></span></font></span></font><span lang="ml">ഞങ്ങൾ
+ആദ്യത്തെ കൺട്രോളർ ആണ്</span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.
+</span></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="ml"><b>എന്നാൽ
+</b></span></font></span></font><span lang="ml"> </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>ഫ്ലിപ്
+സൈഡിൽ</b></span></font></span></font></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">-
+</span></font></font> <font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">
+</span></font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ചില
+തരം </span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>സിസ്റ്റങ്ങൾക്ക്
+</b></span></font></span></font><span lang="ml">  ഒരു ആനുപാതിക
+കൺട്രോളർ ക്ക് മാത്രം സ്ഥിരമായ
+സ്റ്റേറ്റ് പിശകുകൾ നീക്കം
+ചെയ്യാൻ</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>
+കഴിയില്ലഎന്ന് പറയുന്നു</b></span></font></span></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="ml">ആ
+സാഹചര്യങ്ങൾ നമ്മൾ മുന്നോട്ട്
+</span><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="ml"><b>പോകുമ്പോൾ
+ഏതൊക്കെയാണ്</b></span></font></span></font><span lang="ml">എന്ന്
+നോക്കാം</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">.</span></font></font></p>
+</body>
+</html>
