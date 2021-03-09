@@ -1,0 +1,823 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK" name="author"/>
+<meta content="2019-06-10T07:27:00" name="created"/>
+<meta content="Akash Pandey" name="changedby"/>
+<meta content="2021-03-09T15:12:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="1033-10.2.0.7439" name="KSOProductBuildVer"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-family: "Calibri", serif; so-language: en-US }
+		p.cjk { so-language: zh-CN }
+	</style>
+</head>
+<body dir="ltr" lang="en-IN" link="#000080" vlink="#800000"><p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu"><b>નિયંત્રણ
+સિસ્ટમો</b></span></font></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu"><b>પ્રો</b></span></font></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>એસ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>શંકર
+રામ</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu"><b>એન્જિનિયરિંગ
+ડિઝાઇન વિભાગ</b></span></font></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu"><b>ઇન્ડિયન
+ઇન્સ્ટિટ્યૂટ ઓફ ટેકનોલોજી</b></span></font></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>મદ્રાસ</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%; background: #ffffff">
+<font color="#000000"><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>વાંચી
+રહ્યા છીએ </b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+49</b></font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu"><b>બિડઇ
+પ્લોટ</b></span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu"><b>૧</b></span></font></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu"><b>ભાગ
+૧</b></span></font></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%; background: #ffffff">
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">सीनुसोदी
+लिए प्रतिशतियों के प्रतिशत
+को निश्चित करने के लिए </span></font></font></span></font><font size="3" style="font-size: 12pt">F
+requyncy </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">પ્રત્યુત્તરનોઉપયોગ
+થાય છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">રેખીય
+સમય ઇનવેરિઅન્ટ સિસ્ટમ્સનો
+એક મહત્વપૂર્ણ ગુણધર્મ એ છે
+ </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+કે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જો
+</span></font></span></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu">આપણે આવર્તનનું
+સીનોસઓઇડલ ઇનપુટ આપીએ તો </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">તે
+</span></font></font><span lang="gu">સ્થિર રાજ્ય
+ઉત્પાદન પણ સમાન આવર્તનનું
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">હશે</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font></font> <font color="#000000"><font size="3" style="font-size: 12pt">
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">પરંતુ
+ઇનપુટની તીવ્રતા ને માપવા જઈ
+રહી છે </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_273ac98bbb4727c2.gif"/>
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">જે
+પ્લાન્ટ ટ્રાન્સફર કાર્ય
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_fb2133a60d855393.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">स्थित
+िया जा रहा है</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">लेकिन
+इसके प्रकार में स्थापित किया
+जारा है  </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_8a7034c49c31d874.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">जो
+भी का कार्यक्रम </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">है
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_2a25f66d7ca553.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:44)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_ce68ca3c3e3eb93e.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">पर
+</span></font></font><span lang="gu">विचार </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">किया
+जाता </span></font></font><span lang="gu">है </span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">जिसके</span></font></font><span lang="gu">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> बारे में ब्युतित
+तथा प्रकार की प्र આમ</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">પરિણામે</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આવર્તન</span></font></span></font><span lang="gu">
+પ્રતિભાવને સિનોઓઇડલ સ્થાનાંતરણ
+કાર્ય તરીકે કહેવામાં</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+આવે છે</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">શું
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_c374b57accfd95a7.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">તેપ્રશ્ન
+કરે</span></font></font><span lang="gu">છે</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">કે</span></font></font><span lang="gu">
+તે પ્રશ્ન કરે છે</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+કે ડબલ્યુ</span></font></font><span lang="gu">ટોપી
+એ એક જટિલ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">મૂલ્યવાન
+કાર્ય છે </span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt">?
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">વ્યક્તિ
+તેની </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">કલ્પના
+કેવી રીતે કરે છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">?</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">અહીં
+બહુવિધ વિઝ્યુલાઇઝેશન્સ છે
+જે શક્યછે</span></font></font></span></font><font size="3" style="font-size: 12pt">;</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">સૌથી
+વધુ ઉપયોગમાં લેવાતી એક છે
+જેને બાઉડે પ્લોટ તરીકે કહેવામાં
+આવે છે અને ત્યાં નાયક્વિસ્ટા
+પ્લોટ અને નિકોલ્સ પ્લોટ તરીકે
+પણ કંઈક કહેવામાં આવે</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">હોઓવ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ગોડે
+પ્લોટનું કાવતરું ઘડશે</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ઓ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">એનીસાથે
+એક આવાસ પ્લોટ આપવામાં આવ્યો
+છે</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આપણે
+તે પ્લોટમાંથી સિસ્ટમની
+લાક્ષણિકતાઓનું અર્થઘટન કેવી
+રીતે કરીએ</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આનો
+અભ્યાસ હવે કરવામાં આવે છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+02:15)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_eb60d1c05ac8fb1c.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font color="#000000"><font size="3" style="font-size: 12pt">We </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જાણો
+કે જેમાં બે</span></font></span></font><span lang="gu">
+ઘટકો</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_c374b57accfd95a7.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+છે</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">:
+</font></font> <font color="#000000"><font size="3" style="font-size: 12pt">
+</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_c374b57accfd95a7.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">એક
+એટલે કે</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_273ac98bbb4727c2.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અને</span></font></span></font><span lang="gu">
+બીજો તબક્કો</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_c374b57accfd95a7.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">બી
+ઓથતીવ્રતા અને તબક્કો તેના
+કાર્યો છે</span></font></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">मैं
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">न</span></font></font><span lang="gu">े
+परमेश्वर का प्रचार करता है</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">:
+</font></font> <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">पहला
+एक है जो एक मिस्तान का प्राप्त
+किया</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu"><b>
+जाता है</b></span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">बात
+के मामले में</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">हम
+</span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+<span lang="gu">
+अब्सिसा पर काम करते हैं
+तथा</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_273ac98bbb4727c2.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">होते</span></font></font><span lang="gu">हैं
+</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+W e</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">એબ્સિસા</span></font></span></font><span lang="gu">
+ઓકે પર લોગેરિથમિક સ્કેલનો
+ઉપયોગ કરો</span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">અને
+ડેસિબલ માપ</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_b6e4023a97911ea.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">(dB)</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">માં</span></font></span></font><span lang="gu">
+કાવતરું ઘડવામાં આવે છે</span></font>.</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">એચઓવ
+શું આપણને ડેસિબલ માપ મળે છે</span></font></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">આપેલ
+</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">અમે
+લઈએ છીએ અને પછી આપણે લોગારિથમને
+આધાર</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_c374b57accfd95a7.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_25f35b4048aebd75.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+૧૦ </span></font></font><span lang="gu">  પર લઈ એ પછી
+તેને ૨૦ વડે ગુણીને ડીબીમાં
+સમકક્ષ તીવ્રતા</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+મેળવીએ છીએ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font color="#000000"><font size="3" style="font-size: 12pt">W
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">હાયઆપણે
+આવું કરીએ છીએ</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">શું
+તમને</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">લાગે
+છે કે લોગેરિથમિક</span></font></font><span lang="gu">
+સ્કેલ અને રેખીય સ્કેલ વચ્ચેનો
+તફાવત છે</span></span></font>?</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ચાલો
+આપણે કહીએ કે મારા ત્રણ</span></font></font><span lang="gu">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+મુદ્દાઓ છે</span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_eb6b75af17a95700.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+અને </span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_80d26424995b3cd7.gif"/>
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તે
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">વચ્ચેઅંતર</span></font></font><span lang="gu">ધરાવે
+છે અને તે વચ્ચેના</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">અંતર
+જેટલું જ છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">હું
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_b61c118270d967bd.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">જોરેખીય
+સ્કેલનો ઉપયોગ</span></font></font><span lang="gu">કરું
+છું</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તમે
+જાણો છો કે આ બંને બિંદુઓ
+વચ્ચેના અંતર વિશે હું શું
+કહી શકું</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">?</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તે</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ઇક્વિજિટેશન
+ટી છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.B</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તે
+શુંલાક્ષણિકતા છે</span></font></span></font><font size="3" style="font-size: 12pt">?</font></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">મારોઅર્થ
+એ નથી કે તે બરાબર થશે</span></font></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">બીજી
+બાજુ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જો
+હું લોગેરિથમિક સ્કેલનો</span></font></span></font><span lang="gu">
+ઉપયોગ કરું છું</span>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તો
+હું શું અર્થઘટન કરી શકું</span></span></font>?<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_753e47725b04fd6e.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">હુંજો
+લોગેરિથમિક</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> સ્કેલનો ઉપયોગ
+કરું છું</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ગુણોત્તર
+સમાન બનવાનો છે એટલે કે</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_de543f528362e1c4.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+બરાબર થશે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_d446d3298fc62766.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">બોડે
+માં</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">એબ્સીસામાં</span></span></font>,
+w <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ટોપી
+થાય છે જો મારી પાસે </span></span></font>3
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">બિંદુઓ
+હોય જે એક બીજાથી દૂર </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+હોય</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">?
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ઓ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ને
+પોઇન્ટ અગાઉના </span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">10
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ગણા
+છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ટી
+ટોપી એ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">છે
+કે આપણે એક દાયકાને કેવી રીતે
+વ્યાખ્યાયિત કરીએછીએ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font color="#000000"><font size="3" style="font-size: 12pt">Why </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">શું
+આપણે લોગેરિથમિક સ્કેલનો
+ઉપયોગ કરીએ છીએ</span></font></span></font><font size="3" style="font-size: 12pt">?</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">हम
+विभिन्न संबंबंत कर सकते </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">हैं
+</span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font></font> <font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">मैं</span></font></span></font><span lang="gu">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">एकसिम्मेलित
+क्रम</span></font></font><span lang="gu">कर तक कर
+सकता हूं</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+</font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font></font> <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">मैं
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">एकनिर्मिक</span></font></font><span lang="gu">स्कूल
+का इस्तेमाल करता हूं</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">मैं</span></font></span></font><span lang="gu">
+इस बहुत स्कूल का प्राप्त करना
+सच्चा</span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">લોગેરિથમિક
+સ્કેલનો </span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ઉપયોગ
+કરવાનો બીજો ફાયદો શું છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">?</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">हम
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">नीची</span></font></font><span lang="gu">
+प्रक्रिया की संबंभ को भी</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+विस्तार कर </span></font></font><span lang="gu">ઘણી</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+વ્યવહારિક એપ્લિકેશનોમાં</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તમે</span></font></span></font><span lang="gu">
+જોશો કે ઓછી આવૃત્તિ શ્રેણીનું
+પણ ઉચ્ચ આવર્તન જેટલું જ મહત્વ
+છે</span></font>.</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+09:34)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_431ac00141046036.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ડબલ્યુહેટ
+એ લોગેરિથમિક સ્કેલની મર્યાદા
+છે</span></font></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">અમે
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">૦
+નું</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+કાવતરું કરી શકતા નથી</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">हे
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">न
+ेरीकारी क्रम</span></font></font></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">मैं
+</span></span></font>0 <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">को
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+मिल सकता हूं</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">જો
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">કે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">વ્યવહારિક
+પરિપ્રેક્ષ્યમાં</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font></font> <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ડબલ્યુ</span></font></font><span lang="gu">હેટનો
+અર્થ </span></span></font>0<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ફ્રિક્વન્સી
+સિગ્નલ આપીને થાય છે</span></font></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">અથવા
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_2dbbde3b03aa9bce.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_940e687517422751.gif"/>
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જ્યારે</span></font></span></font><span lang="gu">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+</font><font color="#000000"><font size="3" style="font-size: 12pt">=
+0</font></font>,<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">કાં</span></font></font><span lang="gu">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+તો </span></font></font></span></font>0 <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">અથવા
+</span></span></font>1 <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">બનો</span></font></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">इसका
+कोम नहीं है</span></font></span></font><span lang="gu">क्योंकि
+मैं सीनुसोदियादी प्रतिशतों
+को देना चाहता हूं</span><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આમ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જ્યાં
+સુધી</span></font></span></font><span lang="gu">લોગેરિથમિક
+સ્કેલની વાત છે ત્યાં સુધી
+હું બહુ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ગંભીર
+મર્યાદા નથી</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તેથી</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તેથી
+જ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આપણે
+આવર્તન</span></font></span></font><span lang="gu"> માટે
+એબ્સીસા પર લોગેરિથમિક સ્કેલનો
+ઉપયોગ કરીએ છીએ</span></font>.</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font color="#000000"><font size="3" style="font-size: 12pt">W </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">હાયશું
+</span></font></span></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">આપણે
+</span></font></font><span lang="gu">તીવ્રતા </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">માટે
+ડેસિબલ</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ડીબી</span></font></span></font><font size="3" style="font-size: 12pt">)</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્કેલનો
+ઉપયોગ કરીએ છીએ</span></font></span></font><font size="3" style="font-size: 12pt">?</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">અમે
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">લોગારિથમને
+આધાર </span></font></font><span lang="gu">  ૧૦ પર લઈ
+એનો ૨૦ વડે ગુણાકાર કરીએ છીએ
+અને તેને ડીબીમાં</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+રૂપાંતરિત </span></font></font><span lang="gu">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">કરીએ
+છીએ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">હું
+તીવ્રતા માટે લોગેરિથમિક
+સ્કેલનો ઉપયોગ શા માટે કરું</span></font></span></font><font size="3" style="font-size: 12pt">?</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ઈમિલારનાં
+કારણો લાગુ પડશે</span></font></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">હું
+મર્યાદાના સ્કેલમાં તીવ્રતાની
+</span></font></span></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">મોટી
+શ્રેણીને આવરી શકું છું</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">मैं</span></font></font><span lang="gu">
+नीचे मूल्यों </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">पर
+भी</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu">काम कर सकता
+हूं कि यह क्रिया का विस्तार
+किया </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">जाएगा</span></font></font></span></font>.</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_4eeeaf45d88fa3e.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="4" style="font-size: 14pt"><span lang="gu">लेकिन</span></font></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_375615210caaa93b.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">कुल</span></font></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_824e433f4a2249d4.gif"/>
+<span lang="gu">
+कार्यक्रमों के</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+बारे</span></font></font><span lang="gu">में हो</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">હું
+જો તમે</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+લોગારિથમ લો</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અમને
+મળે છે</span></font></span></font><span lang="gu"> </span></font>
+</p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_982a9410696d8572.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">અમે
+નિરીક્ષણ કરીએ છીએ કે જો</span></font></font><span lang="gu">
+તમારી પાસે પરિબળોનું</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+ઉત્પાદન</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">/</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ગુણોત્તર</span></font></span></font><span lang="gu">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+હોય</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તો
+</span></font></span></font><span lang="gu">  જ્યારે લોગારિથમ
+લેવામાં આવે છે ત્યારે તે
+બીજગણિતીય</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+સરવાળો બની જાય છે</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">આ
+એક</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+ખૂબ સારો ફાયદો છે જેનો અમે</span></font></font><span lang="gu">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+ગેરલાભ</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+ઉઠાવીશું</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">स्थापित
+काम</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+दिया गया हूं</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">मैं
+इसे नीची</span></font></span></font><span lang="gu"> समय
+ोंसा में बता હું </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">વ્યક્તિગત
+શરતોના તીવ્રતાના પ્લોટનું
+કાવતરું કરું છું</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">પછી
+હું ફક્ત કેસ જેવી રીતે ઉમેરું
+છું અથવા બાદબાકી કરું છું</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તેથી</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તે
+રીતે</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">બીડે
+</span></font></span></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">પ્લોટનું
+કાવતરું સરળતાથી બનાવી શકાય
+છે</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">એ
+જ રીતે</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તમે
+જોઈ શકો છો કે તબક્કાનો તબક્કો
+પણ આવા જ વલણને અનુસરશે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_c374b57accfd95a7.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">જો
+</span></font></font><span lang="gu">તમે સરળ બિલ્ડિંગ
+બ્લોકમાં આપેલ ટ્રાન્સફર
+ફંસીટીને તોડી શકો</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">છો</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font></font> <font color="#000000"><font size="3" style="font-size: 12pt">
+</font></font> <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તો
+અમે ફક્ત વ્યક્તિગત બ્લોકની
+મુખ્ય આકૃતિઓનું કાવતરું
+કરીએ છીએ અને પછી બીજગણિતટી
+ટોપી લોગેરિથમિક સ્કેલનો
+ઉપયોગ કરવાનો ખૂબ જ સારો</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ફાયદો
+છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">બીજો
+પ્લોટ એ છે જેને ફેઝ પ્લોટ
+તરીકે કહેવામાં</span></font></font><span lang="gu">
+આવે</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu"><b>
+છે</b></span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><b>.</b></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ઓ
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">એન</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સી</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ફરીથી
+લોગેરિથમિક સ્કેલનો ઉપયોગ
+કરીને એબ્સીસા પર કાવતરું
+ઘડવામાં આવે છે અને રેખીય
+સ્કેલનો ઉપયોગ કરીને ડિગ્રીમાં
+તબક્કાનું કાવતરું</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ઘડવામાં
+આવે છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_d05e1fe86c149f59.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">W
+e</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ફક્ત
+રેખીય સ્કેલનો ઉપયોગ કરો</span></font></span></font><span lang="gu">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+કારણ</span></font></font><span lang="gu"> કે કોઈ
+લોગેરિથમિક</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">સ્કેલની
+જરૂર નથી</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">इसका
+क्योंकि </span></font></span></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu">  जिसके प्रकार
+का प्रकार का प्रयास इस संप्राप्त
+को संप</span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">આમ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">બે
+પ્લોટ છે </span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">મેમેડીટ્યુડ</span></font></span></font><span lang="gu">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+પ્લોટ અને ફેઝ પ્લોટ</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">મેગનીટ
+</span></font></span></font><span lang="gu">પ્લોટ અનિવાર્યપણે</span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">લોગેરિથમિક
+સ્કેલનો</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu">ઉપયોગ કરીને
+</span></span></font>x<font color="#000000"><font size="3" style="font-size: 12pt">-</font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">અક્ષ
+પર </span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><i>dB</i></font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">વિરુદ્ધમાં</span></font></span></font><span lang="gu">
+સીનોસઓઇડલ ટ્રાન્સફર ફંક્શનની
+તીવ્રતાનું કાવતરું</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+ઘડે છે</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">त </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> ही वह प्रकार
+के प्रकार को अब एब बार अब
+एबसिसा पर ल ोगरिथिक क्षेत्र
+पर कार्यक्रम करता</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">है</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">इस
+तरह</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">करने
+का</span></font></font><span lang="gu"> अनुभव है कि
+यह हम कुल किसी बनाने के लिए
+कुल मिलने का इस्ते मैं </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">सीही</span></font></font><span lang="gu">है
+कि हम बंग्लों के लिए बाइबल
+के लिए कैसे प्राप्त करना सीही
+है</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">कि
+सियोग के लिए इसे कोशिश करना
+सही है</span></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+15:57)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_d749e5e013669c3c.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">તમને
+લાગેછે કે સંભવિત બિલ્ડિંગ
+બ્લોક્સ છે</span></font></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ટી
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">હેઝએ
+મૂળભૂત પરિબળો છે જે સ્થાનાંતરણ
+કાર્ય બનાવી શકે છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ટ્રાન્સફર
+ફંક્શનમાં કેટલાક સતત કે હોઈ
+શકેછે</span></font></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">હું</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">અભિન્ન
+શબ્દ ન હોઈ શકું</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_250b67357177.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તેમાં
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">ડેરિવેટિવ
+ટર્મ હોઈ શકે છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_b880e659bf7d175e.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">मैं
+प्रकार का पहले अंतराजन का
+समय</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">नहीं
+कर सकता हूं</span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_fa772862e08ab831.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">હું
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">પણન
+કરી શકું</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_e8e333c4cc9a65e1.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">We
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">માં
+સ્વરૂપનું જટિલ સંજુગેટ પરિબળ
+પણ હોઈ શકે છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_147eeae3307ba813.gif"/>
+<font color="#000000"><font size="4" style="font-size: 14pt">
+</font></font> <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">इसके
+बारे में </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">हम</span></font></font><span lang="gu">
+किसी के बारे में दूसरा कार्यक्रम
+का कार्यक्रम</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+कर सकते हैं </span></font></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_d9a7de0692854e12.gif"/>
+</span></font><font color="#000000"><font size="4" style="font-size: 14pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">આપણે
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">તરત
+જ</span></font></font><span lang="gu"> નિરીક્ષણ કરી
+શકીએ છીએ કે</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">હું
+આ ચોક્કસ સ્વરૂપમાં કોઈપણ
+સ્થાનાંતરણ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+કાર્યને અનિવાર્યપણે ફરીથી
+લખી શકું છું</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">इसलिए</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">इस
+बाइबलों के लिए प्राप्त करने
+के लिए प्राप्त करने के ल </span></font></span></font></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">लेकिन
+हम संदेश को समाप्त करते हैं
+कि </span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">यह</span></font></font><span lang="gu">
+कोरने के लिए कोशिश करते हैं</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_6b57f6b21a1635d.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+कि</span></font></font><span lang="gu"> यह कोरनी
+પહેલું </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">પરિબળ
+એ છે </span></font></font><span lang="gu">કે </span></span></font>,
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_b336c8f97ccd0821.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">જ્યાં
+</span></font></font><span lang="gu"> </span></span></font><font color="#000000"><font size="3" style="font-size: 12pt"><i>K</i></font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">વાસ્તવિક</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+સંખ્યા છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_80d4450c0231dcb3.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">જેથી
+લોગારિથમ લેવાનું શક્ય બને</span></font></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">જો
+મારેઆકૃતિનું કાવતરું કરવું
+હોય તો ડબલ્યુ હેટ થાય</span></font></font><span lang="gu">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+છે </span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_b336c8f97ccd0821.gif"/>
+</span></font><font color="#000000"><font size="3" style="font-size: 12pt">?</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">यह
+होजा जारी होगा </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_f954c5f5a6931fbd.gif"/>
+<span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_ee39ebcd265cf506.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">कि
+की जानकारी </span></font></font><span lang="gu">होगी
+</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">जो
+एक की जानकारी में </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">क्र
+</span></font></font><span lang="gu">है</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">તમે
+તબક્કા વિશે શું કહી શકો છો
+</span></font></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તે
+હશે જો</span></font></span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_93035ebcb7c2435b.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+અને</span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_80d4450c0231dcb3.gif"/>
+<span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5b3046940aa9beaf.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+જો </span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_55e8dc0bec5ac53a.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તેથી</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">તે
+ખરેખર કે ઓકેની નિશાની પર આધાર
+રાખે છે</span></font></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">તો</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તીવ્રતાના
+પ્લોટનું શું થવાનું છે</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">इस
+मूल्य के संबंभ में सीतित
+संबंपक होगी </span></font></span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">वहां
+इस मूल्य</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+होगा </span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_189780ed2751b383.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">इस
+प्रकार</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">प्रकार
+के प्रकार में</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">यदि
+हां </span></font></span></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_532e5e0d6059b497.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">तथा</span></font></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_80d4450c0231dcb3.gif"/>
+<span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5b3046940aa9beaf.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">यदि
+हां </span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_55e8dc0bec5ac53a.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">मगर</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">लेकिन
+</span></font></span></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu">हम निकालता
+करते हैं</span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">इसलिए
+हम इसे लिए लेते हैं क्योंकि
+हम यह सम्मान करते हैं कि हम
+अपने बाद क्यों क्यों करते</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_fc55fd866e215442.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">हैं
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તેથી</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">તે
+સતત મુદત માટે નો બાઉડે પ્લોટ</span></font></font><span lang="gu">
+બનવા</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+જઈ</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+રહ્યો છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+24:03)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<img align="bottom" border="0" height="288" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_fa24a6fc0663cff5.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.49cm; margin-bottom: 0.42cm; line-height: 150%; background: #ffffff">
+<font color="#000000"><font size="3" style="font-size: 12pt">Typicly,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">એબ્સીસા
+</span></font></span></font><span lang="gu"> પર અમે પ્લોટ
+કરીએ છીએ</span></font><font color="#000000"><font size="3" style="font-size: 12pt">/</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">માર્ક
+આવર્તનો કે જે</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">એક
+દાયકાના અંતરમાં</span></font></font><span lang="gu">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આવર્તનનો
+એક</span></font></span></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+દાયકો </span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">શું
+છે</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">?</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">मैं</span></font></font><span lang="gu">
+निश्चित </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">करते</span></font></font><span lang="gu">
+हैं</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+कि एक </span></font></font><span lang="gu">दक्सकक
+क्या है </span></span></font>. <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">तत
+ </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">वह</span></font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">एक</span></font></font><span lang="gu">
+दशक से एक </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_ce41841397c9351.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">दशक
+से</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+अच्चा है </span></font></font><span lang="gu"> </span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">इसी
+तरह</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">की</span></font></span></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_ad7c31c05d4d0f9e.gif"/>
+<span lang="gu">
+संबंभाना को </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">एक
+दशक के बारे</span></font></font><span lang="gu">
+में</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+कहा जाता </span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">है
+</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">मैं
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_5e359603aa982f40.gif"/>
+<span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_a8099f2efcc221cf.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_d03a7c5d69e7d1b0.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">यह</span></font></font><span lang="gu">समाप्त</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">करता</span></font></font><span lang="gu">हूं
+कि तुम स्थापित का समाप्त करते
+हैं</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">इसकी
+</span></font></span></font><span lang="gu">प्रक्रिया </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_a8099f2efcc221cf.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+त के</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">लिए
+</span></font></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_c2c89031a1d1bc29.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">वह</span></font></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_a8099f2efcc221cf.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">एक
+दशक से</span></font></font><span lang="gu"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="gu">
+पहले हैं </span></font></font><span lang="gu"> </span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec49.doc%20gujarati_htm_a8099f2efcc221cf.gif"/>
+</p>
+</body>
+</html>

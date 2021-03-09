@@ -1,0 +1,567 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-72" name="author"/>
+<meta content="2018-09-23T09:16:00" name="created"/>
+<meta content="Akash Pandey" name="changedby"/>
+<meta content="2021-03-09T15:29:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 3.3cm; margin-right: 2.54cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-family: "Calibri", serif; font-size: 11pt }
+		p.cjk { font-family: "Calibri"; font-size: 11pt; so-language: zh-CN }
+		p.ctl { font-family: "Calibri"; font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000"><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>નિયંત્રણ
+સિસ્ટમો</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>પ્રો</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>એસ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>શંકર
+રામ</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>એન્જિનિયરિંગ
+ડિઝાઇન વિભાગ</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>ઇન્ડિયન
+ઇન્સ્ટિટ્યૂટ ઓફ ટેકનોલોજી</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>મદ્રાસ</b></span></font></span></font></p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>વાંચી
+રહ્યા છીએ </b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+07</b></font></p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>સ્થાનાંતરણ
+વિધેય </b></span></font></span></font>
+</p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>ભાગ
+– ૧</b></span></font></span></font></p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અમે
+સિંગલ ઇનપુટ સિંગલ </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+આઉટપુટ સિસ્ટમ્સ સાથે સંક્ષેપમાં
+</span></span></font>SISO <font face="Calibri"><span lang="ar-SA"><span lang="gu">અને
+રેખીય સમય ઇન્વેરિઅન્ટ
+કારણગતિશીલ સિસ્ટમ્સ સાથે
+વ્યવહાર કરી રહ્યા છીએ જે સતત
+સહકાર્યક્ષમો સાથે રેખીય
+સામાન્ય વિભેદક સમીકરણો દ્વારા
+લાક્ષણિકતા ધરાવે</span><font size="3" style="font-size: 12pt"><span lang="gu">
+છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:28)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 8" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_13c9f9f7baed5758.png" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">We </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">એ
+જોયું</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+છે</span></font><span lang="gu"> કે આવા સમીકરણોને
+હલ કરવા માટે કોઈ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+લાસ્થળ પરિવર્તનનો ઉપયોગ
+કેવી</span></font><span lang="gu"> રીતે કરી શકે</span><font size="3" style="font-size: 12pt"><span lang="gu">
+છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">આપણે
+અત્યાર સુધી</span><font size="3" style="font-size: 12pt"><span lang="gu">જે
+</span></font><span lang="gu">ટોપી કરી છે તે એ
+છે કે આપણે આ અભ્યાસક્રમમાં
+શું ભણવા જઈ રહ્યા છીએ અને
+કેટલાક ગાણિતિક સાધનોનો ઉપયોગ
+કરવા જઈ </span><font size="3" style="font-size: 12pt"><span lang="gu">રહ્યા</span></font><span lang="gu">
+છીએ તેની વ્યાપક ઝાંખી</span><font size="3" style="font-size: 12pt"><span lang="gu">
+કરવાની છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:49)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_88c9bece0ad795ae.png" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ડબલ્યુઇ
+શાસ્ત્રીય નિયંત્રણ અભિગમનો
+ઉપયોગ કરીને </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">વિશ્લેષણમાં
+જશે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">ઓ</span><font size="3" style="font-size: 12pt"><span lang="gu">મુખ્ય
+વિષયોના ઓ ને કે જે આપણે</span></font><span lang="gu">શીખવા
+જઈ રહ્યા છીએ તે હું</span><font size="3" style="font-size: 12pt"><span lang="gu">સ્થાનાંતરણ
+કાર્યોનો છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">मैं</span><font size="3" style="font-size: 12pt"><span lang="gu">देने
+के लिए देश करते हैं कि एक
+प्रकार काक </span></font><span lang="gu">એલ
+એટ</span><font size="3" style="font-size: 12pt"><span lang="gu">અમને
+માસ સ્પ્રિંગ ડેમ્પર સિસ્ટમનો
+વિચાર કરો જે સંચાલિત થાય છે</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_7bc8e003ef6a093.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ટી
+તેનીરેખીય સમય અવેરિઅન્ટ
+સિસ્ટમ છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">હું
+અમને</span><font size="3" style="font-size: 12pt"><span lang="gu">બંને
+બાજુ લાસ્થળ પરિવર્તન લઈએછીએ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અમને
+મળશે</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_323d7936fc9fad7b.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જો
+આપણે ફક્ત શરતોફરીથી ગોઠવીએ
+તો</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+અમને</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+મળશે</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_32744643e4506ca4.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જો
+હવે આપણે બંને બાજુઓને વિભાજિત
+કરીએ</span></font><span lang="gu"> તો આપણે
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_47cddef531ed4852.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">નીચેમુજબ
+મેળવીશું</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_4b7670c46b863a80.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">પ્રથમ
+શબ્દ આઉટપુટનો ઘટક બિન</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">શૂન્ય</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+પ્રારંભિક</span><font size="3" style="font-size: 12pt"><span lang="gu">
+શરતને કારણે </span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">કોઈ </span><font size="3" style="font-size: 12pt"><span lang="gu">તરત
+જ ટોપીનું નિરીક્ષણ કરી શકે</span></font><span lang="gu">છે
+જેમાં તેનો સમાવેશ થાય</span><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_7d448ed3f01d184a.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">અને
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">ટી </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_c0b6baec8148294d.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">ટોપીએ
+વિસ્થાપન છે જે કોઈ પણ બિન</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">શૂન્ય
+પ્રારંભિક સ્થિતિને કારણે
+થાય છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font> <font face="Calibri"><span lang="ar-SA"><span lang="gu">જો
+</span><font size="3" style="font-size: 12pt"><span lang="gu">આપણી</span></font><span lang="gu">
+પાસે શરૂઆતમાં સમૂહ આરામમાં</span><font size="3" style="font-size: 12pt"><span lang="gu">
+હોય</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font size="3" style="font-size: 12pt"> </font> <font face="Calibri"><span lang="ar-SA"><span lang="gu">તો
+આપણે તેને થોડી રકમથી વિસ્થાપિત
+કરીએ છીએ અને તેને છોડી એ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+કે</span></font><span lang="gu"> અને સીના મૂલ્યોના
+આધારે કંપન કરી શકે છે અને</span><font size="3" style="font-size: 12pt"><span lang="gu">
+છેલ્લે</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">તે
+તેની પાછળ સ્થિર થઈ શકે છે તે
+મૂળ સંતુલન સ્થિતિ</span><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><span lang="gu">तत
+</span><font size="3" style="font-size: 12pt"><span lang="gu">वहपहला
+भाग</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+निक्ली</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> युन्नी प्राप्त
+ियाजनी स्थितियों के लिए</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu">અમે તેને</span><font size="3" style="font-size: 12pt"><span lang="gu">
+મુક્ત પ્રતિસાદ તરીકે કહીએ
+છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">બીજા
+ભાગમાં ઇનપુટ શબ્દનો સમાવેશ
+થાય છે</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_f3a74839aaaa8f2f.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">જે</span><font size="3" style="font-size: 12pt"><span lang="gu">
+બળ છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">એસ
+</span><font size="3" style="font-size: 12pt"><span lang="gu">યુપોઝ</span></font><span lang="gu">આપણે
+સમૂહ</span><font size="3" style="font-size: 12pt"><span lang="gu">પર</span></font><span lang="gu">
+વિવિધ બળ લાગુ કરીએ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+છીએ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">બીજો
+શબ્દ આપણને સમૂહનું વિસ્થાપન
+પૂરું પાડે </span><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+T <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">હેટ
+એ આઉટપુટમાં ઇનપુટ</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">
+ફોર્સનું</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+યોગદાન છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">ડબલ્યુ
+ઇ તેને</span><font size="3" style="font-size: 12pt"><span lang="gu">
+બળજબરીપૂર્વકના</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">
+પ્રતિસાદ </span></font><span lang="gu">તરીકે
+બોલાવે </span><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+We </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આઉટપુટમાં
+આ બંને </span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">ઘટકો
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">હશે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">ઓ</span><font size="3" style="font-size: 12pt"><span lang="gu">ને
+બિન</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">શૂન્ય
+પ્રારંભિક પરિસ્થિતિઓને</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+કારણે અને અન્ય સિસ્ટમને પૂરા
+પાડવામાં આવેલા</span><font size="3" style="font-size: 12pt"><span lang="gu">
+ઇનપુટને કારણે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+07:42)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_a61b28fba57655ad.png" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">હવે</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આપણે
+બધી પ્રારંભિક પરિસ્થિતિઓને
+૦ ગણીએ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આ
+કિસ્સામાં અને </span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">પછી</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_541d8b9d3e1757fb.gif"/>
+</span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_6ac1db023df3aa17.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_305c7f2f244449f7.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તેથી</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આ
+જથ્થો જે આઉટપુટના લાસ્થળ
+રૂપાંતરણનો ગુણોત્તર છે જે
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">પ્રારંભિક
+પરિસ્થિતિઓ હેઠળ ઇનપુટના
+લાસ્થળ પરિવર્તનમાં રૂપાંતરિત
+થાય છે તેને સિસ્ટમ અથવા
+પ્લાન્ટના સ્થાનાંતરણ કાર્ય
+તરીકે કહેવામાં આવે છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અમે
+</span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_aaede8b54463e309.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">સ્થાનાંતરણ
+કાર્યને</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_556e712b849fb6e.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+નોંધવા માટે ઉપયોગ કરીશું</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">સારાંશ
+આપવા માટે</span></span></font>, <font face="Calibri"><span lang="ar-SA"><span lang="gu">અમે
+ગવર્નિંગ રેખીય સામાન્ય વિભેદક
+સમીકરણ લખ્યું</span></span></font>, <font face="Calibri"><span lang="ar-SA"><span lang="gu">પછી
+અમે બંને બાજુ લાબાઉટ પરિવર્તન
+લીધું</span></span></font>, <font face="Calibri"><span lang="ar-SA"><span lang="gu">અમે
+જોયું કે આઉટપુટ શબ્દમાં બે
+ઘટકો છે જે </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+બિન</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">શૂન્ય</span></font><span lang="gu">પ્રારંભિક
+સંવર્ધિતતાને કારણે એક અને
+ઇનપુટને કારણે</span><font size="3" style="font-size: 12pt"><span lang="gu">
+એક છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">અમે </span><font size="3" style="font-size: 12pt"><span lang="gu">બધી
+પ્રારંભિક</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+શરતો૦ લીધી</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">इसके
+बाद</span></span></font>, <font face="Calibri"><span lang="ar-SA"><span lang="gu">हम
+ने अपने प्रतिबद्द के लास्थान
+का अनुसार  </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> किया</span></span></font>, <font face="Calibri"><span lang="ar-SA"><span lang="gu">जो
+स्थिति या प्रस्ताव के संबंभ
+के संबंबंभ के रूप में कहते 
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_80f07ae64983f965.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+हैं </span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">मैं
+</span><font size="3" style="font-size: 12pt"><span lang="gu">एक</span></font><span lang="gu">समय
+सम्मान करता हूं जब हम प्रस्तुतिक्ति
+के प्रतिशत में हमें प्रतिशत
+करते हैं क्योंकि हमने सभी
+प्रतिशतियों को </span></span></font>0
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">किया</span><font size="3" style="font-size: 12pt"><span lang="gu">है</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">હવે
+</span><font size="3" style="font-size: 12pt"><span lang="gu">પ્રશ્ન
+બને છે</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+કે</span></font><span lang="gu">પ્રારંભિક સંગત
+વ્યવહારમાં</span><font size="3" style="font-size: 12pt"><span lang="gu">હંમેશાં</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> શૂન્ય
+રહેશે</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">જો
+નહીં તો</span><font size="3" style="font-size: 12pt"><span lang="gu">
+જો આપણે આ અભિગમને</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">
+અનુસરીએ તો શું થાય</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">ટી
+હેટ</span><font size="3" style="font-size: 12pt"><span lang="gu">એક
+પ્રશ્ન છે જે આપણે પછીથી જવાબ
+આપીશું</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">પી
+લીઝયાદ રાખો કે</span></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જો</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> આપણી</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+પાસે એસ</span></span></font>.<font face="Calibri"><span lang="ar-SA"><span lang="gu">આઈ</span></span></font>.<font face="Calibri"><span lang="ar-SA"><span lang="gu">એસ</span></span></font>.<font face="Calibri"><span lang="ar-SA"><span lang="gu">ઓ</span></span></font>.
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">સિસ્ટમ
+હોય તો જ આપણે આઉટપુટ અને
+ઇનપુટના લાસ્થળના</span><font size="3" style="font-size: 12pt"><span lang="gu">
+ગુણોત્તર લઈ શકીએ છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">જો
+આપણી પાસે</span><font size="3" style="font-size: 12pt"><span lang="gu">
+એમઆઈએમઓ સિસ્ટમ હોય</span></font><span lang="gu">તો</span><font size="3" style="font-size: 12pt"><span lang="gu">અમારી
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">પાસે
+ટ્રાન્સફર</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+ફંક્શન મેટ્રિક્સ હોત</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font face="Calibri"><span lang="ar-SA"><span lang="gu">हम
+</span><font size="3" style="font-size: 12pt"><span lang="gu">अब
+</span></font><span lang="gu">विश्वर अपने प्रतिशत
+के द्वारा विश्वास </span><font size="3" style="font-size: 12pt"><span lang="gu">का
+विकास कर सक </span></font><span lang="gu">અમે
+સીએ  </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+એન </span></font><span lang="gu">હજી પણ તેને
+બીજા ઉત્પાદન સ્વરૂપમાં લખીએ
+</span><font size="3" style="font-size: 12pt"><span lang="gu">છીએ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">જ્યાં
+આપણે કહી શકીએ કે આઉટપુટ વેક્ટર
+જટિલ ડોમેઇનમાં ઇનપુટ વેક્ટરનો
+ગુણાકાર કરતા ટ્રાન્સફર ફંક્શન
+મેટ્રિક્સ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+બરાબર હશે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">બીયુટી
+અમે આ કોર્સમાં સિંગલ ઇનપુટ
+સિંગલ આઉટપુટ સિસ્ટમ્સ </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">સાથે</span></font><span lang="gu">
+વ્યવહાર કરવા જઈ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+રહ્યા છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.
+ </font> <font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><span lang="gu">इसपार</span></span></font>,
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">एक
+निश्चित एक एक व्यक्त िया जाने
+के लिए निश्चित किया</span><font size="3" style="font-size: 12pt"><span lang="gu">जाता
+है</span></font></span></font><font size="3" style="font-size: 12pt">.
+C</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ક્રમશ</span></font></span></font><font size="3" style="font-size: 12pt">:,</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_3fbabed0d82432c8.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+14:26)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_e0a54b088ae0611f.png" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જો
+આપણે લાસ્થળની વિપરિત કાયાપલટ
+કરીએ તો આપણી</span></font><span lang="gu"> પાસે</span><font size="3" style="font-size: 12pt"><span lang="gu">
+છે</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_485ca51aca09f3e7.gif"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_69c89bc0de200b54.gif"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જો
+આપણે ઇનવર્સ લાસ્થળ રૂપાંતરણ
+લઈએ તો શું સમય ડોમેઇનમાં
+આઉટપુટ છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>W<font size="3" style="font-size: 12pt">e </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અમુક
+મુદ્દાઓ નોંધી શકે છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">तत
+वह पहला मुद्दा है</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">कि
+यदि</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_556e712b849fb6e.gif"/>
+<span lang="gu">जानते</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">हैं
+</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">तो
+हम</span></font><span lang="gu"> कोरिस्तान के
+लिए स्थिति का प्रतिबद् हम
+क्या  </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu">कर सकते </span><font size="3" style="font-size: 12pt"><span lang="gu">हैं</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><span lang="gu">यदि
+हम कुल कुल बात चाहते हैं तो
+हम क्या प्रतिशत देना चाहते
+हैं</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">ડબલ્યુ
+</span><font size="3" style="font-size: 12pt"><span lang="gu">ઇનિયંત્રણ
+અને વિશ્લેષણ બંને કરી</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> શકે
+છે</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ડબલ્યુ</span></font><span lang="gu">હેટ</span><font size="3" style="font-size: 12pt"><span lang="gu">અમે</span></font><span lang="gu">મોડેલ્સના
+હેતુ</span><font size="3" style="font-size: 12pt"><span lang="gu">તરીકે
+સ્ટડ કર્યું છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">પી
+</span><font size="3" style="font-size: 12pt"><span lang="gu">રેડક્શનઅથવા
+વિશ્લેષણ એ છે</span></font><span lang="gu">
+જ્યાં</span><font size="3" style="font-size: 12pt"><span lang="gu">
+આપણી</span></font><span lang="gu"> પાસે ઇનપુટ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+છે</span></font><span lang="gu"> અને</span><font size="3" style="font-size: 12pt"><span lang="gu">
+અમે આઉટપુટનું મૂલ્યાંકન</span></font><span lang="gu">
+કરીએ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">સી </span><font size="3" style="font-size: 12pt"><span lang="gu">ઓંટરોલ
+એ</span></font><span lang="gu"> છે જ્યાં અમારી
+પાસે ઇચ્છિત આઉટપુટ છે અને
+અમને</span><font size="3" style="font-size: 12pt"><span lang="gu">
+ઇનપુટ આપવામાં આવે છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">બીજો
+</span><font size="3" style="font-size: 12pt"><span lang="gu">મુદ્દો
+એ છે કે</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જો</span></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_c24c44b3ee11029e.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">એકમ
+આવેગ ઇનપુટ હોયતો</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_3aa600113d007fef.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તેથી</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આ
+</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_b4ffffda71fa77d8.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">સૂચવે
+છે કે</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_42e87bd77a50b16a.gif"/>
+</span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">હું
+જો તમે કોઈ ઇનપુટ આપો છો અને
+તમે અનુરૂપ આઉટપુટની ગણતરી
+કરોછો</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">તે
+આઉટપુટને પ્રતિભાવ તરીકે
+કહેવામાં આવે છે અને તે ચોક્કસ
+ઇનપુટને અનુરૂપ હોય તે ઉમેરી
+શકાય </span><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આ
+ખાસ કિસ્સામાં અમે સિસ્ટમને
+એકમ આવેગ ઇનપુટ પ્રદાન કરી
+રહ્યા છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તેથી</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">પરિણામે
+આપણને જે આઉટપુટ મળે</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+છે તેને આવેગ પ્રતિભાવ તરીકે
+કહેવામાં આવે છે અને </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_6ff12b2aabb97de3.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">તે
+આવેગ પ્રતિભાવ કાર્ય છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અને
+આવેગ પ્રતિભાવ કાર્યનું લાસ્થળ
+એ છોડના સ્થાનાંતરણકાર્ય છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20gujarati_htm_cf15fa1c4b3d690.gif"/>
+<font size="3" style="font-size: 12pt">
+</font>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આ
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> આપણને ખૂબ જ ઉપયોગી
+વિચાર આપે છે</span></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">જો
+આપણે પ્રાયોગિક રીતે પ્લાન્ટ
+ટ્રાન્સફર ફંક્શન નક્કી કરવા
+માંગીએ</span><font size="3" style="font-size: 12pt"><span lang="gu">છીએ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><span lang="gu">તો
+આપણે ફક્ત એકમ ઇમ્પલ્સ ઇનપુટ
+આપવાની જરૂર છે અને પછી આઉટપુટ
+શું છે તે માપવાની જરૂર છે અને
+તે આઈ એમપલ્સ રિસ્પોન્સ
+ફંક્શન</span><font size="3" style="font-size: 12pt"><span lang="gu">હશે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">આવેગ
+</span><font size="3" style="font-size: 12pt"><span lang="gu">પ્રતિભાવ
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">કાર્યમાંથી</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આપણે
+છોડના</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+સ્થાનાંતરણકાર્યને</span></font><span lang="gu">મોડું
+કરી શકીએ</span><font size="3" style="font-size: 12pt"><span lang="gu">છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">ફાયદો
+</span><font size="3" style="font-size: 12pt"><span lang="gu">એ છે</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> કે
+આપણે</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu">માત્ર એક જ પ્રયોગ
+કરવાની જરૂર </span><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">પરંતુ
+અહીં કેચ એ છે કે </span><font size="3" style="font-size: 12pt"><span lang="gu">વ્યવહારમાં
+</span></font><span lang="gu"> આદર્શ આવેગ ઇનપુટને
+જીવી કરવું ખૂબ જ</span><font size="3" style="font-size: 12pt"><span lang="gu">મુશ્કેલ
+છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">પ્રશ્ન
+બને</span><font size="3" style="font-size: 12pt"><span lang="gu">છે
+કેઆપણે</span></font><span lang="gu"> શું મેળવી</span><font size="3" style="font-size: 12pt"><span lang="gu">
+શકીએ</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">હું
+ત્યાં</span><font size="3" style="font-size: 12pt"><span lang="gu">સ્થાનાંતરણ
+કાર્યોને અંજીર કરવામાટે</span></font><span lang="gu">બીજી
+કોઈ પદ્ધતિ</span><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></span></font><font size="3" style="font-size: 12pt">?
+ </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જેમ
+જેમ આપણે પ્રગતિ કરી રહ્યા
+છીએ તેમ તેમ આપણે શીખીશું</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">ટી
+</span><font size="3" style="font-size: 12pt"><span lang="gu">અહીંબીજી
+પદ્ધતિ છે જેના દ્વારા</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+આપણે આવર્તન પ્રતિભાવનો ઉપયોગ
+કરીને પ્રાયોગિક રીતે નિષ્ક્રિય
+સ્થાનાંતરણ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+કાર્યોને કાઢી શકીએ છીએ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ઠીક
+છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તેથી</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આપણે
+તે તકનીક પણ શીખીશું</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">दिन</span></font><span lang="gu">
+के अंत में</span></span></font>, <font face="Calibri"><span lang="ar-SA"><span lang="gu">अगर
+हम प्राप्त कार्यक्रम करना
+चाहते हैं</span></span></font>, <font face="Calibri"><span lang="ar-SA"><span lang="gu">तो
+यह दोनों प्रयासों का मिला</span><font size="3" style="font-size: 12pt"><span lang="gu">
+जाएगा</span></font></span></font><font size="3" style="font-size: 12pt">.
+F</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">અથવા
+એક્ઝામપ</span><font size="3" style="font-size: 12pt"><span lang="gu">લે</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">તે
+ભૌતિકશાસ્ત્ર પર આધારિત અને
+પ્રયોગો કરવા અને સ્થાનાંતરણ
+કાર્યને બંધબેસાડવા માટે
+પ્રાયોગિક ડેટાનો ઉપયોગ કરીને</span></span></font>,
+<font face="Calibri"><span lang="ar-SA"><span lang="gu">આપણે
+બંને અભિગમોનું મિશ્રણ બનવા
+જઈ </span><font size="3" style="font-size: 12pt"><span lang="gu">રહ્યું
+છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">अगर
+स्थापित कार्यक्रम की प्रश्न
+की संभावना की जानकारी है कि
+हम सभी प्रतिशतियों को</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font></span></font><font size="3" style="font-size: 12pt">0</font><font face="Calibri"><span lang="ar-SA"><span lang="gu">रहे
+हैं</span></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Calibri"><span lang="ar-SA"><span lang="gu">तो
+हम अपने संबंभ के बारे में बात
+कर सकते हैं</span></span></font><font size="3" style="font-size: 12pt">.</font></p>
+</body>
+</html>

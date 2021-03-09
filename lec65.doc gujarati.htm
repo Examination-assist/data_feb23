@@ -1,0 +1,392 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="user" name="author"/>
+<meta content="2019-11-24T05:37:00" name="created"/>
+<meta content="Akash Pandey" name="changedby"/>
+<meta content="2021-03-09T15:25:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; font-size: 11pt; line-height: 115%; text-align: justify; orphans: 2; widows: 2; background: transparent }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000"><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>નિયંત્રણ
+સિસ્ટમો</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>પ્રો</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>એસ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>શંકર
+રામ</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>એન્જિનિયરિંગ
+ડિઝાઇન વિભાગ</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>ઇન્ડિયન
+ઇન્સ્ટિટ્યૂટ ઓફ ટેકનોલોજી</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>મદ્રાસ</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>વાંચી
+રહ્યા છીએ </b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+65</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>સાપેક્ષ
+ઇ સ્થિરતા ૨</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>ભાગ
+–</b></span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu"><b>
+૧</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ડબલ્યુ
+ઇસાપેક્ષ સ્થિરતાની ચર્ચા
+કરી રહ્યાહતા</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:21)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_93bf6c09015004a1.png" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અમે
+જે સિસ્ટમો પર વિચાર કરી રહ્યા
+છીએ તેસિસ્ટમના વર્ગનું સી
+લોસ્્ડ લૂપ સ્થાનાંતરણ કાર્ય</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> છે</span></font></span></font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_2f3407dc7b88ada3.gif"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ડબલ્યુઇએ</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">
+સાપેક્ષ </span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">સ્થિરતાની
+કલ્પના ની ચર્ચા કરી હતી</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font> <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">एक
+बार हमने दिल ाया कि पास के</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></span></font><font size="3" style="font-size: 12pt">-1</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_2980f7141828fc2a.gif"/>
+<font size="3" style="font-size: 12pt">
+</font> <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">मुद्दे
+के लिए लोकी संबंभावना संबंभवित
+स्थिति</span><font size="3" style="font-size: 12pt"><span lang="gu">
+का</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_c0a81cc5a840e0ee.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu">संबंभ है</span></span></font><font size="3" style="font-size: 12pt">.</font>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">हम
+दो</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu">सदस्यों को प्रभावित
+करते</span><font size="3" style="font-size: 12pt"><span lang="gu">हैं</span></font><span lang="gu">
+जो गेन प्रवास्तव के रूप में
+कहा गया था </span></span></font>. <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ટી
+</span><font size="3" style="font-size: 12pt"><span lang="gu">તેઓવરઓવર
+ફ્રિક્વન્સી </span></font><span lang="gu">પ્રાપ્ત
+કરે છે તે આવર્તન છે જેના પર
+ઓપન લૂપ સનિસુઓઇડલ ટ્રાન્સફર
+ફંક્શનની તીવ્રતા </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_62ef77932559393d.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">૧</span></font><span lang="gu">
+અથવા બીજા શબ્દોમાં ૧ થાય</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></span></font><font size="3" style="font-size: 12pt">|</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_8daf2175670ab41c.gif"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ફેઝ
+સીઆર </span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_62ef77932559393d.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">ઓસઓવર</span></font><span lang="gu">
+ફ્રિક્વન્સી એ આવર્તનનું
+મૂલ્ય છે જેના પર ઓપન લૂપ
+સિનોસોઇડલ ટ્રાન્સફર ફંક્શનનો
+તબક્કો</span><font size="3" style="font-size: 12pt"><span lang="gu">
+બને છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_3ba7a5065d981879.gif"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:</font>
+03:16)</p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_d9ed47fc532f4598.png" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અમે
+વિમાન દોર્યું છે અને મૂળ</span></font></span></font><font size="3" style="font-size: 12pt">,
+-1 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">બિંદુ
+સ્થિત કર્યું છે અને સ્થાનાંતરણ
+</span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_c0a81cc5a840e0ee.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">કાર્યનું
+લોકસ દોર્યું છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">એચ</span><font size="3" style="font-size: 12pt"><span lang="gu">ઓડબ્લ્યુ
+આપણે ગ્રાફિક</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+રીતે</span></font><span lang="gu"> શોધી શકીએ
+છીએ અને આ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+ચોક્કસ પ્લોટમાં</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_a54ff667072a6f10.gif"/>
+</span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અમે
+એકમ ત્રિજ્યાનું વર્તુળ દોરીએ
+છીએ અને</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu">પછી શોધી કાઢીએ
+છીએ કે આ વર્તુળ એન વાયક્વિટ
+પ્લોટને </span><font size="3" style="font-size: 12pt"><span lang="gu">ક્યાંકાપે
+છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">એટલે
+કે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_d65e29ac881cd80c.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">સિસ્ટમ
+</span><font size="3" style="font-size: 12pt"><span lang="gu">અસ્થિર
+બને છે </span></font></span></font><font size="3" style="font-size: 12pt">i</font>f<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">આપણે</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> આખા</span></font><span lang="gu">
+</span></span></font><font size="3" style="font-size: 12pt">Ny </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ક્વિટ
+</span></font><span lang="gu">પ્લોટને ખૂણા
+દ્વારા</span><font size="3" style="font-size: 12pt"><span lang="gu">ફેરવીએ
+છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_eaa8160b41b212fb.gif"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અથવા
+પ્લોટને એવી રીતે સ્કેલ કરો
+કે તે </span></font></span></font><font size="3" style="font-size: 12pt">-1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">માંથી
+પસાર થાય</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">तत</span><font size="3" style="font-size: 12pt"><span lang="gu">्रीय
+दो निश्चित</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+किया</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+जाता है</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ટી
+તેનેમાર્જિન મળે છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_e6039c81701c8df6.gif"/>
+<font size="3" style="font-size: 12pt">
+</font> <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">मैं
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_2980f7141828fc2a.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">नहीं</span></font><span lang="gu">हूं
+कि विचार पाप सिनुसुदोदियाल
+संप्रक्षा कार्यक्रम की मिसाल
+की संस्करिति </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_b05554ac3dd2859b.gif"/>
+<span lang="gu">
+मैं</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">अपने</span></font><span lang="gu">
+प्राप्त लेने के लिए पूरे
+विचारिक लोप संपूरक कार्यक्रम
+को स्थापित करते हैं</span></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">तो
+प्रकार का प्राप्त</span><font size="3" style="font-size: 12pt"><span lang="gu">
+किया </span></font><span lang="gu">ટી</span><font size="3" style="font-size: 12pt"><span lang="gu">ટોપી
+એ ગેઇન </span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">માર્જિનની
+વ્યાખ્યા પાછળની પ્રેરણા છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તે
+</span><font size="3" style="font-size: 12pt"><span lang="gu">સૂચવે
+છે કે </span></font><span lang="gu">સિસ્ટમ અસ્થિર
+બની શકે તે પહેલાં આપણી પાસે
+કેટલું માર્જિન </span><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_ef1a387b2762540b.gif"/>
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ડેસિબલ્સ</span></font></span></font><font size="3" style="font-size: 12pt">)</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">વિદ્યાર્થી</span></font></span></font><font size="3" style="font-size: 12pt">:
+(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સંદર્ભ
+સમય</span></font></span></font><font size="3" style="font-size: 12pt">:
+11:32)</font> <font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ઓમેગા
+પી બરાબર</span></font></span></font><font size="3" style="font-size: 12pt">?</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+11:56)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_d71f500003ebdba1.png" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">त
+हम चाहते </span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">हैं</span></font><span lang="gu">
+जिसपके बारे में चलने के लिए
+हम चाहते हैं </span></span></font>,<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_eaa8160b41b212fb.gif"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">जो
+काम के</span></font><span lang="gu"> रूप में कह
+प </span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+ हेसे मामले का अनुरोग किया
+जाने के लिए प्रस्थिति के
+प्रतिशत में जो स्थिति के
+प्रतिशत में जानकारी करने की</span><font size="3" style="font-size: 12pt"><span lang="gu">
+जानकारी है</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_599ef4a28939e719.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.
+</font>W<font size="3" style="font-size: 12pt">e </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ગેઇન
+ઓવરઓવર ફ્રિક્વન્સી</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+પર ઓપન લૂપ ટ્રાન્સફર ફંક્શનના
+તબક્કાની ગણતરી કરો અને</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+તેને </span></font></span></font><font size="3" style="font-size: 12pt">-180
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">માંથી
+બાદ કરો</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_a5a7b4b42302bc51.gif"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">નોંધ</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જે
+</span></font><span lang="gu">આપેલ સિસ્ટમના
+ઓપન લૂપ ટ્રાન્સફર ફંક્શનમાં
+ધ્રુવો</span><font size="3" style="font-size: 12pt"><span lang="gu">નથી
+</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font>RPP<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">માં
+શૂન્ય </span><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ડેસિબલ
+એકમોમાં ગેઇન માર્જિન અને
+ડિગ્રીમાં ફેઝ માર્જિન બંને
+બંધ લૂપ સિસ્ટમની સ્થિરતા
+સુનિશ્ચિત કરવા માટે સકારાત્મક
+હોવું</span><font size="3" style="font-size: 12pt"><span lang="gu">જોઈએ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ગેઇનમાર્જિનનું
+નોથીર</span></font><span lang="gu"> અર્થઘટન
+અને ગોડે આકૃતિનો ઉપયોગ કરીને</span><font size="3" style="font-size: 12pt"><span lang="gu">
+તબક્કાનું માર્જિન </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">આ
+નીચે મુજબ છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+18:11)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_d1e359b23c14b471.png" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અમે
+ઓપન </span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">લૂપ
+ટ્રાન્સફર</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+ફંક્શનની </span></font><span lang="gu">બોડે
+આકૃતિ દોરીએ છીએ અને  </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ડેસિબલ
+લાઇન અને</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></span></font><font size="3" style="font-size: 12pt">-180</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">લાઇન
+દોરીએ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">અમે
+આ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+રીતે</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+તીવ્રતાનો પ્લોટ અને ફેઝ</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> પ્લોટ
+દોરીએ છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">हम
+प्राप्त प्रकार को इस प्रकार
+के रूप में बनाते हैं जिस पर
+विचार पाप संपाद काम </span></span></font><font size="3" style="font-size: 12pt">1</font>
+<font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">या</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">देशिबल
+</span><font size="3" style="font-size: 12pt"><span lang="gu">होते
+हैं</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અને
+ફેઝ ઓવરઓવર ફ્રિક્વન્સી ને
+આવર્તન તરીકે જ્યાં </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">તબક્કો
+બને છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_3ba7a5065d981879.gif"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અમે
+સ્લાઈડમાં દર્શાવ્યા મુજબ
+પ્લોટને એક્સ્ટ્રાપોલ કરીને
+ગેઇન</span></font><span lang="gu"> માર્જિન અને
+ફેઝ માર્જિન મેળવીએ છીએ</span></span></font>.
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ફેઝ
+માર્જિન ગેઇન ક્રોસ </span><font size="3" style="font-size: 12pt"><span lang="gu">ઓવર
+ફ્રિક્વન્સી</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> પરના તબક્કા તરીકે
+મેળવવામાં આવે છે અને બાઉડે
+પ્લોટમાંથી મેળવેલા તબક્કાના
+માર્જિનમાંથી</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_3ba7a5065d981879.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+બાદબાકી કરવામાં આવે છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ફેઝ
+ઓવરઓવર ફ્રિક્વન્સી પર તીવ્રતા
+શોધીને અને તેનો પારસ્પરિક
+લઈને ગેઇન માર્જિન મેળવવામાં
+આવે છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+23:40)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="262" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_ebf8e5dbf1a7f6ed.png" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ચાલો
+આપણે એક ઉદાહરણ કરીએ જે આપણે
+અગાઉ જોયું હતું</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ટી
+તે સોનિસોઇડલ ઓપનલૂપ</span></font><span lang="gu">
+ટ્રાન્સફર ફંક્શન</span><font size="3" style="font-size: 12pt"><span lang="gu">
+હતું</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_59e1ea2caf1691c7.gif"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તે
+યાદ કરો</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_66dd518b3390fd03.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અને
+</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_488afe71f585ed81.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+24:45)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 6" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_8547056b518effbc.png" width="384"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તબક્કો
+માર્જિન</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_ce258d2435fba1fb.gif"/>
+</p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ગેઇન
+માર્જિન</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">देशिबलों
+में </span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_31c8749a86c37ad.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">इस</span></font><span lang="gu">
+सीनुसोदियादी संप्रक्षा काम
+का मजबूत</span><font size="3" style="font-size: 12pt"><span lang="gu">
+होता </span></font><span lang="gu">है </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_a23455afd3a556cf.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તેથી
+ગેઇન માર્જિન ડીબી</span></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec65.doc%20gujarati_htm_da65ffc5890e8dc6.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ટીટોપી
+એ જી </span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">એન
+માર્જિન અનેતબક્કાના માર્જિનની
+ગણતરી છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+</body>
+</html>

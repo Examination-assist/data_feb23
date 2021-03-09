@@ -1,0 +1,803 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK" name="author"/>
+<meta content="2018-11-03T08:58:00" name="created"/>
+<meta content="Akash Pandey" name="changedby"/>
+<meta content="2021-03-09T14:39:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="1033-10.2.0.7439" name="KSOProductBuildVer"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-size: 11pt; so-language: en-US }
+		p.cjk { font-size: 11pt; so-language: en-US }
+		p.ctl { font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-IN" link="#000080" vlink="#800000"><p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#222222"><font size="3" style="font-size: 12pt"><span lang="gu"><b>નિયંત્રણ
+સિસ્ટમો</b></span></font></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>પ્રો</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>એસ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>શંકર
+રામ</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>એન્જિનિયરિંગ
+ડિઝાઇન વિભાગ</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>ઇન્ડિયન
+ઇન્સ્ટિટ્યૂટ ઓફ ટેકનોલોજી</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>મદ્રાસ</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu"><b>વાંચી
+રહ્યા છીએ </b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+25</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="gu"><b>પ્રમેયની
+સ્થિરતા માપદંડ </b></span></font></span></font></span></font>
+</p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><span style="background: #ffffff"><font size="3" style="font-size: 12pt"><span lang="gu"><b>ભાગ
+– ૧</b></span></font></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:20)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_ca63730c2efba251.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">मैं
+नहीं स्कूल करता हूं</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font> <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">हमें
+स्थिति के अनुरों के बारे में
+देने के लिए समय किया जाता है
+और हमें संस्थान की स्थिति
+पर कोशिश करना चाहिए </span></span></font>.
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font> <font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font> <font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font> <font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font> <font size="3" style="font-size: 12pt"> </font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">हम</span></font><span lang="gu">
+प्रश्न का प्रश्न करना चाहते</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> हैं</span></span></font>: <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">अगर
+हमारे प्रकार की कोशिश किया
+जाता है </span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">तो
+हम कैसे प्रकार करते हैं</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">कि</span></font><span lang="gu">
+इस प्रस्थिति को क्या स</span></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+01:30)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_e877869b9eea0075.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અમે
+એક સમસ્યા હલ કરી જ્યાં પ્લાન્ટ
+ટ્રાન્સફર કાર્ય</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> હતું</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_9d88102252651899.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">we </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">એ
+જોયું કે તેમાં </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">કાલ્પનિક</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> ધરી
+પર </span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">ધ્રુવો
+છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_122583c615086db9.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">इसलिए
+हम</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_9693eb965568a636.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_716aa34d20318f7c.gif"/>
+<span lang="gu">
+जानते </span><font size="3" style="font-size: 12pt"><span lang="gu">हैं
+कि हम</span></font><span lang="gu"> अगर अपने
+प्रतिबद्</span></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+01:52)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_f0348d6336d0ba2c.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+02:00)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_a97920be57480a71.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ડબલ્યુ
+ઇએકતા નકારાત્મક પ્રતિસાદ
+સિસ્ટમ ડિઝાઇન કરવા માંગતો
+હતો</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">અને</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અમેપ્રમાણસર</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">
+નિયંત્રક સાથે</span></font><span lang="gu">
+પ્રયત્ન કર્યો અને શોધી કાઢ્યું
+કે પ્રમાણસર નિયંત્રક અમને
+ત્યાં મદદ કરી શકે તેમ</span><font size="3" style="font-size: 12pt"><span lang="gu">નથી</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>W<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">हमने</span></font></span></font>PI
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">निकालक
+का प्रयास किया</span></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">हम</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">कितने
+कार्यक्रम के लिए प्राप्त
+किया</span></span></font><font size="3" style="font-size: 12pt">.
+</font> <font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">न
+हमारे</span><font size="3" style="font-size: 12pt"><span lang="gu">दो
+</span></font><span lang="gu">प्रतिशतियों हैं
+जो</span><font size="3" style="font-size: 12pt"><span lang="gu">
+हम</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> संबंत कर सकते
+हैं तथा</span><font size="3" style="font-size: 12pt"><span lang="gu">
+तीन </span></font><span lang="gu">संयुक्त राज्य
+का प्रतिशत </span><font size="3" style="font-size: 12pt"><span lang="gu">कि
+इस से हम </span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> इन प्रकारों के
+मूल्यों की विश्वासों को
+प्राप्त कर सकते हैं जिसके
+लिए संबंबंत संबंबंत के लिए
+दूसरे अंतर प्र</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સામાન્ય
+રીતે બહુનોમીય હુર્વિટઝ ક્યારે
+હશે</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">જો
+</span><font size="3" style="font-size: 12pt"><span lang="gu">આપણે</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">
+બહુનોમીય ગણીએ તો</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_3a5258d9d75f6b7e.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">બધાસહકાર્યક્ષમો
+બધી વાસ્તવિક</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_2151e6132c5d4ac1.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+સંખ્યાઓ છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">अगर
+इस के बारे में निकालावाली
+का रूप में निकालाता है  </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span></span></font><font size="3" style="font-size: 12pt">,
+</font> <font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">तो
+हम चाहते हैं कि हम चाहते हैं
+कि संबंबंत रूप से प्राप्त
+करने का प्रतिबद्  </span><font size="3" style="font-size: 12pt"><span lang="gu">
+ तीनहीं</span></font><span lang="gu"> हमें</span><font size="3" style="font-size: 12pt"><span lang="gu">
+स्वीकार किया</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> जाता है</span><font size="3" style="font-size: 12pt"><span lang="gu">
+कि</span></font><span lang="gu"> संयुक्त लोप
+प्रतिशत िया जा</span><font size="3" style="font-size: 12pt"><span lang="gu">
+रही है</span></font><span lang="gu"> આપણે </span><font size="3" style="font-size: 12pt"><span lang="gu">કેવી
+રીતે મૂલ્યાંકન કરીએ છીએ કે
+આપેલ પોલિનોમીઅલ હુર્વિટ્સ
+હશે કે નહીં</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_1a859507281bb894.gif"/>
+</span></font><font size="3" style="font-size: 12pt">?</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તે
+</span><font size="3" style="font-size: 12pt"><span lang="gu">ક્વેસ્ટિયો
+એન છે જે</span></font><span lang="gu">અમે જવાબ
+આપવા જઈ</span><font size="3" style="font-size: 12pt"><span lang="gu">રહ્યા
+છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">लें</span></font><span lang="gu">
+सब पहले पहले कार्यक्रम को
+प्राप्त</span><font size="3" style="font-size: 12pt"><span lang="gu">
+करते हैं</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_9ccfa73ef3509e6e.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_eb1123562528d35e.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">क्योंकि
+वह हूरवेत्स होगा जब तथा</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> दोनों</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_62aa067e8df62a45.gif"/>
+<span lang="gu">
+के बारे में होगा </span></span></font>. <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ते
+</span><font size="3" style="font-size: 12pt"><span lang="gu">हीदोनों
+सामाजिक हो सकते हैं या दोनों
+नियमित हो स  मैं इस</span></font><span lang="gu">मामले
+में मुद्दे</span><font size="3" style="font-size: 12pt"><span lang="gu">होने
+के लिए</span></font><span lang="gu"> हैं</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_9cecf771614aa87.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">જો
+</span><font size="3" style="font-size: 12pt"><span lang="gu">આપણે</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> ઇચ્છીએ
+છીએ કે આ </span></font><span lang="gu">વાસ્તવિક
+મૂળ નકારાત્મક હોય </span><font size="3" style="font-size: 12pt"><span lang="gu">તો
+</span></font><span lang="gu">બંને રી</span><font size="3" style="font-size: 12pt"><span lang="gu">લ</span></font><span lang="gu">
+સંખ્યાઓ એક</span><font size="3" style="font-size: 12pt"><span lang="gu">
+જ ચિહ્નની હોવી જોઈએ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">હવે</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ચાલો
+આપણે સૌ પ્રથમ ક્રમપોલિનોમીઅલ
+નો વિચાર કરીલઈએ</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_c742d65950985904.gif"/>
+</span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_7310492236d6c527.gif"/>
+<font size="3" style="font-size: 12pt">.
+</font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">मैं</span><font size="3" style="font-size: 12pt"><span lang="gu">यह</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+नहीं बताता हूं कि इस बातों
+को हूरवेत्तों को होगा</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_eba25745c579aca9.gif"/>
+</span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_f7abac9bc6a760e7.gif"/>
+<font size="3" style="font-size: 12pt">
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_42b3fa85802f8008.gif"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">तो
+वह सभी नोन्तु तथा एक संस्करित
+</span><font size="3" style="font-size: 12pt"><span lang="gu">है</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">મૂળ
+</span><font size="3" style="font-size: 12pt"><span lang="gu">જટિલ
+વિમાનની ડાબી બાજુ હશે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">हम
+इसके  </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+बारे</span></font><span lang="gu">में भी कह
+सकते</span><font size="3" style="font-size: 12pt"><span lang="gu">हैं
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">એનઓવ</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> અમને
+જવા</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+દો</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_c921f3e1f0c97ea8.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તે
+</span><font size="3" style="font-size: 12pt"><span lang="gu">બહુપદી
+બને છે</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_84c32c1c195215bd.gif"/>
+<font size="3" style="font-size: 12pt">.
+</font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ટીઅહીં
+ચાર </span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">સહકાર્યક્ષમ</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ઓ
+</span><font size="3" style="font-size: 12pt"><span lang="gu">આરડીઆર</span></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_985cb665ede8e2fd.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+પોલિનોમ આયલ</span></font><span lang="gu">માટે
+આપણી પાસે</span><font size="3" style="font-size: 12pt"><span lang="gu">સહકાર્યક્ષમ</span></font><span lang="gu">
+એસ </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_9e62dad7d8ad38b4.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">હશે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">मैं</span><font size="3" style="font-size: 12pt"><span lang="gu">कोभी</span></font><span lang="gu">सामान्य
+</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">किसी
+कार्यक्रम में</span></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_985cb665ede8e2fd.gif"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">यदि</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_e0ab8542505ea20d.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">को</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+मोनिक लोनोमियाल के रूप में
+कहा</span><font size="3" style="font-size: 12pt"><span lang="gu">
+जाता है</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તેનો
+અર્થ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+એ કે સર્વોચ્ચ ક્રમના શબ્દનો
+સહકાર્યક્ષમ ૧</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">अब
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_e74812ffe746a42e.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">हमें</span></font><span lang="gu">
+अभी जानकारी के बाद में रूप
+से होने के लिए हमें अपने
+संबंगों की जानकारी है तथा
+अनुसार करने के लिए</span></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">પરંતુ
+ક્રમ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+૩ અને વધુના </span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu">બહુનોમીય લોકો
+માટે તે માત્ર જરૂરી </span><font size="3" style="font-size: 12pt"><span lang="gu">શરત
+છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ક્રમ
+</span></span></font><font size="3" style="font-size: 12pt">1</font> <font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અને
+</span></font></span></font>2 <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ના
+</span></span></font>F <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">અથવા
+બહુનોમીયલ્સ</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">જરૂરી
+સ્થિતિ પણ પૂરતી છે પરંતુ
+ઓર્ડર </span></span></font><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">અને
+વધુના બહુપદી </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">નથી</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ચાલો
+આપણે તેને</span><font size="3" style="font-size: 12pt"><span lang="gu">
+બે ઉદાહરણો દ્વારા</span></font><span lang="gu">
+પ્રદર્શન</span><font size="3" style="font-size: 12pt"><span lang="gu">
+ીએ</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+ઠીક છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+09:49)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_9c385b55d0b45076.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">હું
+અમને પ્રથમ પોલિનોમીઅલ ગણીએ
+છીએ</span></font><span lang="gu"> </span></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_1b0fd2491acc0581.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">અને
+બીજું પોલિનોમીઅલ</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">
+પોલિનોમીઅલ</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+હોવું</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_85fb21cf4a8ccb3c.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જો
+આપણે ઉપરોક્ત સમીકરણોના મૂળ
+નક્કી કરીએ તો આપણે જોઈ </span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_aad6768a370f96c1.gif"/>
+<span lang="gu">
+શકીએ છીએ કે</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તેના
+બધા મૂળનકારાત્મક વાસ્તવિક
+ભાગ </span></span></font>s <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">ધરાવે
+છે અને જટિલ વિમાનની ડાબી બાજુ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+આવેલા છે</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">અને
+જટિલ </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_1fce20947187762e.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">વિમાનની
+ડાબી બાજુ એક મૂળ અને </span></font><span lang="gu">જટિલ
+વિમાનની જમણી બાજુ બે મૂળ
+ધરાવે </span><font size="3" style="font-size: 12pt"><span lang="gu">છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">વચ્ચેનો
+ઓનલ ફેરફાર અને </span></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_aad6768a370f96c1.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">તે</span></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_1fce20947187762e.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+શબ્દનો સહકાર્યક્ષમ </span></font><span lang="gu">છે
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_b880e659bf7d175e.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">અને
+સતત શબ્દની અદલાબદલી કરવામાં
+આવે છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">मैं</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">इनदो
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu">प्राप्तियों के
+सभी </span><font size="3" style="font-size: 12pt"><span lang="gu">कोनों</span></font><span lang="gu">कोन्न</span></span></font>-<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">संबंभ
+के निकालने के बारे में नहीं
+हैं</span></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">પરંતુ
+આપણે બે</span><font size="3" style="font-size: 12pt"><span lang="gu">
+બહુનામીયના </span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu">મૂળજે વહેંચવામાં
+આવે છે તેમાં ધરખમ </span><font size="3" style="font-size: 12pt"><span lang="gu">ફેરફાર
+જોઈએ છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">हम
+ </span><font size="3" style="font-size: 12pt"><span lang="gu">देसरे</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">  देसरे</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+देश के लिए जो जानकारी थी तथा
+जो लोगों के</span><font size="3" style="font-size: 12pt"><span lang="gu">
+लिए </span></font><span lang="gu">जानकारी थी
+</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">वह
+ारा काम </span></span></font>2 <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">का
+इस्त</span></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">એફ
+અથવાનિર્ભરતા અમે પ્રમેયની
+એરેનુંનિર્માણકરીએ છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">પ્રમેયની
+એરે નીચે દર્શાવ્યા મુજબ
+બનાવવામાં આવી છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><img align="left" border="0" height="288" hspace="12" name="Picture 6" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_921acc70d9f61812.png" width="384"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+17:31)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt"><br/>
+</font><br/>
+<br/>
+</p>
+<table cellpadding="7" cellspacing="0" width="274">
+<col width="32"/>
+<col width="32"/>
+<col width="32"/>
+<col width="32"/>
+<col width="32"/>
+<col width="32"/>
+<tr valign="top">
+<td height="26" style="border: none; padding: 0cm" width="32"><p class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_bb7272f205f3babb.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_eba25745c579aca9.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_42b3fa85802f8008.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_37550fa99a168ea0.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_54ddf8218641993d.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font size="3" style="font-size: 12pt">...</font></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="32"><p class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_2d36519ed918d34d.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_f7abac9bc6a760e7.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_89cf6d1ff61a116f.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_36b0c27bb52224fb.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_7506ee179760f27f.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font size="3" style="font-size: 12pt">...</font></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="32"><p class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_58a389832d57cc4a.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_abbadf70e3abb61b.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_d23152d6b70906ee.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_194dc54cc13c9789.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font size="3" style="font-size: 12pt">...</font></p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="32"><p class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_1210e81030d70947.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_4f0e004bde9b3483.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_d3751f1a7b46ee64.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_180988800d737f03.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<font size="3" style="font-size: 12pt">...</font></p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="32"><p class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_c6a60373e406f1ce.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_c6a60373e406f1ce.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_c6a60373e406f1ce.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_c6a60373e406f1ce.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="32"><p class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_f822616fdd62e9c6.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_c6a60373e406f1ce.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_c6a60373e406f1ce.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border: none; padding: 0cm" width="32"><p class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_56550b92a27f16d7.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_c6a60373e406f1ce.gif"/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+<td style="border: none; padding: 0cm" width="32"><p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm">
+<br/>
+</p>
+</td>
+</tr>
+</table>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">हम
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_bb7272f205f3babb.gif"/>
+<span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_56550b92a27f16d7.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> इस क्रम के लिए
+संबंबंत करते  </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu">हैं</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">જ્યાં
+</span><font size="3" style="font-size: 12pt"><span lang="gu">સુધી
+સહકાર્યક્ષમો થાકી ન જાય ત્યાં
+સુધી અમે પ્રથમ બે હરોળ ભરીએ
+છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">પછી
+અમે</span><font size="3" style="font-size: 12pt"><span lang="gu">
+આરટીની ગણતરીઅને શરતો ને </span></font><span lang="gu">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_4118ed78445f6ed0.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">સ્ટે
+કરીએ</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_a5ac3243796fec48.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">છીએ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">હું
+અમારીપાસે આવું</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> છું</span></font></span></font><font size="3" style="font-size: 12pt">.</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_abbadf70e3abb61b.gif"/>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font> <font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font> <font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">सो</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">अगर
+हम कोरीबार की कोशिश करने के
+लिए कोशिश करने के लिए हम कोशिश
+करते हैं जो दो राज्यों में
+उपलब्द्दहर हैं</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">मैं</span></font><span lang="gu">ने</span><font size="3" style="font-size: 12pt"><span lang="gu">इस
+कार्यक्रम की रूप में दिलाती
+है</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_2345141856e9a42b.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">सो</span></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">हम
+दो</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font><span lang="gu">  राज्यों को पूरा
+विचार करते हैं जो </span><font size="3" style="font-size: 12pt"><span lang="gu">
+हैं</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+અને</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_43ab56df58efd8aa.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">પછી
+</span><font size="3" style="font-size: 12pt"><span lang="gu">તેની
+ગણતરી</span></font><span lang="gu"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_abbadf70e3abb61b.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="gu">આ
+રીતે કરવામાં આવે છે</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_3790b388551c7483.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">એ
+જ રીતે</span></font></span></font><font size="3" style="font-size: 12pt">,</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_aae09aa99afe01a2.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_45a926864da84ba.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_5cfa7a4d8b88d0b5.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જ્યાં
+સુધી અમે પ્રમેયની</span></font><span lang="gu">
+એરેનું નિર્માણ પૂરું</span><font size="3" style="font-size: 12pt"><span lang="gu">
+ન કરીએ ત્યાં સુધી અમે</span></font><span lang="gu">આ
+પ્રક્રિયા</span><font size="3" style="font-size: 12pt"><span lang="gu">ચાલુરાખીએછીએ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">हम
+इस प्रक्रिया को अनुसार करते</span><font size="3" style="font-size: 12pt"><span lang="gu">हैं</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">हम
+प्रकार की एरा</span><font size="3" style="font-size: 12pt"><span lang="gu">
+की</span></font><span lang="gu">पहली सम्मेलन</span><font size="3" style="font-size: 12pt"><span lang="gu">को
+देते हैं</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">इसकी
+अनुसार की स्थिति यह है कि
+लोगों के लिए विश्वास के लिए
+पहले संबंग में कोशिश नहीं
+किया जाना चाहिए </span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">તે
+</span><font size="3" style="font-size: 12pt"><span lang="gu">એ છે
+</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">કે
+પ્રમેયની</span></font><span lang="gu">એરેની
+પ્રથમ કોલમમાં ચિહ્ન</span><font size="3" style="font-size: 12pt"><span lang="gu">ફેરફારોની
+સંખ્યા ૦ હોવી</span></font><span lang="gu"> </span><font size="3" style="font-size: 12pt"><span lang="gu">
+જોઈએ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">इसलिए
+सच्चे कामों के साथ कार्यक्रम
+</span></font></span></font><font size="3" style="font-size: 12pt">n</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><span lang="gu">के
+कोशिश के लिए जानकारी की जानकारी
+की जानकारी करने के लिए सभी
+कामनाना नहीं होना चाहिए</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="gu">પૂરતી
+</span><font size="3" style="font-size: 12pt"><span lang="gu">શરત
+એ છે કે પ્રમેયના</span></font><span lang="gu">એરેના
+પ્રથમ</span><font size="3" style="font-size: 12pt"><span lang="gu">સ્તંભમાંકોઈ
+ચિહ્ન ફેરફારો ન હોવો જોઈએ</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">સ્લાઇડ
+સમયનો સંદર્ભ લો</span></font></span></font><font size="3" style="font-size: 12pt">:
+26:02)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 7" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec25.doc%20gujarati_htm_fd89e7f38f2e5794.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">ધારોકે</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જો</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> કોઈ
+ચિહ્ન પરિવર્તન હોય તોતેનું</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu">
+અર્થઘટન નીચે મુજબ કરવામાં
+આવે છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">तत</span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">
+</span><font size="3" style="font-size: 12pt"><span lang="gu"> </span></font><span lang="gu">वह
+ने पहले सम्मेलन में संस्करित
+किया जाता है</span></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">જો
+આપણી પાસે પ્રમેયની</span></font><span lang="gu">
+એરેની પ્રથમ કોલમમાં</span><font size="3" style="font-size: 12pt"><span lang="gu">
+</span></font></span></font><font size="3" style="font-size: 12pt">0</font>
+<font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><span lang="gu">હોય
+તો આપણે એક અલગ પ્રક્રિયાને
+અનુસરવાની જરૂર છે અને તે
+કાલ્પનિક ધરી પરના મૂળ</span><font size="3" style="font-size: 12pt"><span lang="gu">
+સૂચવી શકેછે</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">We </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="gu">તે
+દૃશ્યોની ચકાસણી કરવા જઈ રહ્યા
+છે</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+</body>
+</html>
