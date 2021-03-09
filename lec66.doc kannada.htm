@@ -1,0 +1,868 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="user" name="author"/>
+<meta content="2019-12-29T13:28:00" name="created"/>
+<meta content="Akash Pandey" name="changedby"/>
+<meta content="2021-03-09T17:09:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="Grizli777" name="Company"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="1033-10.2.0.7439" name="KSOProductBuildVer"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: justify; orphans: 2; widows: 2; background: transparent }
+		p.western { font-size: 11pt; so-language: en-US }
+		p.cjk { font-size: 11pt; so-language: en-US }
+		p.ctl { font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-IN" link="#000080" vlink="#800000"><p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ನಿಯಂತ್ರಣ
+ವ್ಯವಸ್ಥೆಗಳು</b></span></font></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಪ್ರೊ</b></span></font></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಎಸ್</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಎಂಜಿನಿಯರಿಂಗ್
+ಡಿಸೈನ್ ವಿಭಾಗ</b></span></font></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಇಂಡಿಯನ್
+ಇನ್ ಸ್ಟಿಟ್ಯೂಟ್ ಆಫ್ ಟೆಕ್ನಾಲಜಿ</b></span></font></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಮದ್ರಾಸ್</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font color="#000000"><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಓದುವಿಕೆ
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-</b></font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><b>66</b></font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ರೆಲ್ಸ್ಥಿರತೆ
+</b></span></font></font></span></font><font size="3" style="font-size: 12pt"><b>2</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಭಾಗ
+</b></span></font></font></span></font><font size="3" style="font-size: 12pt"><b>-</b></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"><b> 2</b></font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವೀಗ
+ಇನ್ನೂ ಕೆಲವು ನಿಯಮಗಳನ್ನು
+ವ್ಯಾಖ್ಯಾನಿಸಲು ಹೊರಟಿದ್ದೇವೆ
+ಮತ್ತು ಈ ಎಲ್ಲಾ ನಿಯಮಗಳು ಆವರ್ತನ
+ಡೊಮೇನ್ ಬಲಭಾಗದಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಣೆ
+ಯ ನಿರ್ದಿಷ್ಟತೆಗಳನ್ನು</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ವ್ಯಾಖ್ಯಾನಿಸುತ್ತವೆ</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಮತ್ತೊಮ್ಮೆ ಮುಚ್ಚಿದ ಲೂಪ್</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್ ಅನ್ನು
+ಸರಿಯಾಗಿ ಪರಿಗಣಿಸೋಣ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಪರಿಗಣಿಸಿ</span></font></span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20kannada_htm_8d8c10ddab81296d.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸಹಜವಾಗಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮುಚ್ಚಿದ
+ಲೂಪ್ ವ್ಯವಸ್ಥೆಯು</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸ್ಥಿರವಾಗಿದೆ ಎಂದು</span></font></font><span lang="kn">
+ನಾವು ಭಾವಿಸುತ್ತೇವೆ</span></font>.</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:34)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20kannada_htm_61a22d27fa82d672.png" width="384"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು
+ಕ್ಲೋಸ್ಡ್ ಲೂಪ್</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ನ</span></font></font><span lang="kn"> ವರ್ಗಾವಣೆ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಫಂಕ್ಷನ್ ನ</span></font></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪರಿಮಾಣವನ್ನು ನಾನು ಪ್ಲಾಟ್</span></font></font><span lang="kn">
+ಮಾಡಿಎಂದು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹೇಳೋಣ</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font></font> <font color="#000000"><font size="3" style="font-size: 12pt">See
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇಲ್ಲಿ
+ನಾನು ಹೈಲೈಟ್ ಮಾಡಲು ಬಯಸುವ ಒಂದು
+ಪ್ರಮುಖ ಅಂಶವೆಂದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font></font> <font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಓಪನ್
+ಲೂಪ್ ಸಿಸ್ಟಮ್ಸ್ ಫ್ರೀಕ್ವೆನ್ಸಿ
+ರೆಸ್ಪಾನ್ಸ್ ಅನ್ನು ಬಳಸಿ ಮುಚ್ಚಿದ
+ಲೂಪ್ ಸಿಸ್ಟಮ್ ಗೆ ಲಾಭ ಮತ್ತು
+ಹಂತಅಂಚನ್ನು ವ್ಯಾಖ್ಯಾನಿಸಲಾಗಿದೆ</span></font></span></font><span lang="kn">
+</span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಇದು
+ಬಹಳ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮುಖ್ಯ</span></font></font></span></font>-<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ರೈಟ್</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಕೇವಲ ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್ </span></font></font><span lang="kn">
+</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">G</font></font>(jω
+)H (<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt">jserget)</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಅನ್ನು
+ಮಾತ್ರ ನೋಡಿದೆವು ಎಂದು </span></span></font>K<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ನೆನಪಿಡುತ್ತಾನೆ</span></font></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಅದು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಓಪನ್ ಲೂಪ್</span></font></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಿಸ್ಟಮ್ಸ್ ಸೈನುಸೋಯಿಡಲ್
+ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್ ಆಗಿದ್ದು</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮುಚ್ಚಿದ
+ಲೂಪ್ ವ್ಯವಸ್ಥೆಗೆ ಸಂಬಂಧಿಸಿದ
+ಕೆಲವು ನಿಯತಾಂಕಗಳನ್ನು ನಾವು</span></font></span></font><span lang="kn">
+ಸರಿಯಾಗಿ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ನೆನಪಿಟ್ಟುಕೊಳ್ಳಲು</span></font></font><span lang="kn">
+ಬಹಳ ಮುಖ್ಯ</span></font>.</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಲಾಭದ ಮಾರ್ಜಿನ್ ಮತ್ತು ಫೇಸ್
+ಮಾರ್ಜಿನ್ ನೊಂದಿಗೆ ಮಾಡಿರುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನಾನು
+ಕೇವಲ ಎರಡು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ವ್ಯಾಖ್ಯಾನಗಳಿಗೆ</span></font></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ತೆರಳುತ್ತಿದ್ದೇನೆ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದು
+ಮುಖ್ಯ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು
+ಕ್ಲೋಸ್ಡ್ ಲೂಪ್</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಆವರ್ತನ ಪ್ರತಿಕ್ರಿಯೆ ವರ್ಗಾವಣೆ
+ಫಂಕ್ಷನ್</span></font></font><span lang="kn"> ನ
+ಪರಿಮಾಣವನ್ನು ಡೆಸಿಬೆಲ್ ಗಳಲ್ಲಿ
+ಪ್ಲಾಟ್ ಮಾಡಿ ಎಂದು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹೇಳೋಣ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಕಡಿಮೆ
+ಆವರ್ತನ ಅಸಿಂಪ್ಟೋಟ್  ಕೆಲವು</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸ್ಥಿರ ಮೌಲ್ಯವಾಗಿದೆ</span></font></font><span lang="kn">
+ಎಂದು ಹೇಳೋಣ ಮತ್ತು ನಂತರ ಅದು
+ಕೆಲವು  </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ನಿರಂಕುಶ ತಿರುವು ಬಲಕ್ಕೆ
+ಹೋಗುತ್ತದೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಈಗ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಮೌಲ್ಯವೇನು</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ಕಡಿಮೆ ಆವರ್ತನ ಅಸಿಂಪಟೋಟ್ ನಲ್ಲಿ
+ಈ ಮೌಲ್ಯವಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು
+ಈ ಮೌಲ್ಯವನ್ನು ಪರಿಮಾಣ ಎಂದು
+ಕರೆಯಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20kannada_htm_c5664d751a47d701.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮುಖ್ಯವಾಗಿ
+ನಾನು ಹೇಳುತ್ತಿದ್ದೇನೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಒಮೆಗಾ
+</span></span></font>0 <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಗೆ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹೊಂದಿಕೆಯಾಗಬಹುದಾದ ಅಸಿಂಪಟೋಟಿಕ್
+ಮೌಲ್ಯವಾಗಿದೆ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈಗ
+ನಾವು ಮಾಡುವ ಕೆಲಸವೆಂದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಸಂಖ್ಯೆಗಿಂತ </span></font></span></font><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬೆಲ್
+ಕಡಿಮೆ ಇರುವ ಒಂದು ಸಂಖ್ಯೆಯನ್ನು
+ತೆಗೆದುಕೊಳ್ಳುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಅದು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕಡಿಮೆ ಆವರ್ತನ ಗಳಿಕೆಯ</span></font></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಾಗಿದ್ದರೂ</span></font></font><span lang="kn"> ಕೆಲವರು
+ಅದನ್ನು </span></span></font>T<font color="#000000"><font size="3" style="font-size: 12pt">he
+DC</font></font> <font color="#000000"><font size="3" style="font-size: 12pt">
+gain o</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಎಂದು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕರೆಯುತ್ತಾರೆ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಇದು
+ಕಡಿಮೆ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆವರ್ತನ
+ಗಳಿಕೆ ಮತ್ತು ಇತ್ಯಾದಿ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೂಲಭೂತವಾಗಿ
+ನೀವು ಈ ಸಂಖ್ಯೆಗಿಂತ </span></font></span></font><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬೆಲ್
+ಗಳಿಗಿಂತ ಕಡಿಮೆ ಇರುವ ಪರಿಮಾಣದ</span></font></span></font><span lang="kn">
+ಒಂದು ಸಂಖ್ಯೆಯ ಮೌಲ್ಯವನ್ನು
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ತೆಗೆದುಕೊಳ್ಳುತ್ತೀರಿ</span></font></font><span lang="kn">
+ಮತ್ತು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಯಾವ ಆವರ್ತನ ಓಕೆ</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> t</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಈ
+ಕ್ಲೋಸ್ಡ್ ಲೂಪ್ ಸೈನಸೋಯಿಡಲ್
+ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ನ
+ಪರಿಮಾಣವು</span></font></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬೆಲ್
+ಗಳಿಗಿಂತ ಕಡಿಮೆ ಇರುತ್ತದೆ
+ಎಂಬುದನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಆವರ್ತನವನ್ನು ಕಟ್ ಆಫ್ ಫ್ರೀಕ್ವೆನ್ಸಿ</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಕಟ್
+ಆಫ್ ಆವರ್ತನವು ಈ ಆವರ್ತನವಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಕಟ್
+ಆಫ್ ಆವರ್ತನದ ವ್ಯಾಖ್ಯಾನವನ್ನು
+ಬರೆಯುತ್ತೇನೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮುಚ್ಚಿದ</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಲೂಪ್</span></font></font><span lang="kn"> ಆವರ್ತನ
+ಪ್ರತಿಕ್ರಿಯೆ ವರ್ಗಾವಣೆ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಫಂಕ್ಷನ್</span></font></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ ನ</span></font></font><span lang="kn"> ಪರಿಮಾಣವು </span>C
+(<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt">j)</font></font>R
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನ </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪರಿಮಾಣವು</span></font></font><span lang="kn"> ಅದರ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಶೂನ್ಯ</span></font></font><span lang="kn"> ಆವರ್ತನ
+ಮೌಲ್ಯಕ್ಕಿಂತ </span></span></font>3 <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಡೆಸಿಬಲ್
+ಗಳಿಗಿಂತ </span></span></font>3<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬಲ್
+ಗಳಷ್ಟಿರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಶೂನ್ಯ</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಆವರ್ತನ ಮೌಲ್ಯವು ಕಡಿಮೆ ಆವರ್ತನ
+ಅಸಿಪ್ಟೋಟಿಕ್ ಮೌಲ್ಯವಾಗಿದೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಅದು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸರಿ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ದಯವಿಟ್ಟು
+ಗಮನಿಸಿ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಕಡಿಮೆ
+ಆವರ್ತನ ಅಸಿಂಪ್ಟೋಟಿಕ್ ಮೌಲ್ಯವು
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬೆಲ್
+ಗಳಾಗಬೇಕಾಗಿಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದು
+ನಾವು ಕಟ್ಟಡ ಬ್ಲಾಕ್ ಗಳಿಗೆ ಅದು
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸರಿ
+ಎಂದು ಪರಿಗಣಿಸಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದರೆ
+ಅದು ಸೊನ್ನೆಯಾಗಿರಬೇಕಾಗಿಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನಾವು
+ಬೋಡ್ ರೇಖಾಚಿತ್ರದ ಬಲಕ್ಕೆ ಒಂದು
+ಉದಾಹರಣೆಯನ್ನು </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಮಾಡಿದಾಗ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+You </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದನ್ನು
+ಅರ್ಥಮಾಡಿಕೊಂಡಿರಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಕಡಿಮೆ
+ಆವರ್ತನ ಅಸಿಂಪ್ಟೋಟ್ </span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಶೂನ್ಯ</span></font></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಡೆಸಿಬೆಲ್ ಗಳಾಗಿತ್ತು</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">;</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದು
+ಯಾವುದೋ ಶೂನ್ಯವಲ್ಲದ ಸಂಖ್ಯೆಯಾಗಿತ್ತು</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದು
+ಯಾವುದೇ ಸಮಸ್ಯೆಯೂ ಆಗಲು ಸಾಧ್ಯವಿಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಏನನ್ನು ಹೇಳಬೇಕೆಂದು ನೋಡುತ್ತಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಯಾವ
+ಪ್ರಮಾಣದಲ್ಲಿ </span></font></span></font><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬೆಲ್
+ಗಳಕಡಿಮೆ ಆವರ್ತನಮೌಲ್ಯವು
+ಸರಿಯಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ವ್ಯಾಖ್ಯಾನದೊಂದಿಗೆ </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆವರ್ತನ
+ಶ್ರೇಣಿಯನ್ನು</span></font></span></font><span lang="kn">
+</span>c<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವರೆಗೆ
+</span></font></span></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಇರುವ</span></font></font><span lang="kn">
+ಆವರ್ತನ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಶ್ರೇಣಿಯನ್ನು ಸಿಸ್ಟಂನ ಬ್ಯಾಂಡ್
+ವಿಡ್ತ್ ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವನ
+ಒಂದು ಪ್ರಮುಖ ವ್ಯಾಖ್ಯಾನ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನೀವು
+ಪರಿಮಾಣದ ವಕ್ರಬಲದಿಂದ ಗಮನಿಸಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಏಕೆಂದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸಿಸ್ಟಂ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆವರ್ತನ</span></font></span></font><span lang="kn">
+ಘಟಕಗಳನ್ನು ಅದರ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮೂಲಕ ಸರಿಯಾದ ರೀತಿಯಲ್ಲಿ ಹಾದುಹೋಗಲು</span></font></font><span lang="kn">
+</span>c <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ವರೆಗೆ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಆವರ್ತನ ಘಟಕಗಳನ್ನು </span></font></font><span lang="kn">ಅನುಮತಿಸುತ್ತದೆ</span></span></font>.
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು</span></font></font></span></font><font size="3" style="font-size: 12pt">fter
+</font> <font color="#000000"><font size="3" style="font-size: 12pt">ω</font></font><font color="#000000"><sub><font size="3" style="font-size: 12pt">c</font></sub></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಇದು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಇತರ</span></font></font><span lang="kn"> ಎಲ್ಲಾ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಆವರ್ತನಗಳನ್ನು ಸರಿಯಾಗಿ ಅಟೆನ್ಯುಟ್
+ಮಾಡುತ್ತದೆ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಾಗಾಗಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದೇ
+ಸರಿಯಾದ ುದು</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+0 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ರಿಂದ
+</span></font></span></font><font size="3" style="font-size: 12pt">c
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವರೆಗಿನ
+ಆವರ್ತನ ಶ್ರೇಣಿಯನ್ನು </span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಿಸ್ಟಂನ ಬ್ಯಾಂಡ್ ವಿಡ್ತ್ ಎಂದು
+ಕರೆಯಲಾಗುತ್ತದೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಈಗ
+ಈ </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೈನಸ್
+</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬೆಲ್</span></font></span></font><span lang="kn">ಗಳ
+ಸಂಖ್ಯೆಎಷ್ಟು </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಅನನ್ಯವಾಗಿದೆ
+ಎಂಬ ಪ್ರಶ್ನೆಯನ್ನು ಕೇಳಬಹುದು
+</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬಲ್
+ಗಳ ಬಗ್ಗೆ ನೀವು ಏನು ಯೋಚಿಸುತ್ತೀರಿ</span></font></span></font><font size="3" style="font-size: 12pt">?</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ದಯವಿಟ್ಟುಹುಡುಕಿ
+ಓಕೆ ಹೇಳಿ</span></font></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು
+</span></font></span></font><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬಲ್
+ಗಳನ್ನು ನನ್ನ ಹೊಸ್ತಿಲು ಸರಿಎಂದು
+ಏಕೆ ಪರಿಗಣಿಸಲಿ</span></font></span></font><font size="3" style="font-size: 12pt">;
+5 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬೆಲ್
+ಗಳನ್ನು ನಾನು ಇಷ್ಟಪಡುತ್ತೇನೆ</span></font></span></font><span lang="kn">
+ಎಂದು ನಾನು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹೇಳುತ್ತಿದ್ದೇನೆ</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು</span></font></span></font></font>c
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಅನ್ನು
+ಒಂದು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಂಖ್ಯೆಎಂದು</span></font></font><span lang="kn">ವ್ಯಾಖ್ಯಾನಿಸುವುದಿಲ್ಲ</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">-</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನಾನು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸರಿಯಾಗಿ ಮಾಡುತ್ತಿಲ್ಲದ ಕಡಿಮೆ
+ಆವರ್ತನಮೌಲ್ಯಕ್ಕಿಂತ </span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">5
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬೆಲ್
+ಗಳ ಷ್ಟು ಕಡಿಮೆ ಇರುವ ಆವರ್ತನ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು
+</span></font></span></font><span lang="kn">ಇದನ್ನು </span></font>3
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಡೆಸಿಬೆಲ್
+ಗಳು ಕಡಿಮೆ ಆವರ್ತನ ಮೌಲ್ಯಕ್ಕಿಂತ
+ಕಡಿಮೆ ಎಂದು  </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ವ್ಯಾಖ್ಯಾನಿಸುತ್ತೇನೆ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+3 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬಲ್
+ಏಕೆ</span></font></span></font><font size="3" style="font-size: 12pt">?</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ವಿದ್ಯಾರ್ಥಿ</span></font></font></span></font><font size="3" style="font-size: 12pt">:
+[</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಸ್ಪಷ್ಟ</span></font></span></font><font size="3" style="font-size: 12pt">]</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಹೌದುಎಂದು</span></font></font><span lang="kn">
+ಹೇಳಿ </span></span></font>-<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವ್ಯಾಖ್ಯಾನ
+ನಾನು ಒಪ್ಪುತ್ತೇನೆ</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ನಾನು ಕೇವಲ ನಿಮಗೆ ಕೇಳುತ್ತಿದ್ದೇನೆ
+ಅದರ ಹಿಂದಿರುವ ಭೌತಶಾಸ್ತ್ರಏನು</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">?</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ವಿದ್ಯಾರ್ಥಿ</span></font></font></span></font><font size="3" style="font-size: 12pt">:
+[</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಸ್ಪಷ್ಟ</span></font></span></font><font size="3" style="font-size: 12pt">]</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೂಲೆ
+ಆವರ್ತನ</span></font></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font color="#000000"><font size="3" style="font-size: 12pt">P</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಲೀಸ್
+ಇದು ದಿನದ ಎರಡನೇ ಪ್ರಶ್ನೆ
+ಎಂದು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಕಂಡುಹಿಡಿಯಿರಿ</span></font></font><span lang="kn">
+ಆದ್ದರಿಂದ ದಯವಿಟ್ಟು ಈ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮೂರು ಡೆಸಿಬಲ್ ಗಳು ಏಕೆ ಸರಿಯಾಗಿದೆ
+ಎಂದು ನನಗೆ ಸರಿಯಾಗಿ ತಿಳಿಸಿ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಈ
+ಪ್ರಕರಣದಲ್ಲಿ </span></span></font>3 <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಡೆಸಿಬೆಲ್
+ಗಳು ಸರಿಯಾಗಿದೆ ಅಥವಾ </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೈನಸ್
+</span></font></font><span lang="kn"> </span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">3
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡೆಸಿಬೆಲ್
+ಗಳು ಸರಿಯಾಗಿವೆ</span></font></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ದಯವಿಟ್ಟು ಸರಿ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಮೂಲಭೂತವಾಗಿ ವ್ಯಾಖ್ಯಾನಿಸಬಯಸುವ
+ಇನ್ನೊಂದು ಮಾನದಂಡವೆಂದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದನ್ನು
+ಕಟೆಆಫ್ ಇಲಿ</span></font></span></font><span lang="kn">ಇ
+ಎಂದು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಕರೆಯಲಾಗುತ್ತದೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+08:23)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20kannada_htm_d0c94862d74c9380.png" width="384"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ
+ಕಟ್ ಆಫ್ ರೇಟ್ ಇದು ಕಟ್ ಆಫ್
+ಫ್ರೀಕ್ವೆನ್ಸಿ ಯಲ್ಲಿ </span></font></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಲಾಗ್ ಪರಿಮಾಣ ದ ವಕ್ರತೆಯ</span></font></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಇಳಿಜಾರು</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದು
+ಮೂಲಭೂತವಾಗಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಷ್ಟು
+ವೇಗವಾಗಿ ಪ್ರಮಾಣವು</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕಡಿಮೆಯಾಗುತ್ತಿದೆ ಎಂಬುದನ್ನು
+ಹೇಳುತ್ತದೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಅದು
+ಕಟ್ ಆಫ್ ರೇಟ್</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮತ್ತು </span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">Way</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಮೂಲಕ
+ನಾವು ಸಾಧ್ಯವಾದಷ್ಟು ಹೆಚ್ಚಿನ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಬ್ಯಾಂಡ್ ವಿಡ್ತ್ ಅನ್ನು ಬಯಸುತ್ತೇವೆ
+ಓಕೆ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು
+ಒಂದು ಪ್ರಾಯೋಗಿಕ ವ್ಯವಸ್ಥೆಯನ್ನು
+ವಿನ್ಯಾಸಗೊಳಿಸುತ್ತಿದ್ದೇನೆ
+ಅಥವಾ ನಾನು ಕೆಲವು ಕ್ರಿಯಾತ್ಮಕ
+ಗುಣಲಕ್ಷಣಗಳೊಂದಿಗೆ ಸಂವೇದಕವನ್ನು
+ನಿರ್ಮಿಸುತ್ತಿದ್ದೇನೆ ಯೇ</span></font></span></font><span lang="kn">ಎಂಬುದು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮುಖ್ಯವಲ್ಲ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಅಥವಾ
+ಕೆಲವು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಕ್ರಿಯಾತ್ಮಕ
+ಗುಣಲಕ್ಷಣಗಳು</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹೆಚ್ಚಿನ
+ಬ್ಯಾಂಡ್ ವಿಡ್ತ್ </span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಂದರೆ
+ನೀವು</span></font></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ವೇಗದ ಕ್ಷಣಿಕ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು
+ಹೊಂದುತ್ತೀರಿ ಎಂದರ್ಥ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ಮೂಲಭೂತವಾಗಿ ಯಾವುದು </span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅಪೇಕ್ಷಣೀಯ ವಾದ ುದಾಗಿದೆ</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ
+ನಾನು ಉನ್ನತ ಬ್ಯಾಂಡ್ ವಿಡ್ತ್
+ಆಕ್ಚುಯೇಟರ್ ಬಲವನ್ನು ಹೊಂದಿದ್ದರೆ
+ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಂದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು
+ವಸ್ತುವನ್ನು ಸರಿಸಿ ಎಂದು ಹೇಳಲು
+ನಾನು ನಿಮ್ಮನ್ನು ಕೇಳಿಕೊಳ್ಳುತ್ತೇನೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆಗ
+ಅದು ಆ ಕ್ರಿಯೆಯನ್ನು ಅತ್ಯಂತ
+ವೇಗವಾಗಿ ಮಾಡಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ
+ಅದು ಕಡಿಮೆ ಬ್ಯಾಂಡ್ ವಿಡ್ತ್
+ಆಕ್ಚುಯೇಟರ್ ಗಿಂತ ಹೆಚ್ಚು
+ವೇಗವಾಗಿ ಮಾಡಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದರೆ
+ಅದೇ ಸಮಯದಲ್ಲಿ</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ವೆಚ್ಚವು ಹೆಚ್ಚಾಗುತ್ತದೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಯಾವಾಗಲೂ
+ವೆಚ್ಚ ಮತ್ತು ಕಾರ್ಯಕ್ಷಮತೆಯ</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹೆಚ್ಚಿನ ಬ್ಯಾಂಡ್ ವಿಡ್ತ್</span></font></font><span lang="kn">
+ಗಳ ನಡುವೆ ವ್ಯಾಪಾರವಾಗಿರುತ್ತದೆ</span>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಸಾಮಾನ್ಯವಾಗಿ
+ಉತ್ತಮ ವೇಗದ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪ್ರತಿಕ್ರಿಯೆಉತ್ತಮ ಪ್ರತಿಕ್ರಿಯೆ
+ಯ ಗುಣಲಕ್ಷಣಗಳು</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದರೆ
+ನಂತರ ವೆಚ್ಚವು ಹೆಚ್ಚು ಸರಿ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಪಾವತಿಸುವ ಬೆಲೆ ಅದೇ ಆಗಿದೆ
+ಉದಾಹರಣೆಗೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನೀವು
+ಎಲೆಕ್ಟ್ರೋಮೆಕ್ಯಾನಿಕಲ್
+ಆಕ್ಚುಯೇಟರ್ ಅನ್ನು ಬಳಸಿದರೆ
+ನೀವು ಸರಿಯಾಗಿ ಆಕ್ಟ್ಯೂಯೇಟ್
+ಸಿಸ್ಟಮ್ ಗಳಿಗೆ ಹೋದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನೀವು
+ತುಂಬಾ ವೇಗವಾಗಿ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತೀರಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದರೆ
+ಆಗ ಎಲೆಕ್ಟ್ರೋಮೆಕ್ಯಾನಿಕಲ್
+ಆಕ್ಚುಯೇಟರ್ ನ ವೆಚ್ಚವುಅಧಿಕವಾಗಿರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">;</font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಸಂಕೀರ್ಣತೆ
+ಉನ್ನತ ಮಟ್ಟದಲ್ಲಿದೆ</span></font></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತೊಂದೆಡೆ
+ನೀವು ನ್ಯೂಮ್ಯಾಟಿಕ್ ಆಕ್ಚುಯೇಟರ್
+ಅನ್ನು ಬಳಸಿದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನ್ಯೂಮ್ಯಾಟಿಕ್
+ಆಕ್ಚುಯೇಟರ್ ನ ಬ್ಯಾಂಡ್ ವಿಡ್ತ್
+ತುಲನಾತ್ಮಕವಾಗಿ ಕಡಿಮೆಯಿರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದರೆ
+ವೆಚ್ಚವು ಸಹ ಕಡಿಮೆ ಯಿರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹೀಗಾಗಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+ </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವೆಚ್ಚ
+ಮತ್ತು ಕಾರ್ಯಕ್ಷಮತೆಯ ನಡುವೆ
+ಒಂದು ವ್ಯಾಪಾರವಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ವಿದ್ಯಾರ್ಥಿ</span></font></font></span></font><font size="3" style="font-size: 12pt">:
+[</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಸ್ಪಷ್ಟ</span></font></span></font><font size="3" style="font-size: 12pt">]</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font color="#000000"><font size="3" style="font-size: 12pt">We
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೂಲಭೂತವಾಗಿ
+ಅದನ್ನು ಸರಿಯಾಗಿ ನೋಡುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಾಗಾದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬ್ಯಾಂಡ್
+ವಿಡ್ತ್ ಪ್ರತಿಕ್ರಿಯೆಗೆ ಹೇಗೆ
+ಸಂಬಂಧಿಸಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಾಗಾಗಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಓಕೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೂಲಭೂತವಾಗಿ</span></font></span></font><span lang="kn">
+ಒಂದು ವಿಷಯವನ್ನು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಏನು ಹೇಳಬೇಕು</span></font></font><span lang="kn">
+ಮತ್ತು ನೀವು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಆವರ್ತನ ಪ್ರತಿಕ್ರಿಯೆ ವಿಧಾನಗಳನ್ನು
+ಬಳಸಿದರೆ ಮತ್ತೊಮ್ಮೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಕಾರ್ಯಕ್ಷಮತೆಯ
+ನಿರ್ದಿಷ್ಟತೆಗಳು ವಿಶಿಷ್ಟವಾಗಿ
+ಈ ಮಾನದಂಡಗಳ ಪ್ರಕಾರ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಒಂದು
+ನಿರ್ದಿಷ್ಟವಾಗಿ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ನೀಡಲಾಗುತ್ತದೆ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಂದರೆ
+ಗೇನ್ ಮಾರ್ಜಿನ್ ಫೇಸ್ ಮಾರ್ಜಿನ್</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಫೇಸ್
+ಮಾರ್ಜಿನ್</span></font></span></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮತ್ತು ನಂತರ</span></font></font><span lang="kn">
+ಬ್ಯಾಂಡ್</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ವಿಡ್ತ್ಮತ್ತು</span></font></font><span lang="kn">
+ಕಟ್ ಆಫ್ ರೇಟ್</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮತ್ತು ನಂತರ</span></font></font><span lang="kn"> ಕಟ್</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಆಫ್</span></font></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಫ್ರೀಕ್ವೆನ್ಸಿ</span></font></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಓಕೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಎಲ್ಲಾ ನಿಯತಾಂಕಗಳು ಮತ್ತು
+ರೆಸನಾಂಟ್ ಪೀಕ್ ನೀವು ನೆನಪಿಡಿ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನಾವು
+ಎರಡನೇ ಕ್ರಮಾಣದ ಅಂಶಗಳಿಗೆ </span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">M</font></font><font color="#000000"><sub><font size="3" style="font-size: 12pt">r</font></sub></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಸರಿಯಾಗಿ
+ದೆವು</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನಾವು
+ಸರಿಯಾಗಿ ನೋಡಿರುವ ಆ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ವರ್ತನಆವರ್ತನಕ್ಕೆ</span></font></font><span lang="kn">
+ಈ ಪ್ಯಾರಾ ಮೀಟರ್ ಗಳು ಈ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪ್ಯಾರಾಮೀಟರ್ಗಳು</span></font></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಬಳಸಬಹುದಾದ ಮಾನದಂಡಗಳಾಗಿವೆ</span></font></font><span lang="kn">
+</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ನೀವು
+ಏನು ಹೇಳಬೇಕೆಂದು</span></font></font><span lang="kn">
+ನೀವು ಬಳಸಿ ದಾಗ</span></span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನೀವು
+ವಿನ್ಯಾಸವನ್ನು ಬಳಸಿ</span></span></font>,
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಆವರ್ತನ
+ಪ್ರತಿಕ್ರಿಯೆ ಯನ್ನು ಬಳಸಿ
+ವಿನ್ಯಾಸವನ್ನು ಬಳಸಿ ವಿನ್ಯಾಸವನ್ನು
+ಸರಿಯಾಗಿ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಬಳಸಿ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ನಾಳೆಯಿಂದ ಬಲಗಡೆಯಿಂದ ನಿಯಂತ್ರಕಗಳನ್ನು
+ಕಲಿಯಲಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಕ್ಷಣಿಕ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು
+ಬಳಸಿ ವಿನ್ಯಾಸಗೊಳಿಸಿದಾಗ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಕಾರ್ಯನಿರ್ವಹಣೆಯನ್ನು</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅಳೆಯಲು ಬಳಸಲಾದ ಮಾನದಂಡಗಳೇನು</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">?</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಸಮಯ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸಮಯ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಶಿಖರ
+ಓವರ್ ಶೂಟ್ಮತ್ತು</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪೀಕ್ ಟೈಮ್ ಮತ್ತು ಹೀಗೆ</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬಲಕ್ಕೆ
+ಏರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಸರಿಯಾದ ಮಾನದಂಡಗಳನ್ನು ಬಳಸುತ್ತೇವೆ</span></font></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಆವರ್ತನ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು
+ಬಳಸುವಾಗ ಈ ಮಾನದಂಡಗಳನ್ನು ಏನು
+ಹೇಳಬೇಕೆಂದು</span></font></span></font><span lang="kn">
+ನಾವು ನೋಡಲಿದ್ದೇವೆ</span><font color="#000000"><font size="3" style="font-size: 12pt">.
+T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಂಬ
+ಪ್ರಶ್ನೆ ಉದ್ಭವಿಸುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font></font> <font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡು
+ಸಂಬಂಧಗಳು</span></font></font><span lang="kn">ಹೇಗೆ
+ಸರಿಇವೆ ಎಂದು </span></span></font>.<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇತರ
+ನಿಯತಾಂಕಗಳಿಗೆ ಬ್ಯಾಂಡ್ ವಿಡ್ತ್
+ಹೇಗೆ ಸಂಬಂಧಿಸಿದೆ ಎಂಬುದನ್ನು
+ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬ್ಯಾಂಡ್
+ವಿಡ್ತ್ ಎಂದರೆ ವೇಗದ</span></font></span></font><span lang="kn">
+ಪ್ರತಿಕ್ರಿಯೆ ಎಂದು ನಾನು ಹೇಗೆ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹೇಳಲಿ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಉದಾಹರಣೆಗೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹೆಚ್ಚು ಬ್ಯಾಂಡ್ ವಿಡ್ತ್ ಎಂದರೆ
+ಕಡಿಮೆ ಏರಿಕೆ ಸಮಯಎಂದು ನಾನು
+ತೋರಿಸಿದರೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಸಿಸ್ಟಂ
+ಸರಿಯಾಗಿ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತದೆ
+ಎಂದು ನೀವು ಒಪ್ಪುತ್ತೀರಿ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಾಗಾಗಿ</span></font></font></span></font><font size="3" style="font-size: 12pt">,</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಕೆಲವು ಸಂಬಂಧಗಳನ್ನು</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸರಿಯಾಗಿ ಯೇ ಬಗೆಹರಿಸುತ್ತೇವೆ</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಾಗಾಗಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇವು</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಆವರ್ತನ ಡೊಮೇನ್ ನಲ್ಲಿ ಕಾರ್ಯಕ್ಷಮತೆಯ
+ನಿರ್ದಿಷ್ಟತೆಗಳು ಓಕೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ
+ನಾನು</span></font></span></font><span lang="kn"> ಇಲ್ಲಿ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ನಿಲ್ಲುತ್ತೇನೆ </span></font></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು</span></font></font><span lang="kn">
+ನಾವು ನಾಳೆ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಆವರ್ತನ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು
+ಬಳಸಿಕೊಂಡು ನಿಯಂತ್ರಕ ವಿನ್ಯಾಸವನ್ನು
+ಮುಂದುವರಿಸುತ್ತೇವೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದರೆ
+ನಾನು ಒಂದು ಪ್ರಶ್ನೆಯನ್ನು
+ಸರಿಯಾಗಿ ಕೇಳುತ್ತೇನೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು
+ಈ ಪ್ರಶ್ನೆಯನ್ನು ಈ ವರೆಗೆ
+ಚರ್ಚಿಸಿಲ್ಲ ವೆಂದು ನಾನು
+ಭಾವಿಸುತ್ತೇನೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸರಿ
+ಎಂದು ಹೇಳೋಣ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ನನ್ನ ಸಿಸ್ಟಮ್</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸರಿ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ನನ್ನ ಸಿಸ್ಟಮ್ ಎಂದು ಹೇಳೋಣ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಸಸ್ಯ
+ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್ ಆಗಿದೆ</span></font></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20kannada_htm_5a7825d19e6ad26f.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದು
+ಸ್ಥಿರವಾಗಿದೆಯೇ ಅಥವಾ ಅಸ್ಥಿರವಾಗಿದೆಯೇ</span></font></span></font><font size="3" style="font-size: 12pt">?</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ವಿದ್ಯಾರ್ಥಿ</span></font></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಸ್ಥಿರ
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಸ್ಥಿರಬಲ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಧ್ರುವ
+</span></font></span></font><font size="3" style="font-size: 12pt">+
+1 </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬಲಕ್ಕೆ
+ಇದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಕೋರ್ಸ್ ನ ಒಂದು ಅಂಶವೆಂದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೂಲಭೂತವಾಗಿ</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಸರಿಯಾಗಿ
+ಮಾಡುವ ಮೂಲಕ ಅಸ್ಥಿರ ವ್ಯವಸ್ಥೆಗಳನ್ನು
+ಸ್ಥಿರಗೊಳಿಸುವುದು</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದರೆ
+ಈ ಎಲ್ಲಾ ಪರಿಣಾಮಪ್ರಯತ್ನಗಳನ್ನು
+ಸರಿಯಾಗಿ ತೆಗೆದುಕೊಳ್ಳುವ ಬದಲು
+ನಾನು ಇದನ್ನು ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಅಂದರೆ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ನಾನು ಒಂದು ಬ್ಲಾಕ್ ನಿಂದ ಮೊದಲು
+ಗುಣಾಕಾರ ಮಾಡುತ್ತೇನೆ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಇದು
+ಮೂಲಭೂತವಾಗಿ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಏನಾಗುತ್ತದೆ</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">?</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20kannada_htm_cdb2d8a3223cdac6.gif"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20kannada_htm_b9abd010218fafb3.gif"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಾಗಾದರೆ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನೀವು
+ಅಸ್ಥಿರ ವ್ಯವಸ್ಥೆಯನ್ನು
+ಸ್ಥಿರಗೊಳಿಸಲಿಲ್ಲವೇ</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ
+ನಾನು ಏನು ಮಾಡಿದ್ದೇನೆ ಎಂದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಪೋಲ್
+ಶೂನ್ಯ ಕ್ಯಾನ್ಸಲೇಶನ್ ರೈಟ್
+ಎಂದು ಕರೆಯಲ್ಪ ನಾವು ಈ ಮೊದಲು ಈ
+ಬಗ್ಗೆಚರ್ಚಿಸಿರಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದರೆ
+ಅದಕ್ಕಿಂತ ಮುಖ್ಯವಾಗಿ</span></font></span></font><span lang="kn">
+ನಾನು ಬಲ ಅರ್ಧ ಸಮತಲದಲ್ಲಿ ಪೋಲ್
+ಶೂನ್ಯ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕ್ಯಾನ್ಸಲೇಶನ್ ಮಾಡಿದ್ದೇನೆ</span></font></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಏಕೆಂದರೆ ಬಲಅರ್ಧ ಸಮತಲದಲ್ಲಿ
+ಒಂದು ಶೂನ್ಯ ವನ್ನು ಬಲಭಾಗದಲ್ಲಿ
+ಶೂನ್ಯದಿಂದ ರದ್ದುಮಾಡುತ್ತಿದ್ದೇನೆ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ನಮ್ಮ ಎಲ್ಲಾ ಸಮಸ್ಯೆಗಳನ್ನು
+ಪರಿಹರಿಸುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆಗ
+ನಾನು ದುಬಾರಿ ಕ್ಲೋಸ್ಡ್ ಲೂಪ್
+ಫೀಡ್ ಬ್ಯಾಕ್ ಸಿಸ್ಟಮ್ ಗಳನ್ನು
+ಹೊಂದಬೇಕಾಗಿಲ್ಲ ಮತ್ತು ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬಲಕ್ಕೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ವಿದ್ಯಾರ್ಥಿ</span></font></font></span></font><font size="3" style="font-size: 12pt">:
+[</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಸ್ಪಷ್ಟ</span></font></span></font><font size="3" style="font-size: 12pt">]</font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಾಗಾಗಿ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವರು
+ಏನು ಹೇಳಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದಾರೆ
+ಂದು ಎಲ್ಲರಿಗೂ ಅರ್ಥವಾಗಿದೆ
+ಎಂದು ನಾನು ಭಾವಿಸುತ್ತೇನೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನೈಜ
+ವ್ಯವಸ್ಥೆಗಳಲ್ಲಿ ಯಾವಾಗಲೂ
+ಕೆಲವು ಪ್ಯಾರಾಮೆಟ್ರಿಕ್
+ಅನಿಶ್ಚಿಯಗಳು ಈ ರೀತಿಯ ಆದರ್ಶೀಕೃತ
+ವಿಧಾನಗಳು ಸರಿಯಾಗಿಯೇಇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font color="#000000"><font size="3" style="font-size: 12pt">So,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಿಮಗೆ
+ಎಂದಿಗೂ ತಿಳಿದಿರುವುದಿಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">-</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಉದಾಹರಣೆಗೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಅದು</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮೂಲಭೂತವಾಗಿ ಯಾವುದು</span></font></font><span lang="kn">
+ಎಂದರೆ ಅದು ಕೆಳಗಿನ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹಕ್ಕು</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font color="#000000"><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+16:31)</font></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20kannada_htm_29f55bb90a745386.png" width="384"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಪದವು </span></font></span></font><font size="3" style="font-size: 12pt">Y(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಗಳು</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font></font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಆಗಿರಬಹುದು
+ಮತ್ತು ನೀವು ಪರಿಪೂರ್ಣ ಪರಿಹಾರ
+ಬ್ಲಾಕ್ </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20kannada_htm_c46af1fb2e608e66.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಅನ್ನು
+ನಿರ್ಮಿಸಿದರೂ ಹೌದು</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಇದು
+ನನ್ನ ಪರಿಹಾರ ಬ್ಲಾಕ್ ಆಗಿದೆ</span></span></font><font color="#000000"><font size="3" style="font-size: 12pt">-</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನನ್ನ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಸ್ಯವು ಕೆಲವು ಅನಿಶ್ಚಿತತೆಗಳನ್ನು
+ಹೊಂದಿರಬಹುದು</span></font></font></span></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನನ್ನ
+ಧ್ರುವವು </span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಪ್ಲಸ್
+ಅಥವಾ ಮೈನಸ್ ಎಪ್ಸಿಲೊನ್ ಸಂಭವಿಸಬಹುದು
+ಆಗ ನೀವು  ಪರಿಪೂರ್ಣ ಪೋಲ್ ಶೂನ್ಯ
+ರದ್ದತಿಯನ್ನು</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಹೊಂದುವುದಿಲ್ಲ</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">,</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದು
+ಸಾಧಿಸುವುದು ತುಂಬಾ ಕಠಿಣವಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸರಿಯಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font></p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ನೀವು
+ಹೊಂದಿದ್ದರೆ </span></font></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನೀವು
+ವಿಲೋಮ ಲ್ಯಾಪ್ಲೇಸ್ ಟ್ರಾನ್ಸ್
+ಫಾರ್ಮ್ ಅನ್ನು ತೆಗೆದುಕೊಂಡಲ್ಲಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಪ್ಸಿಲೊನ್
+ಬಹಳ ಚಿಕ್ಕದಾಗಿದೆ ಎಂದು </span></font></span></font><span lang="kn">ನೀವು
+ಹೇಳಿದರೆ</span></font>, <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನೀವು
+ಒಂದು ಪದವನ್ನು ಹೊಂದಿರುವುದನ್ನು
+ನೀವು ನೋಡುತ್ತೀರಿ</span></span></font>, 
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec66.doc%20kannada_htm_f1c92a161cb772b.gif"/>
+<font color="#000000"><font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಪ್ಸಿಲೊನ್
+ಬಹಳ ಚಿಕ್ಕದಾಗಿರಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದರೆ
+</span></font></span></font><font size="3" style="font-size: 12pt">t
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮುಂದುವರಿದಂತೆ
+ಅದು ಅನಂತಕ್ಕೆ ಊದಿಕೊಳ್ಳಲಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font>
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆರಂಭದಲ್ಲಿ
+ವ್ಯವಸ್ಥೆಯು ಸ್ಥಿರವಾಗಿಕಾಣುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದರೆ
+ಕಾಲ ಾರ್ಡ್ ಆದಮೇಲೆ ಅದು</span></font></span></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅಸ್ಥಿರವಾಗುತ್ತದೆ</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">;
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><span lang="kn">
+ಅದು ದೊಡ್ಡ</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ವಿಚಾರವಲ್ಲ</span></font></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಪೋಲ್
+ಶೂನ್ಯ ಕ್ಯಾನ್ಸಲ್ ಅನ್ನು ಸರಿಯಾದ
+ಅರ್ಧ ಸಮತಲದಲ್ಲಿ ಮಾಡಬಾರದು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಕಾರಣಕ್ಕಾಗಿ ಸರಿ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದನ್ನು
+ನಾನು ಪಕ್ಕಕ್ಕೆ ಸರಿಸಬೇಕೆಂದಿದ್ದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+<font color="#000000"><font size="3" style="font-size: 12pt"> </font></font>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಆವರ್ತನ ಪ್ರತಿಕ್ರಿಯೆಗಳ ಆಧಾರದ
+ಮೇಲೆ</span></font></span></font><span lang="kn"> </span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ನಿಯಂತ್ರಕಗಳ ವಿನ್ಯಾಸವನ್ನು</span></font></font><span lang="kn">
+</span><font color="#000000"><font size="3" style="font-size: 12pt"><span lang="kn">
+ನಾಳೆ ಏನು ಹೇಳಬೇಕೆಂದು
+ಮುಂದುವರಿಸುತ್ತೇವೆ</span></font></font><font color="#000000"><font size="3" style="font-size: 12pt">.</font></font></p>
+</body>
+</html>

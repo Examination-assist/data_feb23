@@ -1,0 +1,524 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-81" name="author"/>
+<meta content="2018-09-25T10:07:00" name="created"/>
+<meta content="Akash Pandey" name="changedby"/>
+<meta content="2021-03-09T15:56:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-size: 11pt; so-language: en-US }
+		p.cjk { font-size: 11pt; so-language: en-US }
+		p.ctl { font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-IN" link="#000080" vlink="#800000"><p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ನಿಯಂತ್ರಣ
+ವ್ಯವಸ್ಥೆಗಳು</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಪ್ರೊ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಎಸ್</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.</b></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಎಂಜಿನಿಯರಿಂಗ್
+ಡಿಸೈನ್ ವಿಭಾಗ</b></span></font></span></font></p>
+<p align="center" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಇಂಡಿಯನ್
+ಇನ್ ಸ್ಟಿಟ್ಯೂಟ್ ಆಫ್ ಟೆಕ್ನಾಲಜಿ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಮದ್ರಾಸ್</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಓದುವಿಕೆ
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+13</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಸೊನ್ನೆಗಳ
+ಪ್ರಭಾವ</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಭಾಗ
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+1</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಿಂದಿನ
+ಉಪನ್ಯಾಸದಲ್ಲಿ ನಾವು ಪ್ರತಿಕ್ರಿಯೆಯ
+ಮೇಲೆ ಸಿಸ್ಟಂ ಧ್ರುವಗಳ ಪರಿಣಾಮವನ್ನು
+ನೋಡಿದೆವು</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಧ್ರುವಗಳ
+ಸ್ಥಾನವ್ಯವಸ್ಥೆಯ ಸ್ಥಿರತೆಯ
+ಮೇಲೆ ಪ್ರಭಾವ ಬೀರುತ್ತದೆ ಎಂಬ
+ಸತ್ಯವನ್ನು ನಾವು ಗುರುತಿಸಿದೆವು</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">BIBO</font> <font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಥಿರತೆಗಾಗಿ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು</span></font></span></font><font size="3" style="font-size: 12pt">nd
+ </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಲ್ಲಾ
+ಸಿಸ್ಟಂ ಟ್ರಾನ್ಸ್ ಫರ್ ಫಂಕ್ಷನ್
+</span></font><span lang="kn">ನ ಎಲ್ಲಾ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಧ್ರುವಗಳು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಎಡಅರ್ಧ
+ಸಂಕೀರ್ಣ ಸಮತಲದಲ್ಲಿ</span></font><span lang="kn">ಇರಬೇಕು</span></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನುಬೇರೆ
+ಶಬ್ದಗಳನ್ನು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವು
+ಋಣಾತ್ಮಕ ನೈಜ ಭಾಗಗಳನ್ನು
+ಹೊಂದಿರಬೇಕು</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಉಪನ್ಯಾಸದಲ್ಲಿ ನಾವು ವ್ಯವಸ್ಥೆಯ
+ಪ್ರತಿಕ್ರಿಯೆಯ ಮೇಲೆ ಸೊನ್ನೆಗಳ
+ಪ್ರಭಾವವನ್ನು ತಿಳಿಸಲು</span></font><span lang="kn">ಕೆಲವು
+ಉದಾಹರಣೆಗಳನ್ನು </span><font size="3" style="font-size: 12pt"><span lang="kn">ಮಾಡಲಿದ್ದೇವೆ</span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">.</font> <font size="3" style="font-size: 12pt">
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನೆನಪಿಡಬೇಕಾದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವರ್ಗಾವಣೆ
+ಕಾರ್ಯವು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಔಟ್ ಪುಟ್ ನ ಲ್ಯಾಪ್ಲೇಸ್ ನ
+ಅನುಪಾತವನ್ನು ಇನ್ ಪುಟ್ ನ </span></font></span></font><font size="3" style="font-size: 12pt">Laplace
+of input </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನ
+ಎಲ್ಲಾ ಆರಂಭಿಕ ಷರತ್ತುಗಳಜೊತೆಗೆ
+</span></font></span></font><font size="3" style="font-size: 12pt">0.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+ವರ್ಗಾವಣೆ ಕಾರ್ಯವು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಎರಡು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಬಹುನಾಮಗಳ</span></font><span lang="kn"> ಅನುಪಾತವಾಗಲಿದೆ</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_867803b7e95079e3.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವರ್ಗಾವಣೆ
+ಫಂಕ್ಷನ್ ನ ಬೇರುಗಳನ್ನು ಸೊನ್ನೆಗಳು
+ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದರ
+ಬೇರುಗಳನ್ನು ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್
+ನ ಧ್ರುವಗಳು ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_a87532ee4ea32169.gif"/>
+<font size="3" style="font-size: 12pt">W</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಧ್ರುವಗಳು ಸಿಸ್ಟಂ ಸ್ಥಿರತೆಗೆ
+ಸಂಪರ್ಕಿತವಾಗಿವೆ</span></font><span lang="kn">ಎಂದು
+ಕಂಡುಬಂದಿದೆ</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈಗ
+ಸೊನ್ನೆಗಳನ್ನು ನೋಡೋಣ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+01:39)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_7b39675cfdd2a9fd.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">L us </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡು
+ವ್ಯವಸ್ಥೆಗಳನ್ನುಪರಿಗಣಿಸುತ್ತದೆ
+</span></font><span lang="kn"> </span></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೊದಲ
+ಸಸ್ಯ ವರ್ಗಾವಣೆ ಕಾರ್ಯವು</span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_b563cac05ba092da.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡನೆಯ
+ವ್ಯವಸ್ಥೆ</span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_ae4d3442a8bce95a.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">SE </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವ್ಯವಸ್ಥೆಗಳ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಕ್ರಮ</span></font></span></font><font size="3" style="font-size: 12pt">2
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆಗಿದೆ
+ಏಕೆಂದರೆ </span></font><span lang="kn">ನಾವು
+ಅಧ್ಯಯನ  </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮಾಡುವ</span></font><span lang="kn">ಸಿಸ್ಟಮ್ </span><font size="3" style="font-size: 12pt"><span lang="kn">ಗಳ
+ವರ್ಗಕ್ಕಾಗಿ ಡಿನೋಮಿನೇಟರ್
+ಪಾಲಿನೊಮಿಯಲ್ ನ ಕ್ರಮವು ಯಾವಾಗಲೂ
+ವ್ಯವಸ್ಥೆಯ ಕ್ರಮವಾಗಿರುತ್ತದೆ
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಫ್
+ಐಆರ್ಟಿ ವ್ಯವಸ್ಥೆಗೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_716bb8dd0df16e37.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_7678cf5b8f71db64.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಘಟಕ ಹಂತದ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು
+ಕಂಡುಹಿಡಿಯಲು ಬಯಸುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_4cbfcb2c6648da75.gif"/>
+</p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_cb3ae5d4277b9153.gif"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಭಾಗಶಃ
+ಭಿನ್ನರಾಶಿಗಳನ್ನು ಮೌಲ್ಯಮಾಪನ
+ಮಾಡುವುದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಪಡೆಯುತ್ತೇವೆ </span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_b24579828cbdd552.gif"/>
+</span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು</span></font></span></font><font size="3" style="font-size: 12pt">f
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ವಿಲೋಮ
+ಲ್ಯಾಪ್ಲೇಸ್ ಟ್ರಾನ್ಸ್ ಫಾರ್ಮ್
+ತೆಗೆದುಕೊಳ್ಳುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಪಡೆಯುತ್ತೇವೆ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_468354eee9e89da3.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">W e </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಯು
+ಸಂಕೀರ್ಣ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಮತಲದ ಎಡಭಾಗದಲ್ಲಿ ಎರಡು
+ಧ್ರುವಗಳನ್ನುಗಮನಿಸಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಸಿಸ್ಟಂ
+</span></font></span></font><font size="3" style="font-size: 12pt">BIBO</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಥಿರವಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_c8827097cb80fbe2.gif"/>
+<font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಆಗಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">ಅವನು
+ಔಟ್ ಪುಟ್ ಅನ್ನು ಸಾರ್ವಕಾಲಿಕ
+ವಾಗಿ ಪರಿಮಿತಿಯಲ್ಲಿ ಇರುತ್ತಾನೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಔಟ್ ಪುಟ್ ಫಂಕ್ಷನ್ ನಲ್ಲಿ ನಾವು</span></font><span lang="kn">
+ಚರ್ಚಿಸಿದಂತೆ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಧ್ರುವಗಳ ನಿಜವಾದ ಭಾಗಕ್ಕೆ
+ಹೊಂದಿಕೆಯಾಗುವ ಂತಹ</span></font><span lang="kn">
+ಶಬ್ದಗಳನ್ನು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹೊಂದಿರುವುದನ್ನು </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಗಮನಿಸಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡನೆಯ
+ವ್ಯವಸ್ಥೆಗೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_716bb8dd0df16e37.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_1c66682f8e3eb998.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಧ್ರುವಗಳು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font></span></font><font size="3" style="font-size: 12pt">-1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+</span></font></span></font><font size="3" style="font-size: 12pt">-10</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನಲ್ಲಿ
+</span></span></font>-2 <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನಲ್ಲಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಒಂದು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಶೂನ್ಯವಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> T</font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಅವನು
+ಸಿಸ್ಟಮ್</span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಮತ್ತು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಿಸ್ಟಮ್</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">2</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ರ</span><font size="3" style="font-size: 12pt"><span lang="kn">ನಡುವಿನ
+ವ್ಯತ್ಯಾಸ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+2 <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ರಲ್ಲಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಒಂದು ಸೊನ್ನೆಯನ್ನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪರಿಚಯಿಸಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈಗ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಯೂನಿಟ್
+ಸ್ಟೆಪ್ ರೆಸ್ಪಾನ್ಸ್ ಅನ್ನು
+ಲೆಕ್ಕ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಹಾಕೋಣ</span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_4cbfcb2c6648da75.gif"/>
+</p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_dc5b10d34eaab9e1.gif"/>
+</p>
+<p class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಭಾಗಶಃ
+ಭಿನ್ನರಾಶಿಗಳನ್ನು ಮೌಲ್ಯಮಾಪನ
+ಮಾಡುವುದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಪಡೆಯುತ್ತೇವೆ </span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_7c780920e32857bb.gif"/>
+</span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ವಿಲೋಮ ಲ್ಯಾಪ್ಲೇಸ್ ಟ್ರಾನ್ಸ್
+ಫಾರ್ಮ್ ಅನ್ನು ತೆಗೆದುಕೊಂಡಲ್ಲಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಪಡೆಯುತ್ತೇವೆ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_7c7f4559d63f754b.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ದ್ರಾವಣದಲ್ಲಿ</span></font><span lang="kn"> </span></span></font>E<font size="3" style="font-size: 12pt">ven</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಅನ್ನು
+ನಾವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹೀಗೆ ನೋಡಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_1b1babe8ff2f40bb.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ಬೌಂಡ್ಆಗಿದೆ </span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವ್ಯವಸ್ಥೆಯು
+</span></font></span></font><font size="3" style="font-size: 12pt">BIBO
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಥಿರವಾಗಿದೆ
+ಏಕೆಂದರೆ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಧ್ರುವಗಳು ಎಡಭಾಗದ ಸಮತಲದಲ್ಲಿರುತ್ತವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೊದಲ
+ವ್ಯವಸ್ಥೆಗೆ ಹೋಲಿಸಿದಾಗ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಶೂನ್ಯದಿಂದ</span></font><span lang="kn">ಾಗಿ
+ಎಕ್ಸ್ ಪೆಂಡೆಂಟ್ </span><font size="3" style="font-size: 12pt"><span lang="kn">ಪದದ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಗುಣಾಂಕಗಳು ಬದಲಾಗಿವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದರಿಂದ
+ಉಂಟಾಗುವ ಸಾಪೇಕ್ಷ ಪರಿಣಾಮವೇನು
+ಎಂಬುದನ್ನು ನಾವು ನೋಡುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+11:40)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_e292ae5de4c5561a.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">Lus</font> <font size="3" style="font-size: 12pt">
+s </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸಮತಲವನ್ನು
+ಎಳೆಯಿರಿ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಧ್ರುವಗಳು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font></span></font><font size="3" style="font-size: 12pt">-1</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಮತ್ತು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">-10</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಎರಡೂ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ವ್ಯವಸ್ಥೆಗಳಿಗೆ ಇರುತ್ತವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು</span></font><span lang="kn">ಈ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪ್ರಕರಣವು </span></font></span></font><font size="3" style="font-size: 12pt">2</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನೇ
+ಸಿಸ್ಟಂ ನಪ್ರಕರಣ</span></font><span lang="kn">
+</span></span></font>- <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನಾವು
+</span></span></font>-2 <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ರಲ್ಲಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಒಂದು ಸೊನ್ನೆಯನ್ನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಹೊಂದಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸಮಸ್ಯೆ
+ಸಂಖ್ಯೆ </span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ರಲ್ಲಿ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಬಲಾತ್ಕಾರದ
+ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ನಾವು ನೋಡಿದರೆ</span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">-</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_4f0101c191ad474f.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಔಟ್
+ಪುಟ್ ಅವಧಿಯನ್ನು ಹೆಚ್ಚು ಕಾಲ
+ಪ್ರಾಬಲ್ಯಗೊಳಿಸುತ್ತೇವೆ </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಏಕೆಂದರೆ
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಎಕ್ಸ್
+ಪೆನೆಂಟ್ ಹೆಚ್ಚು ಋಣಾತ್ಮಕವಾಗಿ
+ಪರಿಣಮಿಸುವುದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಕ್ಸ್
+ಪೆನೆಂಟ್ ಕಾರ್ಯವು </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹೆಚ್ಚು
+ವೇಗವಾಗಿ ಕೊಳೆಯುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೊದಲ
+ಪದದ ಪರಿಮಾಣವನ್ನು ನಾವು ಪರಿಗಣಿಸಿದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವರ್ಸಸ್
+</span></font></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹೆಚ್ಚು
+ಕಾಲ ಪ್ರಾಬಲ್ಯ ಸಾಧಿಸಲಿದೆ</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_8507f4b43a30127e.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇನ್ನೊಂದು
+ಅಂಶವೆಂದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಎರಡು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ವಿಪತ್ತನ್ನು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಗುಣಿಸುವ
+ಉಳಿಕೆಗಳು</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_2222f254dafc62a4.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">(</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಪ್ರಭುತ್ವವು
+ಪ್ರಾಬಲ್ಯವನ್ನು</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_494cc888b97a7e4d.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಮಾತ್ರವಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಉಳಿಕೆಗಳು
+ಕೂಡ ಖಂಡಿತವಾಗಿಯೂ </span></font></span></font><font size="3" style="font-size: 12pt">D
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅನ್ನು</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_c68f4a4bb3c66f33.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಹಾನಿಮಾಡುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_252053c6fa3b49b7.gif"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಚಿತ್ರವೊಂದನ್ನು
+ಸ್ಲೈಡಿನಲ್ಲಿ ನೀಡಲಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಕಾರಣಕ್ಕಾಗಿ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಕಲ್ಪಿತ
+ಅಕ್ಷಕ್ಕೆ ಅತ್ಯಂತ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹತ್ತಿರವಾದ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಧ್ರುವಗಳನ್ನು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪ್ರಬಲ ಧ್ರುವಗಳು ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಏಕೆಂದರೆ
+ಅವು ಹೆಚ್ಚು ಕಾಲ ಔಟ್ ಪುಟ್ ಮೇಲೆ
+ಪ್ರಾಬಲ್ಯ ವನ್ನು ಸಾಧಿಸುತ್ತವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇಲ್ಲಿ
+</span></font></span></font><font size="3" style="font-size: 12pt">-1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಪ್ರಬಲ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಧ್ರುವವಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈಗ
+ನಾವು ಸಿಸ್ಟಂ </span></font></span></font><font size="3" style="font-size: 12pt">2
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅನ್ನು
+ಪರಿಗಣಿಸೋಣ</span></font></span></font><font size="3" style="font-size: 12pt">;</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇಲ್ಲಿ
+ನಾವು ಶೂನ್ಯವನ್ನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪರಿಚಯಿಸಿದೆವು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ಧ್ರುವಕ್ಕೆ ಹತ್ತಿರವಾದ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಶೂನ್ಯವನ್ನು </span></font></span></font><font size="3" style="font-size: 12pt">-1
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ರಲ್ಲಿ
+ಪರಿಚಯಿಸಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ನೋಡುವಂತೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ಉಳಿಕೆಗಳ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+1</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನೇ
+ಧ್ರುವದ </span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಪ್ರಾಬಲ್ಯವು</span></font><span lang="kn">
+ಸಿಸ್ಟಂ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಕ್ಕೆ</span></font><span lang="kn">
+ಹೋಲಿಸಿದರೆ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕಡಿಮೆಯಾಗಿದೆ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font><span lang="kn">ಎಂಬುದನ್ನು
+ಚಿತ್ರನಿರೂಪಣೆಯಿಂದ ನಾವು
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ನೋಡಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+17:43)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_f71aeab7208b0c9e.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಶೂನ್ಯವನ್ನು
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">-2
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ರಲ್ಲಿ</span></font><span lang="kn">
+ಪರಿಚಯಿಸಿದ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪರಿಣಾಮ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+1 <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ರಲ್ಲಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">-1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ರಲ್ಲಿ
+ಧ್ರುವದ ಪ್ರಾಬಲ್ಯವು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕಡಿಮೆಯಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಶೂನ್ಯವನ್ನು</span></font><span lang="kn">
+ಹತ್ತಿರಕ್ಕೆ ಮತ್ತು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹತ್ತಿರಕ್ಕೆ  ಸರಿಸುತ್ತಿರುವಾಗ</span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">- 1</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ರಲ್ಲಿ
+ಧ್ರುವದ ಪ್ರಾಬಲ್ಯವು  ಮತ್ತಷ್ಟು
+ಕಡಿಮೆಯಾಗುತ್ತಾ ಹೋಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಶೂನ್ಯವು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ವ್ಯವಸ್ಥೆಯ ಕ್ರಿಯಾತ್ಮಕ
+ಪ್ರತಿಕ್ರಿಯೆಯ ಮೇಲೆ ಪರಿಣಾಮ
+ಬೀರುವುದನ್ನು</span></font><span lang="kn"> ನಾವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ನೋಡಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದರೆ</span></font><span lang="kn">
+ಅದು ಸ್ಥಿರತೆಯ ಮೇಲೆ ನೇರ ಪರಿಣಾಮ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಬೀರುವುದಿಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಏಕೆಂದರೆ
+ಸ್ಥಿರತೆಯು ಧ್ರುವಗಳ ಸ್ಥಾನವನ್ನು
+ಅವಲಂಬಿಸಿರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸೊನ್ನೆಗಳು
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಪ್ರತಿಕ್ರಿಯೆ
+ಫಂಕ್ಷನ್ ನ ಗುಣಾಕಾರಗಳ ಮೇಲೆ
+ಪರಿಣಾಮ ಬೀರುತ್ತವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+21:06)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_12e385e1b0d46411.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಶೂನ್ಯವನ್ನು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">-1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಕ್ಕೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ವರ್ಗಾಯಿಸಿದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಹೊಂದಲಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec13.doc%20kannada_htm_7f79ff36d5624950.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಶೂನ್ಯವು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಧ್ರುವದ ಪರಿಣಾಮವನ್ನು ಸಂಪೂರ್ಣವಾಗಿ
+ರದ್ದುಗೊಳಿಸಲಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">W</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹ್ಯಾಟ್
+ಮೊದಲ ಆರ್ಡರ್ ಸಿಸ್ಟಮ್ ನಂತೆ ಯೇ
+ಕೆಲಸ ಮಾಡಲು ಪ್ರಾರಂಭಿಸುವುದು
+ಎರಡನೆಯ ಆರ್ಡರ್ ವ್ಯವಸ್ಥೆಯಾಗಿತ್ತು</span></font></span></font><font size="3" style="font-size: 12pt">.
+T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವನ
+ಪರಿಣಾಮವನ್ನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಧ್ರುವ</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಶೂನ್ಯ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕ್ಯಾನ್ಸಲೇಶನ್</span></font><span lang="kn">ಎಂದು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕರೆಯಲಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font size="3" style="font-size: 12pt">Typically </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದನ್ನು
+ಮಾಡಬೇಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಏಕೆ
+ಎಂದು ನಾವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ನೋಡೋಣ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">We,</font> <font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಿಯಂತ್ರಣ
+ವಿನ್ಯಾಸಗಳನ್ನು ಮಾಡುವುದು</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಸಿಸ್ಟಂ
+ಸೊನ್ನೆಗಳನ್ನು ಪರಿಚಯಿಸಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.
+F</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಥವಾ
+ಉದಾಹರಣೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನಾವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅನುಪಾತದ ವ್ಯುತ್ಪತ್ತಿ ನಿಯಂತ್ರಣವನ್ನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಮಾಡಿದರೆ</span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">- </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+ಒಂದು ಸಿಸ್ಟಂ ಅನ್ನು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಶೂನ್ಯವನ್ನು ಪರಿಚಯಿಸಬಹುದು</span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಡಿಯುರಿಂಗ್
+ಡಿಸೈನ್ ಪ್ರಕ್ರಿಯೆಯನ್ನು ನಂತರ
+ಆ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸೊನ್ನೆಗಳನ್ನು ಹೇಗೆ ನಿಭಾಯಿಸಬೇಕು</span></font><span lang="kn">ಎಂಬ
+ಸ್ಥಿತಿಯಲ್ಲಿ ನಾವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಇರಬೇಕಾಗುತ್ತದೆ</span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">. </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದನ್ನು
+ನಾವು ನಂತರ ಕಲಿಯೋಣ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+</body>
+</html>

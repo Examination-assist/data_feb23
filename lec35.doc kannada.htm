@@ -1,0 +1,563 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-78" name="author"/>
+<meta content="2019-05-06T16:07:00" name="created"/>
+<meta content="Akash Pandey" name="changedby"/>
+<meta content="2021-03-09T16:33:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; font-size: 11pt; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000"><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ನಿಯಂತ್ರಣ
+ವ್ಯವಸ್ಥೆಗಳು</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಪ್ರೊ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಎಸ್</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಎಂಜಿನಿಯರಿಂಗ್
+ಡಿಸೈನ್ ವಿಭಾಗ</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಇಂಡಿಯನ್
+ಇನ್ ಸ್ಟಿಟ್ಯೂಟ್ ಆಫ್ ಟೆಕ್ನಾಲಜಿ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಮದ್ರಾಸ್</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಓದುವಿಕೆ
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+35</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ರೂಟ್
+ಲೊಕಸ್ </b></span></font></span></font><font size="3" style="font-size: 12pt"><b>2</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಭಾಗ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+1</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವುರೂಟ್
+ಲೊಕಸ್ ಅನ್ನು ನೋಡುತ್ತಿದ್ದೇವೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಮತ್ತು
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಎರಡು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹಂತಗಳನ್ನು ಪೂರ್ಣಗೊಳಿಸಿದ್ದೇವೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಫ್ಐರ್ಸ್ಟ್
+ಹಂತವೆಂದರೆ ಓಪನ್ ಲೂಪ್ ಧ್ರುವಗಳನ್ನು
+ಪತ್ತೆ ಮಾಡುವುದು ಮತ್ತು</span></font><span lang="kn">
+ಸಂಕೀರ್ಣ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಮತಲದಲ್ಲಿ</span></font><span lang="kn">ಲೂಪ್</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸೊನ್ನೆಗಳನ್ನು</span></font><span lang="kn">
+ತೆರೆಯುವುದು ಮತ್ತು ಎರಡನೇ
+ಹೆಜ್ಜೆಯನ್ನು</span><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು
+ರೂಟ್ ಲೊಕಸ್ ನ ಮೇಲೆ ಇರುವ ನಿಜವಾದ
+ಅಕ್ಷದ ಭಾಗಗಳನ್ನು ಕಂಡುಹಿಡಿಯಲು</span></font><span lang="kn">
+ಮತ್ತು</span></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:40)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_3befee50cf88db17.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">Let us</font> <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಹಂತ
+</span></span></font><font size="3" style="font-size: 12pt">3</font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ರಿಂದ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪ್ರಾರಂಭವಾಗುತ್ತದೆ </span></font></span></font>-
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಇದು
+ಮೂಲ ಲೋಕಸ್ ನ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅಸಿಂಪಟೋಟ್ ಗಳನ್ನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ನಿರ್ಧರಿಸುವುದಕ್ಕೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಸಂಬಂಧಿಸಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವನ
+ಸ್ಟೆಪ್ </span></font></span></font><font size="3" style="font-size: 12pt">ap</font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಕೇವಲ
+ಯಾವಾಗ</span><font size="3" style="font-size: 12pt"><span lang="kn">ಮಾತ್ರ
+</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_9b28195e4477992c.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:55)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_c8abac7ec6b8a228.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">As </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಚರ್ಚಿಸಿದೆವು </span></font><span lang="kn"> </span></span></font><font size="3" style="font-size: 12pt">root
+</font> <font size="3" style="font-size: 12pt">locus </font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಶಾಖೆಗಳನ್ನು</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_caf0ed0351febb0e.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಹೊಂದಿದೆ</span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">. Each
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಶಾಖೆತೆರೆದ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಲೂಪ್
+ಧ್ರುವದಿಂದ</span></font><span lang="kn">
+ಪ್ರಾರಂಭವಾಗುತ್ತದೆ ಮತ್ತು
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_dacbc5c1cbb7e783.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಶಾಖೆಗಳು
+ತೆರೆದ ಲೂಪ್ ಸೊನ್ನೆಗಳಲ್ಲಿ
+ಕೊನೆಗೊಳ್ಳುತ್ತದೆ ಮತ್ತು ಉಳಿದ
+ಶಾಖೆಗಳು ಅಸಿಂಪಟೋಟ್ ಗಳ ಮೂಲಕ
+ಅನಂತಕ್ಕೆ ಹೋಗುತ್ತವೆ</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_fc53677f96a53864.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅಸಿಂಪಟೋಟ್ ಗಳು ಯಾವಾಗ
+ಅಸ್ತಿತ್ವದಲ್ಲಿರುತ್ತವೆ</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_974ca81af998d6a2.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಹಿಂದೆ ಎಲ್ಲಿ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮತ್ತು</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_716bb8dd0df16e37.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_7678cf5b8f71db64.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.
+We </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಗೆ
+ಅಸಿಂಪಟೋಟ್ ಗಳು</span></font><span lang="kn">ಇರುತ್ತವೆ</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_22852ecf378b3813.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">B</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವ್ಯಾಖ್ಯೆ
+ಅಸಿಂಪಟೋಟ್ ಗಳು ಮೂಲ ಲೋಕಸ್ ಅಥವಾ
+ಮುಚ್ಚಿದ ಲೂಪ್ ಧ್ರುವಗಳ ಕುರುಹು</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_e42c101fb81d83d0.gif"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಪರೀಕ್ಷಾ ಬಿಂದುವನ್ನು</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_7d25abe43a234056.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಅನಂತತೆಯಕಡೆಗೆ</span></font><span lang="kn">ತಳ್ಳಿದರೆ</span></span></font><font size="3" style="font-size: 12pt">-
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೂಲದಿಂದ
+ದೂರಮತ್ತು ದೂರ</span></font><span lang="kn"> </span></span></font>-
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_9f6590c1b0511f1d.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_80c18b3e84a2f1d9.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಸಮಾನವಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಯಾವ ದಿಕ್ಕಿಗೆ ಹೋಗುತ್ತೇವೆ</span></font><span lang="kn">ಎಂಬುದು</span><font size="3" style="font-size: 12pt"><span lang="kn">ಮುಖ್ಯವಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">So, </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನೀವು
+ಪ್ರತಿಯೊಂದು ಓಪನ್ ಲೂಪ್ ಧ್ರುವದಿಂದ
+ಕೋನಕೊಡುಗೆ ಮತ್ತು ಪ್ರತಿಯೊಂದು
+ಓಪನ್ ಲೂಪ್</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸೊನ್ನೆಯ </span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಕೊಡುಗೆಯು
+ಸಮಾನವಾಗಿರುತ್ತದೆ ಎಂದು</span></font><span lang="kn">ನೀವು
+ನೋಡುತ್ತೀರಿ</span></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಅಸಿಂಪಟೋಟ್
+ಗಳ ಕೋನದ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಮೀಕರಣವನ್ನು</span></font><span lang="kn"> ನಾವು
+ಹೇಗೆ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪಡೆಯುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಪರೀಕ್ಷಾ
+ಬಿಂದುವು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮೂಲದಿಂದ ಬಹಳ ದೂರದಲ್ಲಿ
+ಆಯ್ಕೆಮಾಡಿದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಆಗ
+ಪ್ರತಿ ಓಪನ್</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಲೂಪ್ ಧ್ರುವದ ಕೋನದ ಕೊಡುಗೆಯು
+ಒಂದು ತೆರೆದ ಲೂಪ್ ಸೊನ್ನೆಯೊಂದಿಗೆ
+ರದ್ದುವಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">B</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಕಾರಣವು
+ಹಂತಕೊಡುಗೆಯು ಆಫ್ ಮಾಡುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಓಪನ್
+ಲೂಪ್ ಧ್ರುವ ಮತ್ತು ಓಪನ್ ಲೂಪ್</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸೊನ್ನೆಯ </span></font><span lang="kn">ನಡುವೆ
+ಅವು </span><font size="3" style="font-size: 12pt"><span lang="kn">ಸಮಾನ
+ಪ್ರಮಾಣದಲ್ಲಿರುವುದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">H</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+ಅಸಿಂಪಟೋಟ್ ಗಳು ನೇರರೇಖೆಗಳಾಗಿರಲಿದ್ದು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ಧನಾತ್ಮಕ ನೈಜ ಅಕ್ಷದ ಕೋನವನ್ನು
+ರಚಿಸುತ್ತದೆ </span></font></span></font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_4c34f2c7cae410f3.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+04:41)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_8f70ec6e0e9397e2.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವನು
+ನೇರರೇಖೆಗಳು ಯಾವಾಗ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಅಸ್ತಿತ್ವದಲ್ಲಿರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_9b28195e4477992c.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದು
+ಧನಾತ್ಮಕ ನೈಜ ಅಕ್ಷದ ಕೋನವನ್ನು
+ರಚಿಸುತ್ತದೆ</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_be9adc5e2313dc4a.gif"/>
+</span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಿಜವಾದಅಕ್ಷದ
+ಮೇಲೆ ಅಸಿಂಪಟೋಟ್ ಗಳ ನಡುವಿನ
+ಅಂತರವನ್ನು</span></font><span lang="kn"> </span></span></font>T</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_94a79395eba3e22e.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ತೆರೆದ ಲೂಪ್ ಧ್ರುವಗಳ</span></font><span lang="kn">
+ಲೆಕ್ಕದ ಮೊತ್ತವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸೊನ್ನೆಗಳ</span></font><span lang="kn"> ತೆರೆದ
+ಲೂಪ್ ನ ಮೊತ್ತವನ್ನು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ವಿಭಜಿಸುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_ca208b85b7a26857.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+06:47)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_2f21cab8c70eb55d.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಸಮಸ್ಯೆಯಲ್ಲಿ</span></font><span lang="kn">ಉದಾಹರಣೆಯನ್ನು
+ನೋಡೋಣ</span></span></font><font size="3" style="font-size: 12pt">-
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_f24c1658f96f60d2.gif"/>
+<font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವನ
+ಪ್ರಕಾರ </span></font><span lang="kn">ಎರಡು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅಸಿಂಪ್ಟೋಟ್ ಗಳು </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+</span></font><span lang="kn">ಕೋನವು  </span><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅಸಿಂಪಟೋಟ್ ಗಳು ಸಮವಾಗಿರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_a1c313022264c55f.gif"/>
+<font size="3" style="font-size: 12pt">
+</font>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">Now-</font> <font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನಿಜವಾದ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅಕ್ಷದ </span></font><span lang="kn">ಮೇಲೆ </span><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅಸಿಂಪಟೋಟ್ ಗಳ</span></font><span lang="kn">
+ನಡುವಿನ ಬಿಂದು</span></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_81eef84a1cf6bcb7.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+</span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_7cfcbafd779d7fe3.gif"/>
+<span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಂದರ್ಭದಲ್ಲಿ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಇಬ್ಬರು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪರಸ್ಪರಭೇಟಿಯಾಗುತ್ತಾರೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ರೋಗಲಕ್ಷಣವು ಹೋಗಲಿದೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಅಥವಾ
+</span></font><span lang="kn">ಇನ್ನೊಂದು </span><font size="3" style="font-size: 12pt"><span lang="kn">ಅಸಿಂಪಟೋಟ್
+ನಂತೆ ಹೋಗುತ್ತದೆ</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_a3fb1bf8efd8c751.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_6037e59b132c4035.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+1 1:54)</font></p>
+<p align="center" style="margin-bottom: 0.42cm; line-height: 150%"><img align="bottom" border="0" height="291" name="Picture 6" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_1043b2d68fec723d.png" width="376"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+12:37)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 7" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_7be51f10f7bf7b23.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+</span></font></span></font><font size="3" style="font-size: 12pt">4</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನೇ
+ಹಂತಕ್ಕೆ ಹೋಗೋಣ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಹೇಳುತ್ತೇನೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+ </font> <font size="3" style="font-size: 12pt"> </font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬ್ರೇಕ್</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವೇ</span></font><span lang="kn">
+ಪಾಯಿಂಟ್ ಗಳನ್ನು</span><font size="3" style="font-size: 12pt"><span lang="kn">ನಿರ್ಧರಿಸುವುದು
+ ಮತ್ತು </span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಬ್ರೇಕ್</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇನ್</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪಾಯಿಂಟ್ </span></font><span lang="kn">ಗಳಲ್ಲಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಉದಾಹರಣೆಗೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನಿಜವಾದ
+ಅಕ್ಷದ ಮೇಲೆ </span><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡು</span></font><span lang="kn">
+ಸತತ ಓಪನ್ ಲೂಪ್ ಧ್ರುವಗಳ </span><font size="3" style="font-size: 12pt"><span lang="kn">ನಡುವೆ
+ನಿಜವಾದ  ಓಪನ್ ಲೂಪ್ ಸೊನ್ನೆಗಳು
+ಇರುವುದಿಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದೇ
+ರೀತಿ </span></font><span lang="kn">ನಿಜವಾದ ಓಪನ್</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಲೂಪ್ ಧ್ರುವಗಳ ಿಲ್ಲದ ನಿಜವಾದ
+ತೆರೆದ ಲೂಪ್ ಧ್ರುವಗಳ ಿಲ್ಲದ
+ಎರಡು ಸತತ ಓಪನ್ ಲೂಪ್ ಸೊನ್ನೆಗಳ
+ನಡುವೆ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಒಂದು </span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಬ್ರೇಕ್</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇನ್</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪಾಯಿಂಟ್ ಇರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+13:32)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 8" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_5cee8c1f1d00a627.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">W</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹೆನ್</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ನಮಗೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ವಿರಾಮ</span></font></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ದೂರಬಿಂದು</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇರುತ್ತದೆಯೇ</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font> <font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಉದಾಹರಣೆಯಲ್ಲಿ</span></font></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಹೊಂದಿರುವ ನಿಜವಾದ ಅಕ್ಷದ ಮೇಲೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_31deff7e8161143d.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">These </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಿಜವಾದ
+</span></font><span lang="kn">ಅಕ್ಷದ ಮೇಲೆ </span><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡು</span></font><span lang="kn">
+ಓಪನ್</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಲೂಪ್ ಧ್ರುವಗಳು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮತ್ತು ಮಧ್ಯದಲ್ಲಿ</span></font><span lang="kn">ಯಾವುದೇ
+ಓಪನ್ ಲೂಪ್</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸೊನ್ನೆ</span></font><span lang="kn"> ಇಲ್ಲದೆ</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಈ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಉದಾಹರಣೆಯಲ್ಲಿ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಒಂದು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಶಾಖೆಯನ್ನು ಪ್ರಾರಂಭಿಸಿ</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_cc3eb01607db0507.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+ಬಲಕ್ಕೆ ಬರುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">;</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಶಾಖೆಯಿಂದ ಪ್ರಾರಂಭಿಸಿ</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_a8099f2efcc221cf.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+ಎಡಕ್ಕೆ ಬರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ರೂಟ್
+ಲೊಕಸ್ ಓಪನ್</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಲೂಪ್ ಧ್ರುವಗಳಲ್ಲಿ</span></font><span lang="kn">
+ಪ್ರಾರಂಭವಾಗುತ್ತದೆ</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_3292622f5d9d9d50.gif"/>
+<span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_23087554af7d75b2.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+</span></font></span></font><font size="3" style="font-size: 12pt">A</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಗಳು
+ಹೆಚ್ಚಾಗುತ್ತಲೇ</span></font><span lang="kn">ಇರುತ್ತವೆ</span></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು</span></font><span lang="kn">
+ಶಾಖೆ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಯು ಎಡಕ್ಕೆ ಬರುತ್ತದೆ</span></font><span lang="kn">ಮತ್ತು
+ಒಂದು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹಂತದಲ್ಲಿ</span></font><span lang="kn">ಅವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪರಸ್ಪರ ಸಂಧಿಸಲಿವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಸಮಯದಲ್ಲಿ ಅವು ಒಡೆಯುತ್ತವೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಿಜವಾದ
+ಅಕ್ಷದಿಂದ ದೂರವಿರುತ್ತವೆ ಏಕೆಂದರೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಅವು
+</span></font><span lang="kn">ಪರಸ್ಪರ ಹಿಂದಕ್ಕೆ
+ತಿರುಗಿ ಸಲು </span><font size="3" style="font-size: 12pt"><span lang="kn">ಅಥವಾ
+ದಾಟಲು ಸಾಧ್ಯವಿಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕೊಂಬೆಗಳು ಪರಸ್ಪರ ಡಿಕ್ಕಿ ಹೊಡೆದು
+</span></font><span lang="kn">ನಿಜವಾದ ಅಕ್ಷದಿಂದ</span></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ದೂರ</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಮುರಿದು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಬಿದ್ದವು</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಇದನ್ನು
+ಒಂದು ವಿರಾಮ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font><span lang="kn">ಬಿಂದು</span></span></font><font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ದೂರಬಿಂದು</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಂದು
+ಕರೆಯಲಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬ್ರೇಕ್</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವೇ
+ಪಾಯಿಂಟ್</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಯಾವಾಗಲೂ ಸಂಭವಿಸುವುದಿಲ್ಲ</span></font><span lang="kn">ಎಂಬುದನ್ನು
+ದಯವಿಟ್ಟು ಗಮನಿಸಿ</span></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದರೆ
+</span></font><span lang="kn">ಈ </span><font size="3" style="font-size: 12pt"><span lang="kn">ಉದಾಹರಣೆಯಲ್ಲಿ
+ಇದು ಸಂಭವಿಸುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದೇ
+ರೀತಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಿಜವಾದ
+ಅಕ್ಷದ ಮೇಲೆ ಎರಡು ಓಪನ್ ಲೂಪ್
+ಸೊನ್ನೆಗಳು ಇದ್ದರೆ ಅವುಗಳ ನಡುವೆ
+ಯಾವುದೇ ತೆರೆದ ಲೂಪ್ ಧ್ರುವಗಳಿಲ್ಲದಿದ್ದರೆ</span></font></span></font>-
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ರೂಟ್</span><font size="3" style="font-size: 12pt"><span lang="kn">ಲೋಸಿ
+ಯು ಪರಸ್ಪರ ಪ್ರಯಾಣಿಸಬಹುದು
+ಮತ್ತು ಕೆಲವು ಬಿಂದುಗಳು ಪರಸ್ಪರ
+ಡಿಕ್ಕಿ ಹೊಡೆದು ನಿಜವಾದ ಅಕ್ಷಕ್ಕೆ
+ಒಡೆಯುತ್ತವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದನ್ನು</span></font><span lang="kn">
+ಒಂದು ವಿರಾಮ ಎಂದು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕರೆಯಲಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬಿಂದುವಿನ
+ಮೇಲೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು
+ವಿಘಟನೆ ಅಥವಾ ವಿರಾಮ</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇನ್</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಬಿಂದುವಿನ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು
+ವಿಶಿಷ್ಟ ಲಕ್ಷಣವೆಂದರೆ  ಎರಡು
+ಕವಲುಗಳು ಒಂದೇ ಮೌಲ್ಯಕ್ಕೆ ಪರಸ್ಪರ
+ಸಂಪರ್ಕಿಸುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_23087554af7d75b2.gif"/>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದರಅರ್ಥ
+ನಾವು </span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಪುನರಾವರ್ತಿತ
+ಧ್ರುವವನ್ನು ಹೊಂದಲಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಸತ್ಯ ನಮಗೆ ತಿಳಿದಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನುಎಫ್
+ನೀವು</span></font><span lang="kn">ಒಂದು ಆರ್ ಓಟ್
+ಅನ್ನು ಹೊಂದಿರುವಿರಿ ಮತ್ತು
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ವ್ಯುತ್ಪತ್ತಿಯನ್ನು</span></font><span lang="kn">ಗುಣಿಸಲು
+ಒಂದು ಆರ್ ಅನ್ನು</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_f2121cf30245e232.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಹೊಂದಿರಬಹುದು</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_38b4a30d4c2eb664.gif"/>
+<span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನೀವು
+ಆ</span><font size="3" style="font-size: 12pt"><span lang="kn">ಪುನರಾವರ್ತಿತ
+ಮೂಲವನ್ನು </span></font></span></font><font size="3" style="font-size: 12pt">su
+bstitute</font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ಮಾಡಿದಾಗ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">0 </font>
+<font size="3" style="font-size: 12pt"> </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅನ್ನು
+ಮಾಡಲಾಗುತ್ತದೆ</span></font><span lang="kn"> </span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈಗ
+ವಿರಾಮ</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ದೂರಅಥವಾ
+ವಿರಾಮ</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬಿಂದುವಿನಲ್ಲಿ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಪುನರಾವರ್ತಿತ ಧ್ರುವವನ್ನು
+ಹೊಂದಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೊದಲ
+ವ್ಯುತ್ಪತ್ತಿಯು ಸೊನ್ನೆ ಎಂದು
+ನಾವು ಹೇಳಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹತ್ತು
+ಮಂದಿ</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_c0a81cc5a840e0ee.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಈ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ರೀತಿ
+ಬರೆಯಲಿ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_107b627d8ae4a547.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_6a54f4cb9f7f03fc.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_2436f9511158f178.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವನು
+ಮುಚ್ಚಿದ ಲೂಪ್ ಲಕ್ಷಣಸಮೀಕರಣ</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_b065545389e5965f.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮುಚ್ಚಿದ
+ಲೂಪ್ ಗುಣಬಹುನಾಮೀಯವು </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಪುನರಾವರ್ತಿತ
+ಬೇರುಹೊಂದಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ವ್ಯುತ್ಪತ್ತಿಯು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font></span></font><font size="3" style="font-size: 12pt">0.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+22:57)</font></p>
+<p align="center" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 9" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_445f9fc1c0db40b1.png" width="384"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_68d2c6c01e858983.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_5195de4f6f7820c5.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದನ್ನು
+ಪರಿಹರಿಸುವುದು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಪಡೆಯುತ್ತೇವೆ</span></font></span></font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_b3ca18bd90f71de2.gif"/>
+</p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಸಮೀಕರಣದ </span></font></span></font><font size="3" style="font-size: 12pt">T
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬೇರುಗಳು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಂಭಾವ್ಯ </span></font></span></font><font size="3" style="font-size: 12pt">b</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ರೀಕ್</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ದೂರ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> b</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ರೀಕ್</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇನ್</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಬಿಂದುಗಳು</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+ಇನ್ನೂ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಒಂದು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಚೆಕ್</span></font><span lang="kn">ಮಾಡಬೇಕು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Times New Roman"><span lang="ar-SA"><span lang="kn">ನಾವು
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಸಾಮರ್ಥ್ಯಎಂದು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹೇಳುತ್ತಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">W</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಬಿಂದುಗಳಿಗೆ ಅನುಗುಣವಾದ ಮೌಲ್ಯವನ್ನು
+ಕಂಡುಹಿಡಿಯಬೇಕು ಮತ್ತು ಅವು
+ಧನಾತ್ಮಕವಾಗಿವೆಯೇ ಎಂಬುದನ್ನು
+ಪರಿಶೀಲಿಸಬೇಕು</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_e256ef11c89faf84.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಓ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಆಗ
+ಬಿಂದುಗಳು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮೂಲ ರೇಖೆಯ ಮೇಲೆ ಇರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T </font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇಲ್ಲಿ
+ಎರಡು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತಗಳು
+ </span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<ol>
+<li><p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೊದಲು
+	ನಾವು ಈ ಸಮೀಕರಣವನ್ನು ಪರಿಹರಿಸುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<li><p align="justify" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಂತರ
+	ನಾವು ಮುಚ್ಚಿದ ಲೂಪ್</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec35.doc%20kannada_htm_e256ef11c89faf84.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+	ಗುಣಸಮೀಕರಣದಿಂದ ಸಂಬಂಧಿತ
+	ಮೌಲ್ಯಗಳನ್ನು ಕಂಡುಹಿಡಿಯುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+	</font>
+</p>
+</li></li></ol>
+</body>
+</html>

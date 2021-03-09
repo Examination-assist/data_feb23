@@ -1,0 +1,577 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-72" name="author"/>
+<meta content="2018-09-23T09:16:00" name="created"/>
+<meta content="Akash Pandey" name="changedby"/>
+<meta content="2021-03-09T17:15:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 3.3cm; margin-right: 2.54cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-family: "Calibri", serif; font-size: 11pt }
+		p.cjk { font-family: "Calibri"; font-size: 11pt; so-language: zh-CN }
+		p.ctl { font-family: "Calibri"; font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-US" link="#000080" vlink="#800000"><p align="center" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ನಿಯಂತ್ರಣ
+ವ್ಯವಸ್ಥೆಗಳು</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಪ್ರೊ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಎಸ್</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.</b></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಎಂಜಿನಿಯರಿಂಗ್
+ಡಿಸೈನ್ ವಿಭಾಗ</b></span></font></span></font></p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಇಂಡಿಯನ್
+ಇನ್ ಸ್ಟಿಟ್ಯೂಟ್ ಆಫ್ ಟೆಕ್ನಾಲಜಿ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Times New Roman"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಮದ್ರಾಸ್</b></span></font></span></font></p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಓದುವಿಕೆ
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+07</b></font></p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ವರ್ಗಾವಣೆ
+ಫಂಕ್ಷನ್ </b></span></font></span></font>
+</p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಭಾಗ
+</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+1</b></font></p>
+<p align="center" class="western" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಸಿಂಗಲ್ ಇನ್ ಪುಟ್ ಸಿಂಗಲ್ ಔಟ್
+ಪುಟ್ ಸಿಸ್ಟಮ್ಗಳನ್ನು</span></font><span lang="kn">
+</span></span></font>SISO<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಂದು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಂಕ್ಷಿಪ್ತಗೊಳಿಸುತ್ತೇವೆ ಮತ್ತು
+ಸ್ಥಿರ ಗುಣಾಂಕಗಳ ೊಂದಿಗೆ ರೇಖೀಯ
+ವ್ಯತ್ಯಾಸದ ಸಮೀಕರಣಗಳನ್ನು
+ಹೊಂದಿರುವ ರೇಖೀಯ ಸಮಯ ವ್ಯತ್ಯಯನ
+ಡೈನಾಮಿಕ್ ಸಿಸ್ಟಮ್ ಗಳನ್ನು</span></font><span lang="kn">
+ನಾವು ವ್ಯವಹರಿಸುತ್ತಿದ್ದೇವೆ</span></span></font>.</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:28)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 8" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_13c9f9f7baed5758.png" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">We</font> <font size="3" style="font-size: 12pt">
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಂತಹ</span></font><span lang="kn">
+ಸಮೀಕರಣಗಳನ್ನು ಪರಿಹರಿಸಲು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಲ್ಯಾಪ್ಲೇಸ್ ಟ್ರಾನ್ಸ್ ಫಾರ್ಮ್</span></font><span lang="kn">
+ಅನ್ನು ಹೇಗೆ ಬಳಸಬಹುದು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಎಂಬುದನ್ನು ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">ಇದುವರೆಗೆ
+ಮಾಡಿರುವ </span></span></font>W <font face="Calibri"><span lang="ar-SA"><span lang="kn">ಹ್ಯಾಟ್
+ಎಂದರೆ ನಾವು ಈ ಕೋರ್ಸ್</span><font size="3" style="font-size: 12pt"><span lang="kn">ನಲ್ಲಿ
+ಏನನ್ನು ಅಧ್ಯಯನ ಮಾಡಲು </span></font><span lang="kn">ಹೋಗುತ್ತಿದ್ದೇವೆ
+ಮತ್ತು ನಾವು </span><font size="3" style="font-size: 12pt"><span lang="kn">ಬಳಸಲಿರುವ
+ಕೆಲವು ಗಣಿತದ ಉಪಕರಣಗಳ ಬಗ್ಗೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಥೂಲವಾದ
+ಅವಲೋಕನವನ್ನು ಹೊಂದಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:49)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 2" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_88c9bece0ad795ae.png" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">W </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಶಾಸ್ತ್ರೀಯ
+ನಿಯಂತ್ರಣ ವಿಧಾನವನ್ನು
+ಬಳಸಿಕೊಂಡುವಿಶ್ಲೇಷಣೆಗೆ
+ಹೋಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಓಮತ್ತು
+ನಾವು ಕಲಿಯಲಿರುವ ಪ್ರಮುಖ
+ವಿಷಯಗಳ</span></font><span lang="kn">ಬಗ್ಗೆ
+ನಾನು</span><font size="3" style="font-size: 12pt"><span lang="kn">ವರ್ಗಾವಣಾ
+ಕಾರ್ಯಗಳು</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವರ್ಗಾವಣೆ
+ಫಂಕ್ಷನ್ ಎಂದರೇನು</span></font><span lang="kn">ಎಂದು
+ನಾನು ನೋಡಿ</span></span></font><font size="3" style="font-size: 12pt">.
+L</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+ನಾವು ಈ ಕೆಳಗಿನ ವುಗಳಿಂದ
+ನಿಯಂತ್ರಿಸಲ್ಪಡುವ ದ್ರವ್ಯರಾಶಿಯ
+ಸ್ಪ್ರಿಂಗ್ ಡಾಂಬರ್ ವ್ಯವಸ್ಥೆಯನ್ನು
+ಪರಿಗಣಿಸು</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_7bc8e003ef6a093.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವನ
+ಒಂದು ರೇಖಾತ್ಮಕ ಸಮಯ ವ್ಯತ್ಯಯನ
+ವ್ಯವಸ್ಥೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+Let us </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡೂ
+ಕಡೆಲ್ಯಾಪ್ಲೇಸ್ ಟ್ರಾನ್ಸ್
+ಫಾರ್ಮ್ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">-
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಪಡೆಯಲಿದ್ದೇವೆ</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_323d7936fc9fad7b.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಪಡೆಯುವ ನಿಯಮಗಳನ್ನು ಮರುಜೋಡಿಸಿದರೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font></span></font>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_32744643e4506ca4.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈಗ
+ನಾವು ಎರಡೂ ಬದಿಗಳನ್ನು ವಿಭಜಿಸಿದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="kn">ನಾವು
+ಈ </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_47cddef531ed4852.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಕೆಳಗಿನವುಗಳನ್ನು
+ಪಡೆಯಲಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_4b7670c46b863a80.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೊದಲ
+ಪದವು ಔಟ್ ಪುಟ್ ನ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಭಾಗವಾಗಿದ್ದು</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="kn">ಶೂನ್ಯವಲ್ಲದ
+ಆರಂಭಿಕ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸ್ಥಿತಿಯಿಂದ ಾಗಿ ದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font face="Calibri"><span lang="ar-SA"><span lang="kn">ಟಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">ಹ್ಯಾಟ್
+ಅನ್ನು ಅದು ಒಳಗೊಂಡಿರುವುದನ್ನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ತಕ್ಷಣ
+ಗಮನಿಸಬಹುದು</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_7d448ed3f01d184a.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_c0b6baec8148294d.gif"/>
+<font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹ್ಯಾಟ್
+ಎಂಬುದು ಶೂನ್ಯವಲ್ಲದ ಆರಂಭಿಕ
+ಸ್ಥಿತಿಯಿಂದ ಉಂಟಾಗುವ
+ಸ್ಥಾನಪಲ್ಲಟವಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಆರಂಭದಲ್ಲಿ ವಿಶ್ರಾಂತಿಯಲ್ಲಿದ್ದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+ಅದನ್ನು ಅಲ್ಪ ಪ್ರಮಾಣದಲ್ಲಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸ್ಥಳಾಂತರಿಸುತ್ತೇವೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಮತ್ತು
+ಅದನ್ನು ಬಿಟ್ಟುಬಿಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="kn">ಅದು </span></span></font><font size="3" style="font-size: 12pt"><i>K</i></font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+</span></font><span lang="kn"> </span></span></font><font size="3" style="font-size: 12pt"><i>C</i></font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಯ
+ಮೌಲ್ಯಗಳ ಆಧಾರದ ಮೇಲೆ  ಕಂಪಿಸಬಹುದು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಮತ್ತು
+ಅಂತಿಮವಾಗಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದು
+ಮೂಲತಃ ಸಮತೋಲಿತ ಸ್ಥಿತಿಗೆ
+ಮರಳಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೊದಲ
+ಭಾಗವು</span></font><span lang="kn"> ಶೂನ್ಯವಲ್ಲದ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಆರಂಭಿಕ ಸ್ಥಿತಿಗಳಿಂದ ಾಗಿ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಉತ್ಪಾದನೆಯಾಗಿದೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">. </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಇದನ್ನು
+ಮುಕ್ತ ಪ್ರತಿಕ್ರಿಯೆ ಎಂದು
+ಕರೆಯುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡನೆಯ
+ಭಾಗವು ಇನ್ ಪುಟ್ ಪದವನ್ನು
+ಒಳಗೊಂಡಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_f3a74839aaaa8f2f.gif"/>
+<font size="3" style="font-size: 12pt">
+</font> <font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ಬಲ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">S</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ದ್ರವ್ಯರಾಶಿಯ
+ಮೇಲೆ ನಾವು ಒಂದು ಸಮಯ ವ್ಯತ್ಯಾಸದ
+ಬಲವನ್ನು ಅನ್ವಯಿಸುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><span lang="kn">ಎರಡನೆಯ
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಪದವು
+ದ್ರವ್ಯರಾಶಿಯ ಸ್ಥಾನಪಲ್ಲಟವನ್ನು
+ನಮಗೆ ಒದಗಿಸುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಔಟ್</span></font><span lang="kn">ಪುಟ್
+ಗೆ ಇನ್ ಪುಟ್</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಬಲವು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ನೀಡುವ ಕೊಡುಗೆಯೇ</span></font><span lang="kn">
+ಟಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">ಟೋಪಿ</span></font></span></font><font size="3" style="font-size: 12pt">.
+W</font>e<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದನ್ನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಒತ್ತಾಯಪೂರ್ವಕ
+ಪ್ರತಿಕ್ರಿಯೆ ಎಂದುಕರೆಯಿರಿ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font></span></font><font size="3" style="font-size: 12pt">.
+W</font>e <font face="Calibri"><span lang="ar-SA"><span lang="kn">ಈ
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡು
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಘಟಕಗಳನ್ನು
+ಔಟ್ ಪುಟ್ ಗೆಹೊಂದಲಿದೆ </span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಶೂನ್ಯವಲ್ಲದಆರಂಭಿಕ
+ಸ್ಥಿತಿಗಳು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮತ್ತು ಇತರ</span></font><span lang="kn"> ಕಾರಣದಿಂದ
+</span></span></font>O ne <font face="Calibri"><span lang="ar-SA"><span lang="kn">ಅನ್ನು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಿಸ್ಟಂಗೆ ಒದಗಿಸಲಾದ ಇನ್ ಪುಟ್
+ನಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+07:42)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_a61b28fba57655ad.png" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈಗ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಲ್ಲಾ
+ಆರಂಭಿಕ ಷರತ್ತುಗಳನ್ನು </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಂದು
+ಪರಿಗಣಿಸೋಣ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಸಂದರ್ಭದಲ್ಲಿ ಮತ್ತು </span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಂತರ</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_541d8b9d3e1757fb.gif"/>
+</span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_6ac1db023df3aa17.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_305c7f2f244449f7.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+0 </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆರಂಭಿಕ
+ಪರಿಸ್ಥಿತಿಗಳಲ್ಲಿ ಔಟ್ ಪುಟ್
+ನ ಲ್ಯಾಪ್ಲೇಸ್ ಟ್ರಾನ್ಸ್ ಫಾರ್ಮ್
+ನ ಲ್ಯಾಪ್ಲೇಸ್ ಟ್ರಾನ್ಸ್ ಫಾರ್ಮ್
+ನ ಅನುಪಾತವನ್ನು ಈ ಪರಿಮಾಣವು
+ಸಿಸ್ಟಂ ಅಥವಾ ಸಸ್ಯದ ವರ್ಗಾವಣೆ
+ಫಂಕ್ಷನ್ ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_aaede8b54463e309.gif"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_556e712b849fb6e.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್ ಅನ್ನು
+ಸೂಚಿಸಲು ಬಳಸುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸಂಕ್ಷಿಪ್ತವಾಗಿ
+ಹೇಳುವುದಾದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಆಡಳಿತ
+ರೇಖೀಯ ಸಾಮಾನ್ಯ ವ್ಯತ್ಯಾಸಸಮೀಕರಣವನ್ನು
+ಬರೆದೆವು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಂತರ
+ಎರಡೂ ಕಡೆಗಳಲ್ಲಿ ಲ್ಯಾಪ್ಲೇಸ್
+ಟ್ರಾನ್ಸ್ ಫಾರ್ಮ್ ಅನ್ನು
+ತೆಗೆದುಕೊಂಡೆವು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಔಟ್
+ಪುಟ್ ಪದವು ಶೂನ್ಯವಲ್ಲದ ಕಾಂಡಿಟಿ
+ಆನ್ ಗಳ ಕಾರಣದಿಂದ ಾಗಿ ಎರಡು
+ಘಟಕಗಳನ್ನು ಹೊಂದಿದೆ ಎಂದು ನಾವು
+ನೋಡಿದೆವು</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಎಲ್ಲಾ
+ಆರಂಭಿಕ ಷರತ್ತುಗಳನ್ನು </span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಂದು
+ತೆಗೆದುಕೊಂಡೆವು</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಂತರ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಔಟ್
+ಪುಟ್ ನ ಲ್ಯಾಪ್ಲೇಸ್ ನ ಅನುಪಾತವನ್ನು
+ನಾವು ಇನ್ ಪುಟ್ ನ ಲ್ಯಾಪ್ಲೇಸ್
+ಗೆ ತೆಗೆದುಕೊಂಡೆವು</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದನ್ನು
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಸಿಸ್ಟಂ
+ಅಥವಾ ಸಸ್ಯದ ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್
+ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಮತ್ತು</span></font><span lang="kn">
+ನಾವು ಇದನ್ನು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸೂಚಿಸಲಿದ್ದೇವೆ</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_80f07ae64983f965.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವರ್ಗಾವಣೆಫಂಕ್ಷನ್
+ವಿಧಾನವನ್ನು ನಾವು ಬಳಸುವಾಗ
+ನಾನು ಒಂದು ನಿರ್ದಿಷ್ಟ ಅರ್ಥವನ್ನು
+ಪಡೆದಿದ್ದೇನೆ ಏಕೆಂದರೆ ನಾವು
+ಎಲ್ಲಾ ಆರಂಭಿಕ ಷರತ್ತುಗಳನ್ನು
+</span></font></span></font><font size="3" style="font-size: 12pt">0
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎಂದು
+ತೆಗೆದುಕೊಂಡಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈಗ
+ಪ್ರಶ್ನೆ ಯು ಪ್ರಾರಂಭದ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕಾಂಡಿಟಿ</span></font><span lang="kn">ಆನ್ ಗಳು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಯಾವಾಗಲೂಶೂನ್ಯವಾಗಿರುತ್ತದೆಯೇ</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇಲ್ಲದಿದ್ದರೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಈ
+ವಿಧಾನವನ್ನು ಅನುಸರಿಸಿದರೆ
+ಏನಾಗಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">?</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಟಿಹ್ಯಾಟ್
+ಎಂಬುದು ನಾವು ನಂತರ ಉತ್ತರಿಸುವ
+ಒಂದು ಪ್ರಶ್ನೆಯಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">P</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಲೀಸ್
+ನೆನಪಿಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+</span></span></font>SISO <font face="Calibri"><span lang="ar-SA"><span lang="kn">ವ್ಯವಸ್ಥೆಯನ್ನು
+ಹೊಂದಿದ್ದರೆ ಮಾತ್ರ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಔಟ್ ಪುಟ್ ಮತ್ತು ಇನ್ ಪುಟ್ ನ
+</span></font></span></font><font size="3" style="font-size: 12pt">Laplace
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅನುಪಾತಗಳನ್ನು
+ತೆಗೆದುಕೊಳ್ಳಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು
+ವೇಳೆ ನಾವು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">MIMO
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವ್ಯವಸ್ಥೆಯನ್ನು
+ಹೊಂದಿದ್ದರೆ</span></font><span lang="kn"> </span></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Calibri"><span lang="ar-SA"><span lang="kn">ನಾವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್ ಮ್ಯಾಟ್ರಿಕ್ಸ್</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಅನ್ನು
+ಹೊಂದಿರುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವೆಕ್ಟರ್
+</span></font><span lang="kn">ಇನ್ ಪುಟ್ ನಿಂದ
+ನಾವು ಇನ್ನು ಮುಂದೆ </span><font size="3" style="font-size: 12pt"><span lang="kn">ವೆಕ್ಟರ್
+ಔಟ್ ಪುಟ್ ಅನ್ನು ವಿಭಜಿಸಲು</span></font><span lang="kn">ಸಾಧ್ಯವಿಲ್ಲ</span></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> </span></font></span></font><font size="3" style="font-size: 12pt">CA</font>n
+<font face="Calibri"><span lang="ar-SA"><span lang="kn">ಇನ್ನೂ
+ಇನ್ನೊಂದು ಉತ್ಪನ್ನ ರೂಪದಲ್ಲಿ
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಬರೆಯುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಲ್ಲಿ
+ಔಟ್ ಪುಟ್ ವೆಕ್ಟರ್</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಂಕೀರ್ಣ ಡೊಮೇನ್ ನಲ್ಲಿ</span></font><span lang="kn">
+ಇನ್ ಪುಟ್ ವೆಕ್ಟರ್ ಅನ್ನು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಗುಣಿಸುವ ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್
+ಮ್ಯಾಟ್ರಿಕ್ಸ್ ಗೆ ಸರಿಸಮವಾಗಿರುತ್ತದೆ</span></font><span lang="kn">
+ಎಂದು ನಾವು ಹೇಳಬಹುದು</span></span></font>.<font size="3" style="font-size: 12pt">
+</font> <font size="3" style="font-size: 12pt"> </font>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">B </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಯುಟಿ
+ನಾವು ಈ ಕೋರ್ಸ್ ನಲ್ಲಿ ಸಿಂಗಲ್
+ಇನ್ ಪುಟ್ ಸಿಂಗಲ್ ಔಟ್ ಪುಟ್
+ಸಿಸ್ಟಮ್ ಗಳನ್ನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ವ್ಯವಹರಿಸಲಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+ </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದೇ
+ಇನ್ ಪುಟ್ ಸಿಂಗಲ್ ಔಟ್ ಪುಟ್
+ಸಿಸ್ಟಮ್ ಗೆ</span></font></span></font>S<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅನ್ನು
+ಅನುಸರಿಸಿದ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ನೋಟಿಸೇಶನ್ಗಳು </span></font></span></font><font size="3" style="font-size: 12pt">-
+C</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆನ್
+ಸೆಕ್ವೆಂಟ್ ನಲ್ಲಿ</span></font></span></font><font size="3" style="font-size: 12pt">,</font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_3fbabed0d82432c8.gif"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+14:26)</font></p>
+<p align="center" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_e0a54b088ae0611f.png" width="384"/>
+</p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ವಿಲೋಮ ಲ್ಯಾಪ್ಲೇಸ್ ಟ್ರಾನ್ಸ್
+ಫಾರ್ಮ್ ಅನ್ನು ತೆಗೆದುಕೊಂಡಲ್ಲಿ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font></span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_485ca51aca09f3e7.gif"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_69c89bc0de200b54.gif"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ವಿಲೋಮ ಲ್ಯಾಪ್ಲೇಸ್ ಟ್ರಾನ್ಸ್
+ಫಾರ್ಮ್ ಅನ್ನು ತೆಗೆದುಕೊಂಡಲ್ಲಿ
+ಸಮಯ ಡೊಮೇನ್ ನ ಔಟ್ ಪುಟ್ ಆಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+We </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಕೆಲವು
+ಅಂಶಗಳನ್ನು ಗಮನಿಸಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.
+T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೊದಲ
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ನೆಯ
+ಅಂಶವೆಂದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_556e712b849fb6e.gif"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ತಿಳಿದಿದ್ದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="kn">ನಾವು
+ಯಾವುದೇ ಇನ್ ಪುಟ್ ಗಾಗಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಿಸ್ಟಂ ಔಟ್ ಪುಟ್ ಅನ್ನು
+ಕಂಡುಹಿಡಿಯಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಮಾಡಬಹುದಾದ ಇನ್ನೊಂದು ಕೆಲಸವೆಂದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಕೆಲವು ಔಟ್ ಪುಟ್ ಅನ್ನು ಬಯಸಿದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+ಯಾವ ಇನ್ ಪುಟ್</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅನ್ನು ನೀಡಬೇಕು</span></font><span lang="kn">ಎಂಬುದನ್ನು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕಂಡುಹಿಡಿಯಬಹುದು </span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">W</font><font face="Calibri"><span lang="ar-SA"><span lang="kn">ನಿಯಂತ್ರಣ
+ಮತ್ತು ವಿಶ್ಲೇಷಣೆ</span><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡನ್ನೂ
+ಮಾಡಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> W</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹ್ಯಾಟ್
+ನಾವುಮಾದರಿಗಳ ಉದ್ದೇಶವನ್ನು
+ಅಧ್ಯಯನ ಮಾಡಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">P</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ರೀಡಿಕ್ಷನ್
+ಅಥವಾ ವಿಶ್ಲೇಷಣೆ</span></font><span lang="kn">
+ಯು ನಾವು ಇನ್ ಪುಟ್ ಅನ್ನು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹೊಂದಿದ್ದೇವೆ</span></font><span lang="kn"> ಮತ್ತು
+ನಾವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಔಟ್</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪುಟ್ ಅನ್ನು ಮೌಲ್ಯಮಾಪನ</span></font><span lang="kn">
+ಮಾಡುತ್ತೇವೆ</span></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">Control</font> <font size="3" style="font-size: 12pt">
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಬಯಸಿದ ಔಟ್ ಪುಟ್ ಅನ್ನು ಹೊಂದಿರುವ
+ಲ್ಲಿ ದೆಮತ್ತು ಇನ್ ಪುಟ್ ಅನ್ನು
+ನಾವು ಕಂಡುಹಿಡಿಯುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಎರಡನೆಯ
+ಅಂಶವೆಂದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_c24c44b3ee11029e.gif"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು
+ವೇಳೆ ಯೂನಿಟ್ ಇಂಪಲ್ಸ್ ಇನ್
+ಪುಟ್</span></font><span lang="kn">ಆಗಿದ್ದರೆ</span></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆಗ
+</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_3aa600113d007fef.gif"/>
+</span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ
+</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_b4ffffda71fa77d8.gif"/>
+</span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ಸೂಚಿಸುತ್ತದೆ</span></font><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_42e87bd77a50b16a.gif"/>
+</span></font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾನುಯಾವುದೇ
+ಇನ್ ಪುಟ್ ಅನ್ನು ನೀವು ನೀಡುವಿರಿ
+ಮತ್ತು ನೀವು ಅದಕ್ಕೆ ಅನುಗುಣವಾದ
+ಔಟ್ ಪುಟ್ ಅನ್ನು ಲೆಕ್ಕ ಹಾಕುತ್ತೀರಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆ
+ಔಟ್ ಪುಟ್</span></font><span lang="kn">ಅನ್ನು
+ಪ್ರತಿಕ್ರಿಯೆ ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ
+ಮತ್ತು </span></span></font>T he<font size="3" style="font-size: 12pt">adjective
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅನ್ನು
+ನಿರ್ದಿಷ್ಟ </span></font><span lang="kn">ಇನ್
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಪುಟ್</span></font><span lang="kn">ಗೆ
+ಅನುಗುಣವಾಗಿ ಸೇರಿಸಬಹುದು</span></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ನಿರ್ದಿಷ್ಟ ಪ್ರಕರಣದಲ್ಲಿ ನಾವು
+ಸಿಸ್ಟಮ್ ಗೆ ಒಂದು ಯೂನಿಟ್ ಇಂಪಲ್ಸ್
+ಇನ್ ಪುಟ್ ಅನ್ನು ಒದಗಿಸುತ್ತಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಪಡೆಯುವ ಔಟ್ ಪುಟ್</span></font><span lang="kn">
+ಅನ್ನು ಪ್ರಚೋದನೆ ಪ್ರತಿಕ್ರಿಯೆ
+ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮತ್ತು</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_6ff12b2aabb97de3.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಪ್ರಚೋದನೆಪ್ರತಿಕ್ರಿಯೆ
+ಯ ಕಾರ್ಯವಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+ಪ್ರಚೋದಕ ಪ್ರತಿಸ್ಪಂದನಾ ಫಂಕ್ಷನ್
+ನ ಲ್ಯಾಪ್ಲೇಸ್ ಸಸ್ಯ ವರ್ಗಾವಣೆ
+ಫಂಕ್ಷನ್ ಆಗಿದೆ</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec7.doc%20kannada_htm_cf15fa1c4b3d690.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ನಮಗೆ ಬಹಳ ಉಪಯುಕ್ತವಾದ ಪರಿಕಲ್ಪನೆಯನ್ನು
+ನೀಡುತ್ತದೆ </span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+ಸಸ್ಯ ವರ್ಗಾವಣೆ ಕಾರ್ಯವನ್ನು
+ಪ್ರಾಯೋಗಿಕವಾಗಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ನಿರ್ಧರಿಸಲು ಬಯಸಿದರೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+ಒಂದು ಯೂನಿಟ್</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಇಂಪಲ್ಸ್ ಇನ್ ಪುಟ್ ಅನ್ನು
+ನೀಡಬೇಕಾಗುತ್ತದೆ ಮತ್ತು ನಂತರ
+ಔಟ್ ಪುಟ್ ಎಂದರೇನು ಮತ್ತು ಅದು
+</span></font></span></font><font size="3" style="font-size: 12pt">I</font><font face="Calibri"><span lang="ar-SA"><span lang="kn">ಪಲ್ಸ್</span><font size="3" style="font-size: 12pt"><span lang="kn">ರೆಸ್ಪಾನ್ಸ್
+ಫಂಕ್ಷನ್ ಎಂದು</span></font><span lang="kn"> ಮಾಪನ
+ಮಾಡಬೇಕು</span></span></font>. <font size="3" style="font-size: 12pt">
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಪ್ರಚೋದನೆಪ್ರತಿಕ್ರಿಯೆ
+ಫಂಕ್ಷನ್ ನಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+ಸಸ್ಯ ವರ್ಗಾವಣೆ ಕಾರ್ಯವನ್ನು
+ತಡವಾಗಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಲೆಕ್ಕಾಚಾರ ಮಾಡಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಪ್ರಯೋಜನವೆಂದರೆ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ನಾವು</span></font><span lang="kn">
+ಕೇವಲ ಒಂದು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪ್ರಯೋಗವನ್ನು ಮಾತ್ರ ಮಾಡಬೇಕಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><span lang="kn">ಆದರೆ
+ಇಲ್ಲಿ ಕ್ಯಾಚ್ </span><font size="3" style="font-size: 12pt"><span lang="kn">ಇರುವುದು
+ಪ್ರಾಯೋಗಿಕವಾಗಿ </span></font><span lang="kn">ಒಂದು
+ಆದರ್ಶ ಪ್ರಚೋದನೆಇನ್ ಪುಟ್ ಅನ್ನು
+ಜಿವಿ ಇ </span></span></font>(<font face="Calibri"><span lang="ar-SA"><span lang="kn">ಇನ್</span><font size="3" style="font-size: 12pt"><span lang="kn">ಪುಟ್</span></font></span></font><font size="3" style="font-size: 12pt">)</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮಾಡುವುದು
+ಬಹಳ ಕಠಿಣವಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+Then </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಪ್ರಶ್ನೆ
+ಯು ಬರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="kn">ನಾವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಯಾವ ಅಂದಾಜುಗಳನ್ನು ಪಡೆಯಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">?
+</font><font face="Calibri"><span lang="ar-SA"><span lang="kn">ವರ್ಗಾವಣೆ
+ಫಂಕ್ಷನ್ ಗಳನ್ನು ನಾನು ಬೇರೆ</span><font size="3" style="font-size: 12pt"><span lang="kn">ಯಾವುದಾದರೂ
+ವಿಧಾನದಲ್ಲಿಕಂಡುಹಿಡಿಯುತ್ತೇನೆ</span></font></span></font><font size="3" style="font-size: 12pt">?
+ </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಪ್ರಗತಿಯನ್ನು ಸಾಧಿಸುತ್ತಿದ್ದಂತೆ
+ನಾವು ಕಲಿಯುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><span lang="kn">ಇಲ್ಲಿ
+ನಾವು ಆವರ್ತನ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಬಳಸಿಕೊಂಡು</span></font><span lang="kn">
+ಇನ್</span><font size="3" style="font-size: 12pt"><span lang="kn">ಟ್ರಾನ್ಸ್
+ಫರ್ ಫಂಕ್ಷನ್ ಗಳನ್ನು</span></font><span lang="kn">
+ಪ್ರಾಯೋಗಿಕವಾಗಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">ನಿರ್ಧರಿಸಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸರಿ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಾಗಾಗಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆ
+ತಂತ್ರವನ್ನೂ ನಾವು ಕಲಿಯುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ದಿನದ
+ಕೊನೆಯಲ್ಲಿ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು</span></font><span lang="kn">
+ಸಸ್ಯ ವರ್ಗಾವಣೆ ಕಾರ್ಯವನ್ನು
+ನಾವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕಂಡುಹಿಡಿಯಲು ಬಯಸಿದರೆ ಅದು
+ಎರಡೂ ವಿಧಾನಗಳ ಮಿಶ್ರಣವಾಗಲಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">-
+F</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಥವಾ
+</span></font></span></font><font size="3" style="font-size: 12pt">example,
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ಭೌತಶಾಸ್ತ್ರದ ಆಧಾರದ ಮೇಲೆ
+ವ್ಯುತ್ಪತ್ತಿ ಸಮೀಕರಣಗಳ
+ಮಿಶ್ರಣವಾಗಲಿದೆ ಮತ್ತು ಪ್ರಯೋಗಗಳನ್ನು
+ಸಹ ನಡೆಸುತ್ತದೆ ಮತ್ತು ವರ್ಗಾವಣೆ
+ಕಾರ್ಯಕ್ಕೆ ಸರಿಹೊಂದುವಂತೆ
+ಪ್ರಾಯೋಗಿಕ ಡೇಟಾವನ್ನು ಬಳಸುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಮಗೆ
+ಎರಡೂ ವಿಧಾನಗಳ ಅಗತ್ಯವಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font></p>
+<p align="justify" class="western" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವರ್ಗಾವಣೆ
+ಫಂಕ್ಷನ್ ನ ವ್ಯಾಖ್ಯಾನಕ್ಕೆ
+ಸಂಬಂಧಿಸಿದಂತೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು</span></font><span lang="kn">
+ಎಲ್ಲಾ ಆರಂಭಿಕ ಷರತ್ತುಗಳನ್ನು
+</span></span></font>0 <font face="Calibri"><span lang="ar-SA"><span lang="kn">ಎಂದು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಇರಿಸಿಕೊಳ್ಳುವುದು</span></font><span lang="kn">ಬಹಳ
+ಮುಖ್ಯ</span></span></font><font size="3" style="font-size: 12pt">-
+</font><font face="Calibri"><span lang="ar-SA"><span lang="kn">ನಂತರ
+ನಾವು ಮಾತ್ರ ವರ್ಗಾವಣೆ ಕಾರ್ಯಗಳ
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಬಗ್ಗೆ
+ಮಾತನಾಡಬಹುದು ಮತ್ತು ಅವುಗಳನ್ನು
+ಬಳಸಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+</body>
+</html>

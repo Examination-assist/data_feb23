@@ -1,0 +1,557 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 6.4.6.2 (Linux)" name="generator"/>
+<meta content="DCK-10" name="author"/>
+<meta content="2019-06-09T06:45:00" name="created"/>
+<meta content="Akash Pandey" name="changedby"/>
+<meta content="2021-03-09T16:36:00" name="changed"/>
+<meta content="16.0000" name="AppVersion"/>
+<meta content="0" name="DocSecurity"/>
+<meta content="false" name="HyperlinksChanged"/>
+<meta content="false" name="LinksUpToDate"/>
+<meta content="true" name="MTWinEqns"/>
+<meta content="false" name="ScaleCrop"/>
+<meta content="false" name="ShareDoc"/>
+<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 3.3cm; margin-right: 2.54cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.western { font-family: "Calibri", serif; font-size: 11pt; so-language: en-US }
+		p.cjk { font-family: "Calibri"; font-size: 11pt; so-language: zh-CN }
+		p.ctl { font-family: "Calibri"; font-size: 11pt }
+	</style>
+</head>
+<body dir="ltr" lang="en-IN" link="#000080" vlink="#800000"><p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ನಿಯಂತ್ರಣ
+ವ್ಯವಸ್ಥೆಗಳು</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಪ್ರೊ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.C.</b></font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಎಸ್</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>.	</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಎಂಜಿನಿಯರಿಂಗ್
+ಡಿಸೈನ್ ವಿಭಾಗ</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಇಂಡಿಯನ್
+ಇನ್ ಸ್ಟಿಟ್ಯೂಟ್ ಆಫ್ ಟೆಕ್ನಾಲಜಿ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>,
+</b></font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಮದ್ರಾಸ್</b></span></font></span></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font size="3" style="font-size: 12pt"><b><br/>
+</b></font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಲೆಕ್ಟುರೆ</b></span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"><b> </b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-
+39</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ರೂಟ್
+ಲೊಕಸ್ </b></span></font></span></font><font size="3" style="font-size: 12pt"><b>4
+</b></font>
+</p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn"><b>ಭಾಗ</b></span></font></span></font><font size="3" style="font-size: 12pt"><b>-1</b></font></p>
+<p align="center" class="western" lang="en-US" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+</span></font></span></font><font size="3" style="font-size: 12pt">Root
+</font> <font size="3" style="font-size: 12pt">Locus</font><font face="Calibri"><span lang="ar-SA"><span lang="kn">ಅನ್ನು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ನೋಡುತ್ತಿದ್ದೇವೆ </span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನೆನಪಿಟ್ಟುಕೊಳ್ಳಲು</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಮ್ಮ
+ಗಮನವನ್ನು ಕೇಂದ್ರೀಕರಿಸಿದ ಮೂಲ
+ಬ್ಲಾಕ್ ರೇಖಾಚಿತ್ರವನ್ನು
+ಪರಿಗಣಿಸಿ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+00:38)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 1" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_85c659256567301.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_6b57f6b21a1635d.gif"/>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_d7d26042fed45e60.gif"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಫಾರ್ವರ್ಡ್
+ಪಥ ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್ಆಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_e8a8d21da9ea14c.gif"/>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_d7d26042fed45e60.gif"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಫೀಡ್</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn"> ಬ್ಯಾಕ್
+ಪಥ ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್ ಆಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+ನಾವು</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಋಣಾತ್ಮಕ
+ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಹೊಂದಿದ್ದೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮುಚ್ಚಿದ
+ಲೂಪ್ ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_49fe036788f4f7ee.gif"/>
+<font size="3" style="font-size: 12pt">,
+</font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+ಮುಚ್ಚಿದ ಲೂಪ್ ಲಕ್ಷಣಸಮೀಕರಣವು</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_94224ed07b00fff1.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಾವು
+ಈ ಸಮೀಕರಣದ ಮೂಲಗಳನ್ನು ನೋಡಿದೆವು</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು</span></font><span lang="kn">
+ವೇಳೆ ನಾವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಧನಾತ್ಮಕ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಇತರಎಲ್ಲವುಒಂದೇ
+ರೀತಿಯಲ್ಲಿ ಯೇ ಉಳಿದಿದ್ದೇವೆ</span></font><span lang="kn">ಎಂದು
+ಭಾವಿಸೋಣ</span></span></font><font size="3" style="font-size: 12pt">-
+that,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_c589a239b1c592a7.gif"/>
+.</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬ್ಲಾಕ್
+ರೇಖಾಚಿತ್ರದಲ್ಲಿ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಉಳಿದಎಲ್ಲವೂ
+ಸಾ</span></font><span lang="kn">ಮೀ</span><font size="3" style="font-size: 12pt"><span lang="kn">ಆಗಿರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸಂಮಿಂಗ್
+ಜಂಕ್ಷನ್</span></font><span lang="kn"> ನಲ್ಲಿ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಎರಡು ಸಂಕೇತಗಳನ್ನು </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಕಳೆಯುವುದಕ್ಕಿಂತ</span></font><span lang="kn">ಹೆಚ್ಚಾಗಿ
+ಸೇರಿಸಲಾಗಿದೆ</span></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಕೆಳಗಿನವುಗಳು ಮೂಲ ಲೋಕಸ್ ನ
+ನಿರ್ಮಾಣದಲ್ಲಿ ಒಳಗೊಂಡಿರುವ
+ಹಂತಗಳನ್ನು ಪರೀಕ್ಷಿಸಲು</span></font><span lang="kn">ಒಂದು</span><font size="3" style="font-size: 12pt"><span lang="kn">ಉದಾಹರಣೆಯಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font> <font size="3" style="font-size: 12pt">
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಸಂದರ್ಭದಲ್ಲಿ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮುಚ್ಚಿದ
+ಲೂಪ್ ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್ </span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_130bf6c4c5c360a.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮುಚ್ಚಿದ
+ಲೂಪ್ ಲಕ್ಷಣಸಮೀಕರಣವು </span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_5dd0e0266bad4c9e.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೇಲಿನ
+ಸಮೀಕರಣವನ್ನು </span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_b880e659bf7d175e.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ತೃಪ್ತಿಗೊಳಿಸಬಹುದಾದ
+</span></font><span lang="kn">ಯಾವುದೇ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮೌಲ್ಯವು  ಮುಚ್ಚಿದ ಲೂಪ್ </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಧ್ರುವವಾಗಿದೆ</span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+04:35)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 3" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_1566258a67db5560.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">S
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನ
+ಯಾವುದೇ ಮೌಲ್ಯವು ಓಪನ್ ಲೂಪ್
+ವರ್ಗಾವಣೆ ಫಂಕ್ಷನ್ ಅನ್ನು </span></font></span></font><font size="3" style="font-size: 12pt">1
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಕ್ಕೆ
+ಸಮನಾಗುವಂತೆ ಮಾಡುವ</span></font><span lang="kn">
+ಯಾವುದೇ ಮೌಲ್ಯವು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮುಚ್ಚಿದ ಲೂಪ್ ಪೋಲ್ ಆಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವನ
+ಿಗೆ </span></font></span></font><font size="3" style="font-size: 12pt">2
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಷರತ್ತುಗಳನ್ನು
+ಕೊಡುತ್ತಾನೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವನು
+ಪರಿಮಾಣಸ್ಥಿತಿ </span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_438859796ce71b81.gif"/>
+<font size="3" style="font-size: 12pt">,
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತಸ್ಥಿತಿ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_e4afee89ea9d59a5.gif"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅದೇ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಉದಾಹರಣೆಯನ್ನು  ಮೂಲ ಲೋಕವನ್ನು
+ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಪುನರಾವರ್ತಿಸಲಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+07:06)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 4" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_9639482ec940f853.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತ</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸಂಕೀರ್ಣ
+ಸಮತಲದಲ್ಲಿ ತೆರೆದ ಲೂಪ್ </span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಸೊನ್ನೆಗಳನ್ನು</span></font><span lang="kn">
+ಮತ್ತು ಓಪನ್ ಲೂಪ್ ಧ್ರುವಗಳನ್ನು
+ಪತ್ತೆ ಹಚ್ಚುವ ಮೊದಲ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಹಂತವು ಒಂದೇ ಆಗಿರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">As </font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_60890ec722bfc998.gif"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದು
+ </span></font><span lang="kn"> ತೆರೆದ </span><font size="3" style="font-size: 12pt"><span lang="kn">ಲೂಪ್
+ಕಂಬದಿಂದ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಪ್ರಾರಂಭವಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_dacbc5c1cbb7e783.gif"/>
+<font size="3" style="font-size: 12pt">
+</font><font face="Calibri"><span lang="ar-SA"><span lang="kn">ಮತ್ತು</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಓಪನ್ ಲೂಪ್ </span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಸೊನ್ನೆಗಳಿಗೆ</span></font><span lang="kn">
+ಹೋಗಿ</span><img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_8987ce451d140e88.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+ಮತ್ತು ಅಸಿಂಪಟೋಟ್ ಗಳ</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_974ca81af998d6a2.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಮೂಲಕ</span></font><span lang="kn">
+</span></span></font>.</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತ
+</span></font></span></font><font size="3" style="font-size: 12pt">2:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಿಜವಾದ
+ಅಕ್ಷದ ಮೇಲೆ ಇರುವ ಮೂಲ ಲೋಸಿಯ
+ಮೂಲ ಲೋಕಸ್</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಭಾಗವನ್ನು</span></font><span lang="kn"> ಪತ್ತೆ
+ಹಚ್ಚುವ ಹಂತವು </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಕೋನದ ಸ್ಥಿತಿಯನ್ನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಅವಲಂಬಿಸಿರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+09:25)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 5" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_95dd033453326ec3.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಿಜವಾದ
+ಅಕ್ಷದ ಮೇಲೆ ಒಂದು ಪರೀಕ್ಷಾ
+ಬಿಂದುವನ್ನು</span></font><span lang="kn">ಪರಿಗಣಿಸಿ</span></span></font><font size="3" style="font-size: 12pt">-
+t</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಿಜವಾದ
+ಓಪನ್ ಲೂಪ್ ಧ್ರುವಗಳು ಮತ್ತು
+</span></font><span lang="kn">ಅದರ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಬಲಗಡೆನಿಜವಾದ</span></font><span lang="kn"> ಓಪನ್
+ಲೂಪ್ </span><font size="3" style="font-size: 12pt"><span lang="kn">ಸೊನ್ನೆಗಳು</span></font><span lang="kn">
+ಪರೀಕ್ಷಾ </span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಬಿಂದುವನ್ನು
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ರೂಟ್
+ಲೊಕಸ್ ಮೇಲೆ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಮಲಗಿಸಲು
+ ಸಹ ಇರಬೇಕು </span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತ
+</span></font></span></font><font size="3" style="font-size: 12pt">3:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅವನು
+ಆಂಗಲ್ ಸ್ಥಿತಿಯನ್ನು ಅವಲಂಬಿಸಿರುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font> <font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಪ್ರಕರಣದಲ್ಲಿ </span></font><span lang="kn">ಕೋನಗಳನ್ನು
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ನೀಡಲಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_8c660be1f8a4dc0b.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_857147a692f58cae.gif"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಸಿಂಪಟೋಟ್
+ಗಳುಇವೆ </span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಲ್ಲಿ
+</span></font><span lang="kn">  ನಿಜವಾದ ಅಕ್ಷದ
+ಮೇಲೆ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅಸಿಂಪ್ಟೋಟ್ ಗಳ ನಡುವಿನ ಬಿಂದುವನ್ನು</span></font><span lang="kn">
+ಕೊಟ್ಟಿರುವ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಅದೇ ಸೂತ್ರದಿಂದ ಲೆಕ್ಕ ಹಾಕಲಾಗುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_724f1da6a10c2ea8.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತ
+</span></font></span></font><font size="3" style="font-size: 12pt">4:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">Step 4 </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದೇ
+ಆಗಿಯೇ ಉಳಿಯುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+10:55)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 6" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_9b9fd2d41727fe83.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಲಕ್ಷಣಸಮೀಕರಣವು</span></font></span></font><font size="3" style="font-size: 12pt">,
+</font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_a64a795e04c4aee4.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+12:03)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 7" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_b36c8a25fdcbf2c8.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೌಲ್ಯಗಳು</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_e256ef11c89faf84.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font><span lang="kn"> ಸಂಭಾವ್ಯ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ವಿಭಜನೆಯ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಬಿಂದುಗಳಲ್ಲಿ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಈಗ ನಿರ್ಧರಿಸಲ್ಪಡುತ್ತದೆ</span></font></span></font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_8d1a8207bfe00ca7.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತ
+</span></font></span></font><font size="3" style="font-size: 12pt">5:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆಗಮನದ
+ಕೋನವು ಕೋನಸ್ಥಿತಿಯನ್ನು
+ಬಳಸುತ್ತದೆ</span></font></span></font><font size="3" style="font-size: 12pt">-</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಪ್ರಕರಣದ ಸೂತ್ರಗಳು ಹೀಗಿವೆ</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_483ac853be9f1229.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_49f4a593d71a5c50.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತ
+</span></font></span></font><font size="3" style="font-size: 12pt">6:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">Step 6 </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಒಂದೇ
+ಆಗಿರುತ್ತದೆ</span></font></span></font>-
+<font face="Calibri"><span lang="ar-SA"><span lang="kn">ಅಂದರೆ</span><font size="3" style="font-size: 12pt"><span lang="kn">ಮುಚ್ಚಿದ
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಲೂಪ್
+ಗುಣಲಕ್ಷಣದ</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_479a60edeca5ecf8.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+ಸಮೀಕರಣವನ್ನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಬದಲಿಯಾಗಿ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಇದು
+ಒಂದು ಧನಾತ್ಮಕ</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಪ್ರತಿಕ್ರಿಯೆಯ ಸಂದರ್ಭದಲ್ಲಿ
+ಮೂಲ ಲೋಕಸ್ ಅನ್ನು ನಿರ್ಮಿಸುವ
+ಹಂತಗಳ  ಬದಲಾವಣೆಗಳನ್ನು</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮುಕ್ತಾಯಗೊಳಿಸುತ್ತದೆ</span></font><span lang="kn">
+</span></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಉದಾಹರಣೆ</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_def1aaadca3bf463.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತ
+</span></font></span></font><font size="3" style="font-size: 12pt">1:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_f706d2f8dcce4652.gif"/>
+,</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">Consequently-</font> <font size="3" style="font-size: 12pt">
+2 </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಶಾಖೆಗಳು
+ </span></font><span lang="kn"> </span></span></font><font size="3" style="font-size: 12pt">-4</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮತ್ತು
+</span></font></span></font><font size="3" style="font-size: 12pt">1</font>
+<font size="3" style="font-size: 12pt"> </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ರಿಂದ</span></font><span lang="kn">
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಪ್ರಾರಂಭವಾಗುತ್ತವೆ</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_3292622f5d9d9d50.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+ಮತ್ತು </span></font><span lang="kn"> </span></span></font><font size="3" style="font-size: 12pt">2
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಶಾಖೆಗಳು
+ಅಸಿಂಪಟೋಟ್ ಗಳ ಮೂಲಕ ಅನಂತಕ್ಕೆ
+ಹೋಗುತ್ತವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_e42c101fb81d83d0.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತ
+</span></font></span></font><font size="3" style="font-size: 12pt">2:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font size="3" style="font-size: 12pt">T</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಿಜವಾದ
+ಅಕ್ಷವನ್ನು </span></font></span></font><font size="3" style="font-size: 12pt">3
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ವಲಯಗಳಾಗಿ
+ವಿಂಗಡಿಸಲಾಗಿದೆ</span></font></span></font><font size="3" style="font-size: 12pt">:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_e962682d76cee152.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಮೂರು ಪ್ರದೇಶಗಳಲ್ಲಿ ಪರೀಕ್ಷಾ
+ಬಿಂದುಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುವುದರಿಂದ
+ನಾವು ಈ ಕೆಳಗಿನವುಗಳನ್ನು
+ತೀರ್ಮಾನಿಸಬಹುದು</span></font></span></font><font size="3" style="font-size: 12pt">-</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_9c9368e00d02a514.gif"/>
+<font size="3" style="font-size: 12pt">: </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೂಲ
+ನೆಲೆಯ ಮೇಲೆ ಇದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_2b9017d144941a9a.gif"/>
+<font size="3" style="font-size: 12pt">: </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬೇರಿನ
+ಮೇಲೆ ಮಲಗುವುದಿಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_47be85d4e7caaadb.gif"/>
+<font size="3" style="font-size: 12pt">: </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮೂಲ
+ನೆಲೆಯ ಮೇಲೆ ಇದೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+18:52)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 8" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_647f366b9426709e.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತ
+</span></font></span></font><font size="3" style="font-size: 12pt">3:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಸಿಂಪಟೋಟ್
+ಗಳ ಸಂಖ್ಯೆ</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_22852ecf378b3813.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಸಿಂಪಟೋಟ್
+ಗಳಿಂದ ಮಾಡಲ್ಪಟ್ಟ ಕೋನ</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_64b2c2673277b633.gif"/>
+<font size="3" style="font-size: 12pt">,
+, = </font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_8e04bff0f9f24c03.gif"/>
+<font size="3" style="font-size: 12pt">,
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_5464e3b905149d7.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ನಿಜವಾದ
+ಅಕ್ಷದ ಮೇಲೆ ಛೇದಕ ಬಿಂದು</span></font></span></font><font size="3" style="font-size: 12pt">:
+</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_7cfcbafd779d7fe3.gif"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">,
+2 </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅಸಿಂಪಟೋಟ್
+ಗಳು </span></font><span lang="kn">ಪರಸ್ಪರ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+ಮತ್ತು</span></font><span lang="kn"> </span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_7cfcbafd779d7fe3.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ಧನಾತ್ಮಕ
+ನೈಜ ಅಕ್ಷದ ಕೋನವನ್ನು</span></font><span lang="kn">
+</span>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_8e04bff0f9f24c03.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">ರಚಿಸುತ್ತವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_5464e3b905149d7.gif"/>
+<font size="3" style="font-size: 12pt">
+</font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತ
+</span></font></span></font><font size="3" style="font-size: 12pt">4:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_2c9b736cc702a78e.gif"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_3bd41baec5455e.gif"/>
+<font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_46609e45f94239ee.gif"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%; page-break-after: avoid">
+<font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಸ್ಲೈಡ್
+ಟೈಮ್ ನೋಡಿ</span></font></span></font><font size="3" style="font-size: 12pt">:
+23:09)</font></p>
+<p align="center" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="bottom" border="0" height="288" name="Picture 9" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_643dacc6ae263ba.png" width="384"/>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_80d4450c0231dcb3.gif"/>
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಊಹಿಸಲಾದ
+ಂತೆ</span></font></span></font><font size="3" style="font-size: 12pt">,</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="kn">ಯಾವುದೇ
+ವಿರಾಮ</span></span></font><font size="3" style="font-size: 12pt">(</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಮಾರ್ಗ
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ಅಥವಾ
+</span></font><span lang="kn"> </span><font size="3" style="font-size: 12pt"><span lang="kn">ವಿರಾಮ</span></font></span></font><font size="3" style="font-size: 12pt">)</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬಿಂದುವಿಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತ
+</span></font></span></font><font size="3" style="font-size: 12pt">5:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಈ
+ಉದಾಹರಣೆಯಲ್ಲಿ ನಾವು ನಿಜವಾದ
+ಓಪನ್ ಲೂಪ್ ಧ್ರುವಗಳನ್ನು ಮಾತ್ರ
+ಹೊಂದಿರುವುದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">-</font>
+<font face="Calibri"><span lang="ar-SA"><span lang="kn">ಹಂತ</span><font size="3" style="font-size: 12pt"><span lang="kn">
+</span></font></span></font><font size="3" style="font-size: 12pt">5
+</font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಅನ್ವಯಿಸುವುದಿಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಹಂತ
+</span></font></span></font><font size="3" style="font-size: 12pt">6:</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_37c0ab618584b133.gif"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಬದಲಿ
+ಯಾಗಿ </span></font>
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_bce5b10c3fa65130.gif"/>
+<font size="3" style="font-size: 12pt"><span lang="kn">
+ನಾವು ಪಡೆಯುತ್ತೇವೆ</span></font></span></font><font size="3" style="font-size: 12pt">.</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<img align="absmiddle" src="https://raw.githubusercontent.com/Examination-assist/data_feb23/main/lec39.doc%20kannada_htm_b86101d50bb5eaeb.gif"/>
+<font size="3" style="font-size: 12pt">,</font></p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಆದ್ದರಿಂದ</span></font></span></font><font size="3" style="font-size: 12pt">-
+ </font><font face="Calibri"><span lang="ar-SA"><font size="3" style="font-size: 12pt"><span lang="kn">ಯಾವುದೇ
+ಕ್ರಾಸ್ ಓವರ್</span></font><span lang="kn"> ಪಾಯಿಂಟ್
+</span><font size="3" style="font-size: 12pt"><span lang="kn">ಗಳಿಲ್ಲ</span></font></span></font><font size="3" style="font-size: 12pt">.</font>
+<font size="3" style="font-size: 12pt"> </font>
+</p>
+<p align="justify" class="western" lang="en-US" style="margin-top: 0.42cm; margin-bottom: 0.42cm; line-height: 150%">
+<br/>
+<br/>
+</p>
+</body>
+</html>
